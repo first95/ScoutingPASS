@@ -7,8 +7,8 @@ var config_data = `
       "Scouter": {
         "code":"s",
         "type":"scouter",
-        "size":5,
-        "maxSize":5,
+        "size":20,
+        "maxSize":20,
         "required":"true"
       },
       "Match Level":{
@@ -18,7 +18,6 @@ var config_data = `
           "Quals":"Qualifiers>",
           "Elims":"Eliminations"
         },
-        "defaultValue":"Quals",
         "required":"true"
       },
       "Match #":{
@@ -29,79 +28,73 @@ var config_data = `
         "required":"true"
       },
      "Alliance": {
-        "code":"r",
+        "code":"al",
         "type":"radio",
         "choices":{
-          "Red":"Red"
+          "Red":"Red<br>"
           "Blue":"Blue"
         },
         "required":"true"
       },
-      "Team 1 #": {
+      "Team #": {
         "code":"t",
         "type":"team",
         "min":1,
         "max":99999
-      },
-      "Team 2 #": {
-        "code":"t",
-        "type":"team",
-        "min":1,
-        "max":99999
-      },
-      "Team 3 #": {
-        "code":"t",
-        "type":"team",
-        "min":1,
-        "max":99999
+        "required":"true"
       }
     },
-    "autonomous": {
+    "auton": {
       "Taxi": {
         "code":"at",
         "title":"Taxi",
         "type":"bool"
       },
-      "Team 1 Cargo Scored": {
-        "code":"scored1",
-        "title": "Team 1 Cargo Scored",
+      "Cargo Scored": {
+        "code":"scored",
+        "title": "Cargo Scored",
         "type":"radio"
         "choices":{
-          "None":"None"
-          "Some":"Some"
+          "None":"None<br>"
+          "Some":"Some<br>"
           "Lots":"Lots"
         }
       }
     },
     "teleop": {
-      "Team 1 Cargo Scored": {
-        "code":"scored1",
-        "title": "Team 1 Cargo Scored",
+      "Cargo Attempted": {
+        "code":"attempted",
+        "title": "Cargo Attempted",
         "type":"radio"
         "choices":{
-          "None":"None"
-          "Some":"Some"
+          "None":"None<br>"
+          "Some":"Some<br>"
           "Lots":"Lots"
         }
       },
-      "Team 1 Cargo Attempted": {
-        "code":"attempted1",
-        "title": "Team 1 Cargo Attempted",
+      "Cargo Scored": {
+        "code":"scored",
+        "title": "Cargo Scored",
         "type":"radio"
         "choices":{
-          "None":"None"
-          "Some":"Some"
+          "None":"None<br>"
+          "Some":"Some<br>"
           "Lots":"Lots"
         }
       },
-      "Team 1 Was Defended": {
-        "code":"defended1",
-        "title": "Team 1 Was Defended",
-        "type":"bool"
-      },
-      "Wallbot?": {
-        "code":"wbt",
-        "title": "Wallbot?",
+      "Target Goal": {
+        "code":"target"
+        "title":"Target Goal"
+        "type":"radio"
+        "choices"{
+          "Low":"Low<br>"
+          "High":"High<br>"
+          "Both":"Both"
+        }
+      }
+      "Was Defended": {
+        "code":"defended",
+        "title": "Was Defended",
         "type":"bool"
       },
       "Cargo Intake From": {
@@ -109,58 +102,61 @@ var config_data = `
         "title": "Cargo Intake From",
         "type":"radio",
         "choices":{
-          "t":"Terminal<br>",
-          "g":"Ground<br>",
-          "b":"Both<br>",
-          "x":"Not Attempted"
+          "Terminal":"Terminal<br>",
+          "Ground":"Ground<br>",
+          "Both":"Both<br>",
+          "None":"None"
         },
-        "defaultValue":"x"
+        "defaultValue":"None"
       },
       "Shooting Spot": {
         "code":"ss",
         "title": "Shooting Spot",
-        "type":"field_image",
-        "filename":"2022/field_image.png"
+        "type":"radio",
+        "choices":{
+          "Close":"Close<br>"
+          "Far":"Far<br>"
+          "Adjustable":"Adjustable"
+        }
       }
     },
     "endgame": {
-      "Climb": {
+      "Attempted Climb": {
         "code":"c",
-        "title": "Climb",
+        "title": "Attempted Climb",
         "type":"radio",
         "choices":{
-          "1":"Low<br>",
-          "2":"Mid<br>",
-          "3":"High<br>",
-          "4":"Traversal<br>",
-          "a":"Attempted but failed<br>",
-          "x":"Not attempted"
+          "1":"Bar 1<br>",
+          "2":"Bar 2<br>",
+          "3":"Bar 3<br>",
+          "4":"Bar 4<br>",
+          "Not attempted":"Not attempted"
         },
-        "defaultValue":"x"
+        "defaultValue":"Not attempted"
       },
-      "If climb failed,<br>Last successful rung,<br>if any": {
+      "Successful Climb": {
         "code":"lsr",
-        "title": "If climb failed,<br>last successful rung,<br>if any",
+        "title": "Successful Climb",
         "type":"radio",
         "choices":{
-          "1":"Low<br>",
-          "2":"Mid<br>",
-          "3":"High<br>",
-          "4":"Traversal<br>",
-          "n":"No successful rung<br>",
-          "x":"n/a"
+          "1":"Bar 1<br>",
+          "2":"Bar 2<br>",
+          "3":"Bar 3<br>",
+          "4":"Bar 4<br>",
+          "Not Attempted":"Not Attempted"
         },
-        "defaultValue":"x"
+        "defaultValue":"Not Attempted"
       },
-      "Started Climb before Endgame": {
+      "Climb Time": {
         "code":"be",
-        "title": "Started climb before EndGame",
-        "type":"bool"
-      },
-      "Num of Robots Climbed": {
-        "code":"cn",
-        "title": "# of alliance bots climbed",
-        "type":"counter"
+        "title": "Climb Time",
+        "type":"radio"
+        "choices":{
+          "10":"0-10 secs"
+          "20":"10-20 secs"
+          "30":"20-30 secs"
+          "30+":"30+ secs"
+        }
       }
     },
     "postmatch": {
@@ -169,63 +165,20 @@ var config_data = `
         "title": "Driver Skill",
         "type":"radio",
         "choices":{
-          "n":"Not Effective<br>",
-          "a":"Average<br>",
-          "v":"Very Effective<br>",
-          "x":"Not Observed"
+          "High":"High<br>",
+          "Medium":"Medium<br>",
+          "Low":"Low<br>",
+          "Not Observed":"Not Observed"
         },
-        "defaultValue":"x"
-      },
-      "Defense Rating": {
-        "code":"dr",
-        "title": "Defense Rating",
-        "type":"radio",
-        "choices":{
-          "n":"Not Effective<br>",
-          "a":"Average<br>",
-          "v":"Very Effective<br>",
-          "x":"Not Observed"
-        },
-        "defaultValue":"x"
-      },
-      "Shot enemy balls away?": {
-        "code":"ba",
-        "title": "Shot enemy balls away?",
-        "type":"bool"
-      },
-      "Died/Tipped": {
-        "code":"d",
-        "title": "Died/Tipped",
-        "type":"bool"
-      },
-      "Card Foul": {
-        "code":"cf",
-        "title": "Yellow/Red Card",
-        "type":"bool"
-      },
-      "Make good alliance partner?": {
-        "code":"all",
-        "title": "Make good alliance partner?",
-        "type":"bool"
+        "defaultValue":"Not Observed"
       },
       "Comments": {
         "code":"co",
         "title": "Comments",
         "type":"text",
         "size":15,
-        "maxSize":50
-      },
-      "Confidence Rating": {
-        "code":"cnf",
-        "title": "Confidence Rating",
-        "type":"radio",
-        "choices":{
-          "v":"Very Confident<br>",
-          "a":"Average<br>",
-          "n":"Not Confident"
-      },
-       "defaultValue":"a"
-    }
+        "maxSize":100
+      }
     }
   }
 }`;
