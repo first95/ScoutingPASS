@@ -4,7 +4,7 @@
 
 #### A scouting system for FIRST FRC competitions developed by [PWNAGE - Team #2451](https://pwnagerobotics.org).
 
-<a href="https://PWNAGERobotics.github.io/ScoutingPASS">Live Demo</a> . <a href="#getting-started">Getting Started</a> . <a href="#faq">FAQ</a>
+<a href="https://first95.github.io/ScoutingPASS">Team 95's version Live Demo</a> . <a href="#getting-started">Getting Started</a> . <a href="#faq">FAQ</a>
 <h1></h1>
 
 <!-- TABLE OF CONTENTS -->
@@ -20,6 +20,7 @@
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#things-to-add">Things To Add Someday</a></li>
     <li><a href="#license">License</a></li>
+    <li><a href="#Parsing">Parsing QR code data for pasting into a spreadsheet</a></li>
   </ol>
 </details>
 
@@ -172,3 +173,12 @@ Note: The Auto Start (as) element is special in that it will only keep track of 
 
 ## License
 Distributed under the GNU GPL v3.0 License. See `LICENSE` for more information.
+
+## Parsing
+The Example Excel spreadsheet contains macros that will parse the QR code data and insert the values into the spreadsheet in tabular form.
+There may be teams who's laptops don't have excel on them.
+
+Here's a Powershell one-liner that will take the text as it's formatted in the QR code from the clipboard, and convert it into a tab-delimited list of values only,
+for easy pasting into Excel or Google Sheets, likely any spreadsheet program.  This line can be placed in a Shortcut (.Lnk file) in Widows and pinned to the taskbar for easy execution between QR reading and manually pasting into the left-most cell of the first empty row of a spreadsheet:
+
+	C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -noninteractive -Command {((Get-Clipboard).split(";") | Foreach-Object { $_.split("=")[1] }) -join "`t" |  Set-Clipboard}
