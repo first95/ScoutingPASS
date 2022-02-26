@@ -4,31 +4,21 @@ var config_data = `
   "page_title":"Rapid React",
   "elements":{
     "prematch": {
-      "Scouter Initials": {
+      "Scouter": {
         "code":"s",
         "type":"scouter",
         "size":5,
         "maxSize":5,
         "required":"true"
       },
-      "Event":{
-        "code":"e",
-        "type":"event",
-        "defaultValue":"2022flwp",
-        "required":"true",
-        "disabled":"true"
-      },
       "Match Level":{
         "code":"l",
         "type":"level",
         "choices":{
-          "qm":"Quals<br>",
-          "ef":"Eighth-Final<br>",
-          "qf":"Quarter-Final<br>",
-          "sf":"Semi-Final<br>",
-          "f":"Final"
+          "Quals":"Qualifiers>",
+          "Elims":"Eliminations"
         },
-        "defaultValue":"qm",
+        "defaultValue":"Quals",
         "required":"true"
       },
       "Match #":{
@@ -38,68 +28,75 @@ var config_data = `
         "max":100,
         "required":"true"
       },
-     "Robot": {
+     "Alliance": {
         "code":"r",
-        "type":"robot",
+        "type":"radio",
         "choices":{
-          "r1":"Red-1",
-          "b1":"Blue-1<br>",
-          "r2":"Red-2",
-          "b2":"Blue-2<br>",
-          "r3":"Red-3",
-          "b3":"Blue-3"
+          "Red":"Red"
+          "Blue":"Blue"
         },
         "required":"true"
       },
-      "Team #": {
+      "Team 1 #": {
         "code":"t",
         "type":"team",
         "min":1,
         "max":99999
       },
-      "Auto Start Position": {
-        "code":"as",
-        "title": "Auto Start Position",
-        "type":"field_image",
-        "filename":"2022/field_image.png"
+      "Team 2 #": {
+        "code":"t",
+        "type":"team",
+        "min":1,
+        "max":99999
+      },
+      "Team 3 #": {
+        "code":"t",
+        "type":"team",
+        "min":1,
+        "max":99999
       }
     },
-    "auton": {
+    "autonomous": {
       "Taxi": {
         "code":"at",
-        "title": "Taxied?",
+        "title":"Taxi",
         "type":"bool"
       },
-      "Upper Cargo Scored": {
-        "code":"au",
-        "title": "Uppoer Cargo Scored",
-        "type":"counter"
-      },
-      "Lower Cargo Scored": {
-        "code":"al",
-        "title": "Lower Cargo Scored",
-        "type":"counter"
-      },
-      "Auto Aquired Cargo": {
-        "code":"ac",
-        "title": "Picked up more cargo?",
-        "type":"bool"
+      "Team 1 Cargo Scored": {
+        "code":"scored1",
+        "title": "Team 1 Cargo Scored",
+        "type":"radio"
+        "choices":{
+          "None":"None"
+          "Some":"Some"
+          "Lots":"Lots"
+        }
       }
     },
     "teleop": {
-      "Upper Cargo Scored": {
-        "code":"tu",
-        "title": "Uppoer Cargo Scored",
-        "type":"counter"
+      "Team 1 Cargo Scored": {
+        "code":"scored1",
+        "title": "Team 1 Cargo Scored",
+        "type":"radio"
+        "choices":{
+          "None":"None"
+          "Some":"Some"
+          "Lots":"Lots"
+        }
       },
-      "Lower Cargo Scored": {
-        "code":"tl",
-        "title": "Lower Cargo Scored",
-        "type":"counter"
+      "Team 1 Cargo Attempted": {
+        "code":"attempted1",
+        "title": "Team 1 Cargo Attempted",
+        "type":"radio"
+        "choices":{
+          "None":"None"
+          "Some":"Some"
+          "Lots":"Lots"
+        }
       },
-      "Was Defended": {
-        "code":"wd",
-        "title": "Was Defended",
+      "Team 1 Was Defended": {
+        "code":"defended1",
+        "title": "Team 1 Was Defended",
         "type":"bool"
       },
       "Cargo Intake From": {
