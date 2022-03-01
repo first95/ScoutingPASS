@@ -11,11 +11,18 @@ var config_data = `
         "maxSize":20,
         "required":"true"
       },
+      "Event":{
+        "code":"e",
+        "type":"event",
+        "defaultValue":"2022NHGRS",
+        "required":"true",
+        "disabled":"true"
+      },
       "Match Level":{
         "code":"l",
         "type":"level",
         "choices":{
-          "Quals":"Qualifiers>",
+          "Quals":"Qualifiers",
           "Elims":"Eliminations"
         },
         "required":"true"
@@ -28,8 +35,8 @@ var config_data = `
         "required":"true"
       },
      "Alliance": {
-        "code":"al",
-        "type":"radio",
+        "code":"r",
+        "type":"robot",
         "choices":{
           "Red":"Red<br>"
           "Blue":"Blue"
