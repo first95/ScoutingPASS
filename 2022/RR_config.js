@@ -64,8 +64,10 @@ var config_data = `
         "choices":{
           "None":"None<br>",
           "Some":"Some<br>",
-          "Lots":"Lots"
-        }
+          "Lots":"Lots<br>",
+          "Not observed":"Not observed"
+        },
+        "defaultValue":"Not observed"
       }
     },
     "teleop": {
@@ -76,8 +78,10 @@ var config_data = `
         "choices":{
           "None":"None<br>",
           "Some":"Some<br>",
-          "Lots":"Lots"
-        }
+          "Lots":"Lots<br>",
+          "Not observed":"Not observed"
+        },
+        "defaultValue":"Not observed"
       },
       "Cargo Scored": {
         "code":"ts",
@@ -86,8 +90,10 @@ var config_data = `
         "choices":{
           "None":"None<br>",
           "Some":"Some<br>",
-          "Lots":"Lots"
-        }
+          "Lots":"Lots<br>",
+          "Not observed":"Not observed"
+        },
+        "defaultValue":"Not observed"
       },
       "Target Goal": {
         "code":"tg",
@@ -96,8 +102,11 @@ var config_data = `
         "choices":{
           "Low":"Low<br>",
           "High":"High<br>",
-          "Both":"Both"
-        }
+          "Both":"Both<br>",
+          "None":"None<br>",
+          "Not observed":"Not observed"
+        },
+        "defaultValue":"Not observed"
       },
       "Cargo Intake": {
         "code":"ci",
@@ -107,8 +116,10 @@ var config_data = `
           "Terminal":"Terminal<br>",
           "Ground":"Ground<br>",
           "Both":"Both<br>",
-          "None":"None"
-        }
+          "None":"None<br>",
+          "Not observed":"Not observed"
+        },
+        "defaultValue":"Not observed"
       },
       "Was Defended": {
         "code":"wd",
@@ -122,8 +133,11 @@ var config_data = `
         "choices":{
           "Close":"Close<br>",
           "Far":"Far<br>",
-          "Adjustable":"Adjustable"
-        }
+          "Adjustable":"Adjustable<br>",
+          "None":"None<br>",
+          "Not observed":"Not observed"
+        },
+        "defaultValue":"Not observed"
       }
     },
     "endgame": {
@@ -149,9 +163,10 @@ var config_data = `
           "2":"Bar 2<br>",
           "3":"Bar 3<br>",
           "4":"Bar 4<br>",
-          "Not Attempted":"Not Attempted"
+          "None":"None<br>",
+          "Not attempted":"Not attempted"
         },
-        "defaultValue":"Not Attempted"
+        "defaultValue":"Not attempted"
       },
       "Climb Time": {
         "code":"ct",
@@ -161,22 +176,37 @@ var config_data = `
           "10":"0-10 secs<br>",
           "20":"10-20 secs<br>",
           "30":"20-30 secs<br>",
-          "30+":"30+ secs"
-        }
+          "30+":"30+ secs<br>",
+          "Not attempted":"Not attempted"
+        },
+        "defaultValue":"Not attempted"
       }
     },
     "postmatch": {
       "Driver Skill": {
-        "code":"ds",
+        "code":"drs",
         "title": "Driver Skill",
         "type":"radio",
         "choices":{
           "High":"High<br>",
           "Medium":"Medium<br>",
           "Low":"Low<br>",
-          "Not Observed":"Not Observed"
+          "Not observed":"Not observed"
         },
-        "defaultValue":"x"
+        "defaultValue":"Not observed"
+      },
+      "Defense Skill": {
+        "code":"des",
+        "title": "Defense Skill",
+        "type":"radio",
+        "choices":{
+          "High":"High<br>",
+          "Medium":"Medium<br>",
+          "Low":"Low<br>",
+          "Didn't Defend":"Didn't Defend<br>",
+          "Not observed":"Not observed"
+        },
+        "defaultValue":"Not observed"
       },
       "Comments": {
         "code":"co",
