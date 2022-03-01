@@ -4,17 +4,17 @@ var config_data = `
   "page_title":"Rapid React",
   "elements":{
     "prematch": {
-      "Scouter": {
+      "Scouter Name": {
         "code":"s",
         "type":"scouter",
-        "size":20,
+        "size":10,
         "maxSize":20,
         "required":"true"
       },
       "Event":{
         "code":"e",
         "type":"event",
-        "defaultValue":"2022NHGRS",
+        "defaultValue":"2022nhgrs",
         "required":"true",
         "disabled":"true"
       },
@@ -22,9 +22,10 @@ var config_data = `
         "code":"l",
         "type":"level",
         "choices":{
-          "Quals":"Qualifiers",
-          "Elims":"Eliminations"
+          "qm":"Qualifiers<br>",
+          "ef":"Eliminations"
         },
+        "defaultValue":"qm",
         "required":"true"
       },
       "Match #":{
@@ -38,8 +39,8 @@ var config_data = `
         "code":"r",
         "type":"robot",
         "choices":{
-          "Red":"Red<br>"
-          "Blue":"Blue"
+          "r1":"Red<br>",
+          "r2":"Blue"
         },
         "required":"true"
       },
@@ -48,7 +49,6 @@ var config_data = `
         "type":"team",
         "min":1,
         "max":99999
-        "required":"true"
       }
     },
     "auton": {
@@ -58,78 +58,77 @@ var config_data = `
         "type":"bool"
       },
       "Cargo Scored": {
-        "code":"scored",
+        "code":"as",
         "title": "Cargo Scored",
-        "type":"radio"
+        "type":"radio",
         "choices":{
-          "None":"None<br>"
-          "Some":"Some<br>"
+          "None":"None<br>",
+          "Some":"Some<br>",
           "Lots":"Lots"
         }
       }
     },
     "teleop": {
       "Cargo Attempted": {
-        "code":"attempted",
+        "code":"ta",
         "title": "Cargo Attempted",
-        "type":"radio"
+        "type":"radio",
         "choices":{
-          "None":"None<br>"
-          "Some":"Some<br>"
+          "None":"None<br>",
+          "Some":"Some<br>",
           "Lots":"Lots"
         }
       },
       "Cargo Scored": {
-        "code":"scored",
+        "code":"ts",
         "title": "Cargo Scored",
-        "type":"radio"
+        "type":"radio",
         "choices":{
-          "None":"None<br>"
-          "Some":"Some<br>"
+          "None":"None<br>",
+          "Some":"Some<br>",
           "Lots":"Lots"
         }
       },
       "Target Goal": {
-        "code":"target"
-        "title":"Target Goal"
-        "type":"radio"
-        "choices"{
-          "Low":"Low<br>"
-          "High":"High<br>"
+        "code":"tg",
+        "title": "Target Goal",
+        "type":"radio",
+        "choices":{
+          "Low":"Low<br>",
+          "High":"High<br>",
           "Both":"Both"
         }
-      }
-      "Was Defended": {
-        "code":"defended",
-        "title": "Was Defended",
-        "type":"bool"
       },
-      "Cargo Intake From": {
-        "code":"cif",
-        "title": "Cargo Intake From",
+      "Cargo Intake": {
+        "code":"ci",
+        "title": "Cargo Intake",
         "type":"radio",
         "choices":{
           "Terminal":"Terminal<br>",
           "Ground":"Ground<br>",
           "Both":"Both<br>",
           "None":"None"
-        },
-        "defaultValue":"None"
+        }
+      },
+      "Was Defended": {
+        "code":"wd",
+        "title": "Was Defended",
+        "type":"bool"
       },
       "Shooting Spot": {
         "code":"ss",
         "title": "Shooting Spot",
         "type":"radio",
         "choices":{
-          "Close":"Close<br>"
-          "Far":"Far<br>"
+          "Close":"Close<br>",
+          "Far":"Far<br>",
           "Adjustable":"Adjustable"
         }
       }
     },
     "endgame": {
       "Attempted Climb": {
-        "code":"c",
+        "code":"ac",
         "title": "Attempted Climb",
         "type":"radio",
         "choices":{
@@ -142,7 +141,7 @@ var config_data = `
         "defaultValue":"Not attempted"
       },
       "Successful Climb": {
-        "code":"lsr",
+        "code":"sc",
         "title": "Successful Climb",
         "type":"radio",
         "choices":{
@@ -155,13 +154,13 @@ var config_data = `
         "defaultValue":"Not Attempted"
       },
       "Climb Time": {
-        "code":"be",
+        "code":"ct",
         "title": "Climb Time",
-        "type":"radio"
+        "type":"radio",
         "choices":{
-          "10":"0-10 secs"
-          "20":"10-20 secs"
-          "30":"20-30 secs"
+          "10":"0-10 secs<br>",
+          "20":"10-20 secs<br>",
+          "30":"20-30 secs<br>",
           "30+":"30+ secs"
         }
       }
@@ -177,7 +176,7 @@ var config_data = `
           "Low":"Low<br>",
           "Not Observed":"Not Observed"
         },
-        "defaultValue":"Not Observed"
+        "defaultValue":"x"
       },
       "Comments": {
         "code":"co",
