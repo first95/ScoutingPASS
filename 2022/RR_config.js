@@ -65,9 +65,9 @@ var config_data = `
           "None":"None<br>",
           "Some":"Some<br>",
           "Lots":"Lots<br>",
-          "Not observed":"Not observed"
+          "Not Observed":"Not Observed"
         },
-        "defaultValue":"Not observed"
+        "defaultValue":"Not Observed"
       }
     },
     "teleop": {
@@ -79,9 +79,9 @@ var config_data = `
           "None":"None<br>",
           "Some":"Some<br>",
           "Lots":"Lots<br>",
-          "Not observed":"Not observed"
+          "Not Observed":"Not Observed"
         },
-        "defaultValue":"Not observed"
+        "defaultValue":"Not Observed"
       },
       "Cargo Scored": {
         "code":"ts",
@@ -91,48 +91,48 @@ var config_data = `
           "None":"None<br>",
           "Some":"Some<br>",
           "Lots":"Lots<br>",
-          "Not observed":"Not observed"
+          "Not Observed":"Not Observed"
         },
-        "defaultValue":"Not observed"
+        "defaultValue":"Not Observed"
       },
       "Target Goal": {
         "code":"tg",
         "title": "Target Goal",
         "type":"radio",
         "choices":{
+          "None":"None<br>",
           "Low":"Low<br>",
           "High":"High<br>",
           "Both":"Both<br>",
-          "None":"None<br>",
-          "Not observed":"Not observed"
+          "Not Observed":"Not Observed"
         },
-        "defaultValue":"Not observed"
+        "defaultValue":"Not Observed"
       },
       "Cargo Intake": {
         "code":"ci",
         "title": "Cargo Intake",
         "type":"radio",
         "choices":{
+          "None":"None<br>",
           "Terminal":"Terminal<br>",
           "Ground":"Ground<br>",
           "Both":"Both<br>",
-          "None":"None<br>",
-          "Not observed":"Not observed"
+          "Not Observed":"Not Observed"
         },
-        "defaultValue":"Not observed"
+        "defaultValue":"Not Observed"
       },
       "Shooting Spot": {
         "code":"ss",
         "title": "Shooting Spot",
         "type":"radio",
         "choices":{
+          "None":"None<br>",
           "Close":"Close<br>",
           "Far":"Far<br>",
           "Adjustable":"Adjustable<br>",
-          "None":"None<br>",
-          "Not observed":"Not observed"
+          "Not Observed":"Not Observed"
         },
-        "defaultValue":"Not observed"
+        "defaultValue":"Not Observed"
       }
     },
     "endgame": {
@@ -145,36 +145,37 @@ var config_data = `
           "2":"Bar 2<br>",
           "3":"Bar 3<br>",
           "4":"Bar 4<br>",
-          "Not attempted":"Not attempted"
+          "Not Attempted":"Not Attempted"
         },
-        "defaultValue":"Not attempted"
+        "defaultValue":"Not Attempted"
       },
       "Successful Climb": {
         "code":"sc",
         "title": "Successful Climb",
         "type":"radio",
         "choices":{
+          "None":"None<br>",
           "1":"Bar 1<br>",
           "2":"Bar 2<br>",
           "3":"Bar 3<br>",
           "4":"Bar 4<br>",
-          "None":"None<br>",
-          "Not attempted":"Not attempted"
+          "Not Attempted":"Not Attempted"
         },
-        "defaultValue":"Not attempted"
+        "defaultValue":"Not Attempted"
       },
       "Climb Time": {
         "code":"ct",
         "title": "Climb Time",
         "type":"radio",
         "choices":{
-          "10":"0-10 secs<br>",
-          "20":"10-20 secs<br>",
-          "30":"20-30 secs<br>",
+          "None":"None<br>",
+          "0-10":"0-10 secs<br>",
+          "10-20":"10-20 secs<br>",
+          "20-30":"20-30 secs<br>",
           "30+":"30+ secs<br>",
-          "Not attempted":"Not attempted"
+          "Not Attempted":"Not Attempted"
         },
-        "defaultValue":"Not attempted"
+        "defaultValue":"Not Attempted"
       }
     },
     "postmatch": {
@@ -183,25 +184,25 @@ var config_data = `
         "title": "Driver Skill",
         "type":"radio",
         "choices":{
-          "High":"High<br>",
-          "Medium":"Medium<br>",
           "Low":"Low<br>",
-          "Not observed":"Not observed"
+          "Medium":"Medium<br>",
+          "High":"High<br>",
+          "Not Observed":"Not Observed"
         },
-        "defaultValue":"Not observed"
+        "defaultValue":"Not Observed"
       },
       "Defense Skill": {
         "code":"des",
         "title": "Defense Skill",
         "type":"radio",
         "choices":{
-          "High":"High<br>",
-          "Medium":"Medium<br>",
-          "Low":"Low<br>",
           "Didn't Defend":"Didn't Defend<br>",
-          "Not observed":"Not observed"
+          "Low":"Low<br>",
+          "Medium":"Medium<br>",
+          "High":"High<br>",
+          "Not Observed":"Not Observed"
         },
-        "defaultValue":"Not observed"
+        "defaultValue":"Not Observed"
       },
       "Was Defended": {
         "code":"wd",
