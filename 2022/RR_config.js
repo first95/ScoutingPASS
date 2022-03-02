@@ -121,11 +121,6 @@ var config_data = `
         },
         "defaultValue":"Not observed"
       },
-      "Was Defended": {
-        "code":"wd",
-        "title": "Was Defended",
-        "type":"bool"
-      },
       "Shooting Spot": {
         "code":"ss",
         "title": "Shooting Spot",
@@ -207,6 +202,11 @@ var config_data = `
           "Not observed":"Not observed"
         },
         "defaultValue":"Not observed"
+      },
+      "Was Defended": {
+        "code":"wd",
+        "title": "Was Defended",
+        "type":"bool"
       },
       "Comments": {
         "code":"co",
