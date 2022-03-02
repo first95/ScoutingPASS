@@ -100,10 +100,10 @@ var config_data = `
         "title": "Target Goal",
         "type":"radio",
         "choices":{
-          "None":"None<br>",
           "Low":"Low<br>",
           "High":"High<br>",
           "Both":"Both<br>",
+          "None":"None<br>",
           "Not observed":"Not observed"
         },
         "defaultValue":"Not observed"
@@ -113,10 +113,10 @@ var config_data = `
         "title": "Cargo Intake",
         "type":"radio",
         "choices":{
-          "None":"None<br>",
           "Terminal":"Terminal<br>",
           "Ground":"Ground<br>",
           "Both":"Both<br>",
+          "None":"None<br>",
           "Not observed":"Not observed"
         },
         "defaultValue":"Not observed"
@@ -126,10 +126,10 @@ var config_data = `
         "title": "Shooting Spot",
         "type":"radio",
         "choices":{
-          "None":"None<br>",
           "Close":"Close<br>",
           "Far":"Far<br>",
           "Adjustable":"Adjustable<br>",
+          "None":"None<br>",
           "Not observed":"Not observed"
         },
         "defaultValue":"Not observed"
@@ -154,13 +154,14 @@ var config_data = `
         "title": "Successful Climb",
         "type":"radio",
         "choices":{
-          "None":"None<br>",
           "1":"Bar 1<br>",
           "2":"Bar 2<br>",
           "3":"Bar 3<br>",
-          "4":"Bar 4"
+          "4":"Bar 4<br>",
+          "None":"None<br>",
+          "Not attempted":"Not attempted"
         },
-        "defaultValue":"None"
+        "defaultValue":"Not attempted"
       },
       "Climb Time": {
         "code":"ct",
@@ -182,9 +183,9 @@ var config_data = `
         "title": "Driver Skill",
         "type":"radio",
         "choices":{
-          "Low":"Low<br>",
-          "Medium":"Medium<br>",
           "High":"High<br>",
+          "Medium":"Medium<br>",
+          "Low":"Low<br>",
           "Not observed":"Not observed"
         },
         "defaultValue":"Not observed"
@@ -194,10 +195,10 @@ var config_data = `
         "title": "Defense Skill",
         "type":"radio",
         "choices":{
-          "Didn't Defend":"Didn't Defend<br>",
-          "Low":"Low<br>",
-          "Medium":"Medium<br>",
           "High":"High<br>",
+          "Medium":"Medium<br>",
+          "Low":"Low<br>",
+          "Didn't Defend":"Didn't Defend<br>",
           "Not observed":"Not observed"
         },
         "defaultValue":"Not observed"
