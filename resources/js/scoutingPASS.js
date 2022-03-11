@@ -515,29 +515,29 @@ function getData() {
 		if (radio > -1) {
 			if (e.checked) {
 				if (start==false) {
-					str=str+';'
+					str=str+'\t'
 				} else {
 					start=false
 				}
 				// str=str+code.substr(0,radio)+'='+code.substr(radio+1)
 				// document.getElementById("display_"+code.substr(0, radio)).value = code.substr(radio+1)
-				str=str+code.substr(0,radio)+'='+e.value
+				str=str+e.value
 				document.getElementById("display_"+code.substr(0, radio)).value = e.value
 			}
 		} else {
 			if (start==false) {
-				str=str+';'
+				str=str+'\t'
 			} else {
 				start=false
 			}
 			if (e.value == "on") {
 				if (e.checked) {
-					str=str+code+'=Y'
+					str=str+'Y'
 				} else {
-					str=str+code+'=N'
+					str=str+'N'
 				}
 			} else {
-				str=str+code+'='+e.value.split(';').join('-')
+				str=str+e.value.split('\t').join('-')
 			}
 		}
 	}
