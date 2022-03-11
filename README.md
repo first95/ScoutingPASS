@@ -9,6 +9,8 @@
 ![Stars](https://img.shields.io/github/stars/PWNAGERobotics/ScoutingPASS?style=plastic) ![Forks](https://img.shields.io/github/forks/PWNAGERobotics/ScoutingPASS?style=plastic) ![watchers](https://img.shields.io/github/watchers/PWNAGERobotics/ScoutingPASS?style=plastic)
 <h1></h1>
 
+# Sample String for Testing:
+	s=Sample;e=2022nhgrs;l=qm;m=1;r=r1;t=95;at=Y;as=Lots;ta=Lots;ts=Some;tg=High;ci=Ground;ss=Close;ac=4;sc=4;ct=20-30;drs=Not Observed;des=Not Observed;wd=N;co=This is a sample string
 
 <!-- TABLE OF CONTENTS -->
 <details>
