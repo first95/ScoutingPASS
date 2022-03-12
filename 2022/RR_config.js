@@ -49,9 +49,7 @@ var config_data = `
         "type":"team",
         "min":1,
         "max":99999
-      }
-    },
-    "auton": {
+      },
       "Taxi": {
         "code":"at",
         "title":"Taxi",
@@ -68,9 +66,7 @@ var config_data = `
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
-      }
-    },
-    "teleop": {
+      },
       "Cargo Attempted": {
         "code":"ta",
         "title": "Cargo Attempted",
@@ -133,9 +129,7 @@ var config_data = `
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
-      }
-    },
-    "endgame": {
+      },
       "Attempted Climb": {
         "code":"ac",
         "title": "Attempted Climb",
@@ -145,9 +139,10 @@ var config_data = `
           "2":"Bar 2<br>",
           "3":"Bar 3<br>",
           "4":"Bar 4<br>",
-          "Not Attempted":"Not Attempted"
+          "Not Attempted":"Not Attempted<br>",
+          "Not Observed":"Not Observed"
         },
-        "defaultValue":"Not Attempted"
+        "defaultValue":"Not Observed"
       },
       "Successful Climb": {
         "code":"sc",
@@ -159,9 +154,10 @@ var config_data = `
           "2":"Bar 2<br>",
           "3":"Bar 3<br>",
           "4":"Bar 4<br>",
-          "Not Attempted":"Not Attempted"
+          "Not Attempted":"Not Attempted<br>",
+          "Not Observed":"Not Observed"
         },
-        "defaultValue":"Not Attempted"
+        "defaultValue":"Not Observed"
       },
       "Climb Time": {
         "code":"ct",
@@ -172,13 +168,11 @@ var config_data = `
           "0-10":"0-10 secs<br>",
           "10-20":"10-20 secs<br>",
           "20-30":"20-30 secs<br>",
-          "30+":"30+ secs<br>",
+          ">30":">30 secs<br>",
           "Not Attempted":"Not Attempted"
         },
         "defaultValue":"Not Attempted"
-      }
-    },
-    "postmatch": {
+      },
       "Driver Skill": {
         "code":"drs",
         "title": "Driver Skill",
@@ -204,10 +198,18 @@ var config_data = `
         },
         "defaultValue":"Not Observed"
       },
-      "Was Defended": {
-        "code":"wd",
-        "title": "Was Defended",
-        "type":"bool"
+      "Defense Tolerance": {
+        "code":"dt",
+        "title": "Defense Tolerance",
+        "type":"radio",
+        "choices":{
+          "Wasn't Defended":"Wasn't Defended<br>",
+          "Low":"Low<br>",
+          "Medium":"Medium<br>",
+          "High":"High<br>",
+          "Not Observed":"Not Observed"
+        },
+        "defaultValue":"Not Observed"
       },
       "Comments": {
         "code":"co",
