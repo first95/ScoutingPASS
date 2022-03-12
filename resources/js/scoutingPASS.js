@@ -532,9 +532,9 @@ function getData() {
 			}
 			if (e.value == "on") {
 				if (e.checked) {
-					str=str+'Y'
+					str=str+'Yes'
 				} else {
-					str=str+'N'
+					str=str+'No'
 				}
 			} else {
 				str=str+e.value.split('\t').join('-')
