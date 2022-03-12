@@ -164,14 +164,14 @@ var config_data = `
         "title": "Climb Time",
         "type":"radio",
         "choices":{
-          "None":"None<br>",
           "0-10":"0-10 secs<br>",
           "10-20":"10-20 secs<br>",
           "20-30":"20-30 secs<br>",
           ">30":">30 secs<br>",
-          "Not Attempted":"Not Attempted"
+          "Not Attempted":"Not Attempted<br>",
+          "Not Observed":"Not Observed"
         },
-        "defaultValue":"Not Attempted"
+        "defaultValue":"Not Observed"
       },
       "Driver Skill": {
         "code":"drs",
