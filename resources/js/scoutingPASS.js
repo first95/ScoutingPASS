@@ -53,6 +53,15 @@ function addCounter(table, idx, name, data){
   button2.setAttribute("onclick", "counter(this.parentElement, 1)");
   button2.innerHTML += "+";
   cell2.appendChild(button2);
+
+  if (data.hasOwnProperty('defaultValue')) {
+    var def = document.createElement("input");
+    def.setAttribute("id", "default_"+data.code)
+    def.setAttribute("type", "hidden");
+    def.setAttribute("value", data.defaultValue);
+    cell2.appendChild(def);
+  }
+
   return idx+1;
 }
 
@@ -153,6 +162,14 @@ function addText(table, idx, name, data) {
     inp.setAttribute("disabled", "");
   }
   cell2.appendChild(inp);
+
+  if (data.hasOwnProperty('defaultValue')) {
+    var def = document.createElement("input");
+    def.setAttribute("id", "default_"+data.code)
+    def.setAttribute("type", "hidden");
+    def.setAttribute("value", data.defaultValue);
+    cell2.appendChild(def);
+  }
   return idx+1
 }
 
@@ -192,6 +209,15 @@ function addNumber(table, idx, name, data) {
     inp.setAttribute("required", "");
   }
   cell2.appendChild(inp);
+
+  if (data.hasOwnProperty('defaultValue')) {
+    var def = document.createElement("input");
+    def.setAttribute("id", "default_"+data.code)
+    def.setAttribute("type", "hidden");
+    def.setAttribute("value", data.defaultValue);
+    cell2.appendChild(def);
+  }
+
   if (data.type == 'team') {
     row = table.insertRow(idx+1);
     cell1 = row.insertCell(0);
@@ -200,6 +226,7 @@ function addNumber(table, idx, name, data) {
     cell1.setAttribute("style", "text-align: center;");
     return idx+2;
   }
+
   return idx+1;
 }
 
@@ -245,6 +272,14 @@ function addRadio(table, idx, name, data) {
   inp.setAttribute("value", "");
   cell2.appendChild(inp);
 
+  if (data.hasOwnProperty('defaultValue')) {
+    var def = document.createElement("input");
+    def.setAttribute("id", "default_"+data.code)
+    def.setAttribute("type", "hidden");
+    def.setAttribute("value", data.defaultValue);
+    cell2.appendChild(def);
+  }
+
   return idx+1;
 }
 
@@ -267,6 +302,14 @@ function addCheckbox(table, idx, name, data){
 
   if (data.type == 'bool') {
     cell2.innerHTML += "(checked = Yes)";
+  }
+
+  if (data.hasOwnProperty('defaultValue')) {
+    var def = document.createElement("input");
+    def.setAttribute("id", "default_"+data.code)
+    def.setAttribute("type", "hidden");
+    def.setAttribute("value", data.defaultValue);
+    cell2.appendChild(def);
   }
 
   return idx+1;
@@ -558,7 +601,7 @@ function updateQRHeader() {
 
 
 function qr_regenerate() {
-	// Validate required pre-match date (event, match, level, robot, scouter)
+	// Validate required pre-match data (event, match, level, robot, scouter)
 	if (validateData() == false) {
 		// Don't allow a swipe until all required data is filled in
 		return false
@@ -579,10 +622,13 @@ function qr_clear() {
 }
 
 function clearForm() {
+
+    console.log("Clear Form");
+
 	var match = 0;
 	var e = 0;
 
-	swipePage(-5)
+	swipePage(-1)
 
 	// Increment match
 	match = parseInt(document.getElementById("input_m").value)
@@ -593,7 +639,7 @@ function clearForm() {
 	}
 
 	// Robot
-	resetRobot()
+	//resetRobot()  //We usually scout the same alliance every time
 
 	// Clear XY coordinates
 	inputs = document.querySelectorAll("[id*='XY_']");
@@ -616,9 +662,18 @@ function clearForm() {
 
 		radio = code.indexOf("_")
 		if (radio > -1) {
+			var baseCode = code.substr(0, radio)
 			if (e.checked) {
 				e.checked = false
-				document.getElementById("display_"+code.substr(0, radio)).value = ""
+				document.getElementById("display_"+baseCode).value = ""
+			}
+			var defaultValue = document.getElementById("default_"+baseCode).value
+			if (defaultValue != "") {
+				if (defaultValue == e.value) {
+					console.log("they match!")
+					e.checked = true
+					document.getElementById("display_"+baseCode).value = defaultValue
+				}
 			}
 		} else {
 			if (e.type=="number" || e.type=="text" || e.type=="hidden") {
