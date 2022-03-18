@@ -558,7 +558,7 @@ function updateQRHeader() {
 
 
 function qr_regenerate() {
-	// Validate required pre-match date (event, match, level, robot, scouter)
+	// Validate required pre-match data (event, match, level, robot, scouter)
 	if (validateData() == false) {
 		// Don't allow a swipe until all required data is filled in
 		return false
@@ -579,10 +579,13 @@ function qr_clear() {
 }
 
 function clearForm() {
+
+    console.log("Clear Form");
+
 	var match = 0;
 	var e = 0;
 
-	swipePage(-5)
+	swipePage(-1)
 
 	// Increment match
 	match = parseInt(document.getElementById("input_m").value)
@@ -593,7 +596,7 @@ function clearForm() {
 	}
 
 	// Robot
-	resetRobot()
+	//resetRobot()  //We usually scout the same alliance every time
 
 	// Clear XY coordinates
 	inputs = document.querySelectorAll("[id*='XY_']");
