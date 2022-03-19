@@ -397,41 +397,41 @@ function configure(){
     idx = addElement(pmt, idx, key, value);
   });
 
-  // Configure auton screen
-  var ac = mydata.elements.auton;
-  var at = document.getElementById("auton_table");
-  idx = 0;
-  Object.entries(ac).forEach((el) => {
-    const [key, value] = el;
-    idx = addElement(at, idx, key, value);
-  });
+  // // Configure auton screen
+  // var ac = mydata.elements.auton;
+  // var at = document.getElementById("auton_table");
+  // idx = 0;
+  // Object.entries(ac).forEach((el) => {
+  //   const [key, value] = el;
+  //   idx = addElement(at, idx, key, value);
+  // });
 
-  // Configure teleop screen
-  var tc = mydata.elements.teleop;
-  var tt = document.getElementById("teleop_table");
-  idx = 0;
-  Object.entries(tc).forEach((el) => {
-    const [key, value] = el;
-    idx = addElement(tt, idx, key, value);
-  });
+  // // Configure teleop screen
+  // var tc = mydata.elements.teleop;
+  // var tt = document.getElementById("teleop_table");
+  // idx = 0;
+  // Object.entries(tc).forEach((el) => {
+  //   const [key, value] = el;
+  //   idx = addElement(tt, idx, key, value);
+  // });
 
-  // Configure endgame screen
-  var egc = mydata.elements.endgame;
-  var egt = document.getElementById("endgame_table");
-  idx = 0;
-  Object.entries(egc).forEach((el) => {
-    const [key, value] = el;
-    idx = addElement(egt, idx, key, value);
-  });
+  // // Configure endgame screen
+  // var egc = mydata.elements.endgame;
+  // var egt = document.getElementById("endgame_table");
+  // idx = 0;
+  // Object.entries(egc).forEach((el) => {
+  //   const [key, value] = el;
+  //   idx = addElement(egt, idx, key, value);
+  // });
 
-  // Configure postmatch screen
-  pmc = mydata.elements.postmatch;
-  pmt = document.getElementById("postmatch_table");
-  var idx = 0;
-  Object.entries(pmc).forEach((el) => {
-    const [key, value] = el;
-    idx = addElement(pmt, idx, key, value);
-  });
+  // // Configure postmatch screen
+  // pmc = mydata.elements.postmatch;
+  // pmt = document.getElementById("postmatch_table");
+  // var idx = 0;
+  // Object.entries(pmc).forEach((el) => {
+  //   const [key, value] = el;
+  //   idx = addElement(pmt, idx, key, value);
+  // });
 	
   return 0
 }
