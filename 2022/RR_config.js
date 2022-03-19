@@ -14,7 +14,7 @@ var config_data = `
       "Event":{
         "code":"e",
         "type":"event",
-        "defaultValue":"2022mabos",
+        "defaultValue":"2022nhgrs",
         "required":"true",
         "disabled":"true"
       },
@@ -59,19 +59,34 @@ var config_data = `
         "title":"Taxi",
         "type":"bool"
       },
-      "Cargo Scored": {
+      "Auton Cargo Scored": {
         "code":"as",
-        "title": "Cargo Scored",
+        "title": "Auton Cargo Scored",
         "type":"radio",
         "choices":{
-          "None":"None<br>",
-          "Some":"Some<br>",
-          "Lots":"Lots<br>",
+          "0":"0",
+          "1":"1",
+          "2":"2<br>",
+          "3":"3",
+          "4":"4",
+          "5":"5<br>",
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
       },
-      "Cargo Attempted": {
+      "Auton Target Goal": {
+        "code":"ag",
+        "title":"Auton Target Goal",
+        "type":"radio",
+        "choices":{
+          "None":"None<br>",
+          "Low":"Low<br>",
+          "High":"High<br>",
+          "Not Observed":"Not Observed"
+        },
+        "defaultValue":"Not Observed"
+      },
+      "Shots Taken": {
         "code":"ta",
         "title": "Cargo Attempted",
         "type":"radio",
@@ -83,14 +98,14 @@ var config_data = `
         },
         "defaultValue":"Not Observed"
       },
-      "Cargo Scored": {
+      "Shot Accuracy": {
         "code":"ts",
         "title": "Cargo Scored",
         "type":"radio",
         "choices":{
-          "None":"None<br>",
-          "Some":"Some<br>",
-          "Lots":"Lots<br>",
+          "Low":"Low<br>",
+          "Medium":"Medium<br>",
+          "High":"High<br>",
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
