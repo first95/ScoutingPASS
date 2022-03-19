@@ -4,6 +4,10 @@ var config_data = `
   "page_title":"ScoutingPASS 95",
   "elements":{
     "prematch": {
+      "Prematch": {
+        "code":"prm-div",
+        "type":"divider"
+      },
       "Scouter Name": {
         "code":"s",
         "type":"scouter",
@@ -54,6 +58,10 @@ var config_data = `
         "min":1,
         "max":99999
       },
+      "Autonomous": {
+        "code":"a-div",
+        "type":"divider"
+      },
       "Taxi": {
         "code":"at",
         "title":"Taxi",
@@ -85,6 +93,10 @@ var config_data = `
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
+      },
+      "Teleop": {
+        "code":"t-div",
+        "type":"divider"
       },
       "Shots Taken": {
         "code":"ta",
@@ -149,6 +161,10 @@ var config_data = `
         },
         "defaultValue":"Not Observed"
       },
+      "Endgame": {
+        "code":"eg-div",
+        "type":"divider"
+      },
       "Attempted Climb": {
         "code":"ac",
         "title": "Attempted Climb",
@@ -191,6 +207,10 @@ var config_data = `
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
+      },
+      "Postmatch": {
+        "code":"pom-div",
+        "type":"divider"
       },
       "Driver Skill": {
         "code":"drs",

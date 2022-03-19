@@ -131,6 +131,18 @@ function addFieldImage(table, idx, name, data) {
   cell.appendChild(img);
 }
 
+function addDivider(table, idx, name, data) {
+  var row = table.insertRow(idx);
+  var cell1 = row.insertCell(0);
+  cell1.classList.add("title");
+  if (!data.hasOwnProperty('code')) {
+    cell1.innerHTML = `Error: No code specified for ${name}`;
+    return idx+1;
+  }
+  cell1.innerHTML = name+'&nbsp;';
+  return idx+1;
+}
+
 function addText(table, idx, name, data) {
   var row = table.insertRow(idx);
   var cell1 = row.insertCell(0);
@@ -327,6 +339,8 @@ function addElement(table, idx, name, data){
   }
   if (type == 'counter') {
     idx = addCounter(table, idx, name, data);
+  } else if (data.type == 'divider') {
+    idx = addDivider(table, idx, name, data);
   } else if ((data.type == 'scouter') ||
              (data.type == 'event') ||
              (data.type == 'text')
