@@ -433,25 +433,11 @@ function configure(){
   //   idx = addElement(pmt, idx, key, value);
   // });
 	
-  return 0
+  return 0 
 }
 
 function getRobot(){
-	if (document.getElementById("input_r_r1").checked){
-		return "r1";
-	} else if(document.getElementById("input_r_r2").checked){
-		return "r2";
-	} else if(document.getElementById("input_r_r3").checked){
-		return "r3";
-	} else if(document.getElementById("input_r_b1").checked){
-		return "b1";
-	} else if(document.getElementById("input_r_b2").checked){
-		return "b2";
-	} else if(document.getElementById("input_r_b3").checked){
-		return "b3";
-	}	else {
-		return "";
-	}
+		return document.forms.scoutingForm.r.value;
 }
 
 function validateRobot() {
