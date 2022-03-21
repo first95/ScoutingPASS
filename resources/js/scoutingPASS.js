@@ -139,7 +139,8 @@ function addDivider(table, idx, name, data) {
     cell1.innerHTML = `Error: No code specified for ${name}`;
     return idx+1;
   }
-  cell1.innerHTML = name+'&nbsp;';
+  cell1.colSpan = 2;
+  cell1.innerHTML = "<h2>"+name+"</h2>";
   return idx+1;
 }
 
