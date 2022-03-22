@@ -441,69 +441,20 @@ function getRobot(){
 }
 
 function validateRobot() {
-	if (document.getElementById("input_r_r1").checked ||
-		document.getElementById("input_r_r2").checked ||
-		document.getElementById("input_r_r3").checked ||
-		document.getElementById("input_r_b1").checked ||
-		document.getElementById("input_r_b2").checked ||
-		document.getElementById("input_r_b3").checked
-	) {
-		return true
-	} else {
-
-		return false
-	}
+		return (document.forms.scoutingForm.r.value != "")
 }
 
 function resetRobot() {
-	if (document.getElementById("input_r_r1").checked) {
-		document.getElementById("input_r_r1").checked = false
-	}
-	if (document.getElementById("input_r_r2").checked) {
-		document.getElementById("input_r_r2").checked = false
-	}
-	if (document.getElementById("input_r_r3").checked) {
-		document.getElementById("input_r_r3").checked = false
-	}
-	if (document.getElementById("input_r_b1").checked) {
-		document.getElementById("input_r_b1").checked = false
-	}
-	if (document.getElementById("input_r_b2").checked) {
-		document.getElementById("input_r_b2").checked = false
-	}
-	if (document.getElementById("input_r_b3").checked) {
-		document.getElementById("input_r_b3").checked = false
-	}
+  for ( rb of document.getElementsByName('r')) { rb.checked = false };
 }
 
 
 function getLevel(){
-	if(document.getElementById("input_l_qm").checked){
-		return "qm";
-	} else if(document.getElementById("input_l_ef").checked){
-		return "ef";
-	} else if(document.getElementById("input_l_qf").checked){
-		return "qf";
-	} else if(document.getElementById("input_l_sf").checked){
-		return "sf";
-	} else if(document.getElementById("input_l_f").checked){
-		return "f";
-	} else {
-		return "";
-	}
+	return document.forms.scoutingForm.l.value
 }
 
 function validateLevel() {
-	if (document.getElementById("input_l_qm").checked ||
-		document.getElementById("input_l_ef").checked ||
-		document.getElementById("input_l_qf").checked ||
-		document.getElementById("input_l_sf").checked ||
-		document.getElementById("input_l_f").checked
-	) {
-		return true
-	} else {
-		return false
-	}
+  return (document.forms.scoutingForm.l.value != "")
 }
 
 function validateData() {
