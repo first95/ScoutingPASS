@@ -655,8 +655,9 @@ function clearForm() {
 		document.getElementById("input_m").value = match+1
 	}
 
-	// Robot
-	//resetRobot()  //We usually scout the same alliance every time
+  //Uncommenting this will make "Clear Form" clear the Robot field
+  //We usually scout the same alliance every time
+  //resetRobot()
 
 	// Clear XY coordinates
 	inputs = document.querySelectorAll("[id*='XY_']");
