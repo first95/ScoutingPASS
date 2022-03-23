@@ -1,14 +1,9 @@
-/*
-Font to use:
-https://fonts.google.com/specimen/Oxanium?category=Display&preview.text=ScoutingPASS%2095&preview.text_type=custom#standard-styles
-*/
-
 @font-face {
-    font-family: 'Alexis';
+    font-family: 'Audiowide';
     font-style: normal;
     font-weight: normal;
-    src: local('Alexis'), url('../fonts/alex.woff') format('woff');
-    src: url("../fonts/alexisv3.ttf") format('truetype');
+    /*src: local('Alexis'), url('../fonts/alex.woff') format('woff');*/
+    src: url("../fonts/Audiowide-Regular.ttf") format('truetype');
 }
 
 html, body{
@@ -20,7 +15,7 @@ html, body{
     background-color: black;
 }
 
-#prematch_table, #postmatch_table {
+#prematch_table {
 
     font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     text-align: center;
@@ -30,28 +25,6 @@ html, body{
     letter-spacing: 1px;
     border-width: 4px;
     border-color: 79a4d2;
-}
-
-#auton_table, #endgame_table, #teleop_table {
-    font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-    color: black;
-    font-size: 13px;
-    font-style: bold;
-    letter-spacing: 1px;
-    border-width: 4px;
-    border-color: black;
-}
-
-
-#autonHeader, #endgameHeader, #teleopHeader1, #teleopHeader2{
-    color: black;
-    border-color: black;
-    border-width: 4px;
-}
-
-#postmatchHeader{
-    border-width: 4px;
-    border-color: white;
 }
 
 #prematchHeader1, #prematchHeader2{
@@ -96,26 +69,21 @@ html, body{
 }
 
 h1{
-    font-family: Alexis;
+    font-family: Audiowide;
     text-align: center;
     border-style: groove;
-    border-color: white;
-    border-width: 2px;
+    border-color: #79a4d2;
+    border-width: 4px;
     font-size: 40px;
     padding: 10px; 
     font-weight: 350;
 }
-
-#page2, #page4 {
-    color: black;
-}
-
 h2{
-    font-family: Alexis;
+    font-family: Audiowide;
     text-align: center;
-    font-size: 30px;
-    font-weight: 300;
-    font-style: italic;
+    font-size: 24px;
+    font-weight: 250;
+    text-decoration: underline;
 }
 
 .match-label{
@@ -142,7 +110,7 @@ h2{
 }
 
 #nextButton1, #nextButton2, #nextButton9, #nextButton10, .clearForm{
-    font-family: Alexis;
+    font-family: Audiowide;
     padding: 10px;
     background-color: rgb(151, 199, 240);
     text-decoration: none;
@@ -150,20 +118,20 @@ h2{
 }
 
 #nextButton3, #nextButton4, #nextButton5, #nextButton6, #nextButton7, #nextButton8, .undoButton{
-    font-family: Alexis;
+    font-family: Audiowide;
     background-color: black; 
     padding: 10px;
     color: white;
 }
 
 #prevButton7, #prevButton8, #prevButton9{
-    font-family: Alexis;
+    font-family: Audiowide;
     background-color: rgb(151, 199, 240); 
     padding: 10px;
 }
 
 #prevButton1, #prevButton2, #prevButton3, #prevButton4, #prevButton5, #prevButton6{
-    font-family: Alexis;
+    font-family: Audiowide;
     background-color: black; 
     padding: 10px;
     color: white;
@@ -171,21 +139,8 @@ h2{
 }
 
 #prematch_table{
-    font: Alexis;
+    font: Audiowide;
     text-align: center;
-}
-
-
-h1 .odd {
-    font-family: Alexis;
-    text-align: center;
-    color: #0AB4EC;
-}
-
-h1 .even {
-    font-family: Alexis;
-    text-align: center;
-    color: #42B333;
 }
 
 table {

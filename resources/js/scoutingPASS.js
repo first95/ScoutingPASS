@@ -11,7 +11,9 @@ var options = {
 	text: "t=9998;m=99;l=q;r=b1;s=rjs;d=0;to=0;ds=5;if=0;f=15;cf=0;in=1;alp=5;aop=5;aip=5;apu=5;atr=1;atro=0;lp=20;op=10;ip=10;rc=0;pc=0;ss=[(111,111),(111,111),(111,111),(111,111),(111,111),(111,111),(111,111)];c=1;hbc=0;ac=1;hc=0;cb=0;cs=3;nh=0;p=0;b=0;tr=1;ct=3;dr=3;comm='good shooter; shot from all over the field'",
 	correctLevel: QRCode.CorrectLevel.L,
     quietZone: 15,
-    quietZoneColor: '#FFFFFF'
+    quietZoneColor: '#FFFFFF',
+    width: 200,
+    height: 200
 };
 
 // Must be filled in: e=event, m=match#, l=level(q,qf,sf,f), t=team#, r=robot(r1,r2,b1..), s=scouter
@@ -129,6 +131,19 @@ function addFieldImage(table, idx, name, data) {
   //img.setAttribute("onclick", "onFieldClick(event)");
   img.setAttribute("hidden", "");
   cell.appendChild(img);
+}
+
+function addDivider(table, idx, name, data) {
+  var row = table.insertRow(idx);
+  var cell1 = row.insertCell(0);
+  cell1.classList.add("title");
+  if (!data.hasOwnProperty('code')) {
+    cell1.innerHTML = `Error: No code specified for ${name}`;
+    return idx+1;
+  }
+  cell1.colSpan = 2;
+  cell1.innerHTML = "<h2>"+name+"</h2>";
+  return idx+1;
 }
 
 function addText(table, idx, name, data) {
@@ -327,6 +342,8 @@ function addElement(table, idx, name, data){
   }
   if (type == 'counter') {
     idx = addCounter(table, idx, name, data);
+  } else if (data.type == 'divider') {
+    idx = addDivider(table, idx, name, data);
   } else if ((data.type == 'scouter') ||
              (data.type == 'event') ||
              (data.type == 'text')
@@ -575,8 +592,9 @@ function clearForm() {
 		document.getElementById("input_m").value = match+1
 	}
 
-	// Robot
-	//resetRobot()  //We usually scout the same alliance every time
+  //Uncommenting this will make "Clear Form" clear the Robot field
+  //We usually scout the same alliance every time
+  //resetRobot()
 
 	// Clear XY coordinates
 	inputs = document.querySelectorAll("[id*='XY_']");

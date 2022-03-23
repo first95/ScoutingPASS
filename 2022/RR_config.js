@@ -4,6 +4,10 @@ var config_data = `
   "page_title":"ScoutingPASS 95",
   "elements":{
     "prematch": {
+      "Prematch": {
+        "code":"prm-div",
+        "type":"divider"
+      },
       "Scouter Name": {
         "code":"s",
         "type":"scouter",
@@ -54,24 +58,47 @@ var config_data = `
         "min":1,
         "max":99999
       },
+      "Autonomous": {
+        "code":"a-div",
+        "type":"divider"
+      },
       "Taxi": {
         "code":"at",
         "title":"Taxi",
         "type":"bool"
       },
-      "Cargo Scored": {
+      "Auton Cargo Scored": {
         "code":"as",
-        "title": "Cargo Scored",
+        "title": "Auton Cargo Scored",
         "type":"radio",
         "choices":{
-          "None":"None<br>",
-          "Some":"Some<br>",
-          "Lots":"Lots<br>",
+          "0":"0",
+          "1":"1",
+          "2":"2<br>",
+          "3":"3",
+          "4":"4",
+          "5":"5<br>",
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
       },
-      "Cargo Attempted": {
+      "Auton Target Goal": {
+        "code":"ag",
+        "title":"Auton Target Goal",
+        "type":"radio",
+        "choices":{
+          "None":"None<br>",
+          "Low":"Low<br>",
+          "High":"High<br>",
+          "Not Observed":"Not Observed"
+        },
+        "defaultValue":"Not Observed"
+      },
+      "Teleop": {
+        "code":"t-div",
+        "type":"divider"
+      },
+      "Shots Taken": {
         "code":"ta",
         "title": "Cargo Attempted",
         "type":"radio",
@@ -83,14 +110,14 @@ var config_data = `
         },
         "defaultValue":"Not Observed"
       },
-      "Cargo Scored": {
+      "Shot Accuracy": {
         "code":"ts",
         "title": "Cargo Scored",
         "type":"radio",
         "choices":{
-          "None":"None<br>",
-          "Some":"Some<br>",
-          "Lots":"Lots<br>",
+          "Low":"Low<br>",
+          "Medium":"Medium<br>",
+          "High":"High<br>",
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
@@ -134,6 +161,10 @@ var config_data = `
         },
         "defaultValue":"Not Observed"
       },
+      "Endgame": {
+        "code":"eg-div",
+        "type":"divider"
+      },
       "Attempted Climb": {
         "code":"ac",
         "title": "Attempted Climb",
@@ -176,6 +207,10 @@ var config_data = `
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
+      },
+      "Postmatch": {
+        "code":"pom-div",
+        "type":"divider"
       },
       "Driver Skill": {
         "code":"drs",
