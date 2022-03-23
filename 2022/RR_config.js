@@ -27,7 +27,10 @@ var config_data = `
         "type":"level",
         "choices":{
           "qm":"Qualifiers<br>",
-          "ef":"Eliminations"
+          "ef":"Eighthfinals<br>",
+          "qf":"Quarterfinals<br>",
+          "sf":"Semifinals<br>",
+          "f":"Finals"
         },
         "defaultValue":"qm",
         "required":"true"
