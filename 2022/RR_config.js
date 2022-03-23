@@ -26,8 +26,8 @@ var config_data = `
         "code":"l",
         "type":"level",
         "choices":{
-          "Qualifiers":"Qualifiers<br>",
-          "Eliminations":"Eliminations"
+          "qm":"Qualifiers<br>",
+          "ef":"Eliminations"
         },
         "defaultValue":"qm",
         "required":"true"
