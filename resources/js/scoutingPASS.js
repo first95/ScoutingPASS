@@ -206,7 +206,7 @@ function addNumber(table, idx, name, data) {
 	if ((data.type == 'team') ||
 	 	  (data.type == 'match'))
 	{
-		inp.setAttribute("onchange", "updateMatchStart(event)");
+		inp.setAttribute("onchange", "updateMatchStart()");
 	}
   if (data.hasOwnProperty('min')) {
     inp.setAttribute("min", data.min);
@@ -260,7 +260,7 @@ function addRadio(table, idx, name, data) {
 			(data.type == 'robot')
 		)
 	{
-		cell2.setAttribute("onchange", "updateMatchStart(event)");
+		cell2.setAttribute("onchange", "updateMatchStart()");
 	}
   var checked = null
   if (data.hasOwnProperty('defaultValue')) {
@@ -646,7 +646,8 @@ function clearForm() {
 			}
 		}
 	}
-	drawFields()
+	drawFields();
+  updateMatchStart();
 }
 
 function startTouch(e) {
@@ -790,21 +791,14 @@ function getCurrentMatch(){
 	return getMatch(getCurrentMatchKey());
 }
 
-function updateMatchStart(event){
-	if((getCurrentMatch() == "") ||
+function updateMatchStart(){
+	if((getCurrentMatch() == "") || (getRobot() == "") ||
 		 (!teams)) {
 		return;
 	}
-	if(event.target.name == "r"){
-		document.getElementById("input_t").value = getCurrentTeamNumberFromRobot().replace("frc", "");
-		onTeamnameChange();
-	}
-	if(event.target.name == "m"){
-		if(getRobot() != "" && typeof getRobot()){
-			document.getElementById("input_t").value = getCurrentTeamNumberFromRobot().replace("frc", "");
-			onTeamnameChange();
-		}
-	}
+	document.getElementById("input_t").value = getCurrentTeamNumberFromRobot().replace("frc", "");
+	onTeamnameChange();
+		
 }
 
 function onTeamnameChange(event){
