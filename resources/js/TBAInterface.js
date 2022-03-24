@@ -1,7 +1,16 @@
 // TBAInterface funcitons to pull data from TheBlueAlliance.com
-var teams = null;
-var schedule = null;
-var authKey = "";
+// but don't clobber the values if they were loaded from a local file
+if (typeof teams === 'undefined') {
+	var teams = null;
+}
+if (typeof schedule === 'undefined') {
+	var schedule = null;
+} 
+
+// Read-only API key - please use your own if you fork/clone this project
+// thebluealliance.com, Account menu lets you create a free account and generate
+// your own. 
+var authKey = "hNDnK23dYcPhS6V5SKwfZK8l9VKtWZyZBDKYQRQh5aUqWiKj5KyvKOLDJW49YO00";
 
 /**
  * Get list of teams in event
@@ -17,8 +26,10 @@ function getTeams(eventCode) {
 		xmlhttp.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
 				var response = this.responseText;
-				teams = JSON.parse(response);
-			}
+				if (response != "[]") {
+					teams = JSON.parse(response);
+				};
+			};
 		};
 		// Send request
 		xmlhttp.send();
@@ -39,8 +50,11 @@ function getSchedule(eventCode) {
 		xmlhttp.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
 				var response = this.responseText;
-				schedule = JSON.parse(response);
-			}
+				var matches = JSON.parse(response);
+				if (matches.length > 0) {
+					schedule = matches;
+				};
+			};
 		};
 		// Send request
 		xmlhttp.send();

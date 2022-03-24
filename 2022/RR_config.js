@@ -18,7 +18,7 @@ var config_data = `
       "Event":{
         "code":"e",
         "type":"event",
-        "defaultValue":"2022nhgrs",
+        "defaultValue":"2022mabos",
         "required":"true",
         "disabled":"true"
       },
