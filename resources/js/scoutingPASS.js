@@ -501,7 +501,7 @@ function validateData() {
 	return ret
 }
 
-function getData() {
+function OriggetData() {
 	var str = ''
 	var rep = ''
 	var start = true
@@ -539,6 +539,32 @@ function getData() {
 		}
 	}
 	return str
+}
+
+function getData() {
+  var UniqueFieldNames = [];
+  var Data = []
+  var Form = document.forms.scoutingForm
+  // collect the names of all the elements in the form
+  var fieldnames = Array.from(Form.elements, formElmt => formElmt.name);
+  
+  // the field names in the form will include blanks for separators and buttons, 
+  // and duplicates for radio buttons in the same group.
+  // strip out the blanks, and only add the field name if it has not already been added to UniqueFieldNames
+  fieldnames.forEach((fieldname) => {if ( fieldname != "" && !UniqueFieldNames.includes(fieldname)) { UniqueFieldNames.push(fieldname) }} );
+  
+  //For each of the values stored in the fields listed in UniqueFieldNames, Convert Checkboxes to "Yes" or "No", and 
+  // replace any tab characters with a dash,
+  // then join the list of data with tabs and return it.  Using the /\t/g format for the replace string to catch multiple 
+  // tabs in the same input string.
+  UniqueFieldNames.forEach((field) => {
+    if (Form[field].type == 'checkbox') {
+      Data.push(Form[field].checked ? "Yes" : "No")
+    } else {
+      Data.push(Form[field].value.replace(/\t/g,"-"))
+    }
+  })
+  return Data.join("\t")
 }
 
 function updateQRHeader() {
