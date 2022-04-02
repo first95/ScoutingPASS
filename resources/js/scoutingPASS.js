@@ -501,45 +501,6 @@ function validateData() {
 	return ret
 }
 
-function OriggetData() {
-	var str = ''
-	var rep = ''
-	var start = true
-	inputs = document.querySelectorAll("[id*='input_']");
-	for (e of inputs) {
-		code = e.id.substring(6)
-		radio = code.indexOf("_")
-		if (radio > -1) {
-			if (e.checked) {
-				if (start==false) {
-					str=str+'\t'
-				} else {
-					start=false
-				}
-				// str=str+code.substr(0,radio)+'='+code.substr(radio+1)
-				// document.getElementById("display_"+code.substr(0, radio)).value = code.substr(radio+1)
-				str=str+e.value
-				document.getElementById("display_"+code.substr(0, radio)).value = e.value
-			}
-		} else {
-			if (start==false) {
-				str=str+'\t'
-			} else {
-				start=false
-			}
-			if (e.value == "on") {
-				if (e.checked) {
-					str=str+'Yes'
-				} else {
-					str=str+'No'
-				}
-			} else {
-				str=str+e.value.split('\t').join('-')
-			}
-		}
-	}
-	return str
-}
 
 function getData() {
   var UniqueFieldNames = [];
