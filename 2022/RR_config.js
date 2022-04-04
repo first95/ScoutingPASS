@@ -18,7 +18,7 @@ var config_data = `
       "Event":{
         "code":"e",
         "type":"event",
-        "defaultValue":"2022nhgrs",
+        "defaultValue":"2022mabos",
         "required":"true",
         "disabled":"true"
       },
@@ -27,7 +27,10 @@ var config_data = `
         "type":"level",
         "choices":{
           "qm":"Qualifiers<br>",
-          "ef":"Eliminations"
+          "ef":"Eighthfinals<br>",
+          "qf":"Quarterfinals<br>",
+          "sf":"Semifinals<br>",
+          "f":"Finals"
         },
         "defaultValue":"qm",
         "required":"true"

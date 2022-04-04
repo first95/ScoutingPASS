@@ -1,3 +1,9 @@
+<!--
+	When we gain access to the match schedule, follow these steps:
+	- Add "var matches = " to the start of the file
+	- Rename file to "2022mabos_matches.js"
+	- Move file to "2022" folder on all 4 iPads
+-->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,13 +13,13 @@
 		<script src="resources/js/TBAInterface.js"></script>
 		<script src="resources/js/scoutingPASS.js"></script>
 		<script src="2022/RR_config.js"></script>
-		<script src="2022/2022nhgrs_matches.js"></script>
-		<script src="2022/2022nhgrs_teams.js"></script>
+		<script src="2022/2022mabos_matches.js"></script>
+		<script src="2022/2022mabos_teams.js"></script>
 		<link rel="stylesheet" href="resources/css/scoutingPASS.css">
 	</head>
 
 	<body>
-		<form name="scoutingForm" id="scoutingForm" onsubmit="return false">
+		<form name="scoutingForm" id="scoutingForm" onsubmit="false">
 			<div id="main-panel-holder">
 				<div id="prematch" class="main-panel" style="background-color: #8cb1d9;">
 					<h1 id="prematchHeader1" class="page_title"><span class="odd">P</span><span class="even">W</span><span class="odd">N</span><span class="even">A</span><span class="odd">G</span><span class="even">E</span><br>Scouting 2020</h1>
@@ -40,6 +46,7 @@
 					<p></p>
 					<div id="clearButton">
 						<button type="button" class="clearForm" onclick="clearForm()">Clear Form</button>
+						<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br></p>
 					</div>
 					<br>
 				</div>

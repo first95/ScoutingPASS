@@ -203,10 +203,13 @@ function addNumber(table, idx, name, data) {
   inp.setAttribute("id", "input_"+data.code);
   inp.setAttribute("type", "number");
   inp.setAttribute("name", data.code);
-	if ((data.type == 'team') ||
-	 	  (data.type == 'match'))
+	if (data.type == 'match')
 	{
 		inp.setAttribute("onchange", "updateMatchStart()");
+	}
+  if (data.type == 'team')
+	{
+		inp.setAttribute("onchange", "onTeamnameChange()");
 	}
   if (data.hasOwnProperty('min')) {
     inp.setAttribute("min", data.min);
@@ -788,7 +791,7 @@ function updateMatchStart(){
 		
 }
 
-function onTeamnameChange(event){
+function onTeamnameChange(){
 	var newNumber = document.getElementById("input_t").value;
 	var teamLabel = document.getElementById("teamname-label");
 	if(newNumber != ""){
