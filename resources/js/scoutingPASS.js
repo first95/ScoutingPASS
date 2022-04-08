@@ -134,16 +134,23 @@ function addFieldImage(table, idx, name, data) {
 }
 
 function addDivider(table, idx, name, data) {
-  var row = table.insertRow(idx);
-  var cell1 = row.insertCell(0);
-  cell1.classList.add("title");
-  if (!data.hasOwnProperty('code')) {
-    cell1.innerHTML = `Error: No code specified for ${name}`;
-    return idx+1;
-  }
+  var row1 = table.insertRow(idx);
+  var row2 = table.insertRow(idx+1);
+  var cell1 = row1.insertCell(0);
+  var cell2 = row2.insertCell(0);
   cell1.colSpan = 2;
-  cell1.innerHTML = "<h2>"+name+"</h2>";
-  return idx+1;
+  cell2.colSpan = 2;
+  //cell1.classList.add("title");
+  if (!data.hasOwnProperty('code')) {
+    cell1.innerHTML = `Error:`;
+    cell2.innerHTML = `No code specified for ${name}`
+    return idx+2;
+  }
+  cell1.setAttribute("class", "divider-header");
+  cell1.innerHTML = name;
+  cell2.setAttribute("id", "teaminfo_"+data.code);
+  cell2.setAttribute("class", "divider-info");
+  return idx+2;
 }
 
 function addText(table, idx, name, data) {
@@ -234,15 +241,6 @@ function addNumber(table, idx, name, data) {
     def.setAttribute("type", "hidden");
     def.setAttribute("value", data.defaultValue);
     cell2.appendChild(def);
-  }
-
-  if (data.type == 'team') {
-    row = table.insertRow(idx+1);
-    cell1 = row.insertCell(0);
-    cell1.setAttribute("id", "teamname-label");
-    cell1.setAttribute("colspan", 2);
-    cell1.setAttribute("style", "text-align: center;");
-    return idx+2;
   }
 
   return idx+1;
@@ -806,11 +804,16 @@ function updateMatchStart(){
 
 function onTeamnameChange(){
 	var newNumber = document.getElementById("input_t").value;
-	var teamLabel = document.getElementById("teamname-label");
+  var teamInfos = document.querySelectorAll("[id*='teaminfo_']");
 	if(newNumber != ""){
-		teamLabel.innerText = getTeamName(newNumber) != "" ? "You are scouting " + getTeamName(newNumber) : "That team isn't playing this match, please double check to verify correct number";
+    for (i of teamInfos) {
+      i.innerHTML = "<i>" + newNumber + ": " + getTeamName(newNumber) + "</i>";
+    }
 	} else{
 		teamLabel.innerText = "";
+    for (i of teamInfos) {
+      i.innerHTML = "";
+    }
 	}
 }
 
