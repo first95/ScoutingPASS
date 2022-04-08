@@ -140,7 +140,6 @@ function addDivider(table, idx, name, data) {
   var cell2 = row2.insertCell(0);
   cell1.colSpan = 2;
   cell2.colSpan = 2;
-  //cell1.classList.add("title");
   if (!data.hasOwnProperty('code')) {
     cell1.innerHTML = `Error:`;
     cell2.innerHTML = `No code specified for ${name}`
@@ -150,6 +149,7 @@ function addDivider(table, idx, name, data) {
   cell1.innerHTML = name;
   cell2.setAttribute("id", "teaminfo_"+data.code);
   cell2.setAttribute("class", "divider-info");
+  cell2.innerHTML = ("Fill in \"Match #\" and \"Robot\" fields");
   return idx+2;
 }
 
@@ -781,7 +781,9 @@ function getCurrentTeamNumberFromRobot(){
 		} else if(getRobot().charAt(0) == "b"){
 			return getCurrentMatch().blue.team_keys[parseInt(getRobot().charAt(1))-1]
 		}
-	}
+	} else {
+    return "";
+  }
 }
 
 function getCurrentMatchKey(){
@@ -793,13 +795,14 @@ function getCurrentMatch(){
 }
 
 function updateMatchStart(){
-	if((getCurrentMatch() == "") || (getRobot() == "") ||
-		 (!teams)) {
-		return;
+	if((getCurrentMatch() == "") || (getRobot() == "") || (getCurrentTeamNumberFromRobot() == "") || (!teams)) {
+    document.getElementById("input_t").value = "";
+    onTeamnameChange();
+    return;
 	}
+  console.log("updateMatchStart - validated");
 	document.getElementById("input_t").value = getCurrentTeamNumberFromRobot().replace("frc", "");
 	onTeamnameChange();
-		
 }
 
 function onTeamnameChange(){
@@ -810,9 +813,8 @@ function onTeamnameChange(){
       i.innerHTML = "<i>" + newNumber + ": " + getTeamName(newNumber) + "</i>";
     }
 	} else{
-		teamLabel.innerText = "";
     for (i of teamInfos) {
-      i.innerHTML = "";
+      i.innerHTML = ("Fill in \"Match #\" and \"Robot\" fields");
     }
 	}
 }
