@@ -1,6 +1,6 @@
 var config_data = `
 {
-  "title":"Scouting PASS 2022",
+  "title":"ScoutingPASS 95",
   "page_title":"ScoutingPASS 95",
   "elements":{
     "prematch": {
