@@ -1,4 +1,4 @@
-var matches = [
+var schedule = [
     {
       "actual_time": null, 
       "alliances": {
