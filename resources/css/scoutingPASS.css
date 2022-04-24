@@ -86,6 +86,20 @@ h2{
     text-decoration: underline;
 }
 
+.divider-header{
+    font-family: Audiowide;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 250;
+    text-decoration: underline;
+    padding-bottom: 0px;
+}
+
+.divider-info{
+    font-style: italic;
+    padding-top: 5px;
+}
+
 .match-label{
     text-align: center;
 }

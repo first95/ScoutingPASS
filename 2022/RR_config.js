@@ -1,6 +1,6 @@
 var config_data = `
 {
-  "title":"Scouting PASS 2022",
+  "title":"ScoutingPASS 95",
   "page_title":"ScoutingPASS 95",
   "elements":{
     "prematch": {
@@ -18,7 +18,7 @@ var config_data = `
       "Event":{
         "code":"e",
         "type":"event",
-        "defaultValue":"2022mabos",
+        "defaultValue":"2022necmp2",
         "required":"true",
         "disabled":"true"
       },
