@@ -1,4 +1,4 @@
-var config_data = `
+var config_data = 
 {
   "title":"ScoutingPASS 95",
   "page_title":"ScoutingPASS 95",
@@ -12,14 +12,12 @@ var config_data = `
         "code":"s",
         "type":"scouter",
         "size":10,
-        "maxSize":20,
-        "required":"true"
+        "maxSize":20
       },
       "Event":{
         "code":"e",
         "type":"event",
         "defaultValue":"2022necmp2",
-        "required":"true",
         "disabled":"true"
       },
       "Match Level":{
@@ -32,15 +30,13 @@ var config_data = `
           "sf":"Semifinals<br>",
           "f":"Finals"
         },
-        "defaultValue":"qm",
-        "required":"true"
+        "defaultValue":"qm"
       },
       "Match #":{
         "code":"m",
         "type":"match",
         "min":1,
-        "max":100,
-        "required":"true"
+        "max":100
       },
      "Robot": {
         "code":"r",
@@ -52,8 +48,7 @@ var config_data = `
           "b2":"Blue-2<br>",
           "r3":"Red-3",
           "b3":"Blue-3"
-        },
-        "required":"true"
+        }
       },
       "Team #": {
         "code":"t",
@@ -250,4 +245,4 @@ var config_data = `
       }
     }
   }
-}`;
+};

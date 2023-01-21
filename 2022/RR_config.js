@@ -1,4 +1,4 @@
-var config_data = `
+var config_data =
 {
   "title":"ScoutingPASS 95",
   "page_title":"ScoutingPASS 95",
@@ -262,4 +262,4 @@ var config_data = `
       }
     }
   }
-}`;
+};
