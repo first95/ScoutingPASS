@@ -34,7 +34,7 @@ function addCounter(table, idx, name, data){
 
   var button1 = document.createElement("button");
   button1.setAttribute("type", "checkbox");
-  button1.setAttribute("onclick", "counter(this.parentElement, -1)");
+  button1.setAttribute("onclick", "return counter(this.parentElement, -1)");
   button1.innerHTML += "-"
   cell2.appendChild(button1);
 
@@ -52,7 +52,7 @@ function addCounter(table, idx, name, data){
 
   var button2 = document.createElement("button");
   button2.setAttribute("type", "checkbox");
-  button2.setAttribute("onclick", "counter(this.parentElement, 1)");
+  button2.setAttribute("onclick", "return counter(this.parentElement, 1)");
   button2.innerHTML += "+";
   cell2.appendChild(button2);
 
@@ -814,6 +814,7 @@ function onTeamnameChange(){
  */
 function counter(element, step)
 {
+  console.log("counter() called");
   var ctr = element.getElementsByClassName("counter")[0];
   var result = parseInt(ctr.value) + step;
 
@@ -826,6 +827,8 @@ function counter(element, step)
   } else {
     ctr.value = 0;
   }
+  console.log("counter() finished");
+  return false;
 }
 
 function undo(event)
