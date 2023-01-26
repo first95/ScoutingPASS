@@ -6,22 +6,26 @@ var config_data =
     "prematch": {
       "Prematch": {
         "code":"prm-div",
+        "title":"Pregame",
         "type":"divider"
       },
       "Scouter Name": {
         "code":"s",
+        "title":"Scouter Name",
         "type":"scouter",
         "size":10,
         "maxSize":20
       },
       "Event":{
         "code":"e",
+        "title":"Event",
         "type":"event",
         "defaultValue":"2022necmp2",
         "disabled":"true"
       },
       "Match Level":{
         "code":"l",
+        "title":"Match Level",
         "type":"level",
         "choices":{
           "qm":"Qualifiers<br>",
@@ -32,14 +36,16 @@ var config_data =
         },
         "defaultValue":"qm"
       },
-      "Match #":{
+      "Match Number":{
         "code":"m",
+        "title":"Match Number",
         "type":"match",
         "min":1,
         "max":100
       },
      "Robot": {
         "code":"r",
+        "title":"Robot",
         "type":"robot",
         "choices":{
           "r1":"Red-1",
@@ -50,14 +56,16 @@ var config_data =
           "b3":"Blue-3"
         }
       },
-      "Team #": {
+      "Team Number": {
         "code":"t",
+        "title":"Team Number",
         "type":"team",
         "min":1,
         "max":99999
       },
       "Autonomous": {
         "code":"a-div",
+        "title":"Autonomous",
         "type":"divider"
       },
       "Auton Exits Community?": {
@@ -106,6 +114,7 @@ var config_data =
       },
       "Teleop": {
         "code":"t-div",
+        "title":"Teleop",
         "type":"divider"
       },
       "Teleop Objects Scored": {
@@ -137,6 +146,7 @@ var config_data =
       },
       "Endgame": {
         "code":"eg-div",
+        "title":"Endgame",
         "type":"divider"
       },
       "Endgame Returns to Community?": {
@@ -172,6 +182,7 @@ var config_data =
       },
       "Postmatch": {
         "code":"pom-div",
+        "title":"Postmatch",
         "type":"divider"
       },
       "Speed": {

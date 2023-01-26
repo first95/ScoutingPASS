@@ -29,7 +29,7 @@ function addCounter(table, idx, name, data){
     return idx+1;
   }
   var cell2 = row.insertCell(1);
-  cell1.innerHTML = name+'&nbsp;';
+  cell1.innerHTML = data.title+'&nbsp;';
   cell2.classList.add("field");
 
   var button1 = document.createElement("button");
@@ -146,7 +146,7 @@ function addDivider(table, idx, name, data) {
     return idx+2;
   }
   cell1.setAttribute("class", "divider-header");
-  cell1.innerHTML = name;
+  cell1.innerHTML = data.title;
   cell2.setAttribute("id", "teaminfo_"+data.code);
   cell2.setAttribute("class", "divider-info");
   cell2.innerHTML = ("Fill in \"Match #\" and \"Robot\" fields");
@@ -162,7 +162,7 @@ function addText(table, idx, name, data) {
     return idx+1;
   }
   var cell2 = row.insertCell(1);
-  cell1.innerHTML = name+'&nbsp;';
+  cell1.innerHTML = data.title+'&nbsp;';
   cell2.classList.add("field");
   var inp = document.createElement("input");
   inp.setAttribute("id", "input_"+data.code);
@@ -204,7 +204,7 @@ function addNumber(table, idx, name, data) {
     return idx+1;
   }
   var cell2 = row.insertCell(1);
-  cell1.innerHTML = name+'&nbsp;';
+  cell1.innerHTML = data.title+'&nbsp;';
   cell2.classList.add("field");
   var inp = document.createElement("input");
   inp.setAttribute("id", "input_"+data.code);
@@ -255,7 +255,7 @@ function addRadio(table, idx, name, data) {
     return idx+1;
   }
   var cell2 = row.insertCell(1);
-  cell1.innerHTML = name+'&nbsp;';
+  cell1.innerHTML = data.title+'&nbsp;';
   cell2.classList.add("field");
 	if ((data.type == 'level') ||
 			(data.type == 'robot')
@@ -308,7 +308,7 @@ function addCheckbox(table, idx, name, data){
     return idx+1;
   }
   var cell2 = row.insertCell(1);
-  cell1.innerHTML = name+'&nbsp;';
+  cell1.innerHTML = data.title+'&nbsp;';
   cell2.classList.add("field");
   var inp = document.createElement("input");
   inp.setAttribute("id", "input_"+data.code);
