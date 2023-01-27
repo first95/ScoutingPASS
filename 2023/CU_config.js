@@ -122,14 +122,29 @@ var config_data =
         "title": "Objects Scored",
         "type":"counter"
       },
-      "Teleop Can Score Cones?": {
+      "Teleop Can Handle Cones?": {
         "code":"tco",
-        "title":"Can Score Cones?",
+        "title":"Can Handle Cones?",
         "type":"bool"
       },
-      "Teleop Can Score Cubes?": {
+      "Teleop Can Handle Cubes?": {
         "code":"tcu",
-        "title":"Can Score Cubes?",
+        "title":"Can Handle Cubes?",
+        "type":"bool"
+      },
+      "Teleop Picks Up From Ground": {
+        "code":"tpg",
+        "title":"Picks Up From Ground",
+        "type":"bool"
+      },
+      "Teleop Picks Up From Chute": {
+        "code":"tpc",
+        "title":"Picks Up From Chute",
+        "type":"bool"
+      },
+      "Teleop Picks Up From Shelf": {
+        "code":"tps",
+        "title":"Picks Up From Shelf",
         "type":"bool"
       },
       "Teleop Highest Scoring Level": {
