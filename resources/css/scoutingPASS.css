@@ -126,6 +126,8 @@ h2{
 #nextButton1, #nextButton2, #nextButton9, #nextButton10, .clearForm{
     font-family: Audiowide;
     padding: 10px;
+    padding-right: 325px;
+    padding-left: 325px;
     background-color: rgb(151, 199, 240);
     text-decoration: none;
     display: inline-block;

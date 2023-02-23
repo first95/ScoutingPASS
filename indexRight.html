@@ -1,0 +1,38 @@
+<!--
+	When we gain access to the match schedule, follow these steps:
+	- Add "var schedule = " to the start of the file
+	- Rename file to "2022mabos_matches.js"
+	- Move file to "2022" folder on all 4 iPads
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0">
+		<title>ScoutingPASS 95</title>
+		<script src="resources/js/easy.qrcode.min.js"></script>
+		<script src="resources/js/TBAInterface.js"></script>
+		<script src="resources/js/scoutingPASS.js"></script>
+		<script src="2023/CU_config.js"></script>
+		<script src="2022/2022necmp2_matches.js"></script>
+		<script src="2022/2022necmp2_teams.js"></script>
+		<link rel="stylesheet" href="resources/css/scoutingPASS.css">
+	</head>
+
+	<body>
+		<form name="scoutingFormRight" id="scoutingFormRight" onsubmit="false">
+			<div id="main-panel-holder">
+				<div id="prematch" class="main-panel" style="background-color: #8cb1d9;">
+					<table id="prematch_table" style="font: Roboto">
+					<!-- ###PRE-MATCH-COMPONENTS###-->
+					</table>
+					<div id="clearButton">
+						<button type="button" class="clearForm" onclick="clearForm()">Clear Form</button>
+						<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br></p>
+					</div>
+				</div>
+					<br>
+				</div>
+			</div>
+		</body>
+	</form>
+</html>

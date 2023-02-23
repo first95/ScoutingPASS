@@ -503,10 +503,10 @@ function validateData() {
 }
 
 
-function getData() {
+function getData(Form) {
   var UniqueFieldNames = [];
   var Data = []
-  var Form = document.forms.scoutingForm
+  // var Form = document.forms.scoutingForm
   // collect the names of all the elements in the form
   var fieldnames = Array.from(Form.elements, formElmt => formElmt.name);
   
@@ -527,6 +527,13 @@ function getData() {
     }
   })
   return Data.join("\t")
+}
+
+function addData() {
+  var dataLeft = getData(document.forms.scoutingFormTop)
+  var dataMid = getData(document.forms.scoutingFormTop)
+  var dataRight = getData(document.forms.scoutingFormTop)
+  return dataLeft + "\n" + dataMid + "\n" + dataRight + "\n"
 }
 
 function updateQRHeader() {
@@ -550,7 +557,7 @@ function qr_regenerate() {
 	}
 
 	// Get data
-	data = getData()
+	data = addData()
 
   // Regenerate QR Code
 	qr.makeCode(data)
@@ -570,7 +577,7 @@ function clearForm() {
 	var match = 0;
 	var e = 0;
 
-	swipePage(-1)
+	// swipePage(-1)
 
 	// Increment match
 	match = parseInt(document.getElementById("input_m").value)
