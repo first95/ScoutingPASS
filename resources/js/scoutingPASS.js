@@ -530,7 +530,8 @@ function getData(Form) {
 }
 
 function addData() {
-  var dataLeft = getData(document.forms.scoutingFormTop)
+  // I need this to essentially do " var dataLeft = getData(document.forms.scoutingFormLeft) " but for whatever reason, it's not working...
+  var dataLeft = getData(document.getElementById('scoutingFormTop'))
   var dataMid = getData(document.forms.scoutingFormTop)
   var dataRight = getData(document.forms.scoutingFormTop)
   return dataLeft + "\n" + dataMid + "\n" + dataRight + "\n"
