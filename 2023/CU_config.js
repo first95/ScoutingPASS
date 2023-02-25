@@ -164,17 +164,13 @@ var config_data =
         "title":"Endgame",
         "type":"divider"
       },
-      "Endgame Returns to Community?": {
-        "code":"er",
-        "title":"Returns to Community?",
-        "type":"bool"
-      },
       "Endgame Charging Pad Level": {
         "code":"ec",
         "title": "Charging Pad Level",
         "type":"radio",
         "choices":{
           "None":"None<br>",
+          "Parked":"Parked<br>",
           "Docked":"Docked<br>",
           "Engaged":"Engaged<br>",
           "Not Observed":"Not Observed"
