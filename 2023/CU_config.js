@@ -202,7 +202,7 @@ var config_data =
       },
       "Speed": {
         "code":"ps",
-        "title": "Driver Skill",
+        "title": "Speed",
         "type":"radio",
         "choices":{
           "Slow":"Slow<br>",
