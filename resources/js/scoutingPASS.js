@@ -382,7 +382,7 @@ function addElement(table, idx, name, data){
   return idx
 }
 
-function configure(){
+function configure(table){
   try {
     var mydata = config_data;
   } catch(err) {
@@ -408,11 +408,10 @@ function configure(){
 
   // Configure prematch screen
   var pmc = mydata.elements.prematch;
-  var pmt = document.getElementById("prematch_table");
   var idx = 0;
   Object.entries(pmc).forEach((el) => {
     const [key, value] = el;
-    idx = addElement(pmt, idx, key, value);
+    idx = addElement(table, idx, key, value);
   });
 
   // // Configure auton screen
@@ -848,8 +847,24 @@ function undo(event)
 }		
 
 window.onload = function(){
-  var ret = configure();
-  if (ret != -1) {
+  var ret_left = configure(document.getElementById("table_left"));
+  if (ret_left != -1) {
+    var ec = document.getElementById("input_e").value;
+    getTeams(ec);
+    getSchedule(ec);
+    this.drawFields();
+  }
+
+  var ret_mid = configure(document.getElementById("table_mid"));
+  if (ret_mid != -1) {
+    var ec = document.getElementById("input_e").value;
+    getTeams(ec);
+    getSchedule(ec);
+    this.drawFields();
+  }
+
+  var ret_right = configure(document.getElementById("table_right"));
+  if (ret_right != -1) {
     var ec = document.getElementById("input_e").value;
     getTeams(ec);
     getSchedule(ec);
