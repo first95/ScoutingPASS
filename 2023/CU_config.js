@@ -20,7 +20,7 @@ var config_data =
         "code":"e",
         "title":"Event",
         "type":"event",
-        "defaultValue":"2022necmp2",
+        "defaultValue":"2023week0",
         "disabled":"true"
       },
       "Match Level":{
