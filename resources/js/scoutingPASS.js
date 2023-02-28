@@ -668,7 +668,7 @@ function swipePage(incriment){
 			slides[slide].style.display = "none";
 			slide += incriment;
 			window.scrollTo(0,0);
-			slides[slide].style.display = "table";
+			slides[slide].style.display = "block";
 		}
 	}
 }

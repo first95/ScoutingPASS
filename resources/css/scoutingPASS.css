@@ -16,8 +16,9 @@ html, body{
 }
 
 .column {
-    float: left;
-    width: 33.33%;
+    /* float: left;
+    width: 33.33%; */
+    flex:0.33;
 }
 
 /* Clear floats after the columns */
@@ -114,6 +115,8 @@ h2{
 
 .match-label{
     text-align: center;
+    background-color: #8cb1d9;
+    margin:0
 }
 
 .half-button-l{
