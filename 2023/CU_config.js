@@ -20,7 +20,7 @@ var config_data =
         "code":"e",
         "title":"Event",
         "type":"event",
-        "defaultValue":"2022necmp2",
+        "defaultValue":"2023week0",
         "disabled":"true"
       },
       "Match Level":{
@@ -164,17 +164,13 @@ var config_data =
         "title":"Endgame",
         "type":"divider"
       },
-      "Endgame Returns to Community?": {
-        "code":"er",
-        "title":"Returns to Community?",
-        "type":"bool"
-      },
       "Endgame Charging Pad Level": {
         "code":"ec",
         "title": "Charging Pad Level",
         "type":"radio",
         "choices":{
           "None":"None<br>",
+          "Parked":"Parked<br>",
           "Docked":"Docked<br>",
           "Engaged":"Engaged<br>",
           "Not Observed":"Not Observed"
@@ -202,7 +198,7 @@ var config_data =
       },
       "Speed": {
         "code":"ps",
-        "title": "Driver Skill",
+        "title": "Speed",
         "type":"radio",
         "choices":{
           "Slow":"Slow<br>",
