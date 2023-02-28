@@ -20,12 +20,12 @@ var options = {
 //var requiredFields = ["e", "m", "l", "t", "r", "s", "as"];
 var requiredFields = [];
 
-function addCounter(table, idx, name, data){
+function addCounter(table, idx, column, data){
   var row = table.insertRow(idx);
   var cell1 = row.insertCell(0);
   cell1.classList.add("title");
   if (!data.hasOwnProperty('code')) {
-    cell1.innerHTML = `Error: No code specified for ${name}`;
+    cell1.innerHTML = `Error: No code specified for ${data.title}`;
     return idx+1;
   }
   var cell2 = row.insertCell(1);
@@ -40,9 +40,9 @@ function addCounter(table, idx, name, data){
 
   var inp = document.createElement("input");
   inp.classList.add("counter");
-  inp.setAttribute("id", "input_"+data.code);
+  inp.setAttribute("id", "input_" + data.code);
   inp.setAttribute("type", "text");
-  inp.setAttribute("name", data.code);
+  inp.setAttribute("name", column + data.code);
   inp.setAttribute("style", "background-color: black; color: white;border: none; text-align: center;");
   inp.setAttribute("disabled", "");
   inp.setAttribute("value", 0);
@@ -67,13 +67,13 @@ function addCounter(table, idx, name, data){
   return idx+1;
 }
 
-function addFieldImage(table, idx, name, data) {
+function addFieldImage(table, idx, column, data) {
   var row = table.insertRow(idx);
   idx += 1
   var cell = row.insertCell(0);
   cell.setAttribute("colspan", 2);
   cell.setAttribute("style", "text-align: center;");
-  cell.innerHTML = name;
+  cell.innerHTML = data.title;
 	
   row = table.insertRow(idx); 
   idx += 1;
@@ -133,7 +133,7 @@ function addFieldImage(table, idx, name, data) {
   cell.appendChild(img);
 }
 
-function addDivider(table, idx, name, data) {
+function addDivider(table, idx, column, data) {
   var row1 = table.insertRow(idx);
   var row2 = table.insertRow(idx+1);
   var cell1 = row1.insertCell(0);
@@ -142,23 +142,23 @@ function addDivider(table, idx, name, data) {
   cell2.colSpan = 2;
   if (!data.hasOwnProperty('code')) {
     cell1.innerHTML = `Error:`;
-    cell2.innerHTML = `No code specified for ${name}`
+    cell2.innerHTML = `No code specified for ${data.title}`
     return idx+2;
   }
   cell1.setAttribute("class", "divider-header");
   cell1.innerHTML = data.title;
-  cell2.setAttribute("id", "teaminfo_"+data.code);
+  cell2.setAttribute("id", column + "_teaminfo_" + data.code);
   cell2.setAttribute("class", "divider-info");
   cell2.innerHTML = ("Fill in \"Match #\" and \"Robot\" fields");
   return idx+2;
 }
 
-function addText(table, idx, name, data) {
+function addText(table, idx, column, data) {
   var row = table.insertRow(idx);
   var cell1 = row.insertCell(0);
   cell1.classList.add("title");
   if (!data.hasOwnProperty('code')) {
-    cell1.innerHTML = `Error: No code specified for ${name}`;
+    cell1.innerHTML = `Error: No code specified for ${data.title}`;
     return idx+1;
   }
   var cell2 = row.insertCell(1);
@@ -167,7 +167,7 @@ function addText(table, idx, name, data) {
   var inp = document.createElement("input");
   inp.setAttribute("id", "input_"+data.code);
   inp.setAttribute("type", "text");
-  inp.setAttribute("name", data.code);
+  inp.setAttribute("name", column + data.code);
   if (data.hasOwnProperty('size')) {
     inp.setAttribute("size", data.size);
   }
@@ -195,12 +195,12 @@ function addText(table, idx, name, data) {
   return idx+1
 }
 
-function addNumber(table, idx, name, data) {
+function addNumber(table, idx, column, data) {
   var row = table.insertRow(idx);
   var cell1 = row.insertCell(0);
   cell1.classList.add("title");
   if (!data.hasOwnProperty('code')) {
-    cell1.innerHTML = `Error: No code specified for ${name}`;
+    cell1.innerHTML = `Error: No code specified for ${data.title}`;
     return idx+1;
   }
   var cell2 = row.insertCell(1);
@@ -209,14 +209,14 @@ function addNumber(table, idx, name, data) {
   var inp = document.createElement("input");
   inp.setAttribute("id", "input_"+data.code);
   inp.setAttribute("type", "number");
-  inp.setAttribute("name", data.code);
+  inp.setAttribute("name", column + data.code);
 	if (data.type == 'match')
 	{
-		inp.setAttribute("onchange", "updateMatchStart()");
+		inp.setAttribute("onchange", `updateMatchStart('${column}')`);
 	}
   if (data.type == 'team')
 	{
-		inp.setAttribute("onchange", "onTeamnameChange()");
+		inp.setAttribute("onchange", `onTeamnameChange('${column}')`);
 	}
   if (data.hasOwnProperty('min')) {
     inp.setAttribute("min", data.min);
@@ -246,12 +246,12 @@ function addNumber(table, idx, name, data) {
   return idx+1;
 }
 
-function addRadio(table, idx, name, data) {
+function addRadio(table, idx, column, data) {
   var row = table.insertRow(idx);
   var cell1 = row.insertCell(0);
   cell1.classList.add("title");
   if (!data.hasOwnProperty('code')) {
-    cell1.innerHTML = `Error: No code specified for ${name}`;
+    cell1.innerHTML = `Error: No code specified for ${data.title}`;
     return idx+1;
   }
   var cell2 = row.insertCell(1);
@@ -261,7 +261,7 @@ function addRadio(table, idx, name, data) {
 			(data.type == 'robot')
 		)
 	{
-		cell2.setAttribute("onchange", "updateMatchStart()");
+		cell2.setAttribute("onchange", `updateMatchStart('${column}')`);
 	}
   var checked = null
   if (data.hasOwnProperty('defaultValue')) {
@@ -273,7 +273,7 @@ function addRadio(table, idx, name, data) {
       var inp = document.createElement("input");
       inp.setAttribute("id", "input_"+data.code+"_"+c);
       inp.setAttribute("type", "radio");
-      inp.setAttribute("name", data.code);
+      inp.setAttribute("name", column + data.code);
 			inp.setAttribute("value", c);
       if (checked == c) {
         inp.setAttribute("checked", "");
@@ -299,12 +299,12 @@ function addRadio(table, idx, name, data) {
   return idx+1;
 }
 
-function addCheckbox(table, idx, name, data){
+function addCheckbox(table, idx, column, data){
   var row = table.insertRow(idx);
   var cell1 = row.insertCell(0);
   cell1.classList.add("title");
   if (!data.hasOwnProperty('code')) {
-    cell1.innerHTML = `Error: No code specified for ${name}`;
+    cell1.innerHTML = `Error: No code specified for ${data.title}`;
     return idx+1;
   }
   var cell2 = row.insertCell(1);
@@ -313,7 +313,7 @@ function addCheckbox(table, idx, name, data){
   var inp = document.createElement("input");
   inp.setAttribute("id", "input_"+data.code);
   inp.setAttribute("type", "checkbox");
-  inp.setAttribute("name", data.code);
+  inp.setAttribute("name", column + data.code);
   cell2.appendChild(inp);
 
   if (data.type == 'bool') {
@@ -331,50 +331,50 @@ function addCheckbox(table, idx, name, data){
   return idx+1;
 }
 
-function addElement(table, idx, name, data){
+function addElement(table, idx, column, data){
   var type = null;
   if (data.hasOwnProperty('type')){
     type = data.type
   } else {
     console.log("No type specified");
     err = (("defaultValue", "No type specified"));
-    idx = addText(table, idx, name, err);
+    idx = addText(table, idx, column, err);
     return
   }
   if (type == 'counter') {
-    idx = addCounter(table, idx, name, data);
+    idx = addCounter(table, idx, column, data);
   } else if (data.type == 'divider') {
-    idx = addDivider(table, idx, name, data);
+    idx = addDivider(table, idx, column, data);
   } else if ((data.type == 'scouter') ||
              (data.type == 'event') ||
              (data.type == 'text')
            )
   {
-    idx = addText(table, idx, name, data);
+    idx = addText(table, idx, column, data);
   } else if ((data.type == 'level') ||
              (data.type == 'radio') ||
              (data.type == 'robot')
            )
   {
-    idx = addRadio(table, idx, name, data);
+    idx = addRadio(table, idx, column, data);
   } else if ((data.type == 'match') ||
              (data.type == 'team') ||
              (data.type == 'number')
            )
   {
-    idx = addNumber(table, idx, name, data);
+    idx = addNumber(table, idx, column, data);
   } else if (data.type == 'field_image')
   {
-    idx = addFieldImage(table, idx, name, data);
+    idx = addFieldImage(table, idx, column, data);
   } else if ((data.type == 'bool') ||
              (data.type == 'checkbox') ||
              (data.type == 'pass_fail')
            )
   {
-    idx = addCheckbox(table, idx, name, data);
+    idx = addCheckbox(table, idx, column, data);
   } else if (data.type == 'counter')
   {
-    idx = addCounter(table, idx, name, data);
+    idx = addCounter(table, idx, column, data);
   } else
   {
     console.log(`Unrecognized type: ${data.type}`);
@@ -412,7 +412,7 @@ function configure(column){
   var idx = 0;
   Object.entries(pmc).forEach((el) => {
     const [key, value] = el;
-    idx = addElement(table, idx, key.concat(column), value);
+    idx = addElement(table, idx, column, value);
   });
 
   // // Configure auton screen
@@ -454,25 +454,26 @@ function configure(column){
   return 0 
 }
 
-function getRobot(){
-		return document.forms.scoutingForm.r.value;
+function getRobot(column){
+		return document.forms[column + "Form"][column + "r"].value;
 }
 
-function validateRobot() {
-		return (document.forms.scoutingForm.r.value != "")
+function validateRobot(column) {
+		return (document.forms[column + "Form"][column + "r"].value != "")
 }
 
 function resetRobot() {
-  for ( rb of document.getElementsByName('r')) { rb.checked = false };
+  document.querySelectorAll(`[id*='${column}_teaminfo_']`)
+  for ( rb of document.querySelectorAll(`[*name='r']`)) { rb.checked = false };
 }
 
 
-function getLevel(){
-	return document.forms.scoutingForm.l.value
+function getLevel(column){
+	return document.forms[column + "Form"][column + "l"].value
 }
 
-function validateLevel() {
-  return (document.forms.scoutingForm.l.value != "")
+function validateLevel(column) {
+  return (document.forms[column + "Form"][column + "l"].value != "")
 }
 
 function validateData() {
@@ -762,40 +763,40 @@ function getMatch(matchKey){
 	return "";
 }
 
-function getCurrentTeamNumberFromRobot(){
-	if(getRobot() != "" && typeof getRobot() !== 'undefined' && getCurrentMatch() != ""){
-		if(getRobot().charAt(0) == "r"){
-			return getCurrentMatch().red.team_keys[parseInt(getRobot().charAt(1))-1]
-		} else if(getRobot().charAt(0) == "b"){
-			return getCurrentMatch().blue.team_keys[parseInt(getRobot().charAt(1))-1]
+function getCurrentTeamNumberFromRobot(column){
+	if(getRobot(column) != "" && typeof getRobot(column) !== 'undefined' && getCurrentMatch(column) != ""){
+		if(getRobot(column).charAt(0) == "r"){
+			return getCurrentMatch(column).red.team_keys[parseInt(getRobot(column).charAt(1))-1]
+		} else if(getRobot(column).charAt(0) == "b"){
+			return getCurrentMatch(column).blue.team_keys[parseInt(getRobot(column).charAt(1))-1]
 		}
 	} else {
     return "";
   }
 }
 
-function getCurrentMatchKey(){
-	return document.getElementById("input_e").value + "_" + getLevel() + document.getElementById("input_m").value;
+function getCurrentMatchKey(column){
+	return document.forms[column + "Form"][column + "e"].value + "_" + getLevel(column) + document.forms[column + "Form"][column + "m"].value;
 }
 
-function getCurrentMatch(){
-	return getMatch(getCurrentMatchKey());
+function getCurrentMatch(column){
+	return getMatch(getCurrentMatchKey(column));
 }
 
-function updateMatchStart(){
-	if((getCurrentMatch() == "") || (getRobot() == "") || (getCurrentTeamNumberFromRobot() == "") || (!teams)) {
-    document.getElementById("input_t").value = "";
-    onTeamnameChange();
+function updateMatchStart(column){
+	if((getCurrentMatch(column) == "") || (getRobot(column) == "") || (getCurrentTeamNumberFromRobot(column) == "") || (!teams)) {
+    document.forms[column + "Form"][column + "t"].value = "";
+    onTeamnameChange(column);
     return;
 	}
   console.log("updateMatchStart - validated");
-	document.getElementById("input_t").value = getCurrentTeamNumberFromRobot().replace("frc", "");
-	onTeamnameChange();
+	document.forms[column + "Form"][column + "t"].value = getCurrentTeamNumberFromRobot(column).replace("frc", "");
+	onTeamnameChange(column);
 }
 
-function onTeamnameChange(){
-	var newNumber = document.getElementById("input_t").value;
-  var teamInfos = document.querySelectorAll("[id*='teaminfo_']");
+function onTeamnameChange(column){
+	var newNumber = document.forms[column + "Form"][column + "t"].value;
+  var teamInfos = document.querySelectorAll(`[id*='${column}_teaminfo_']`);
 	if(newNumber != ""){
     for (i of teamInfos) {
       i.innerHTML = "<i>" + newNumber + ": " + getTeamName(newNumber) + "</i>";
