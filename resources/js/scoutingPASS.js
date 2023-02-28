@@ -575,12 +575,15 @@ function clearForm() {
 	swipePage(-1)
 
 	// Increment match
-	match = parseInt(document.getElementById("input_m").value)
-	if (match == NaN) {
-		document.getElementById("input_m").value = ""
-	} else {
-		document.getElementById("input_m").value = match+1
-	}
+  for (column of ["left","mid","right"])  {
+    match = parseInt(document.forms[column + "Form"][column + "m"].value)
+    if (match == NaN) {
+      document.forms[column + "Form"][column + "m"].value = ""
+    } else {
+      document.forms[column + "Form"][column + "m"].value = match+1
+    }
+
+  };
 
   //Uncommenting this will make "Clear Form" clear the Robot field
   //We usually scout the same alliance every time
@@ -637,7 +640,9 @@ function clearForm() {
 		}
 	}
 	drawFields();
-  updateMatchStart();
+  for (column of ["left","mid","right"])  {
+    updateMatchStart(column);
+  }
 }
 
 function startTouch(e) {
