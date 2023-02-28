@@ -503,10 +503,10 @@ function validateData() {
 }
 
 
-function getData() {
+function getData(Formname) {
   var UniqueFieldNames = [];
   var Data = []
-  var Form = document.forms.scoutingForm
+  var Form = document.forms[Formname];
   // collect the names of all the elements in the form
   var fieldnames = Array.from(Form.elements, formElmt => formElmt.name);
   
@@ -550,10 +550,11 @@ function qr_regenerate() {
 	}
 
 	// Get data
-	data = getData()
-
+	leftdata = getData("leftForm");
+  middata = getData("midForm");
+  rightdata = getData("rightForm");
   // Regenerate QR Code
-	qr.makeCode(data)
+	qr.makeCode(leftdata + "\n"  + middata + "\n" + rightdata)
 
 	updateQRHeader()
 	return true

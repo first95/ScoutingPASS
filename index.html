@@ -26,17 +26,24 @@
 			<h2 id="prematchHeader2"></h2>
 			<p class="match-label"><input type="button" value="Next" id="nextButton1" onclick="swipePage(1)"></p>
 		</div>
+	</form>
 		<div id="main-panel-holder">
 			<div>
 			<div style="display:flex; width:100%;">
 				<div id="left" class="column" style="background-color: #8cb1d9;">
-					<table id="table_left" style="font: Roboto"></table>
+					<form name="leftForm" id="leftForm" onsubmit="false">
+						<table id="table_left" style="font: Roboto"></table>
+					</form>
 				</div>
 				<div id="mid" class="column" style="background-color: #8cb1d9;">
-					<table id="table_mid" style="font: Roboto"></table>
+					<form name="midForm" id="midForm" onsubmit="false">
+						<table id="table_mid" style="font: Roboto"></table>
+					</form>
 				</div>
 				<div id="right" class="column" style="background-color: #8cb1d9;">
-					<table id="table_right" style="font: Roboto"></table>
+					<form name="rightForm" id="rightForm" onsubmit="false">
+						<table id="table_right" style="font: Roboto"></table>
+					</form>
 				</div>
 				</div>
 				<p class="match-label"><input type="button" value="Next" id="nextButton2" onclick="swipePage(1)"></p>
