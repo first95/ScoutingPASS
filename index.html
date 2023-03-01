@@ -1,23 +1,24 @@
 <!--
 	When we gain access to the match schedule, follow these steps:
+	- Create a file named "2023nhgrs_matches.js" in the "2023 folder"
+	- Go to https://www.thebluealliance.com/api/v3/event/2023nhgrs/matches/simple?X-TBA-Auth-Key=hNDnK23dYcPhS6V5SKwfZK8l9VKtWZyZBDKYQRQh5aUqWiKj5KyvKOLDJW49YO00
 	- Add "var schedule = " to the start of the file
-	- Rename file to "2022mabos_matches.js"
-	- Move file to "2022" folder on all 4 iPads
+	- Copy-paste the data from TBA into the file
+	- Move file to "2023" folder on all 6 tablets
 -->
 <!DOCTYPE html>
 <html>
-
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0">
-	<title>ScoutingPASS 95</title>
-	<script src="./resources/js/easy.qrcode.min.js"></script>
-	<script src="./resources/js/TBAInterface.js"></script>
-	<script src="./resources/js/scoutingPASS.js"></script>
-	<script src="./2023/CU_config.js"></script>
-	<script src="./2023/2023week0_matches.js"></script>
-	<script src="./2023/2023week0_teams.js"></script>
-	<link rel="stylesheet" href="./resources/css/scoutingPASS.css">
-</head>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0">
+		<title>ScoutingPASS 95</title>
+		<script src="./resources/js/easy.qrcode.min.js"></script>
+		<script src="./resources/js/TBAInterface.js"></script>
+		<script src="./resources/js/scoutingPASS.js"></script>
+		<script src="./2023/CU_config.js"></script>
+		<script src="./2023/2023nhgrs_matches.js"></script>
+		<script src="./2023/2023nhgrs_teams.js"></script>
+		<link rel="stylesheet" href="./resources/css/scoutingPASS.css">
+	</head>
 
 <body>
 	<form name="scoutingForm" id="scoutingForm" onsubmit="false">
