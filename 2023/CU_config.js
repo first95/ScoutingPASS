@@ -191,6 +191,19 @@ var config_data =
         },
         "defaultValue":"Not Observed"
       },
+      "Endgame Number of Balance Buddies": {
+        "code":"eb",
+        "title": "Number of Balance Buddies",
+        "type":"radio",
+        "choices":{
+          "0":"0<br>",
+          "1":"1<br>",
+          "2":"2<br>",
+          "Not Attempted":"Not Attempted<br>",
+          "Not Observed":"Not Observed"
+        },
+        "defaultValue":"Not Observed"
+      },
       "Postmatch": {
         "code":"pom-div",
         "title":"Postmatch",
