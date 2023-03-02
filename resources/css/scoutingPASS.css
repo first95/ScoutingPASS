@@ -115,13 +115,15 @@ h2{
 }
 
 .team-info-header{
-    color:black;
-    font-family: roboto;
     position: fixed;
     width: 33%;
     display: flex;
     justify-content: center;
     top:4.9em;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    color: black;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .match-label{

@@ -135,22 +135,22 @@ function addFieldImage(table, idx, column, data) {
 
 function addDivider(table, idx, column, data) {
   var row1 = table.insertRow(idx);
-  var row2 = table.insertRow(idx+1);
+  // var row2 = table.insertRow(idx+1);
   var cell1 = row1.insertCell(0);
-  var cell2 = row2.insertCell(0);
+  // var cell2 = row2.insertCell(0);
   cell1.colSpan = 2;
-  cell2.colSpan = 2;
+  // cell2.colSpan = 2;
   if (!data.hasOwnProperty('code')) {
     cell1.innerHTML = `Error:`;
-    cell2.innerHTML = `No code specified for ${data.title}`
-    return idx+2;
+    // cell2.innerHTML = `No code specified for ${data.title}`
+    return idx+1;
   }
   cell1.setAttribute("class", "divider-header");
   cell1.innerHTML = data.title;
-  cell2.setAttribute("id", column + "_teaminfo_" + data.code);
-  cell2.setAttribute("class", "divider-info");
-  cell2.innerHTML = ("Fill in \"Match #\" and \"Robot\" fields");
-  return idx+2;
+  // cell2.setAttribute("id", column + "_teaminfo_" + data.code);
+  // cell2.setAttribute("class", "divider-info");
+  // cell2.innerHTML = ("Fill in \"Match #\" and \"Robot\" fields");
+  return idx+1;
 }
 
 function addText(table, idx, column, data) {
@@ -804,7 +804,7 @@ function onTeamnameChange(column){
   var teamInfos = document.querySelectorAll(`[id*='${column}_teaminfo_']`);
 	if(newNumber != ""){
     for (i of teamInfos) {
-      i.innerHTML = "<i>" + newNumber + ": " + getTeamName(newNumber) + "</i>";
+      i.innerHTML = "<b><i>" + newNumber + ": " + getTeamName(newNumber) + "</i></b>";
     }
 	} else{
     for (i of teamInfos) {
