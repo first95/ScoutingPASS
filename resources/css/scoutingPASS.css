@@ -44,6 +44,7 @@ clear: both;
     color: black;
     border-color: #79a4d2;
     border-width: 4px;
+    margin:0 0 0.5em 0;
 }
 
 #qrHeader1, #qrHeader2 {
@@ -111,6 +112,16 @@ h2{
 .divider-info{
     font-style: italic;
     padding-top: 5px;
+}
+
+.team-info-header{
+    color:black;
+    font-family: roboto;
+    position: fixed;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    top:4.9em;
 }
 
 .match-label{
