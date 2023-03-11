@@ -28,6 +28,18 @@ display: table;
 clear: both;
 }
 
+input[type=radio] {
+    border: 0px;
+    width: 10%;
+    height: 1.25em;
+}
+
+input[type=checkbox] {
+    border: 0px;
+    width: 10%;
+    height: 1.25em;
+}
+
 #table_left, #table_mid, #table_right {
 
     font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
