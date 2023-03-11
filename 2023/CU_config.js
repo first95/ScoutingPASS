@@ -76,17 +76,16 @@ var config_data =
       "Auton Objects Scored": {
         "code":"as",
         "title": "Objects Scored",
-        "type":"counter"
-      },
-      "Auton Can Score Cones?": {
-        "code":"aco",
-        "title":"Can Score Cones?",
-        "type":"bool"
-      },
-      "Auton Can Score Cubes?": {
-        "code":"acu",
-        "title":"Can Score Cubes?",
-        "type":"bool"
+        "type":"radio",
+        "choices":{
+          "None":"None<br>",
+          "1":"1<br>",
+          "2-3":"2-3<br>",
+          "4-5":"4-5<br>",
+          "6-7":"6-7<br>",
+          "Not Observed":"Not Observed"
+        },
+        "defaultValue":"Not Observed"
       },
       "Auton Highest Scoring Level": {
         "code":"al",
@@ -118,9 +117,18 @@ var config_data =
         "type":"divider"
       },
       "Teleop Objects Scored": {
-        "code":"ts",
+        "code":"tos",
         "title": "Objects Scored",
-        "type":"counter"
+        "type":"radio",
+        "choices":{
+          "None":"None<br>",
+          "1-2":"1-2<br>",
+          "3-5":"3-5<br>",
+          "6-10":"6-10<br>",
+          "10+":"10+<br>",
+          "Not Observed":"Not Observed"
+        },
+        "defaultValue":"Not Observed"
       },
       "Teleop Can Handle Cones?": {
         "code":"tco",
