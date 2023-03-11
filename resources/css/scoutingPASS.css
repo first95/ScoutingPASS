@@ -15,7 +15,20 @@ html, body{
     background-color: black;
 }
 
-#prematch_table {
+.column {
+    /* float: left;
+    width: 33.33%; */
+    flex:0.33;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+#table_left, #table_mid, #table_right {
 
     font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     text-align: center;
@@ -31,6 +44,7 @@ html, body{
     color: black;
     border-color: #79a4d2;
     border-width: 4px;
+    margin:0 0 0.5em 0;
 }
 
 #qrHeader1, #qrHeader2 {
@@ -100,8 +114,22 @@ h2{
     padding-top: 5px;
 }
 
+.team-info-header{
+    position: fixed;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    top:4.9em;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    color: black;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
 .match-label{
     text-align: center;
+    background-color: #8cb1d9;
+    margin:0
 }
 
 .half-button-l{
