@@ -74,8 +74,8 @@ var config_data =
         "title": "Objects Scored",
         "type":"radio",
         "choices":{
-          "None":"None<br>",
-          "One":"1<br>",
+          "0":"None<br>",
+          "1":"1<br>",
           "2-3":"2-3<br>",
           "4-5":"4-5<br>",
           "6+":"6+<br>",
