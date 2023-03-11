@@ -28,11 +28,7 @@ var config_data =
         "title":"Match Level",
         "type":"level",
         "choices":{
-          "qm":"Qualifiers<br>",
-          "ef":"Eighthfinals<br>",
-          "qf":"Quarterfinals<br>",
-          "sf":"Semifinals<br>",
-          "f":"Finals"
+          "qm":"Qualifiers",
         },
         "defaultValue":"qm"
       },
@@ -79,10 +75,10 @@ var config_data =
         "type":"radio",
         "choices":{
           "None":"None<br>",
-          "1":"1<br>",
+          "One":"1<br>",
           "2-3":"2-3<br>",
           "4-5":"4-5<br>",
-          "6-7":"6-7<br>",
+          "6+":"6+<br>",
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
@@ -125,29 +121,14 @@ var config_data =
           "1-2":"1-2<br>",
           "3-5":"3-5<br>",
           "6-10":"6-10<br>",
-          "10+":"10+<br>",
+          "11+":"10+<br>",
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
       },
-      "Teleop Can Handle Cones?": {
-        "code":"tco",
-        "title":"Can Handle Cones?",
-        "type":"bool"
-      },
-      "Teleop Can Handle Cubes?": {
-        "code":"tcu",
-        "title":"Can Handle Cubes?",
-        "type":"bool"
-      },
       "Teleop Picks Up From Ground": {
         "code":"tpg",
         "title":"Picks Up From Ground",
-        "type":"bool"
-      },
-      "Teleop Picks Up From Chute": {
-        "code":"tpc",
-        "title":"Picks Up From Chute",
         "type":"bool"
       },
       "Teleop Picks Up From Shelf": {
@@ -166,11 +147,6 @@ var config_data =
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
-      },
-      "Endgame": {
-        "code":"eg-div",
-        "title":"Endgame",
-        "type":"divider"
       },
       "Endgame Charging Pad Level": {
         "code":"ec",
@@ -216,6 +192,16 @@ var config_data =
         "code":"pom-div",
         "title":"Postmatch",
         "type":"divider"
+      },
+      "Teleop Can Handle Cones?": {
+        "code":"tco",
+        "title":"Can Handle Cones?",
+        "type":"bool"
+      },
+      "Teleop Can Handle Cubes?": {
+        "code":"tcu",
+        "title":"Can Handle Cubes?",
+        "type":"bool"
       },
       "Speed": {
         "code":"ps",
