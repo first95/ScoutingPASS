@@ -40,7 +40,7 @@ input[type=checkbox] {
     height: 1.25em;
 }
 
-#table_left, #table_mid, #table_right {
+#prematch_table_left, #prematch_table_mid, #prematch_table_right, #auton_table_left, #auton_table_mid, #auton_table_right, #teleop_table_left, #teleop_table_mid, #teleop_table_right, #endgame_table_left, #endgame_table_mid, #endgame_table_right, #postmatch_table_left, #postmatch_table_mid, #postmatch_table_right {
 
     font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     text-align: center;
@@ -49,7 +49,7 @@ input[type=checkbox] {
     font-style: bold;
     letter-spacing: 1px;
     border-width: 4px;
-    border-color: 79a4d2;
+    border-color: black;
 }
 
 #prematchHeader1, #prematchHeader2{

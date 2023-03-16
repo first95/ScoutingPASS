@@ -6,7 +6,7 @@ var config_data =
     "prematch": {
       "Prematch": {
         "code":"prm-div",
-        "title":"Pregame",
+        "title":"Prematch",
         "type":"divider"
       },
       "Scouter Name": {
@@ -59,6 +59,8 @@ var config_data =
         "min":1,
         "max":99999
       },
+    },
+    "auton": {
       "Autonomous": {
         "code":"a-div",
         "title":"Autonomous",
@@ -107,6 +109,8 @@ var config_data =
         },
         "defaultValue":"Not Observed"
       },
+    },
+    "teleop": {
       "Teleop": {
         "code":"t-div",
         "title":"Teleop",
@@ -148,6 +152,13 @@ var config_data =
         },
         "defaultValue":"Not Observed"
       },
+    },
+    "endgame": {
+      "Endgame": {
+        "code":"e-div",
+        "title":"Endgame",
+        "type":"divider"
+      },
       "Endgame Charging Pad Level": {
         "code":"ec",
         "title": "Charging Pad Level",
@@ -188,6 +199,8 @@ var config_data =
         },
         "defaultValue":"Not Observed"
       },
+    },
+    "postmatch": {
       "Postmatch": {
         "code":"pom-div",
         "title":"Postmatch",
