@@ -22,16 +22,16 @@
 
 <body>
 	<form name="scoutingForm" id="scoutingForm" onsubmit="false">
-		<div id="top" style="background-color:#8cb1d9; position:fixed; width:100%; top:0em">
+		<div id="top" style="background-color:var(--background); position:fixed; width:100%; top:0em">
 			<h1 id="prematchHeader1" class="page_title"><br></h1>
 			<h2 id="prematchHeader2"></h2>
-			<p class="match-label" style="border-bottom: 5px solid black;"><input type="button" value="Next" id="nextButton1" onclick="swipePage(1)"></p>
+			<p class="match-label" style="border-bottom: 5px solid var(--border);"><input type="button" value="Next" id="nextButton1" onclick="swipePage(1)"></p>
 		</div>
 	</form>
 		<div id="main-panel-holder" style="top:5em">
 			<div>
 			<div style="display:flex; width:100%; margin-top:141.46px">
-				<div id="left" class="column" style="background-color: #8cb1d9;">
+				<div id="left" class="column" style="background-color: var(--background);">
 					<div id="left_teaminfo_" class="team-info-header"></div>
 					<form name="leftForm" id="leftForm" onsubmit="false">
 						<table id="prematch_table_left" style="font: Roboto"></table>
@@ -41,7 +41,7 @@
 						<table id="postmatch_table_left" style="font: Roboto"></table>
 					</form>
 				</div>
-				<div id="mid" class="column" style="background-color: #8cb1d9;">
+				<div id="mid" class="column" style="background-color: var(--background);">
 					<div id="mid_teaminfo_" class="team-info-header"></div>
 					<form name="midForm" id="midForm" onsubmit="false">
 						<table id="prematch_table_mid" style="font: Roboto"></table>
@@ -51,7 +51,7 @@
 						<table id="postmatch_table_mid" style="font: Roboto"></table>
 					</form>
 				</div>
-				<div id="right" class="column" style="background-color: #8cb1d9;">
+				<div id="right" class="column" style="background-color: var(--background);">
 					<div id="right_teaminfo_" class="team-info-header"></div>
 					<form name="rightForm" id="rightForm" onsubmit="false">
 						<table id="prematch_table_right" style="font: Roboto"></table>
@@ -64,7 +64,7 @@
 				</div>
 				<p class="match-label"><input type="button" value="Next" id="nextButton2" onclick="swipePage(1)"></p>
 			</div>
-			<div id="qr-code" class="main-panel" style="background-color: #8cb1d9;">
+			<div id="qr-code" class="main-panel" style="background-color: var(--background);">
 				<h1 id="qrHeader1" class="page_title"><span class="odd">P</span><span class="even">W</span><span
 						class="odd">n</span><span class="even">A</span><span class="odd">G</span><span
 						class="even">E</span><br>Scouting 2020</h1>

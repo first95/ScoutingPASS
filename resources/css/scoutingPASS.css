@@ -1,3 +1,14 @@
+:root {
+    --background: #71bdbd;
+    --border: #000000;
+    --text: #000000;
+    --prematch: #5dc43f;
+    --auton: #00c082;
+    --teleop: #00b6b7;
+    --endgame: #00a7d4;
+    --postmatch: #0093d3;
+  }
+
 @font-face {
     font-family: 'Audiowide';
     font-style: normal;
@@ -11,8 +22,8 @@ html, body{
     width: 100%;
     margin: 0;
     padding: 0;
-    color: white;
-    background-color: black;
+    color: var(--background);
+    background-color: var(--background);
 }
 
 .column {
@@ -44,23 +55,43 @@ input[type=checkbox] {
 
     font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     text-align: center;
-    color: black;
+    color: var(--text);
     font-size: 16px;
     font-style: bold;
     letter-spacing: 1px;
-    border-width: 4px;
-    border-color: black;
+    border-width: 3px;
+    border-color: var(--border);
+}
+
+#prematch_table_left, #prematch_table_mid, #prematch_table_right {
+    background-color: var(--prematch);
+}
+
+#auton_table_left, #auton_table_mid, #auton_table_right {
+    background-color: var(--auton);
+}
+
+#teleop_table_left, #teleop_table_mid, #teleop_table_right {
+    background-color: var(--teleop);
+}
+
+#endgame_table_left, #endgame_table_mid, #endgame_table_right {
+    background-color: var(--endgame);
+}
+
+#postmatch_table_left, #postmatch_table_mid, #postmatch_table_right {
+    background-color: var(--postmatch);
 }
 
 #prematchHeader1, #prematchHeader2{
-    color: black;
-    border-color: #79a4d2;
+    color: var(--text);
+    border-color: var(--border);
     border-width: 4px;
     margin:0 0 0.5em 0;
 }
 
 #qrHeader1, #qrHeader2 {
-    color: black;
+    color: var(--text);
 }
     
 .field-image {
@@ -80,8 +111,8 @@ input[type=checkbox] {
     position: absolute;
     left: 0;
     top: 0;
-    color: black;
-    background-color: black;
+    color: var(--text);
+    background-color: var(--background);
     font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     text-align: justify;
 }
@@ -98,7 +129,7 @@ h1{
     font-family: Audiowide;
     text-align: center;
     border-style: groove;
-    border-color: #79a4d2;
+    border-color: var(--border);
     border-width: 4px;
     font-size: 40px;
     padding: 10px; 
@@ -133,14 +164,14 @@ h2{
     justify-content: center;
     top:4.9em;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-    color: black;
+    color: var(--text);
     font-size: 16px;
     letter-spacing: 1px;
 }
 
 .match-label{
     text-align: center;
-    background-color: #8cb1d9;
+    background-color: var(--background);
     margin:0
 }
 
@@ -166,29 +197,29 @@ h2{
 #nextButton1, #nextButton2, #nextButton9, #nextButton10, .clearForm{
     font-family: Audiowide;
     padding: 10px;
-    background-color: rgb(151, 199, 240);
+    background-color: var(--background);
     text-decoration: none;
     display: inline-block;
 }
 
 #nextButton3, #nextButton4, #nextButton5, #nextButton6, #nextButton7, #nextButton8, .undoButton{
     font-family: Audiowide;
-    background-color: black; 
+    background-color: var(--background); 
     padding: 10px;
-    color: white;
+    color: var(--text);
 }
 
 #prevButton7, #prevButton8, #prevButton9{
     font-family: Audiowide;
-    background-color: rgb(151, 199, 240); 
+    background-color: var(--background); 
     padding: 10px;
 }
 
 #prevButton1, #prevButton2, #prevButton3, #prevButton4, #prevButton5, #prevButton6{
     font-family: Audiowide;
-    background-color: black; 
+    background-color: var(--background); 
     padding: 10px;
-    color: white;
+    color: var(--text);
     
 }
 
@@ -198,7 +229,7 @@ h2{
 }
 
 table {
-    border: 1px solid black;
+    border: 1px solid var(--border);
     width: 100%;
 }
 
@@ -223,6 +254,6 @@ input {
 
 #qr-table {
     text-align: center;
-    color: black;
-    background-color: white;
+    color: var(--text);
+    background-color: var(--background);
 }
