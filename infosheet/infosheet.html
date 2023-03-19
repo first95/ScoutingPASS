@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html>
-
     <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-		<a href="#section1">Section 1</a>
-		<a href="#section2">Section 2</a>
-		<a href="#section3">Section 3</a>
+        <!-- #8cb1d9; Background Color-->
+        <!-- #79a4d2; Button Color-->
+        <title>Javascript</title>
+    
+        <style type="text/css">
+            .swipePageButton {
+                background-color: #79a4d2;
+                border-color: black;
+                border-width: 2px;
 
-        <p id="section1">
-          Section 1<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>End Section 1
-        </p>
-        <p id="section2">
-          Section 2<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>End Section 2
-        </p>
-        <p id="section3">
-          Section 3<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>End Section 3
-        </p>
+                width: 33%;
+                height: 2em;
+                float: left;
+
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body style="background-color:#8cb1d9">
+        <div id="top" style="position:fixed; width:100%">
+            <div class="swipePageButton" id="AlliesButton">Allies</div>
+            <div class="swipePageButton" id="OpponentsButton">Opponents</div>
+            <div class="swipePageButton" id="StrategyButton">Strategy</div>
+        </div>
+
+        <div> <br>
+            <div id="Allies" style="display:block">
+                <p>Allies<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Allies</p>
+            </div>
+
+            <div id="Opponents" style="display:none">
+                <p>Opponents<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Opponents</p>
+            </div>
+
+            <div id="Strategy" style="display:none">
+                <p>Strategy<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Strategy</p>
+            </div>
+        </div>
+    
+        <script type="text/javascript">
+            document.getElementById("AlliesButton").onclick = function() {
+                document.getElementById("Allies").style.display = "block";
+                document.getElementById("Opponents").style.display = "none";
+                document.getElementById("Strategy").style.display = "none";
+            }
+        
+            document.getElementById("OpponentsButton").onclick = function() {
+                document.getElementById("Allies").style.display = "none";
+                document.getElementById("Opponents").style.display = "block";
+                document.getElementById("Strategy").style.display = "none";
+            }
+        
+            document.getElementById("StrategyButton").onclick = function() {
+                document.getElementById("Allies").style.display = "none";
+                document.getElementById("Opponents").style.display = "none";
+                document.getElementById("Strategy").style.display = "block";
+            }
+        </script>
     </body>
 </html>
