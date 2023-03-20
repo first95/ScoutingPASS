@@ -4,40 +4,314 @@
         <!-- #8cb1d9; Background Color-->
         <!-- #79a4d2; Button Color-->
         <title>Javascript</title>
-    
         <style type="text/css">
             .swipePageButton {
                 background-color: #79a4d2;
-                border-color: black;
-                border-width: 2px;
+                border: 2px solid black;
 
                 width: 33%;
-                height: 2em;
                 float: left;
+                height: 30px;
 
                 text-align: center;
+                line-height: 30px;
+            }
+            .infoBox {
+                margin: auto;
+                width: 100%;
+                text-align: center;
+                padding-top: 35px;
+            }
+            .divAlly {
+                float: left;
+                width: 50%;
+            }
+            .divOpponent {
+                float: left;
+                width: 33%;
             }
         </style>
+
+        <script type="text/javascript">
+            function copyDiv(){
+              var Ally1Div = document.getElementById('Ally1');
+              var Ally2Div = document.getElementById('Ally2');
+              Ally2Div.innerHTML = Ally1Div.innerHTML;
+
+              var Opponent1Div = document.getElementById('Opponent1');
+              var Opponent2Div = document.getElementById('Opponent2');
+              var Opponent3Div = document.getElementById('Opponent3');
+              Opponent2Div.innerHTML = Opponent1Div.innerHTML;
+              Opponent3Div.innerHTML = Opponent1Div.innerHTML;
+            }
+        </script>
     </head>
 
-    <body style="background-color:#8cb1d9">
-        <div id="top" style="position:fixed; width:100%">
+    <body style="background-color:#8cb1d9; margin: 1px 0px 0px 0px;" onload="copyDiv();">
+        <div id="top" style="position:fixed; width:100%; height:30px; background:#8cb1d9; border: 1px solid black; margin: -1px;">
             <div class="swipePageButton" id="AlliesButton">Allies</div>
             <div class="swipePageButton" id="OpponentsButton">Opponents</div>
             <div class="swipePageButton" id="StrategyButton">Strategy</div>
         </div>
 
-        <div> <br>
-            <div id="Allies" style="display:block">
-                <p>Allies<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Allies</p>
+        <div>
+            <div class="infoBox" id="Allies">
+                <div class="divAlly" id="Ally1">
+                    <form>
+                        Team Number: <input type="text">
+                    </form>
+
+                    <h2>Auto</h2>
+
+                    <label for="Auto Score">Auto Score:</label>
+                    <select id="Auto Score">
+                        <option></option>
+                        <option>None</option>
+                        <option>Exits Community</option>
+                        <option>Scores Loaded Piece</option>
+                        <option>Scores Multiple Pieces</option>
+                    </select>
+                    
+                    <br><br>
+
+                    <label for="Charge Level">Auto Charge Level:</label>
+                    <select id="Charge Level">
+                        <option></option>
+                        <option>None</option>
+                        <option>Docked</option>
+                        <option>Engaged</option>
+                    </select>
+
+                    <h2>Teleop</h2>
+
+                    <label for="Objects Scored">Objects Scored:</label>
+                    <select id="Objects Scored">
+                        <option></option>
+                        <option>None</option>
+                        <option>1-2</option>
+                        <option>3-5</option>
+                        <option>6-10</option>
+                        <option>10+</option>
+                    </select>
+                    
+                    <br><br>
+
+                    <label for="Preferred Scoring Level">Preferred Scoring Level:</label>>
+                    <select id="Preferred Scoring Level">
+                        <option></option>
+                        <option>None</option>
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
+                    
+                    <br><br>
+                    
+                    <label for="Can Handle">Can Handle<br>Cones:</label>
+                    <input type="checkbox" id="Can Handle">
+                    <label for="Can Handle">Cubes:</label>
+                    <input type="checkbox" id="Can Handle">
+                    
+                    <br><br>
+
+                    <label for="Pickup">Pickup<br>Shelf:</label>
+                    <input type="checkbox" id="Pickup">
+                    <label for="Pickup">Ground:</label>
+                    <input type="checkbox" id="Pickup">
+                    
+                    <br><br>
+
+                    <label for="Tilted">Tilted:</label>
+                    <input type="checkbox" id="Tilted">
+
+                    <h2>Endgame:</h2>
+
+                    <label for="Charge Level">Charge Level:</label>
+                    <select id="Charge Level">
+                        <option></option>
+                        <option>None</option>
+                        <option>Docked</option>
+                        <option>Engaged</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="Dock Time">Dock Time:</label>
+                    <select id="Dock Time">
+                        <option></option>
+                        <option>0-5</option>
+                        <option>5-15</option>
+                        <option>15-30</option>
+                        <option>30+</option>
+                    </select>
+
+                    <h2>Miscellaneous</h2>
+
+                    <label for="Defense Skill">Defense Skill:</label>
+                    <select id="Defense Skill">
+                        <option></option>
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="Size">Size:</label>
+                    <select id="Size">
+                        <option></option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                    </select>
+
+                    <br><br>
+
+                    <form>
+                        Comments: <input type="text">
+                    </form>
+
+                </div>
+
+                <div class="divAlly" id="Ally2"></div>
+
             </div>
 
-            <div id="Opponents" style="display:none">
-                <p>Opponents<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Opponents</p>
+            <!-- Next Page -->
+
+            <div id="Opponents" class="infoBox" style="display:none">
+                <div class="divOpponent" id="Opponent1">
+                    <form>
+                        Team Number: <input type="text">
+                    </form>
+
+                    <h2>Cycling</h2>
+
+                    <label for="Objects Scored">Objects Scored:</label>
+                    <select id="Objects Scored">
+                        <option></option>
+                        <option>None</option>
+                        <option>1-2</option>
+                        <option>3-5</option>
+                        <option>6-10</option>
+                        <option>10+</option>
+                    </select>
+                    
+                    <br><br>
+
+                    <label for="Preferred Scoring Level">Preferred Scoring Level:</label>
+                    <select id="Preferred Scoring Level">
+                        <option></option>
+                        <option>None</option>
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
+                    
+                    <br><br>
+                    
+                    <label for="Can Handle">Can Handle<br>Cones:</label>
+                    <input type="checkbox" id="Can Handle">
+                    <label for="Can Handle">Cubes:</label>
+                    <input type="checkbox" id="Can Handle">
+                    
+                    <br><br>
+
+                    <label for="Pickup">Pickup<br>Shelf:</label>
+                    <input type="checkbox" id="Pickup">
+                    <label for="Pickup">Ground:</label>
+                    <input type="checkbox" id="Pickup">
+                    
+                    <br><br>
+
+                    <label for="Tilted">Tilted:</label>
+                    <input type="checkbox" id="Tilted">
+
+                    <h2>Charging</h2>
+
+                    <label for="Returns to Community/Charger">Returns to Community/Charger</label>
+                    <input type="checkbox" id="Return">
+
+                    <br><br>
+
+                    <label for="Dock Time">Dock Time:</label>
+                    <select id="Dock Time">
+                        <option></option>
+                        <option>0-5</option>
+                        <option>5-15</option>
+                        <option>15-30</option>
+                        <option>30+</option>
+                    </select>
+
+                    <h2>Miscellaneous</h2>
+
+                    <label for="Defense Skill">Defense Skill:</label>
+                    <select id="Defense Skill">
+                        <option></option>
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
+
+                    <br><br>
+
+                    <form>
+                        Comments: <input type="text">
+                    </form>
+
+
+                </div>
+
+                <div class="divOpponent" id="Opponent2"></div>
+
+                <div class="divOpponent" id="Opponent3"></div>
             </div>
 
-            <div id="Strategy" style="display:none">
-                <p>Strategy<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Strategy</p>
+            <div id="Strategy" class="infoBox" style="display:none">
+
+                <h2>Reccomended Strategy</h2>
+
+                <form>
+                    Which Opponent(s) to Defend: <input type="text">
+                </form>
+
+                <br><br>
+
+                <form>
+                    Which Allies Should Defend: <input type="text">
+                </form>
+
+                <br><br>
+                
+                <label for="Focus On">Focus On:</label>
+                <select id="Focus On">
+                    <option></option>
+                    <option>Ranking Points</option>
+                    <option>Winning Match</option>
+                </select>
+                <br><br>
+                <form>
+                    <input type="text" style="width:33%">
+                </form>
+
+                <h2>Endgame Strategy</h2>
+
+                <form>
+                    Team 95:<input type="text">
+                </form>
+
+                <br>
+
+                <form>
+                    Team<input type="text" style="width:30px">:<input type="text">
+                </form>
+
+                <br>
+
+                <form>
+                    Team<input type="text" style="width:30px">:<input type="text">
+                </form>
+
             </div>
         </div>
     
