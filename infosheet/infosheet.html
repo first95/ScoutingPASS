@@ -3,34 +3,8 @@
     <head>
         <!-- #8cb1d9; Background Color-->
         <!-- #79a4d2; Button Color-->
-        <title>Javascript</title>
-        <style type="text/css">
-            .swipePageButton {
-                background-color: #79a4d2;
-                border: 2px solid black;
-
-                width: 33%;
-                float: left;
-                height: 30px;
-
-                text-align: center;
-                line-height: 30px;
-            }
-            .infoBox {
-                margin: auto;
-                width: 100%;
-                text-align: center;
-                padding-top: 35px;
-            }
-            .divAlly {
-                float: left;
-                width: 50%;
-            }
-            .divOpponent {
-                float: left;
-                width: 33%;
-            }
-        </style>
+        <title>Drive Team Info Sheet</title>
+        <link rel="stylesheet" href="infosheet.css">
 
         <script type="text/javascript">
             function copyDiv(){
@@ -57,8 +31,9 @@
         <div>
             <div class="infoBox" id="Allies">
                 <div class="divAlly" id="Ally1">
-                    <form onSubmit="return false;">
-                        Team Number: <input type="text">
+                    <br>
+                    <form id="team_number_label" onSubmit="return false;">
+                        Team Number: <input id="team_number_input" type="number">
                     </form>
 
                     <h2>Auto</h2>
@@ -124,7 +99,7 @@
                     <label for="Tilted">Tilted:</label>
                     <input type="checkbox" id="Tilted">
 
-                    <h2>Endgame:</h2>
+                    <h2>Endgame</h2>
 
                     <label for="Charge Level">Charge Level:</label>
                     <select id="Charge Level">
@@ -171,6 +146,8 @@
                         Comments: <input type="text">
                     </form>
 
+                    <br>
+
                 </div>
 
                 <div class="divAlly" id="Ally2"></div>
@@ -181,8 +158,9 @@
 
             <div id="Opponents" class="infoBox" style="display:none">
                 <div class="divOpponent" id="Opponent1">
-                    <form onSubmit="return false;">
-                        Team Number: <input type="text">
+                    <br>
+                    <form id="team_number_label" onSubmit="return false;">
+                        Team Number: <input id="team_number_input" type="text">
                     </form>
 
                     <h2>Cycling</h2>
@@ -259,6 +237,7 @@
                         Comments: <input type="text">
                     </form>
 
+                    <br>
 
                 </div>
 
