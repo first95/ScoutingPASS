@@ -38,18 +38,17 @@
 
                     <h2>Auto</h2>
 
-                    <label for="Auto Score">Auto Score:</label>
-                    <select id="Auto Score">
+                    <label for="Auto Pieces Score">Auto Score:</label>
+                    <select id="Auto Pieces Score">
                         <option></option>
                         <option>None</option>
-                        <option>Exits Community</option>
                         <option>Scores Loaded Piece</option>
                         <option>Scores Multiple Pieces</option>
                     </select>
                     
                     <br><br>
 
-                    <label for="Charge Level">Auto Charge Level:</label>
+                    <label for="Charge Level">Final Position:</label>
                     <select id="Charge Level">
                         <option></option>
                         <option>None</option>
@@ -71,8 +70,8 @@
                     
                     <br><br>
 
-                    <label for="Preferred Scoring Level">Preferred Scoring Level:</label>
-                    <select id="Preferred Scoring Level">
+                    <label for="Highest Scoring Level">Highest Scoring Level:</label>
+                    <select id="Highest Scoring Level">
                         <option></option>
                         <option>None</option>
                         <option>Low</option>
@@ -82,22 +81,19 @@
                     
                     <br><br>
                     
-                    <label for="Can Handle">Can Handle<br>Cones:</label>
+                    <label for="Can Handle">Can Handle<br>Upright Cones:</label>
                     <input type="checkbox" id="Can Handle">
-                    <label for="Can Handle">Cubes:</label>
+                    <label for="Can Handle">Tilted Cones:</label>
+                    <input type="checkbox" id="Can Handle">
+		    <label for="Can Handle">Cubes:</label>
                     <input type="checkbox" id="Can Handle">
                     
                     <br><br>
 
-                    <label for="Pickup">Pickup<br>Shelf:</label>
+                    <label for="Pickup">Can Pickup<br>Shelf:</label>
                     <input type="checkbox" id="Pickup">
                     <label for="Pickup">Ground:</label>
                     <input type="checkbox" id="Pickup">
-                    
-                    <br><br>
-
-                    <label for="Tilted">Tilted:</label>
-                    <input type="checkbox" id="Tilted">
 
                     <h2>Endgame</h2>
 
@@ -105,6 +101,7 @@
                     <select id="Charge Level">
                         <option></option>
                         <option>None</option>
+			<option>Parked</option>
                         <option>Docked</option>
                         <option>Engaged</option>
                     </select>
@@ -114,6 +111,7 @@
                     <label for="Dock Time">Dock Time:</label>
                     <select id="Dock Time">
                         <option></option>
+			<option>N/A</option>
                         <option>0-5</option>
                         <option>5-15</option>
                         <option>15-30</option>
@@ -142,12 +140,8 @@
 
                     <br><br>
 
-			  <label for="Comments">Comments:</label>
-                    <form action="/form/submit" method="GET">
-      		  <textarea rows="5" cols="60"></textarea>
-      		  <br/>
-      		  <input type="submit" value="submit"/>
-    			  </form>
+	 	    <label for="Comments">Comments:</label>
+      		    <textarea rows="5" cols="60"></textarea>
 
                     <br>
 
@@ -180,7 +174,7 @@
                     
                     <br><br>
 
-                    <label for="Preferred Scoring Level">Preferred Scoring Level:</label>
+                    <label for="Preferred Scoring Level">Highest Scoring Level:</label>
                     <select id="Preferred Scoring Level">
                         <option></option>
                         <option>None</option>
@@ -191,9 +185,11 @@
                     
                     <br><br>
                     
-                    <label for="Can Handle">Can Handle<br>Cones:</label>
+                    <label for="Can Handle">Can Handle<br>Upright Cones:</label>
                     <input type="checkbox" id="Can Handle">
-                    <label for="Can Handle">Cubes:</label>
+                    <label for="Can Handle">Tilted Cones:</label>
+                    <input type="checkbox" id="Can Handle">
+		    <label for="Can Handle">Cubes:</label>
                     <input type="checkbox" id="Can Handle">
                     
                     <br><br>
@@ -204,9 +200,6 @@
                     <input type="checkbox" id="Pickup">
                     
                     <br><br>
-
-                    <label for="Tilted">Tilted:</label>
-                    <input type="checkbox" id="Tilted">
 
                     <h2>Charging</h2>
 
@@ -236,12 +229,8 @@
 
               <br><br>
                     
-			  <label for="Comments">Comments:</label>
-                    <form action="/form/submit" method="GET">
-      		  <textarea rows="5" cols="60"></textarea>
-      		  <br/>
-      		  <input type="submit" value="submit"/>
-    			  </form>
+		    <label for="Comments">Comments:</label>
+      		    <textarea rows="5" cols="60"></textarea>
 
                     <br>
 
