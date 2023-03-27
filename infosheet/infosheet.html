@@ -3,50 +3,22 @@
     <head>
         <!-- #8cb1d9; Background Color-->
         <!-- #79a4d2; Button Color-->
-        <title>Javascript</title>
-        <style type="text/css">
-            .swipePageButton {
-                background-color: #79a4d2;
-                border: 2px solid black;
+        <title>Drive Team Info Sheet</title>
+        <link rel="stylesheet" href="infosheet.css">
 
-                width: 475px;
-                float: left;
-                height: 40px;
+        <script type="text/javascript">
+            function copyDiv(){
+              var Ally1Div = document.getElementById('Ally1');
+              var Ally2Div = document.getElementById('Ally2');
+              Ally2Div.innerHTML = Ally1Div.innerHTML;
 
-                text-align: center;
-                line-height: 40px;
+              var Opponent1Div = document.getElementById('Opponent1');
+              var Opponent2Div = document.getElementById('Opponent2');
+              var Opponent3Div = document.getElementById('Opponent3');
+              Opponent2Div.innerHTML = Opponent1Div.innerHTML;
+              Opponent3Div.innerHTML = Opponent1Div.innerHTML;
             }
-            .infoBox {
-                margin: auto;
-                width: 100%;
-                text-align: center;
-                padding-top: 55px;
-            }
-            .divAlly {
-                margin-bottom: 15px;
-                float: left;
-                width: 50%;
-            }
-            .divOpponent {
-                margin-bottom: 15px;
-                float: left;
-                width: 33%;
-                
-            }
-            .lockIcon {
-                height: 40px;
-                width: 40px;
-                float: left;
-                background-color: white;
-            }
-            .unlockIcon {
-                height: 40px;
-                width: 40px;
-                float: left;
-                background-color: black;
-                display: none;
-            }
-        </style>
+        </script>
     </head>
 
     <body style="background-color:#8cb1d9; margin: 0px;" onload="copyDiv();">
@@ -126,7 +98,7 @@
                     <label for="Tilted">Tilted:</label>
                     <input type="checkbox" id="Tilted">
                 
-                    <h2>Endgame:</h2>
+                    <h2>Endgame</h2>
                 
                     <label for="Charge Level">Charge Level:</label>
                     <select id="Charge Level">
@@ -168,9 +140,15 @@
                     </select>
                 
                     <br><br>
-                    
-                    Comments: <input type="text">
-                
+
+                    <label for="Comments">Comments:</label>
+                    <form id="Comments" action="/form/submit" method="GET">
+                        <textarea rows="4" cols="40"></textarea>
+                        <br>
+                    </form>
+
+                    <br>
+
                 </div>
 
                 <div class="divAlly" id="Ally2"></div>
@@ -254,8 +232,14 @@
                     </select>
 
                     <br><br>
+                    
+			        <label for="Comments">Comments:</label>
+                    <form id="Comments" action="/form/submit" method="GET">
+                        <textarea rows="4" cols="40"></textarea>
+                        <br>
+                    </form>
 
-                    Comments: <input type="text">
+                    <br>
 
                 </div>
 

@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Audiowide";
+    font-style: normal;
+    font-weight: 250;
+    src: url(../resources/fonts/Audiowide-Regular.ttf) format('truetype');
+}
+
+#team_number_label {
+    font-family: Audiowide, sans-serif;
+    font-weight: 250;
+    font-size: 18px;
+
+    height: 28px;
+    background-color: #6f95bc;
+}
+
+#team_number_input {
+    width: 60px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input, option, select {
+    font-size: 16px;
+}
+
+textarea {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-size: 16px;
+}
+
+h2 {
+    font-family: Audiowide, sans-serif;
+    font-weight: 250;
+    text-decoration-line: underline;
+}
+
+.swipePageButton {
+    font-family: Audiowide, sans-serif;
+    font-weight: 250;
+    /* text-decoration-line: underline; */
+    font-size: 24px;
+
+    background-color: #79a4d2;
+    border: 2px solid black;
+
+    width: 33%;
+    float: left;
+    height: 40px;
+
+    text-align: center;
+    line-height: 40px;
+}
+.infoBox {
+    font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 35px;
+}
+.divAlly {
+    font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    float: left;
+    width: 49.5%;
+    border: 1px solid black;
+}
+.divOpponent {
+    font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    float: left;
+    width: 33%;
+    border: 1px solid black;
+
+}
