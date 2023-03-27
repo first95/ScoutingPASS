@@ -9,7 +9,7 @@
                 background-color: #79a4d2;
                 border: 2px solid black;
 
-                width: 33%;
+                width: 475px;
                 float: left;
                 height: 40px;
 
@@ -33,25 +33,26 @@
                 width: 33%;
                 
             }
-        </style>
-
-        <script type="text/javascript">
-            function copyDiv(){
-              var Ally1Div = document.getElementById('Ally1');
-              var Ally2Div = document.getElementById('Ally2');
-              Ally2Div.innerHTML = Ally1Div.innerHTML;
-
-              var Opponent1Div = document.getElementById('Opponent1');
-              var Opponent2Div = document.getElementById('Opponent2');
-              var Opponent3Div = document.getElementById('Opponent3');
-              Opponent2Div.innerHTML = Opponent1Div.innerHTML;
-              Opponent3Div.innerHTML = Opponent1Div.innerHTML;
+            .lockIcon {
+                height: 40px;
+                width: 40px;
+                float: left;
+                background-color: white;
             }
-        </script>
+            .unlockIcon {
+                height: 40px;
+                width: 40px;
+                float: left;
+                background-color: black;
+                display: none;
+            }
+        </style>
     </head>
 
-    <body style="background-color:#8cb1d9; margin: 1px 0px 0px 0px;" onload="copyDiv();">
-        <div id="top" style="position:fixed; width:100%; height:30px; background:#8cb1d9; border: 1px solid black; margin: -1px;">
+    <body style="background-color:#8cb1d9; margin: 0px;" onload="copyDiv();">
+        <div id="top" style="position:fixed; width:100%; height:30px;">
+            <div class="lockIcon" id="InputLock"><img src="UnlockedIcon.png" width="40" height="45"></div>
+            <div class="unlockIcon" id="InputUnlock"><img src="LockedIcon.png" width="40" height="45"></div>
             <div class="swipePageButton" id="AlliesButton">Allies</div>
             <div class="swipePageButton" id="OpponentsButton">Opponents</div>
             <div class="swipePageButton" id="StrategyButton">Strategy</div>
@@ -60,12 +61,10 @@
         <div>
             <div class="infoBox" id="Allies">
                 <div class="divAlly" id="Ally1">
-                    <form onSubmit="return false;">
-                        Team Number: <input type="text">
-                    </form>
-
+                    Team Number: <input type="text">
+                    
                     <h2>Auto</h2>
-
+                    
                     <label for="Auto Score">Auto Score:</label>
                     <select id="Auto Score">
                         <option></option>
@@ -76,7 +75,7 @@
                     </select>
                     
                     <br><br>
-
+                
                     <label for="Charge Level">Auto Charge Level:</label>
                     <select id="Charge Level">
                         <option></option>
@@ -84,9 +83,9 @@
                         <option>Docked</option>
                         <option>Engaged</option>
                     </select>
-
+                
                     <h2>Teleop</h2>
-
+                
                     <label for="Objects Scored">Objects Scored:</label>
                     <select id="Objects Scored">
                         <option></option>
@@ -98,7 +97,7 @@
                     </select>
                     
                     <br><br>
-
+                
                     <label for="Preferred Scoring Level">Preferred Scoring Level:</label>
                     <select id="Preferred Scoring Level">
                         <option></option>
@@ -116,19 +115,19 @@
                     <input type="checkbox" id="Can Handle">
                     
                     <br><br>
-
+                
                     <label for="Pickup">Pickup<br>Shelf:</label>
                     <input type="checkbox" id="Pickup">
                     <label for="Pickup">Ground:</label>
                     <input type="checkbox" id="Pickup">
                     
                     <br><br>
-
+                
                     <label for="Tilted">Tilted:</label>
                     <input type="checkbox" id="Tilted">
-
+                
                     <h2>Endgame:</h2>
-
+                
                     <label for="Charge Level">Charge Level:</label>
                     <select id="Charge Level">
                         <option></option>
@@ -136,9 +135,9 @@
                         <option>Docked</option>
                         <option>Engaged</option>
                     </select>
-
+                
                     <br><br>
-
+                
                     <label for="Dock Time">Dock Time:</label>
                     <select id="Dock Time">
                         <option></option>
@@ -147,9 +146,9 @@
                         <option>15-30</option>
                         <option>30+</option>
                     </select>
-
+                
                     <h2>Miscellaneous</h2>
-
+                
                     <label for="Defense Skill">Defense Skill:</label>
                     <select id="Defense Skill">
                         <option></option>
@@ -157,9 +156,9 @@
                         <option>Medium</option>
                         <option>High</option>
                     </select>
-
+                
                     <br><br>
-
+                
                     <label for="Size">Size:</label>
                     <select id="Size">
                         <option></option>
@@ -167,13 +166,11 @@
                         <option>Medium</option>
                         <option>Large</option>
                     </select>
-
+                
                     <br><br>
-
-                    <form onSubmit="return false;">
-                        Comments: <input type="text">
-                    </form>
-
+                    
+                    Comments: <input type="text">
+                
                 </div>
 
                 <div class="divAlly" id="Ally2"></div>
@@ -184,9 +181,7 @@
 
             <div id="Opponents" class="infoBox" style="display:none">
                 <div class="divOpponent" id="Opponent1">
-                    <form onSubmit="return false;">
-                        Team Number: <input type="text">
-                    </form>
+                    Team Number: <input type="text">
 
                     <h2>Cycling</h2>
 
@@ -199,7 +194,7 @@
                         <option>6-10</option>
                         <option>10+</option>
                     </select>
-                    
+
                     <br><br>
 
                     <label for="Preferred Scoring Level">Preferred Scoring Level:</label>
@@ -210,18 +205,20 @@
                         <option>Medium</option>
                         <option>High</option>
                     </select>
-                    
+
                     <br><br>
-                    
+
                     <label for="Can Handle">Can Handle<br>Cones:</label>
                     <input type="checkbox" id="Can Handle">
+
                     <label for="Can Handle">Cubes:</label>
                     <input type="checkbox" id="Can Handle">
-                    
+
                     <br><br>
 
                     <label for="Pickup">Pickup<br>Shelf:</label>
                     <input type="checkbox" id="Pickup">
+
                     <label for="Pickup">Ground:</label>
                     <input type="checkbox" id="Pickup">
                     
@@ -258,10 +255,7 @@
 
                     <br><br>
 
-                    <form onSubmit="return false;">
-                        Comments: <input type="text">
-                    </form>
-
+                    Comments: <input type="text">
 
                 </div>
 
@@ -273,16 +267,12 @@
             <div id="Strategy" class="infoBox" style="display:none">
 
                 <h2>Recommended Strategy</h2>
-
-                <form onSubmit="return false;">
-                    Which Opponent(s) to Defend: <input type="text" style="height:40px;">
-                </form>
+                
+                Which Opponent(s) to Defend: <input type="text" style="height:40px;">
 
                 <br><br>
-
-                <form onSubmit="return false;">
-                    Which Allies Should Defend: <input type="text">
-                </form>
+                
+                Which Allies Should Defend: <input type="text">
 
                 <br><br>
                 
@@ -293,27 +283,20 @@
                     <option>Winning Match</option>
                 </select>
                 <br><br>
-                <form onSubmit="return false;">
-                    <input type="text" style="width:33%">
-                </form>
+                
+                <input type="text" style="width:33%">
 
                 <h2>Endgame Strategy</h2>
+                
+                Team 95:<input type="text">
 
-                <form onSubmit="return false;">
-                    Team 95:<input type="text">
-                </form>
+                <br>
+                
+                Team<input type="text" style="width:30px">:<input type="text">
 
                 <br>
 
-                <form onSubmit="return false;">
-                    Team<input type="text" style="width:30px">:<input type="text">
-                </form>
-
-                <br>
-
-                <form onSubmit="return false;">
-                    Team<input type="text" style="width:30px">:<input type="text">
-                </form>
+                Team<input type="text" style="width:30px">:<input type="text">
 
             </div>
         </div>
@@ -335,6 +318,58 @@
                 document.getElementById("Allies").style.display = "none";
                 document.getElementById("Opponents").style.display = "none";
                 document.getElementById("Strategy").style.display = "block";
+            }
+
+            document.getElementById("InputLock").onclick = function() {
+                document.getElementById("InputLock").style.display = "none";
+                document.getElementById("InputUnlock").style.display = "block";
+
+                for (var i=0; i < document.getElementById("Ally1").children.length; i++) {
+                    document.getElementById("Ally1").children[i].disabled = true;
+                    document.getElementById("Ally2").children[i].disabled = true;
+                }
+
+                for (var i=0; i < document.getElementById("Opponent1").children.length; i++) {
+                    document.getElementById("Opponent1").children[i].disabled = true;
+                    document.getElementById("Opponent2").children[i].disabled = true;
+                    document.getElementById("Opponent3").children[i].disabled = true;
+                }
+                
+                for (var i=0; i < document.getElementById("Strategy").children.length; i++) {
+                    document.getElementById("Strategy").children[i].disabled = true;
+                }
+            }
+
+            document.getElementById("InputUnlock").onclick = function() {
+                document.getElementById("InputLock").style.display = "block";
+                document.getElementById("InputUnlock").style.display = "none";
+
+                for (var i=0; i < document.getElementById("Ally1").children.length; i++) {
+                    document.getElementById("Ally1").children[i].disabled = false;
+                    document.getElementById("Ally2").children[i].disabled = false;
+                }
+
+                for (var i=0; i < document.getElementById("Opponent1").children.length; i++) {
+                    document.getElementById("Opponent1").children[i].disabled = false;
+                    document.getElementById("Opponent2").children[i].disabled = false;
+                    document.getElementById("Opponent3").children[i].disabled = false;
+                }
+                
+                for (var i=0; i < document.getElementById("Strategy").children.length; i++) {
+                    document.getElementById("Strategy").children[i].disabled = false;
+                }
+            }
+
+            function copyDiv(){
+              var Ally1Div = document.getElementById('Ally1');
+              var Ally2Div = document.getElementById('Ally2');
+              Ally2Div.innerHTML = Ally1Div.innerHTML;
+
+              var Opponent1Div = document.getElementById('Opponent1');
+              var Opponent2Div = document.getElementById('Opponent2');
+              var Opponent3Div = document.getElementById('Opponent3');
+              Opponent2Div.innerHTML = Opponent1Div.innerHTML;
+              Opponent3Div.innerHTML = Opponent1Div.innerHTML;
             }
         </script>
     </body>
