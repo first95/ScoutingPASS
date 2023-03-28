@@ -33,31 +33,33 @@
         <div>
             <div class="infoBox" id="Allies">
                 <div class="divAlly" id="Ally1">
-                    Team Number: <input type="text">
-                    
+                    <br>
+                    <form id="team_number_label" onSubmit="return false;">
+                        Team Number: <input id="team_number_input" type="number">
+                    </form>
+
                     <h2>Auto</h2>
-                    
-                    <label for="Auto Score">Auto Score:</label>
-                    <select id="Auto Score">
+
+                    <label for="Auto Pieces Score">Auto Score:</label>
+                    <select id="Auto Pieces Score">
                         <option></option>
                         <option>None</option>
-                        <option>Exits Community</option>
                         <option>Scores Loaded Piece</option>
                         <option>Scores Multiple Pieces</option>
                     </select>
                     
                     <br><br>
-                
-                    <label for="Charge Level">Auto Charge Level:</label>
+
+                    <label for="Charge Level">Final Position:</label>
                     <select id="Charge Level">
                         <option></option>
                         <option>None</option>
                         <option>Docked</option>
                         <option>Engaged</option>
                     </select>
-                
+
                     <h2>Teleop</h2>
-                
+
                     <label for="Objects Scored">Objects Scored:</label>
                     <select id="Objects Scored">
                         <option></option>
@@ -69,9 +71,9 @@
                     </select>
                     
                     <br><br>
-                
-                    <label for="Preferred Scoring Level">Preferred Scoring Level:</label>
-                    <select id="Preferred Scoring Level">
+
+                    <label for="Highest Scoring Level">Highest Scoring Level:</label>
+                    <select id="Highest Scoring Level">
                         <option></option>
                         <option>None</option>
                         <option>Low</option>
@@ -81,46 +83,45 @@
                     
                     <br><br>
                     
-                    <label for="Can Handle">Can Handle<br>Cones:</label>
+                    <label for="Can Handle">Can Handle<br>Upright Cones:</label>
                     <input type="checkbox" id="Can Handle">
-                    <label for="Can Handle">Cubes:</label>
+                    <label for="Can Handle">Tilted Cones:</label>
+                    <input type="checkbox" id="Can Handle">
+		    <label for="Can Handle">Cubes:</label>
                     <input type="checkbox" id="Can Handle">
                     
                     <br><br>
-                
-                    <label for="Pickup">Pickup<br>Shelf:</label>
+
+                    <label for="Pickup">Can Pickup<br>Shelf:</label>
                     <input type="checkbox" id="Pickup">
                     <label for="Pickup">Ground:</label>
                     <input type="checkbox" id="Pickup">
-                    
-                    <br><br>
-                
-                    <label for="Tilted">Tilted:</label>
-                    <input type="checkbox" id="Tilted">
-                
+
                     <h2>Endgame</h2>
-                
+
                     <label for="Charge Level">Charge Level:</label>
                     <select id="Charge Level">
                         <option></option>
                         <option>None</option>
+			<option>Parked</option>
                         <option>Docked</option>
                         <option>Engaged</option>
                     </select>
-                
+
                     <br><br>
-                
+
                     <label for="Dock Time">Dock Time:</label>
                     <select id="Dock Time">
                         <option></option>
+			<option>N/A</option>
                         <option>0-5</option>
                         <option>5-15</option>
                         <option>15-30</option>
                         <option>30+</option>
                     </select>
-                
+
                     <h2>Miscellaneous</h2>
-                
+
                     <label for="Defense Skill">Defense Skill:</label>
                     <select id="Defense Skill">
                         <option></option>
@@ -128,9 +129,9 @@
                         <option>Medium</option>
                         <option>High</option>
                     </select>
-                
+
                     <br><br>
-                
+
                     <label for="Size">Size:</label>
                     <select id="Size">
                         <option></option>
@@ -138,14 +139,11 @@
                         <option>Medium</option>
                         <option>Large</option>
                     </select>
-                
+
                     <br><br>
 
-                    <label for="Comments">Comments:</label>
-                    <form id="Comments" action="/form/submit" method="GET">
-                        <textarea rows="4" cols="40"></textarea>
-                        <br>
-                    </form>
+	 	    <label for="Comments">Comments:</label>
+      		    <textarea rows="4" cols="40"></textarea>
 
                     <br>
 
@@ -159,7 +157,10 @@
 
             <div id="Opponents" class="infoBox" style="display:none">
                 <div class="divOpponent" id="Opponent1">
-                    Team Number: <input type="text">
+                    <br>
+                    <form id="team_number_label" onSubmit="return false;">
+                        Team Number: <input id="team_number_input" type="text">
+                    </form>
 
                     <h2>Cycling</h2>
 
@@ -172,10 +173,10 @@
                         <option>6-10</option>
                         <option>10+</option>
                     </select>
-
+                    
                     <br><br>
 
-                    <label for="Preferred Scoring Level">Preferred Scoring Level:</label>
+                    <label for="Preferred Scoring Level">Highest Scoring Level:</label>
                     <select id="Preferred Scoring Level">
                         <option></option>
                         <option>None</option>
@@ -183,27 +184,24 @@
                         <option>Medium</option>
                         <option>High</option>
                     </select>
-
+                    
                     <br><br>
-
-                    <label for="Can Handle">Can Handle<br>Cones:</label>
+                    
+                    <label for="Can Handle">Can Handle<br>Upright Cones:</label>
                     <input type="checkbox" id="Can Handle">
-
-                    <label for="Can Handle">Cubes:</label>
+                    <label for="Can Handle">Tilted Cones:</label>
                     <input type="checkbox" id="Can Handle">
-
+		    <label for="Can Handle">Cubes:</label>
+                    <input type="checkbox" id="Can Handle">
+                    
                     <br><br>
 
                     <label for="Pickup">Pickup<br>Shelf:</label>
                     <input type="checkbox" id="Pickup">
-
                     <label for="Pickup">Ground:</label>
                     <input type="checkbox" id="Pickup">
                     
                     <br><br>
-
-                    <label for="Tilted">Tilted:</label>
-                    <input type="checkbox" id="Tilted">
 
                     <h2>Charging</h2>
 
@@ -231,13 +229,10 @@
                         <option>High</option>
                     </select>
 
-                    <br><br>
+              <br><br>
                     
-			        <label for="Comments">Comments:</label>
-                    <form id="Comments" action="/form/submit" method="GET">
-                        <textarea rows="4" cols="40"></textarea>
-                        <br>
-                    </form>
+		    <label for="Comments">Comments:</label>
+      		    <textarea rows="4" cols="40"></textarea>
 
                     <br>
 
@@ -251,12 +246,16 @@
             <div id="Strategy" class="infoBox" style="display:none">
 
                 <h2>Recommended Strategy</h2>
-                
-                Which Opponent(s) to Defend: <input type="text" style="height:40px;">
+
+                <form onSubmit="return false;">
+                    Which Opponent(s) to Defend: <input type="text" style="height:40px;">
+                </form>
 
                 <br><br>
-                
-                Which Allies Should Defend: <input type="text">
+
+                <form onSubmit="return false;">
+                    Which Allies Should Defend: <input type="text">
+                </form>
 
                 <br><br>
                 
@@ -267,20 +266,27 @@
                     <option>Winning Match</option>
                 </select>
                 <br><br>
-                
-                <input type="text" style="width:33%">
+                <form onSubmit="return false;">
+                    <input type="text" style="width:33%">
+                </form>
 
                 <h2>Endgame Strategy</h2>
-                
-                Team 95:<input type="text">
+
+                <form onSubmit="return false;">
+                    Team 95:<input type="text">
+                </form>
 
                 <br>
-                
-                Team<input type="text" style="width:30px">:<input type="text">
+
+                <form onSubmit="return false;">
+                    Team<input type="text" style="width:30px">:<input type="text">
+                </form>
 
                 <br>
 
-                Team<input type="text" style="width:30px">:<input type="text">
+                <form onSubmit="return false;">
+                    Team<input type="text" style="width:30px">:<input type="text">
+                </form>
 
             </div>
         </div>
