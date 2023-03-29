@@ -22,7 +22,8 @@
     </head>
 
     <body style="background-color:#8cb1d9; margin: 0px;" onload="copyDiv();">
-        <div id="top" style="position:fixed; width:100%; height:30px;">
+        <div id="Hidey McHidey Boi" style="z-index:1; position:absolute; width:100%; height:175%; display:none;"></div>
+        <div id="top" style="position:fixed; width:100%; height:30px; z-index:2;">
             <div class="lockIcon" id="InputLock"><img src="UnlockedIcon.png" width="40" height="45"></div>
             <div class="unlockIcon" id="InputUnlock"><img src="LockedIcon.png" width="40" height="45"></div>
             <div class="swipePageButton" id="AlliesButton">Allies</div>
@@ -143,6 +144,7 @@
                     <br><br>
 
 	 	    <label for="Comments">Comments:</label>
+            <br>
       		    <textarea rows="4" cols="40"></textarea>
 
                     <br>
@@ -232,6 +234,7 @@
               <br><br>
                     
 		    <label for="Comments">Comments:</label>
+            <br>
       		    <textarea rows="4" cols="40"></textarea>
 
                     <br>
@@ -314,40 +317,14 @@
                 document.getElementById("InputLock").style.display = "none";
                 document.getElementById("InputUnlock").style.display = "block";
 
-                for (var i=0; i < document.getElementById("Ally1").children.length; i++) {
-                    document.getElementById("Ally1").children[i].disabled = true;
-                    document.getElementById("Ally2").children[i].disabled = true;
-                }
-
-                for (var i=0; i < document.getElementById("Opponent1").children.length; i++) {
-                    document.getElementById("Opponent1").children[i].disabled = true;
-                    document.getElementById("Opponent2").children[i].disabled = true;
-                    document.getElementById("Opponent3").children[i].disabled = true;
-                }
-                
-                for (var i=0; i < document.getElementById("Strategy").children.length; i++) {
-                    document.getElementById("Strategy").children[i].disabled = true;
-                }
+                document.getElementById("Hidey McHidey Boi").style.display = "block";
             }
 
             document.getElementById("InputUnlock").onclick = function() {
                 document.getElementById("InputLock").style.display = "block";
                 document.getElementById("InputUnlock").style.display = "none";
 
-                for (var i=0; i < document.getElementById("Ally1").children.length; i++) {
-                    document.getElementById("Ally1").children[i].disabled = false;
-                    document.getElementById("Ally2").children[i].disabled = false;
-                }
-
-                for (var i=0; i < document.getElementById("Opponent1").children.length; i++) {
-                    document.getElementById("Opponent1").children[i].disabled = false;
-                    document.getElementById("Opponent2").children[i].disabled = false;
-                    document.getElementById("Opponent3").children[i].disabled = false;
-                }
-                
-                for (var i=0; i < document.getElementById("Strategy").children.length; i++) {
-                    document.getElementById("Strategy").children[i].disabled = false;
-                }
+                document.getElementById("Hidey McHidey Boi").style.display = "none";
             }
 
             function copyDiv(){
