@@ -44,7 +44,7 @@ h2 {
     background-color: #79a4d2;
     border: 2px solid black;
 
-    width: 475px;
+    width: 32.9%;
     float: left;
     height: 40px;
 
@@ -74,12 +74,16 @@ h2 {
 .lockIcon {
     height: 40px;
     width: 40px;
+    border: 3px solid black;
+    position:absolute;
     float: left;
     background-color: white;
 }
 .unlockIcon {
     height: 40px;
     width: 40px;
+    border: 3px solid black;
+    position:absolute;
     float: left;
     background-color: black;
     display: none;

@@ -24,8 +24,8 @@
     <body style="background-color:#8cb1d9; margin: 0px;" onload="copyDiv();">
         <div id="Hidey McHidey Boi" style="z-index:1; position:absolute; width:100%; height:175%; display:none;"></div>
         <div id="top" style="position:fixed; width:100%; height:30px; z-index:2;">
-            <div class="lockIcon" id="InputLock"><img src="UnlockedIcon.png" width="40" height="45"></div>
-            <div class="unlockIcon" id="InputUnlock"><img src="LockedIcon.png" width="40" height="45"></div>
+            <div class="lockIcon" id="InputLock"><img src="UnlockedIcon.png" width="40" height="40"></div>
+            <div class="unlockIcon" id="InputUnlock"><img src="LockedIcon.png" width="40" height="40"></div>
             <div class="swipePageButton" id="AlliesButton">Allies</div>
             <div class="swipePageButton" id="OpponentsButton">Opponents</div>
             <div class="swipePageButton" id="StrategyButton">Strategy</div>
@@ -193,7 +193,7 @@
                     <input type="checkbox" id="Can Handle">
                     <label for="Can Handle">Tilted Cones:</label>
                     <input type="checkbox" id="Can Handle">
-		    <label for="Can Handle">Cubes:</label>
+		            <label for="Can Handle">Cubes:</label>
                     <input type="checkbox" id="Can Handle">
                     
                     <br><br>
@@ -231,14 +231,13 @@
                         <option>High</option>
                     </select>
 
-              <br><br>
+                    <br><br>
                     
-		    <label for="Comments">Comments:</label>
-            <br>
-      		    <textarea rows="4" cols="40"></textarea>
+		            <label for="Comments">Comments:</label>
+                    <br>
+      		        <textarea rows="4" cols="40"></textarea>
 
                     <br>
-
                 </div>
 
                 <div class="divOpponent" id="Opponent2"></div>
@@ -247,18 +246,19 @@
             </div>
 
             <div id="Strategy" class="infoBox" style="display:none">
+                <form onSubmit="return false;"></form>
 
                 <h2>Recommended Strategy</h2>
 
-                <form onSubmit="return false;">
-                    Which Opponent(s) to Defend: <input type="text" style="height:40px;">
-                </form>
+                Which Opponents(s) to Defend:
+                <br>
+      		    <textarea rows="2" cols="40"></textarea>
 
                 <br><br>
 
-                <form onSubmit="return false;">
-                    Which Allies Should Defend: <input type="text">
-                </form>
+                Which Ally/Allies Should Defend:
+                <br>
+      		    <textarea rows="2" cols="40"></textarea>
 
                 <br><br>
                 
@@ -268,29 +268,28 @@
                     <option>Ranking Points</option>
                     <option>Winning Match</option>
                 </select>
-                <br><br>
-                <form onSubmit="return false;">
-                    <input type="text" style="width:33%">
-                </form>
+                <br>
+      		    <textarea rows="2" cols="40"></textarea>
 
                 <h2>Endgame Strategy</h2>
 
-                <form onSubmit="return false;">
-                    Team 95:<input type="text">
-                </form>
-
+                Team 95:
                 <br>
+      		    <textarea rows="2" cols="40"></textarea>
 
-                <form onSubmit="return false;">
-                    Team<input type="text" style="width:30px">:<input type="text">
-                </form>
+                <br><br>
 
+                Team<input type="text" style="width:30px">:
                 <br>
+                <textarea rows="2" cols="40"></textarea>
+                
+                <br><br>
 
-                <form onSubmit="return false;">
-                    Team<input type="text" style="width:30px">:<input type="text">
+                Team<input type="text" style="width:30px">:
+                <br>
+                <textarea rows="2" cols="40"></textarea>
+                
                 </form>
-
             </div>
         </div>
     
