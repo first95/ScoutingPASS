@@ -1,353 +1,355 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- #8cb1d9; Background Color-->
-        <!-- #79a4d2; Button Color-->
-        <title>Drive Team Info Sheet</title>
-        <link rel="stylesheet" href="infosheet.css">
 
-        <script type="text/javascript">
-            function copyDiv(){
-              var Ally1Div = document.getElementById('Ally1');
-              var Ally2Div = document.getElementById('Ally2');
-              Ally2Div.innerHTML = Ally1Div.innerHTML;
+<head>
+    <!-- #8cb1d9; Background Color-->
+    <!-- #79a4d2; Button Color-->
+    <title>Drive Team Info Sheet</title>
+    <link rel="stylesheet" href="infosheet.css">
 
-              var Opponent1Div = document.getElementById('Opponent1');
-              var Opponent2Div = document.getElementById('Opponent2');
-              var Opponent3Div = document.getElementById('Opponent3');
-              Opponent2Div.innerHTML = Opponent1Div.innerHTML;
-              Opponent3Div.innerHTML = Opponent1Div.innerHTML;
-            }
-        </script>
-    </head>
+    <script type="text/javascript">
+        function copyDiv() {
+            var Ally1Div = document.getElementById('Ally1');
+            var Ally2Div = document.getElementById('Ally2');
+            Ally2Div.innerHTML = Ally1Div.innerHTML;
 
-    <body style="background-color:#8cb1d9; margin: 0px;" onload="copyDiv();">
-        <div id="Hidey McHidey Boi" style="z-index:1; position:absolute; width:100%; height:175%; display:none;"></div>
-        <div id="top" style="position:fixed; width:100%; height:30px; z-index:2;">
-            <div class="lockIcon" id="InputLock"><img src="UnlockedIcon.png" width="40" height="40"></div>
-            <div class="unlockIcon" id="InputUnlock"><img src="LockedIcon.png" width="40" height="40"></div>
-            <div class="swipePageButton" id="AlliesButton"><span>Allies</span></div>
-            <div class="swipePageButton" id="OpponentsButton">Opponents</div>
-            <div class="swipePageButton" id="StrategyButton">Strategy</div>
-        </div>
+            var Opponent1Div = document.getElementById('Opponent1');
+            var Opponent2Div = document.getElementById('Opponent2');
+            var Opponent3Div = document.getElementById('Opponent3');
+            Opponent2Div.innerHTML = Opponent1Div.innerHTML;
+            Opponent3Div.innerHTML = Opponent1Div.innerHTML;
+        }
+    </script>
+</head>
 
-        <div>
-            <div class="infoBox" id="Allies">
-                <div class="divAlly" id="Ally1">
-                    <br>
-                    <form id="team_number_label" onSubmit="return false;">
-                        Team Number: <input id="team_number_input" type="number">
-                    </form>
+<body style="background-color:#8cb1d9; margin: 0px;" onload="copyDiv();">
+    <div id="Hidey McHidey Boi" style="z-index:1; position:absolute; width:100%; height:175%; display:none;"></div>
+    <div id="top" style="position:fixed; width:100%; height:30px; z-index:2;">
+        <div class="lockIcon" id="InputLock"><img src="UnlockedIcon.png" width="40" height="40"></div>
+        <div class="unlockIcon" id="InputUnlock"><img src="LockedIcon.png" width="40" height="40"></div>
+        <div class="swipePageButton" id="AlliesButton"><span>Allies</span></div>
+        <div class="swipePageButton" id="OpponentsButton">Opponents</div>
+        <div class="swipePageButton" id="StrategyButton">Strategy</div>
+    </div>
 
-                    <h2>Auto</h2>
-
-                    <label for="Auto Pieces Score">Auto Score:</label>
-                    <select id="Auto Pieces Score">
-                        <option></option>
-                        <option>None</option>
-                        <option>Scores Loaded Piece</option>
-                        <option>Scores Multiple Pieces</option>
-                    </select>
-                    
-                    <br><br>
-
-                    <label for="Charge Level">Final Position:</label>
-                    <select id="Charge Level">
-                        <option></option>
-                        <option>None</option>
-                        <option>Docked</option>
-                        <option>Engaged</option>
-                    </select>
-
-                    <h2>Teleop</h2>
-
-                    <label for="Objects Scored">Objects Scored:</label>
-                    <select id="Objects Scored">
-                        <option></option>
-                        <option>None</option>
-                        <option>1-2</option>
-                        <option>3-5</option>
-                        <option>6-10</option>
-                        <option>10+</option>
-                    </select>
-                    
-                    <br><br>
-
-                    <label for="Highest Scoring Level">Highest Scoring Level:</label>
-                    <select id="Highest Scoring Level">
-                        <option></option>
-                        <option>None</option>
-                        <option>Low</option>
-                        <option>Medium</option>
-                        <option>High</option>
-                    </select>
-                    
-                    <br><br>
-                    
-                    <label for="Can Handle">Can Handle<br>Upright Cones:</label>
-                    <input type="checkbox" id="Can Handle">
-                    <label for="Can Handle">Tilted Cones:</label>
-                    <input type="checkbox" id="Can Handle">
-		    <label for="Can Handle">Cubes:</label>
-                    <input type="checkbox" id="Can Handle">
-                    
-                    <br><br>
-
-                    <label for="Pickup">Can Pickup<br>Shelf:</label>
-                    <input type="checkbox" id="Pickup">
-                    <label for="Pickup">Ground:</label>
-                    <input type="checkbox" id="Pickup">
-
-                    <h2>Endgame</h2>
-
-                    <label for="Charge Level">Charge Level:</label>
-                    <select id="Charge Level">
-                        <option></option>
-                        <option>None</option>
-			<option>Parked</option>
-                        <option>Docked</option>
-                        <option>Engaged</option>
-                    </select>
-
-                    <br><br>
-
-                    <label for="Dock Time">Dock Time:</label>
-                    <select id="Dock Time">
-                        <option></option>
-			<option>N/A</option>
-                        <option>0-5</option>
-                        <option>5-15</option>
-                        <option>15-30</option>
-                        <option>30+</option>
-                    </select>
-
-                    <h2>Miscellaneous</h2>
-
-                    <label for="Defense Skill">Defense Skill:</label>
-                    <select id="Defense Skill">
-                        <option></option>
-                        <option>Low</option>
-                        <option>Medium</option>
-                        <option>High</option>
-                    </select>
-
-                    <br><br>
-
-                    <label for="Size">Size:</label>
-                    <select id="Size">
-                        <option></option>
-                        <option>Small</option>
-                        <option>Medium</option>
-                        <option>Large</option>
-                    </select>
-
-                    <br><br>
-
-	 	    <label for="Comments">Comments:</label>
-            <br>
-      		    <textarea rows="4" cols="40"></textarea>
-
-                    <br>
-
-                </div>
-
-                <div class="divAlly" id="Ally2"></div>
-
-            </div>
-
-            <!-- Next Page -->
-
-            <div id="Opponents" class="infoBox" style="display:none">
-                <div class="divOpponent" id="Opponent1">
-                    <br>
-                    <form id="team_number_label" onSubmit="return false;">
-                        Team Number: <input id="team_number_input" type="text">
-                    </form>
-
-                    <h2>Cycling</h2>
-
-                    <label for="Objects Scored">Objects Scored:</label>
-                    <select id="Objects Scored">
-                        <option></option>
-                        <option>None</option>
-                        <option>1-2</option>
-                        <option>3-5</option>
-                        <option>6-10</option>
-                        <option>10+</option>
-                    </select>
-                    
-                    <br><br>
-
-                    <label for="Preferred Scoring Level">Highest Scoring Level:</label>
-                    <select id="Preferred Scoring Level">
-                        <option></option>
-                        <option>None</option>
-                        <option>Low</option>
-                        <option>Medium</option>
-                        <option>High</option>
-                    </select>
-                    
-                    <br><br>
-                    
-                    <label for="Can Handle">Can Handle<br>Upright Cones:</label>
-                    <input type="checkbox" id="Can Handle">
-                    <label for="Can Handle">Tilted Cones:</label>
-                    <input type="checkbox" id="Can Handle">
-		            <label for="Can Handle">Cubes:</label>
-                    <input type="checkbox" id="Can Handle">
-                    
-                    <br><br>
-
-                    <label for="Pickup">Pickup<br>Shelf:</label>
-                    <input type="checkbox" id="Pickup">
-                    <label for="Pickup">Ground:</label>
-                    <input type="checkbox" id="Pickup">
-                    
-                    <br><br>
-
-                    <h2>Charging</h2>
-
-                    <label for="Returns to Community/Charger">Returns to Community/Charger</label>
-                    <input type="checkbox" id="Return">
-
-                    <br><br>
-
-                    <label for="Dock Time">Dock Time:</label>
-                    <select id="Dock Time">
-                        <option></option>
-                        <option>0-5</option>
-                        <option>5-15</option>
-                        <option>15-30</option>
-                        <option>30+</option>
-                    </select>
-
-                    <h2>Miscellaneous</h2>
-
-                    <label for="Defense Skill">Defense Skill:</label>
-                    <select id="Defense Skill">
-                        <option></option>
-                        <option>Low</option>
-                        <option>Medium</option>
-                        <option>High</option>
-                    </select>
-
-                    <br><br>
-                    
-		            <label for="Comments">Comments:</label>
-                    <br>
-      		        <textarea rows="4" cols="40"></textarea>
-
-                    <br>
-                </div>
-
-                <div class="divOpponent" id="Opponent2"></div>
-
-                <div class="divOpponent" id="Opponent3"></div>
-            </div>
-
-            <div id="Strategy" class="infoBox" style="display:none">
-                <form onSubmit="return false;"></form>
-
-                <h2>Recommended Strategy</h2>
-
-                Which Opponents(s) to Defend:
+    <div>
+        <div class="infoBox" id="Allies">
+            <div class="divAlly" id="Ally1">
                 <br>
-      		    <textarea rows="2" cols="40"></textarea>
-
-                <br><br>
-
-                Which Ally/Allies Should Defend:
-                <br>
-      		    <textarea rows="2" cols="40"></textarea>
-
-                <br><br>
-                
-                <label for="Focus On">Focus On:</label>
-                <select id="Focus On">
-                    <option></option>
-                    <option>Ranking Points</option>
-                    <option>Winning Match</option>
-                </select>
-                <br>
-      		    <textarea rows="2" cols="40"></textarea>
-
-                <h2>Endgame Strategy</h2>
-
-                Team 95:
-                <br>
-      		    <textarea rows="2" cols="40"></textarea>
-
-                <br><br>
-
-                Team<input type="text" style="width:30px">:
-                <br>
-                <textarea rows="2" cols="40"></textarea>
-                
-                <br><br>
-
-                Team<input type="text" style="width:30px">:
-                <br>
-                <textarea rows="2" cols="40"></textarea>
+                <form id="team_number_label" onSubmit="return false;">
+                    Team Number: <input id="team_number_input" type="number">
                 </form>
+
+                <h2>Auto</h2>
+
+                <label for="Auto Pieces Score">Auto Score:</label>
+                <select id="Auto Pieces Score">
+                    <option></option>
+                    <option>None</option>
+                    <option>Scores Loaded Piece</option>
+                    <option>Scores Multiple Pieces</option>
+                </select>
+
+                <br><br>
+
+                <label for="Charge Level">Final Position:</label>
+                <select id="Charge Level">
+                    <option></option>
+                    <option>None</option>
+                    <option>Docked</option>
+                    <option>Engaged</option>
+                </select>
+
+                <h2>Teleop</h2>
+
+                <label for="Objects Scored">Objects Scored:</label>
+                <select id="Objects Scored">
+                    <option></option>
+                    <option>None</option>
+                    <option>1-2</option>
+                    <option>3-5</option>
+                    <option>6-10</option>
+                    <option>10+</option>
+                </select>
+
+                <br><br>
+
+                <label for="Highest Scoring Level">Highest Scoring Level:</label>
+                <select id="Highest Scoring Level">
+                    <option></option>
+                    <option>None</option>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+
+                <br><br>
+
+                <label for="Can Handle">Can Handle<br>Upright Cones:</label>
+                <input type="checkbox" id="Can Handle">
+                <label for="Can Handle">Tilted Cones:</label>
+                <input type="checkbox" id="Can Handle">
+                <label for="Can Handle">Cubes:</label>
+                <input type="checkbox" id="Can Handle">
+
+                <br><br>
+
+                <label for="Pickup">Can Pickup<br>Shelf:</label>
+                <input type="checkbox" id="Pickup">
+                <label for="Pickup">Ground:</label>
+                <input type="checkbox" id="Pickup">
+
+                <h2>Endgame</h2>
+
+                <label for="Charge Level">Charge Level:</label>
+                <select id="Charge Level">
+                    <option></option>
+                    <option>None</option>
+                    <option>Parked</option>
+                    <option>Docked</option>
+                    <option>Engaged</option>
+                </select>
+
+                <br><br>
+
+                <label for="Dock Time">Dock Time:</label>
+                <select id="Dock Time">
+                    <option></option>
+                    <option>N/A</option>
+                    <option>0-5</option>
+                    <option>5-15</option>
+                    <option>15-30</option>
+                    <option>30+</option>
+                </select>
+
+                <h2>Miscellaneous</h2>
+
+                <label for="Defense Skill">Defense Skill:</label>
+                <select id="Defense Skill">
+                    <option></option>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+
+                <br><br>
+
+                <label for="Size">Size:</label>
+                <select id="Size">
+                    <option></option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+
+                <br><br>
+
+                <label for="Comments">Comments:</label>
+                <br>
+                <textarea rows="4" cols="40"></textarea>
+
+                <br>
+
             </div>
+
+            <div class="divAlly" id="Ally2"></div>
+
         </div>
-    
-        <script type="text/javascript">
-            document.getElementById("AlliesButton").onclick = function() {
-                document.getElementById("AlliesButton").style.textShadow = "2px 2px 2px #fcffca";
-                document.getElementById("OpponentsButton").style.textShadow = "none";
-                document.getElementById("StrategyButton").style.textShadow = "none";
 
-                document.getElementById("Allies").style.display = "block";
-                document.getElementById("Opponents").style.display = "none";
-                document.getElementById("Strategy").style.display = "none";
-            }
-        
-            document.getElementById("OpponentsButton").onclick = function() {
-                document.getElementById("AlliesButton").style.textShadow = "none";
-                document.getElementById("OpponentsButton").style.textShadow = "2px 2px 2px #fcffca";
-                document.getElementById("StrategyButton").style.textShadow = "none";
-                
-                document.getElementById("Allies").style.display = "none";
-                document.getElementById("Opponents").style.display = "block";
-                document.getElementById("Strategy").style.display = "none";
-            }
-        
-            document.getElementById("StrategyButton").onclick = function() {
-                document.getElementById("AlliesButton").style.textShadow = "none";
-                document.getElementById("OpponentsButton").style.textShadow = "none"
-                document.getElementById("StrategyButton").style.textShadow = "2px 2px 2px #fcffca";
-                
-                document.getElementById("Allies").style.display = "none";
-                document.getElementById("Opponents").style.display = "none";
-                document.getElementById("Strategy").style.display = "block";
-            }
+        <!-- Next Page -->
 
-            document.getElementById("InputLock").onclick = function() {
-                document.getElementById("InputLock").style.display = "none";
-                document.getElementById("InputUnlock").style.display = "block";
+        <div id="Opponents" class="infoBox" style="display:none">
+            <div class="divOpponent" id="Opponent1">
+                <br>
+                <form id="team_number_label" onSubmit="return false;">
+                    Team Number: <input id="team_number_input" type="text">
+                </form>
 
-                document.getElementById("Hidey McHidey Boi").style.display = "block";
-            }
+                <h2>Cycling</h2>
 
-            document.getElementById("InputUnlock").onclick = function() {
-                document.getElementById("InputLock").style.display = "block";
-                document.getElementById("InputUnlock").style.display = "none";
+                <label for="Objects Scored">Objects Scored:</label>
+                <select id="Objects Scored">
+                    <option></option>
+                    <option>None</option>
+                    <option>1-2</option>
+                    <option>3-5</option>
+                    <option>6-10</option>
+                    <option>10+</option>
+                </select>
 
-                document.getElementById("Hidey McHidey Boi").style.display = "none";
-            }
+                <br><br>
 
-            function copyDiv(){
-              var Ally1Div = document.getElementById('Ally1');
-              var Ally2Div = document.getElementById('Ally2');
-              Ally2Div.innerHTML = Ally1Div.innerHTML;
+                <label for="Preferred Scoring Level">Highest Scoring Level:</label>
+                <select id="Preferred Scoring Level">
+                    <option></option>
+                    <option>None</option>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
 
-              var Opponent1Div = document.getElementById('Opponent1');
-              var Opponent2Div = document.getElementById('Opponent2');
-              var Opponent3Div = document.getElementById('Opponent3');
-              Opponent2Div.innerHTML = Opponent1Div.innerHTML;
-              Opponent3Div.innerHTML = Opponent1Div.innerHTML;
-            }
-        </script>
-    </body>
+                <br><br>
+
+                <label for="Can Handle">Can Handle<br>Upright Cones:</label>
+                <input type="checkbox" id="Can Handle">
+                <label for="Can Handle">Tilted Cones:</label>
+                <input type="checkbox" id="Can Handle">
+                <label for="Can Handle">Cubes:</label>
+                <input type="checkbox" id="Can Handle">
+
+                <br><br>
+
+                <label for="Pickup">Pickup<br>Shelf:</label>
+                <input type="checkbox" id="Pickup">
+                <label for="Pickup">Ground:</label>
+                <input type="checkbox" id="Pickup">
+
+                <br><br>
+
+                <h2>Charging</h2>
+
+                <label for="Returns to Community/Charger">Returns to Community/Charger</label>
+                <input type="checkbox" id="Return">
+
+                <br><br>
+
+                <label for="Dock Time">Dock Time:</label>
+                <select id="Dock Time">
+                    <option></option>
+                    <option>0-5</option>
+                    <option>5-15</option>
+                    <option>15-30</option>
+                    <option>30+</option>
+                </select>
+
+                <h2>Miscellaneous</h2>
+
+                <label for="Defense Skill">Defense Skill:</label>
+                <select id="Defense Skill">
+                    <option></option>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+
+                <br><br>
+
+                <label for="Comments">Comments:</label>
+                <br>
+                <textarea rows="4" cols="40"></textarea>
+
+                <br>
+            </div>
+
+            <div class="divOpponent" id="Opponent2"></div>
+
+            <div class="divOpponent" id="Opponent3"></div>
+        </div>
+
+        <div id="Strategy" class="infoBox" style="display:none">
+            <form onSubmit="return false;"></form>
+
+            <h2>Recommended Strategy</h2>
+
+            Which Opponents(s) to Defend:
+            <br>
+            <textarea rows="2" cols="40"></textarea>
+
+            <br><br>
+
+            Which Ally/Allies Should Defend:
+            <br>
+            <textarea rows="2" cols="40"></textarea>
+
+            <br><br>
+
+            <label for="Focus On">Focus On:</label>
+            <select id="Focus On">
+                <option></option>
+                <option>Ranking Points</option>
+                <option>Winning Match</option>
+            </select>
+            <br>
+            <textarea rows="2" cols="40"></textarea>
+
+            <h2>Endgame Strategy</h2>
+
+            Team 95:
+            <br>
+            <textarea rows="2" cols="40"></textarea>
+
+            <br><br>
+
+            Team<input type="text" style="width:30px">:
+            <br>
+            <textarea rows="2" cols="40"></textarea>
+
+            <br><br>
+
+            Team<input type="text" style="width:30px">:
+            <br>
+            <textarea rows="2" cols="40"></textarea>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("AlliesButton").onclick = function () {
+            document.getElementById("AlliesButton").style.textShadow = "2px 2px 2px #fcffca";
+            document.getElementById("OpponentsButton").style.textShadow = "none";
+            document.getElementById("StrategyButton").style.textShadow = "none";
+
+            document.getElementById("Allies").style.display = "block";
+            document.getElementById("Opponents").style.display = "none";
+            document.getElementById("Strategy").style.display = "none";
+        }
+
+        document.getElementById("OpponentsButton").onclick = function () {
+            document.getElementById("AlliesButton").style.textShadow = "none";
+            document.getElementById("OpponentsButton").style.textShadow = "2px 2px 2px #fcffca";
+            document.getElementById("StrategyButton").style.textShadow = "none";
+
+            document.getElementById("Allies").style.display = "none";
+            document.getElementById("Opponents").style.display = "block";
+            document.getElementById("Strategy").style.display = "none";
+        }
+
+        document.getElementById("StrategyButton").onclick = function () {
+            document.getElementById("AlliesButton").style.textShadow = "none";
+            document.getElementById("OpponentsButton").style.textShadow = "none"
+            document.getElementById("StrategyButton").style.textShadow = "2px 2px 2px #fcffca";
+
+            document.getElementById("Allies").style.display = "none";
+            document.getElementById("Opponents").style.display = "none";
+            document.getElementById("Strategy").style.display = "block";
+        }
+
+        document.getElementById("InputLock").onclick = function () {
+            document.getElementById("InputLock").style.display = "none";
+            document.getElementById("InputUnlock").style.display = "block";
+
+            document.getElementById("Hidey McHidey Boi").style.display = "block";
+        }
+
+        document.getElementById("InputUnlock").onclick = function () {
+            document.getElementById("InputLock").style.display = "block";
+            document.getElementById("InputUnlock").style.display = "none";
+
+            document.getElementById("Hidey McHidey Boi").style.display = "none";
+        }
+
+        function copyDiv() {
+            var Ally1Div = document.getElementById('Ally1');
+            var Ally2Div = document.getElementById('Ally2');
+            Ally2Div.innerHTML = Ally1Div.innerHTML;
+
+            var Opponent1Div = document.getElementById('Opponent1');
+            var Opponent2Div = document.getElementById('Opponent2');
+            var Opponent3Div = document.getElementById('Opponent3');
+            Opponent2Div.innerHTML = Opponent1Div.innerHTML;
+            Opponent3Div.innerHTML = Opponent1Div.innerHTML;
+        }
+    </script>
+</body>
+
 </html>
