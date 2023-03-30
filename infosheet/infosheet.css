@@ -5,7 +5,7 @@
     src: url(../resources/fonts/Audiowide-Regular.ttf) format('truetype');
 }
 
-#team_number_label {
+.team_number_label {
     font-family: Audiowide, sans-serif;
     font-weight: 250;
     font-size: 18px;
@@ -14,8 +14,8 @@
     background-color: #6f95bc;
 }
 
-#team_number_input {
-    width: 60px;
+.team_number_input {
+    width: 35px;
     font-size: 14px;
     font-weight: bold;
 }
@@ -33,6 +33,7 @@ h2 {
     font-family: Audiowide, sans-serif;
     font-weight: 250;
     text-decoration-line: underline;
+    margin-bottom: 5px;
 }
 
 .swipePageButton {
