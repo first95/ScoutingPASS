@@ -57,19 +57,20 @@ h2 {
     width: 100%;
     text-align: center;
     padding-top: 35px;
-    margin-bottom: 15;
 }
 .divAlly {
     font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     float: left;
     width: 49.5%;
     border: 1px solid black;
+    margin-bottom: 5%;
 }
 .divOpponent {
     font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     float: left;
     width: 33%;
     border: 1px solid black;
+    margin-bottom: 10%;
 
 }
 .lockIcon {
