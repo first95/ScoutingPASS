@@ -84,14 +84,21 @@ input[type=checkbox] {
 }
 
 #prematchHeader1, #prematchHeader2{
+    text-align: left;
     color: var(--text);
     border-color: var(--border);
     border-width: 4px;
     margin:0 0 0.5em 0;
 }
 
-#qrHeader1, #qrHeader2 {
+#qrHeader1 {
     color: var(--text);
+    text-align: left;
+    margin:0;
+}
+#qrHeader2 {
+    color: var(--text);
+    margin:0;
 }
     
 .field-image {
@@ -213,6 +220,9 @@ h2{
     font-family: Audiowide;
     background-color: var(--background); 
     padding: 10px;
+    position: absolute;
+    top: 1em;
+    left: 48%;
 }
 
 #prevButton1, #prevButton2, #prevButton3, #prevButton4, #prevButton5, #prevButton6{
