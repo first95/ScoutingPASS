@@ -20,7 +20,7 @@ var config_data =
         "code":"e",
         "title":"Event",
         "type":"event",
-        "defaultValue":"2023cthars",
+        "defaultValue":"2023cthar",
         "disabled":"true"
       },
       "Match Level":{
