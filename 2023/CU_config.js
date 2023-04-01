@@ -216,30 +216,6 @@ var config_data =
         "title":"Can Handle Cubes?",
         "type":"bool"
       },
-      "Speed": {
-        "code":"ps",
-        "title": "Speed",
-        "type":"radio",
-        "choices":{
-          "Slow":"Slow<br>",
-          "Medium":"Medium<br>",
-          "Fast":"Fast<br>",
-          "Not Observed":"Not Observed"
-        },
-        "defaultValue":"Not Observed"
-      },
-      "Maneuverability": {
-        "code":"pm",
-        "title": "Maneuverability",
-        "type":"radio",
-        "choices":{
-          "Low":"Low<br>",
-          "Medium":"Medium<br>",
-          "High":"High<br>",
-          "Not Observed":"Not Observed"
-        },
-        "defaultValue":"Not Observed"
-      },
       "Driver Skill": {
         "code":"pdrs",
         "title": "Driver Skill",
@@ -258,19 +234,6 @@ var config_data =
         "type":"radio",
         "choices":{
           "Didn't Defend":"Didn't Defend<br>",
-          "Low":"Low<br>",
-          "Medium":"Medium<br>",
-          "High":"High<br>",
-          "Not Observed":"Not Observed"
-        },
-        "defaultValue":"Not Observed"
-      },
-      "Defense Tolerance": {
-        "code":"pdet",
-        "title": "Defense Tolerance",
-        "type":"radio",
-        "choices":{
-          "Wasn't Defended":"Wasn't Defended<br>",
           "Low":"Low<br>",
           "Medium":"Medium<br>",
           "High":"High<br>",
