@@ -20,7 +20,7 @@ var config_data =
         "code":"e",
         "title":"Event",
         "type":"event",
-        "defaultValue":"2023cthar",
+        "defaultValue":"2023necmp2",
         "disabled":"true"
       },
       "Match Level":{
@@ -76,11 +76,11 @@ var config_data =
         "title": "Objects Scored",
         "type":"radio",
         "choices":{
-          "0":"None<br>",
-          "1":"1<br>",
-          "2-3":"2-3<br>",
-          "4-5":"4-5<br>",
-          "6+":"6+<br>",
+          "'0":"None<br>",
+          "'1":"1<br>",
+          "'2":"2<br>",
+          "'3":"3<br>",
+          "'4+":"4+<br>",
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
@@ -121,11 +121,12 @@ var config_data =
         "title": "Objects Scored",
         "type":"radio",
         "choices":{
-          "None":"None<br>",
-          "1-2":"1-2<br>",
-          "3-5":"3-5<br>",
-          "6-10":"6-10<br>",
-          "11+":"10+<br>",
+          "'0":"None<br>",
+          "'1":"1<br>",
+          "'2-3":"2-3<br>",
+          "'4-6":"4-6<br>",
+          "'7-10":"7-10<br>",
+          "'11+":"11+<br>",
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
@@ -140,9 +141,9 @@ var config_data =
         "title":"Picks Up From Shelf",
         "type":"bool"
       },
-      "Teleop Highest Scoring Level": {
+      "Teleop Preferred Scoring Level": {
         "code":"tl",
-        "title": "Highest Scoring Level",
+        "title": "Preferred Scoring Level",
         "type":"radio",
         "choices":{
           "Low":"Low<br>",
@@ -177,10 +178,10 @@ var config_data =
         "title": "Time to Dock",
         "type":"radio",
         "choices":{
-          "0-5":"0-5 secs<br>",
-          "5-15":"5-15 secs<br>",
-          "15-30":"15-30 secs<br>",
-          ">30":">30 secs<br>",
+          "'0-5":"0-5 secs<br>",
+          "'5-15":"5-15 secs<br>",
+          "'15-30":"15-30 secs<br>",
+          "'>30":">30 secs<br>",
           "Not Attempted":"Not Attempted<br>",
           "Not Observed":"Not Observed"
         },
