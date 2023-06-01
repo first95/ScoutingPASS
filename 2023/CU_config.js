@@ -20,7 +20,7 @@ var config_data =
         "code":"e",
         "title":"Event",
         "type":"event",
-        "defaultValue":"2023necmp2",
+        "defaultValue":"2023MAWo2",
         "disabled":"true"
       },
       "Match Level":{
@@ -66,11 +66,6 @@ var config_data =
         "title":"Autonomous",
         "type":"divider"
       },
-      "Auton Exits Community?": {
-        "code":"ae",
-        "title":"Exits Community?",
-        "type":"bool"
-      },
       "Auton Objects Scored": {
         "code":"as",
         "title": "Objects Scored",
@@ -109,6 +104,18 @@ var config_data =
         },
         "defaultValue":"Not Observed"
       },
+      "Auton Charging Pad Location": {
+        "code":"ab",
+        "title": "Charging Pad Location",
+        "type":"radio",
+        "choices":{
+          "Edge":"Edge<br>",
+          "Center":"Center<br>",
+          "Not Attempted":"Not Attempted<br>",
+          "Not Observed":"Not Observed"
+        },
+        "defaultValue":"Not Observed"
+      },
     },
     "teleop": {
       "Teleop": {
@@ -122,11 +129,11 @@ var config_data =
         "type":"radio",
         "choices":{
           "'0":"None<br>",
-          "'1":"1<br>",
-          "'2-3":"2-3<br>",
+          "'1-3":"1-3<br>",
           "'4-6":"4-6<br>",
           "'7-10":"7-10<br>",
-          "'11+":"11+<br>",
+          "'11-15":"11-15<br>",
+          "'16+":"16+<br>",
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
@@ -160,13 +167,13 @@ var config_data =
         "title":"Endgame",
         "type":"divider"
       },
-      "Endgame Charging Pad Level": {
+      "Endgame Ending Position": {
         "code":"ec",
-        "title": "Charging Pad Level",
+        "title": "Ending Position",
         "type":"radio",
         "choices":{
           "None":"None<br>",
-          "Parked":"Parked<br>",
+          "BC Dot":"BC Dot<br>",
           "Docked":"Docked<br>",
           "Engaged":"Engaged<br>",
           "Not Observed":"Not Observed"
@@ -179,22 +186,21 @@ var config_data =
         "type":"radio",
         "choices":{
           "'0-5":"0-5 secs<br>",
-          "'5-15":"5-15 secs<br>",
-          "'15-30":"15-30 secs<br>",
-          "'>30":">30 secs<br>",
+          "'5-10":"5-10 secs<br>",
+          "'10-15":"10-15 secs<br>",
+          "'15+":"15+ secs<br>",
           "Not Attempted":"Not Attempted<br>",
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
       },
-      "Endgame Number of Balance Buddies": {
+      "Endgame Charging Pad Location": {
         "code":"eb",
-        "title": "Number of Balance Buddies",
+        "title": "Charging Pad Location",
         "type":"radio",
         "choices":{
-          "0":"0<br>",
-          "1":"1<br>",
-          "2":"2<br>",
+          "Edge":"Edge<br>",
+          "Center":"Center<br>",
           "Not Attempted":"Not Attempted<br>",
           "Not Observed":"Not Observed"
         },
