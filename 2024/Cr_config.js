@@ -74,7 +74,7 @@ var config_data =
       "Auton Objects Scored": {
         "code":"as",
         "title": "Objects Scored",
-        "type":"score",
+        "type":"counter",
         "min":0,
         "max":100
       },
