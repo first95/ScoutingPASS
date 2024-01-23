@@ -72,35 +72,18 @@ var config_data =
         "type":"bool"
       },
       "Auton Objects Scored": {
-        "code":"as",
-        "title": "Objects Scored",
+        "code":"aa",
+        "title": "Amp Notes Scored",
         "type":"counter",
         "min":0,
-        "max":100
+        "max":10
       },
-      "Auton Highest Scoring Level": {
-        "code":"al",
-        "title": "Highest Scoring Level",
-        "type":"radio",
-        "choices":{
-          "Low":"Low<br>",
-          "Medium":"Medium<br>",
-          "High":"High<br>",
-          "Not Observed":"Not Observed"
-        },
-        "defaultValue":"Not Observed"
-      },
-      "Auton Charging Pad Level": {
-        "code":"ac",
-        "title": "Charging Pad Level",
-        "type":"radio",
-        "choices":{
-          "None":"None<br>",
-          "Docked":"Docked<br>",
-          "Engaged":"Engaged<br>",
-          "Not Observed":"Not Observed"
-        },
-        "defaultValue":"Not Observed"
+      "Auton Objects Scored": {
+        "code":"as",
+        "title": "Speaker Notes Scored",
+        "type":"counter",
+        "min":0,
+        "max":10
       },
     },
     "teleop": {
@@ -110,41 +93,18 @@ var config_data =
         "type":"divider"
       },
       "Teleop Objects Scored": {
-        "code":"tos",
-        "title": "Objects Scored",
-        "type":"radio",
-        "choices":{
-          "'0":"None<br>",
-          "'1":"1<br>",
-          "'2-3":"2-3<br>",
-          "'4-6":"4-6<br>",
-          "'7-10":"7-10<br>",
-          "'11+":"11+<br>",
-          "Not Observed":"Not Observed"
-        },
-        "defaultValue":"Not Observed"
+        "code":"ta",
+        "title": "Amp Notes Scored",
+        "type":"counter",
+        "min":0,
+        "max":50
       },
-      "Teleop Picks Up From Ground": {
-        "code":"tpg",
-        "title":"Picks Up From Ground",
-        "type":"bool"
-      },
-      "Teleop Picks Up From Shelf": {
-        "code":"tps",
-        "title":"Picks Up From Shelf",
-        "type":"bool"
-      },
-      "Teleop Preferred Scoring Level": {
-        "code":"tl",
-        "title": "Preferred Scoring Level",
-        "type":"radio",
-        "choices":{
-          "Low":"Low<br>",
-          "Medium":"Medium<br>",
-          "High":"High<br>",
-          "Not Observed":"Not Observed"
-        },
-        "defaultValue":"Not Observed"
+      "Teleop Amp Notes Scored": {
+        "code":"ts",
+        "title": "Speaker Notes Scored",
+        "type":"counter",
+        "min":0,
+        "max":50
       },
     },
     "endgame": {
@@ -153,22 +113,22 @@ var config_data =
         "title":"Endgame",
         "type":"divider"
       },
-      "Endgame Charging Pad Level": {
-        "code":"ec",
-        "title": "Charging Pad Level",
+      "Endgame Harmony": {
+        "code":"eh",
+        "title": "Harmony",
         "type":"radio",
         "choices":{
           "None":"None<br>",
           "Parked":"Parked<br>",
-          "Docked":"Docked<br>",
-          "Engaged":"Engaged<br>",
+          "Soloist":"Soloist<br>",
+          "Harmony":"Harmony<br>",
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
       },
-      "Endgame Time to Dock": {
+      "Endgame Show Queue": {
         "code":"et",
-        "title": "Time to Dock",
+        "title": "Time to Queue",
         "type":"radio",
         "choices":{
           "'0-5":"0-5 secs<br>",
@@ -180,35 +140,23 @@ var config_data =
         },
         "defaultValue":"Not Observed"
       },
-      "Endgame Number of Balance Buddies": {
-        "code":"eb",
-        "title": "Number of Balance Buddies",
-        "type":"radio",
-        "choices":{
-          "0":"0<br>",
-          "1":"1<br>",
-          "2":"2<br>",
-          "Not Attempted":"Not Attempted<br>",
-          "Not Observed":"Not Observed"
-        },
-        "defaultValue":"Not Observed"
+      "Trap?": {
+        "code":"tr",
+        "title":"Trap",
+        "type":"bool"
       },
+      "Spotlit?": {
+        "code":"sl",
+        "title":"Spotlit?",
+        "type":"bool"
+      },
+
     },
     "postmatch": {
       "Postmatch": {
         "code":"pom-div",
         "title":"Postmatch",
         "type":"divider"
-      },
-      "Teleop Can Handle Cones?": {
-        "code":"tco",
-        "title":"Can Handle Cones?",
-        "type":"bool"
-      },
-      "Teleop Can Handle Cubes?": {
-        "code":"tcu",
-        "title":"Can Handle Cubes?",
-        "type":"bool"
       },
       "Driver Skill": {
         "code":"pdrs",
