@@ -74,16 +74,9 @@ var config_data =
       "Auton Objects Scored": {
         "code":"as",
         "title": "Objects Scored",
-        "type":"radio",
-        "choices":{
-          "'0":"None<br>",
-          "'1":"1<br>",
-          "'2":"2<br>",
-          "'3":"3<br>",
-          "'4+":"4+<br>",
-          "Not Observed":"Not Observed"
-        },
-        "defaultValue":"Not Observed"
+        "type":"score",
+        "min":0,
+        "max":100
       },
       "Auton Highest Scoring Level": {
         "code":"al",
