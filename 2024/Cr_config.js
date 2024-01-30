@@ -71,14 +71,14 @@ var config_data =
         "title":"Exits Community?",
         "type":"bool"
       },
-      "Auton Objects Scored": {
+      "Auton Speaker Scored": {
         "code":"aa",
         "title": "Amp Notes Scored",
         "type":"counter",
         "min":0,
         "max":10
       },
-      "Auton Objects Scored": {
+      "Auton Amp Scored": {
         "code":"as",
         "title": "Speaker Notes Scored",
         "type":"counter",

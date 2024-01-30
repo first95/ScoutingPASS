@@ -552,10 +552,10 @@ function qr_regenerate() {
 
 	// Get data
 	leftdata = getData("leftForm");
-  // middata = getData("midForm");
-  // rightdata = getData("rightForm");
+  middata = getData("midForm");
+  rightdata = getData("rightForm");
   // Regenerate QR Code
-	qr.makeCode(leftdata)
+	qr.makeCode(leftdata + "\n"  + middata + "\n" + rightdata)
 
 	updateQRHeader()
 	return true
