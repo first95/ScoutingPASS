@@ -41,20 +41,20 @@ clear: both;
 
 input[type=radio] {
     border: 0px;
-    width: 10%;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
 }
 
 input[type=checkbox] {
     border: 0px;
-    width: 10%;
+    width: 2em;
     height: 2em;
 }
 
-input[type=increment] {
-    border: 0px;
-    width: 10%;
-    height: 20em;
+button {
+    width:2.5em;
+    height:2.5em;
 }
 
 #prematch_table_left, #prematch_table_mid, #prematch_table_right, #auton_table_left, #auton_table_mid, #auton_table_right, #teleop_table_left, #teleop_table_mid, #teleop_table_right, #endgame_table_left, #endgame_table_mid, #endgame_table_right, #postmatch_table_left, #postmatch_table_mid, #postmatch_table_right {
@@ -257,6 +257,7 @@ input {
     font-size: 16px;
     font: roboto;
     text-align: center;
+    
 }
 
 .title {
