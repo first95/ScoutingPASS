@@ -48,6 +48,13 @@ function addCounter(table, idx, column, data){
   inp.setAttribute("value", 0);
   inp.setAttribute("size", 2);
   inp.setAttribute("maxLength", 2);
+
+  var minValue = data.hasOwnProperty('minValue') ? parseInt(data.minValue) : Number.MIN_SAFE_INTEGER;
+  var maxValue = data.hasOwnProperty('maxValue') ? parseInt(data.maxValue) : Number.MAX_SAFE_INTEGER;
+
+  inp.dataset.minValue = minValue; // Set minimum value as a data attribute
+  inp.dataset.maxValue = maxValue; // Set maximum value as a data attribute
+
   cell2.appendChild(inp);
 
   var button2 = document.createElement("button");
@@ -65,6 +72,69 @@ function addCounter(table, idx, column, data){
   }
 
   return idx+1;
+}
+
+function addDropdown(table, idx, column, data) {
+  // Create a single row for both title and dropdowns
+  var row = table.insertRow(idx);
+  
+  var cell1 = row.insertCell(0);
+  cell1.classList.add("title");
+  
+  if (!data.hasOwnProperty('code')) {
+    cell1.innerHTML = `Error: No code specified for ${data.title}`;
+    return idx + 1;
+  }
+  
+  cell1.innerHTML = data.title + '&nbsp;';
+
+  var cell2 = row.insertCell(1);
+  cell2.classList.add("field");
+
+  // Check if the "data" field has a "columns" property
+  if (data.hasOwnProperty('columns') && Array.isArray(data.columns) && data.columns.length > 0) {
+    // Handle multiple columns
+    for (var i = 0; i < data.columns.length; i++) {
+      var col = data.columns[i];
+
+      // Check if the column has choices
+      if (col.hasOwnProperty('choices')) {
+        // Create a select element for each column
+        var select = document.createElement("select");
+        select.setAttribute("id", "dropdown_" + data.code + "_" + col.title);
+        select.setAttribute("name", column + data.code + "_" + col.title);
+
+        for (var choice in col.choices) {
+          if (col.choices.hasOwnProperty(choice)) {
+            var option = document.createElement("option");
+            option.value = choice;
+            option.text = col.choices[choice];
+            select.appendChild(option);
+          }
+        }
+
+        cell2.appendChild(select);
+      }
+    }
+  } else if (data.hasOwnProperty('choices')) {
+    // Handle a single column
+    var select = document.createElement("select");
+    select.setAttribute("id", "dropdown_" + data.code);
+    select.setAttribute("name", column + data.code);
+
+    for (var choice in data.choices) {
+      if (data.choices.hasOwnProperty(choice)) {
+        var option = document.createElement("option");
+        option.value = choice;
+        option.text = data.choices[choice];
+        select.appendChild(option);
+      }
+    }
+
+    cell2.appendChild(select);
+  }
+
+  return idx + 1;
 }
 
 function addFieldImage(table, idx, column, data) {
@@ -317,7 +387,7 @@ function addCheckbox(table, idx, column, data){
   cell2.appendChild(inp);
 
   if (data.type == 'bool') {
-    cell2.innerHTML += "(checked = Yes)";
+    // cell2.innerHTML += "(checked = Yes)";
   }
 
   if (data.hasOwnProperty('defaultValue')) {
@@ -375,8 +445,10 @@ function addElement(table, idx, column, data){
   } else if (data.type == 'counter')
   {
     idx = addCounter(table, idx, column, data);
-  } else
-  {
+  } else if (data.type == 'dropdown')
+  { 
+    idx = addDropdown(table,idx, column, data);
+  } else {
     console.log(`Unrecognized type: ${data.type}`);
   }
   return idx
