@@ -30,10 +30,20 @@ textarea {
 }
 
 h2 {
+    color:black;
     font-family: Audiowide, sans-serif;
     font-weight: 250;
-    text-decoration-line: underline;
-    margin-bottom: 5px;
+    margin-top:0px;
+    margin-bottom:0px;
+    text-decoration: underline;
+}
+
+.sectionBox {
+    border: 2px solid black;
+    width:89.5%;
+    margin-left:5%;
+    margin-top:0.5%;
+    padding-bottom:0.5%;
 }
 
 .swipePageButton {
@@ -92,7 +102,6 @@ h2 {
     background-color: black;
     display: none;
 }
-
 .matchNumberLabel {
     font-family: Audiowide, sans-serif;
     position: absolute;
@@ -105,7 +114,6 @@ h2 {
     text-align: center;
     border: 2px solid black;
 }
-
 .matchNumberInput {
     width: 50px;
     text-align: center;

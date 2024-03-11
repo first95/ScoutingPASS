@@ -44,126 +44,103 @@
     <div>
         <div class="infoBox" id="Allies">
             <div class="divAlly" id="Ally1">
-                <br>
-                <div class="team_number_label">
+                <br><div class="team_number_label">
                     Team Number: <input class="team_number_input" type="number">
                 </div>
 
-                <h2>Auto</h2>
+                <div class="sectionBox">
+                    <h2>Auto</h2>
+                    <label for="Leaves Start Line">Leaves Start Line:</label>
+                    <input type="checkbox" id="Can Handle">
+                    
+                    <br><br>
 
-                <label for="Auto Pieces Score">Auto Score:</label>
-                <select id="Auto Pieces Score">
-                    <option></option>
-                    <option>None</option>
-                    <option>Scores Loaded Piece</option>
-                    <option>Scores Multiple Pieces</option>
-                </select>
+                    <b>Amp Notes</b><br>
+                        Mean:<input type="text" style="width:30px">
+                        Max:<input type="text" style="width:30px">
+                    <br><br>
 
-                <br><br>
+                    <b>Spkr Notes</b><br>
+                        Mean:<input type="text" style="width:30px">
+                        Max:<input type="text" style="width:30px">
+                </div>
+                
+                <div class="sectionBox">
+                    <h2>Teleop</h2>
+                    <b>Amp Notes</b><br>
+                        Mean:<input type="text" style="width:30px">
+                        Max:<input type="text" style="width:30px">
+                    <br><br>
 
-                <label for="Charge Level">Final Position:</label>
-                <select id="Charge Level">
-                    <option></option>
-                    <option>None</option>
-                    <option>Docked</option>
-                    <option>Engaged</option>
-                </select>
+                    <b>Spkr Notes</b><br>
+                        Mean:<input type="text" style="width:30px">
+                        Max:<input type="text" style="width:30px">
+                </div>
 
-                <h2>Teleop</h2>
+                <div class="sectionBox">
+                    <h2>Endgame</h2>
+                    <label for="Harmony">Harmony:</label>
+                    <select id="Harmony">
+                        <option></option>
+                        <option>None</option>
+                        <option>Parked</option>
+                        <option>Soloist</option>
+                        <option>Harmony</option>
+                        <option>Not Observed</option>
+                    </select>
+                    
+                    <br>
+                    
+                    <label for="Queue Time">Queue Time:</label>
+                    <select id="Queue Time">
+                        <option></option>
+                        <option>0-5 secs</option>
+                        <option>5-10 secs</option>
+                        <option>15-30 secs</option>
+                        <option>>30 secs</option>
+                        <option>Not Attempted</option>
+                        <option>Not Observed</option>
+                    </select>
 
-                <label for="Objects Scored">Objects Scored:</label>
-                <select id="Objects Scored">
-                    <option></option>
-                    <option>None</option>
-                    <option>1</option>
-                    <option>2-3</option>
-                    <option>4-6</option>
-                    <option>7-10</option>
-                    <option>11+</option>
-                </select>
+                    <br>
+                    
+                    <label for="Scores in Trap">Scores in Trap:</label>
+                    <input type="checkbox" id="Scores in Trap">
+                    
+                    <br>
+                    
+                    Spotlight Aim:<input type="text" style="width:30px">
+                </div>
+                    
+                <div class="sectionBox">
+                    <h2>Miscellaneous</h2>
+                    <label for="Driver Skill">Driver Skill:</label>
+                    <select id="Driver Skill">
+                        <option></option>
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
 
-                <br><br>
-
-                <label for="Preferred Scoring Level">Preferred Scoring Level:</label>
-                <select id="Preferred Scoring Level">
-                    <option></option>
-                    <option>None</option>
-                    <option>Low</option>
-                    <option>Medium</option>
-                    <option>High</option>
-                </select>
-
-                <br><br>
-
-                <label for="Can Handle">Can Handle<br>Upright Cones:</label>
-                <input type="checkbox" id="Can Handle">
-                <label for="Can Handle">Tilted Cones:</label>
-                <input type="checkbox" id="Can Handle">
-                <label for="Can Handle">Cubes:</label>
-                <input type="checkbox" id="Can Handle">
-
-                <br><br>
-
-                <label for="Pickup">Can Pickup<br>Shelf:</label>
-                <input type="checkbox" id="Pickup">
-                <label for="Pickup">Ground:</label>
-                <input type="checkbox" id="Pickup">
-
-                <h2>Endgame</h2>
-
-                <label for="Charge Level">Charge Level:</label>
-                <select id="Charge Level">
-                    <option></option>
-                    <option>None</option>
-                    <option>Parked</option>
-                    <option>Docked</option>
-                    <option>Engaged</option>
-                </select>
-
-                <br><br>
-
-                <label for="Dock Time">Dock Time:</label>
-                <select id="Dock Time">
-                    <option></option>
-                    <option>N/A</option>
-                    <option>0-5</option>
-                    <option>5-15</option>
-                    <option>15-30</option>
-                    <option>30+</option>
-                </select>
-
-                <h2>Miscellaneous</h2>
-
-                <label for="Defense Skill">Defense Skill:</label>
-                <select id="Defense Skill">
-                    <option></option>
-                    <option>Low</option>
-                    <option>Medium</option>
-                    <option>High</option>
-                </select>
-
-                <br><br>
-
-                <label for="Size">Size:</label>
-                <select id="Size">
-                    <option></option>
-                    <option>Small</option>
-                    <option>Medium</option>
-                    <option>Large</option>
-                </select>
-
-                <br><br>
-
-                <label for="Comments">Comments:</label>
-                <br>
-                <textarea rows="4" cols="30"></textarea>
-
-                <br><br>
-
+                    <br>
+                    
+                    <label for="Defense Skill">Defense Skill:</label>
+                    <select id="Defense Skill">
+                        <option></option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                    </select>
+                    
+                    <br>
+                    
+                    <label for="Comments">Comments:</label>
+                    <br>
+                    <textarea rows="4" cols="30"></textarea>
+                </div>
             </div>
 
             <div class="divAlly" id="Ally2"></div>
-
         </div>
 
         <!-- Next Page -->
@@ -175,93 +152,88 @@
                     Team Number: <input class="team_number_input" type="number">
                 </div>
 
-                <h2>Cycling</h2>
-
-                <label for="Objects Scored">Objects Scored:</label>
-                <select id="Objects Scored">
-                    <option></option>
-                    <option>None</option>
-                    <option>1</option>
-                    <option>2-3</option>
-                    <option>4-6</option>
-                    <option>7-10</option>
-                    <option>11+</option>
-                </select>
-
-                <br><br>
-
-                <label for="Preferred Scoring Level">Preferred Scoring Level:</label>
-                <select id="Preferred Scoring Level">
-                    <option></option>
-                    <option>None</option>
-                    <option>Low</option>
-                    <option>Medium</option>
-                    <option>High</option>
-                </select>
-
-                <br><br>
-
-                <label for="Can Handle">Can Handle<br>Upright Cones:</label>
-                <input type="checkbox" id="Can Handle">
-                <label for="Can Handle">Tilted Cones:</label>
-                <input type="checkbox" id="Can Handle">
-                <label for="Can Handle">Cubes:</label>
-                <input type="checkbox" id="Can Handle">
-
-                <br><br>
-
-                <label for="Pickup">Pickup<br>Shelf:</label>
-                <input type="checkbox" id="Pickup">
-                <label for="Pickup">Ground:</label>
-                <input type="checkbox" id="Pickup">
-
-                <br><br>
-
-                <h2>Charging</h2>
-
-                <label for="Returns to Community/Charger">Returns to Community/Charger</label>
-                <input type="checkbox" id="Return">
-
-                <br><br>
-
-                <label for="Dock Time">Dock Time:</label>
-                <select id="Dock Time">
-                    <option></option>
-                    <option>0-5</option>
-                    <option>5-15</option>
-                    <option>15-30</option>
-                    <option>30+</option>
-                </select>
-
-                <h2>Miscellaneous</h2>
-
-                <label for="Defense Skill">Defense Skill:</label>
-                <select id="Defense Skill">
-                    <option></option>
-                    <option>Low</option>
-                    <option>Medium</option>
-                    <option>High</option>
-                </select>
-
-                <br><br>
-
-                <label for="Comments">Comments:</label>
-                <br>
-                <textarea rows="4" cols="30"></textarea>
-
-                <br><br>
+                <div class="sectionBox">
+                    <h2>Cycling</h2>
+                    <b>Amp Notes</b><br>
+                        Mean:<input type="text" style="width:30px">
+                        Max:<input type="text" style="width:30px">
+                    <br><br>
+                    
+                    <b>Spkr Notes</b><br>
+                        Mean:<input type="text" style="width:30px">
+                        Max:<input type="text" style="width:30px">
+                    <br><br>
+                </div>
+                    
+                <div class="sectionBox">
+                    <h2>Charging</h2>
+                    <label for="Harmony">Harmony:</label>
+                    <select id="Harmony">
+                        <option></option>
+                        <option>None</option>
+                        <option>Parked</option>
+                        <option>Soloist</option>
+                        <option>Harmony</option>
+                        <option>Not Observed</option>
+                    </select>
+                    
+                    <br><br>
+                    
+                    <label for="Queue Time">Queue Time:</label>
+                    <select id="Queue Time">
+                        <option></option>
+                        <option>0-5 secs</option>
+                        <option>5-10 secs</option>
+                        <option>15-30 secs</option>
+                        <option>>30 secs</option>
+                        <option>Not Attempted</option>
+                        <option>Not Observed</option>
+                    </select>
                 
+                    <br><br>
+                
+                    <label for="Scores in Trap">Scores in Trap:</label>
+                    <input type="checkbox" id="Scores in Trap">
+                </div>
+
+                <div class="sectionBox">
+                    <h2>Miscellaneous</h2>
+                    <label for="Driver Skill">Driver Skill:</label>
+                    <select id="Driver Skill">
+                        <option></option>
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
+                    
+                    <br><br>
+                    
+                    <label for="Defense Skill">Defense Skill:</label>
+                    <select id="Defense Skill">
+                        <option></option>
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
+                    
+                    <br><br>
+                    
+                    <label for="Comments">Comments:</label>
+                    <br>
+                    <textarea rows="4" cols="30"></textarea>
+                </div>
             </div>
 
             <div class="divOpponent" id="Opponent2"></div>
 
             <div class="divOpponent" id="Opponent3"></div>
-
         </div>
 
         <!-- Next Page -->
 
         <div id="Strategy" class="infoBox" style="display:none">
+
+            <br>
 
             <h2>Recommended Strategy</h2>
 
