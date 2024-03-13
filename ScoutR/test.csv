@@ -1,0 +1,469 @@
+Scouter Name,Event,Match Level,Match Num,Robot,Team,Auto Amp,Auto Spkr,Compatible,Teleop Amp,Teleop Spkr,Harmony,Queue Time,Trap,Driver,Defense,Comments
+Olivia,2024necmp1,Qualifiers,1,R1,5902,3,2,Yes,0,6,None,5-15,No,Medium,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,1,R2,663,2,3,Yes,6,4,Parked,15-30,No,Not Observed,Low,TEXT
+Olivia,2024necmp1,Qualifiers,1,R3,7913,3,2,No,4,3,None,15-30,No,High,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,1,B1,1831,0,3,No,6,6,Harmony,5-15,Yes,Medium,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,1,B2,4761,1,3,No,3,6,Soloist,Not Observed,Yes,Not Observed,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,1,B3,1058,0,0,Yes,0,0,Soloist,0-5,No,Low,Not Observed,TEXT
+River,2024necmp1,Qualifiers,2,R1,1307,0,2,No,2,5,Parked,>30,No,Not Observed,High,TEXT
+River,2024necmp1,Qualifiers,2,R2,8023,2,2,Yes,4,3,Parked,0-5,No,High,High,TEXT
+River,2024necmp1,Qualifiers,2,R3,501,3,3,Yes,6,5,None,5-15,Yes,Low,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,2,B1,6690,1,1,No,2,4,None,Not Observed,Yes,Not Observed,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,2,B2,2876,1,2,No,0,5,None,Not Observed,Yes,Low,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,2,B3,1277,2,1,Yes,2,1,None,15-30,No,Medium,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,3,R1,3467,1,0,No,6,2,None,0-5,No,Medium,Low,TEXT
+Nate,2024necmp1,Qualifiers,3,R2,4925,1,0,Yes,5,3,Parked,15-30,No,Not Observed,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,3,R3,467,1,1,Yes,2,4,Parked,Not Observed,No,Not Observed,Low,TEXT
+River,2024necmp1,Qualifiers,3,B1,1073,0,2,Yes,4,1,Soloist,None,No,Medium,Not Observed,TEXT
+River,2024necmp1,Qualifiers,3,B2,8708,3,3,Yes,4,0,Parked,5-15,No,Medium,Not Observed,TEXT
+River,2024necmp1,Qualifiers,3,B3,6161,0,1,Yes,3,1,Not Observed,5-15,No,Not Observed,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,4,R1,238,2,2,No,3,1,None,None,Yes,Not Observed,Low,TEXT
+Olivia,2024necmp1,Qualifiers,4,R2,5491,3,2,Yes,0,1,Not Observed,Not Observed,Yes,Low,Low,TEXT
+Olivia,2024necmp1,Qualifiers,4,R3,151,0,2,Yes,5,4,None,15-30,Yes,Low,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,4,B1,3597,2,0,No,4,1,Not Observed,None,Yes,Not Observed,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,4,B2,3566,0,2,Yes,4,2,None,5-15,Yes,Medium,Medium,TEXT
+Nate,2024necmp1,Qualifiers,4,B3,811,1,1,Yes,3,3,Parked,0-5,Yes,Low,Medium,TEXT
+River,2024necmp1,Qualifiers,5,R1,1247,0,2,No,1,3,Harmony,15-30,No,Not Observed,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,5,R2,95,1,0,Yes,6,1,Soloist,Not Observed,Yes,Medium,High,TEXT
+Olivia,2024necmp1,Qualifiers,5,R3,5687,0,3,No,1,3,Soloist,5-15,Yes,Not Observed,High,TEXT
+Olivia,2024necmp1,Qualifiers,5,B1,1512,1,0,No,1,4,None,>30,No,Low,Medium,TEXT
+Nate,2024necmp1,Qualifiers,5,B2,6762,3,3,Yes,5,2,Harmony,>30,No,High,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,5,B3,6933,0,0,Yes,2,4,Harmony,None,No,Not Observed,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,6,R1,4564,2,1,No,1,1,None,None,Yes,Medium,Medium,TEXT
+River,2024necmp1,Qualifiers,6,R2,7314,0,0,Yes,0,2,None,0-5,No,Not Observed,Not Observed,TEXT
+River,2024necmp1,Qualifiers,6,R3,3451,0,1,Yes,6,4,Not Observed,Not Observed,No,High,Not Observed,TEXT
+River,2024necmp1,Qualifiers,6,B1,8724,1,1,No,0,6,Soloist,Not Observed,No,High,Low,TEXT
+Olivia,2024necmp1,Qualifiers,6,B2,6763,3,1,No,0,5,None,15-30,Yes,Low,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,6,B3,4041,2,2,Yes,6,6,Soloist,Not Observed,Yes,Low,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,7,R1,501,1,2,Yes,3,2,Parked,>30,Yes,High,Medium,TEXT
+Nate,2024necmp1,Qualifiers,7,R2,1922,2,1,No,1,0,None,>30,Yes,Medium,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,7,R3,8708,0,0,No,2,5,Soloist,Not Observed,Yes,Medium,Medium,TEXT
+Nate,2024necmp1,Qualifiers,7,B1,1831,0,3,No,4,5,None,5-15,Yes,High,Not Observed,TEXT
+River,2024necmp1,Qualifiers,7,B2,138,1,0,Yes,0,3,Not Observed,0-5,Yes,Not Observed,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,7,B3,131,0,2,Yes,5,1,Not Observed,None,No,Not Observed,Not Observed,TEXT
+River,2024necmp1,Qualifiers,8,R1,2876,1,3,Yes,3,4,Harmony,5-15,No,Not Observed,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,8,R2,4761,2,3,No,2,0,Not Observed,Not Observed,No,Medium,Low,TEXT
+Olivia,2024necmp1,Qualifiers,8,R3,8023,2,0,No,5,2,Parked,Not Observed,No,Low,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,8,B1,811,1,0,No,2,1,Harmony,15-30,No,High,Low,TEXT
+Nate,2024necmp1,Qualifiers,8,B2,238,3,1,No,1,2,Not Observed,5-15,Yes,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,8,B3,1073,1,1,Yes,5,0,None,None,No,Not Observed,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,9,R1,663,2,2,Yes,1,3,Parked,None,No,High,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,9,R2,1058,2,2,No,2,0,Parked,Not Observed,No,High,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,9,R3,4925,3,3,No,1,2,None,>30,Yes,Low,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,9,B1,3467,2,2,Yes,2,0,Soloist,15-30,No,Low,High,TEXT
+Olivia,2024necmp1,Qualifiers,9,B2,5491,2,2,Yes,4,1,None,None,Yes,Low,Medium,TEXT
+Nate,2024necmp1,Qualifiers,9,B3,6690,0,2,No,4,1,Parked,>30,Yes,Not Observed,Low,TEXT
+Nate,2024necmp1,Qualifiers,10,R1,3451,2,1,No,1,0,None,5-15,Yes,Not Observed,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,10,R2,151,1,1,No,5,4,Soloist,>30,Yes,Not Observed,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,10,R3,7913,0,1,Yes,2,2,None,5-15,No,Low,Medium,TEXT
+River,2024necmp1,Qualifiers,10,B1,1307,3,0,Yes,2,3,Harmony,0-5,Yes,High,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,10,B2,6933,1,2,Yes,6,1,Soloist,0-5,Yes,Not Observed,High,TEXT
+Olivia,2024necmp1,Qualifiers,10,B3,4564,3,1,No,4,2,Soloist,5-15,Yes,Not Observed,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,11,R1,1277,2,2,Yes,4,5,Parked,None,Yes,High,Low,TEXT
+Olivia,2024necmp1,Qualifiers,11,R2,5687,1,1,No,5,4,Soloist,0-5,Yes,Low,High,TEXT
+Nate,2024necmp1,Qualifiers,11,R3,6161,0,1,Yes,5,2,Harmony,15-30,Yes,Not Observed,Low,TEXT
+Nate,2024necmp1,Qualifiers,11,B1,7314,1,2,Yes,5,4,Harmony,None,No,Medium,High,TEXT
+Nate,2024necmp1,Qualifiers,11,B2,3597,2,3,No,3,2,Parked,>30,Yes,Low,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,11,B3,6762,2,2,No,0,0,None,>30,No,Not Observed,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,12,R1,138,3,3,Yes,3,2,Parked,5-15,No,Medium,High,TEXT
+River,2024necmp1,Qualifiers,12,R2,1512,3,2,No,4,6,Parked,5-15,Yes,Low,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,12,R3,6763,2,1,No,3,2,Not Observed,0-5,No,High,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,12,B1,5902,3,3,Yes,0,4,None,>30,No,Not Observed,High,TEXT
+Olivia,2024necmp1,Qualifiers,12,B2,95,1,0,Yes,5,2,Not Observed,>30,Yes,High,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,12,B3,467,1,3,Yes,1,3,Not Observed,15-30,Yes,Medium,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,13,R1,3566,2,0,Yes,5,0,Parked,5-15,No,Medium,High,TEXT
+Nate,2024necmp1,Qualifiers,13,R2,8724,1,1,Yes,3,5,Parked,Not Observed,No,Not Observed,Medium,TEXT
+River,2024necmp1,Qualifiers,13,R3,131,1,3,No,4,5,Soloist,15-30,No,High,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,13,B1,1922,2,3,Yes,4,4,Harmony,>30,No,High,High,TEXT
+Olivia,2024necmp1,Qualifiers,13,B2,1247,1,1,No,1,5,Soloist,5-15,No,Medium,Low,TEXT
+Olivia,2024necmp1,Qualifiers,13,B3,4041,2,0,Yes,4,6,Harmony,>30,No,High,Low,TEXT
+Nate,2024necmp1,Qualifiers,14,R1,8708,0,3,Yes,5,6,None,None,No,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,14,R2,4761,2,3,No,2,1,Not Observed,5-15,No,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,14,R3,3467,1,0,Yes,4,1,Soloist,None,No,Medium,Low,TEXT
+River,2024necmp1,Qualifiers,14,B1,1058,2,2,No,3,4,Soloist,Not Observed,No,Not Observed,Low,TEXT
+River,2024necmp1,Qualifiers,14,B2,8023,3,1,No,5,4,Harmony,None,No,Not Observed,High,TEXT
+River,2024necmp1,Qualifiers,14,B3,5491,1,1,Yes,6,0,None,0-5,Yes,Not Observed,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,15,R1,6933,1,1,Yes,4,4,None,15-30,Yes,Not Observed,High,TEXT
+Olivia,2024necmp1,Qualifiers,15,R2,5687,0,2,No,5,3,Not Observed,15-30,No,Low,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,15,R3,3597,3,0,Yes,1,1,None,Not Observed,Yes,Medium,Medium,TEXT
+Nate,2024necmp1,Qualifiers,15,B1,4564,2,0,Yes,5,4,Parked,None,Yes,Medium,Medium,TEXT
+Nate,2024necmp1,Qualifiers,15,B2,811,2,2,Yes,2,2,Harmony,None,No,Low,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,15,B3,2876,2,1,Yes,3,3,Parked,>30,Yes,Low,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,16,R1,6161,0,0,Yes,6,0,Harmony,0-5,Yes,Low,Medium,TEXT
+River,2024necmp1,Qualifiers,16,R2,238,1,3,No,0,5,Parked,15-30,Yes,Low,Medium,TEXT
+River,2024necmp1,Qualifiers,16,R3,4925,0,3,No,1,5,None,0-5,No,High,Low,TEXT
+Olivia,2024necmp1,Qualifiers,16,B1,1512,1,0,No,4,4,Not Observed,>30,Yes,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,16,B2,3451,1,0,No,6,5,Harmony,Not Observed,Yes,Not Observed,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,16,B3,501,1,0,No,2,6,Harmony,5-15,Yes,High,High,TEXT
+Nate,2024necmp1,Qualifiers,17,R1,6763,1,3,Yes,0,3,Harmony,0-5,Yes,High,High,TEXT
+Nate,2024necmp1,Qualifiers,17,R2,663,2,0,Yes,0,4,Harmony,Not Observed,Yes,High,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,17,R3,7314,0,0,No,0,3,Soloist,>30,No,High,High,TEXT
+River,2024necmp1,Qualifiers,17,B1,138,0,0,Yes,6,6,Soloist,0-5,No,Low,Low,TEXT
+Olivia,2024necmp1,Qualifiers,17,B2,1247,3,2,Yes,5,6,Parked,None,No,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,17,B3,5902,2,2,Yes,0,4,Not Observed,0-5,No,Not Observed,Low,TEXT
+Olivia,2024necmp1,Qualifiers,18,R1,6762,1,0,No,5,2,Parked,Not Observed,Yes,Not Observed,Low,TEXT
+Nate,2024necmp1,Qualifiers,18,R2,1831,2,2,No,4,4,Harmony,0-5,No,Low,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,18,R3,1073,3,0,No,6,6,Harmony,Not Observed,Yes,Medium,High,TEXT
+Nate,2024necmp1,Qualifiers,18,B1,467,0,1,Yes,0,1,None,Not Observed,No,Not Observed,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,18,B2,4041,0,2,Yes,5,5,Parked,Not Observed,No,Not Observed,High,TEXT
+River,2024necmp1,Qualifiers,18,B3,1307,2,0,Yes,6,1,Soloist,0-5,No,High,Not Observed,TEXT
+River,2024necmp1,Qualifiers,19,R1,131,0,0,No,4,0,Soloist,None,Yes,Medium,High,TEXT
+Olivia,2024necmp1,Qualifiers,19,R2,1922,2,1,Yes,4,3,Parked,None,Yes,Low,Low,TEXT
+Olivia,2024necmp1,Qualifiers,19,R3,151,0,3,Yes,2,4,None,Not Observed,No,Low,Low,TEXT
+Olivia,2024necmp1,Qualifiers,19,B1,8724,2,1,No,0,5,Parked,None,Yes,High,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,19,B2,7913,2,2,No,0,5,Harmony,0-5,No,Not Observed,Low,TEXT
+Nate,2024necmp1,Qualifiers,19,B3,1277,3,2,Yes,2,2,Harmony,5-15,No,Not Observed,High,TEXT
+Nate,2024necmp1,Qualifiers,20,R1,3566,0,0,No,2,4,Not Observed,0-5,Yes,Not Observed,Not Observed,TEXT
+River,2024necmp1,Qualifiers,20,R2,3451,2,2,No,1,2,None,0-5,No,Medium,Low,TEXT
+River,2024necmp1,Qualifiers,20,R3,4761,2,1,Yes,5,4,Soloist,0-5,No,Low,Medium,TEXT
+River,2024necmp1,Qualifiers,20,B1,95,1,1,No,2,1,None,5-15,No,High,Low,TEXT
+Olivia,2024necmp1,Qualifiers,20,B2,6690,0,1,No,5,2,Not Observed,Not Observed,Yes,Not Observed,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,20,B3,1512,2,0,No,5,6,Soloist,5-15,Yes,Medium,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,21,R1,4564,1,1,Yes,0,5,Soloist,5-15,Yes,High,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,21,R2,8708,3,1,No,6,3,Parked,>30,No,Medium,High,TEXT
+Nate,2024necmp1,Qualifiers,21,R3,1247,1,2,Yes,2,5,None,5-15,Yes,High,Medium,TEXT
+Nate,2024necmp1,Qualifiers,21,B1,3597,3,1,Yes,3,1,Parked,None,Yes,High,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,21,B2,2876,0,2,Yes,6,4,Soloist,5-15,Yes,Low,High,TEXT
+Olivia,2024necmp1,Qualifiers,21,B3,663,0,2,No,4,1,Not Observed,0-5,No,Medium,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,22,R1,4925,0,0,Yes,5,1,Not Observed,Not Observed,Yes,Medium,High,TEXT
+Olivia,2024necmp1,Qualifiers,22,R2,5687,1,0,Yes,1,2,Harmony,Not Observed,No,Not Observed,Low,TEXT
+Nate,2024necmp1,Qualifiers,22,R3,8023,2,1,No,5,0,Harmony,15-30,No,Low,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,22,B1,238,2,1,No,1,4,Soloist,>30,No,Not Observed,High,TEXT
+Nate,2024necmp1,Qualifiers,22,B2,1307,1,2,Yes,2,6,Parked,0-5,Yes,Low,Not Observed,TEXT
+River,2024necmp1,Qualifiers,22,B3,1058,1,1,No,0,1,Not Observed,0-5,Yes,High,Low,TEXT
+River,2024necmp1,Qualifiers,23,R1,6161,3,1,No,4,6,Parked,0-5,No,Low,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,23,R2,131,1,1,No,6,2,None,None,Yes,Medium,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,23,R3,6763,1,0,No,6,3,None,>30,No,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,23,B1,7314,2,3,No,5,1,None,5-15,Yes,Medium,High,TEXT
+Olivia,2024necmp1,Qualifiers,23,B2,5902,0,0,No,1,1,Soloist,5-15,No,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,23,B3,8724,3,3,No,0,6,Parked,>30,No,Medium,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,24,R1,4041,0,0,Yes,3,2,Parked,None,No,Medium,High,TEXT
+Nate,2024necmp1,Qualifiers,24,R2,95,3,2,Yes,2,5,Harmony,>30,Yes,Not Observed,High,TEXT
+River,2024necmp1,Qualifiers,24,R3,5491,1,1,No,6,3,Not Observed,None,Yes,Not Observed,Not Observed,TEXT
+River,2024necmp1,Qualifiers,24,B1,151,3,2,Yes,4,2,None,None,No,Low,Medium,TEXT
+River,2024necmp1,Qualifiers,24,B2,1073,0,1,No,0,0,None,0-5,Yes,High,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,24,B3,6690,0,1,Yes,4,6,Parked,None,Yes,Low,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,25,R1,467,0,2,Yes,0,3,Not Observed,15-30,Yes,Medium,High,TEXT
+Olivia,2024necmp1,Qualifiers,25,R2,501,2,2,Yes,0,3,Harmony,5-15,No,High,High,TEXT
+Nate,2024necmp1,Qualifiers,25,R3,6762,0,1,No,3,6,Parked,None,No,Not Observed,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,25,B1,1922,0,0,Yes,4,4,Parked,Not Observed,No,Low,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,25,B2,811,2,3,Yes,0,4,Not Observed,>30,No,High,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,25,B3,7913,1,2,Yes,4,6,Not Observed,15-30,No,High,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,26,R1,138,2,2,Yes,4,4,Not Observed,0-5,Yes,Low,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,26,R2,6933,3,1,No,4,6,Parked,None,Yes,Medium,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,26,R3,3467,2,1,Yes,2,5,Harmony,None,Yes,Low,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,26,B1,3566,2,0,No,3,5,Parked,0-5,No,Medium,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,26,B2,1831,2,2,Yes,4,5,Parked,Not Observed,Yes,Medium,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,26,B3,1277,2,0,Yes,1,1,Not Observed,5-15,Yes,Medium,Low,TEXT
+River,2024necmp1,Qualifiers,27,R1,8023,0,1,Yes,2,5,None,>30,No,Not Observed,Not Observed,TEXT
+River,2024necmp1,Qualifiers,27,R2,3597,0,1,No,3,5,Not Observed,0-5,No,Medium,High,TEXT
+River,2024necmp1,Qualifiers,27,R3,1512,2,2,No,0,4,Soloist,Not Observed,Yes,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,27,B1,3451,1,2,No,6,5,Soloist,>30,Yes,High,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,27,B2,1307,1,0,Yes,2,2,Harmony,>30,Yes,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,27,B3,8724,2,2,No,5,0,Soloist,0-5,No,High,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,28,R1,2876,0,0,Yes,1,4,Parked,15-30,Yes,Not Observed,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,28,R2,131,2,1,Yes,0,5,Parked,>30,Yes,Medium,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,28,R3,238,2,3,Yes,6,5,None,None,No,Medium,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,28,B1,4761,2,3,Yes,2,0,Parked,5-15,Yes,Low,Not Observed,TEXT
+River,2024necmp1,Qualifiers,28,B2,151,0,2,Yes,1,6,Parked,>30,No,Medium,Medium,TEXT
+River,2024necmp1,Qualifiers,28,B3,663,3,2,Yes,4,3,Not Observed,Not Observed,Yes,Not Observed,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,29,R1,7913,1,1,No,2,3,Soloist,Not Observed,No,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,29,R2,1058,0,2,No,1,0,Soloist,None,No,Medium,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,29,R3,8708,0,2,Yes,3,3,Parked,5-15,Yes,Low,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,29,B1,7314,2,0,Yes,0,3,Soloist,15-30,Yes,Low,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,29,B2,6161,3,0,No,4,2,Harmony,>30,No,Low,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,29,B3,95,2,2,No,6,0,None,>30,No,Medium,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,30,R1,811,1,3,Yes,0,4,Harmony,>30,No,High,High,TEXT
+Olivia,2024necmp1,Qualifiers,30,R2,1831,0,2,No,4,2,Parked,15-30,No,Low,Low,TEXT
+Olivia,2024necmp1,Qualifiers,30,R3,6763,2,2,Yes,3,4,Parked,Not Observed,No,Low,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,30,B1,1247,1,1,Yes,0,0,None,0-5,No,Low,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,30,B2,4925,2,1,No,3,1,Soloist,0-5,No,High,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,30,B3,1277,2,2,No,2,2,Parked,None,No,High,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,31,R1,5902,0,2,Yes,3,1,Soloist,Not Observed,Yes,High,Low,TEXT
+River,2024necmp1,Qualifiers,31,R2,6690,1,2,No,1,6,Soloist,15-30,No,Medium,Not Observed,TEXT
+River,2024necmp1,Qualifiers,31,R3,4564,3,0,Yes,5,4,Soloist,>30,Yes,Not Observed,Low,TEXT
+River,2024necmp1,Qualifiers,31,B1,5491,0,2,Yes,6,1,Parked,None,Yes,Medium,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,31,B2,467,0,2,No,2,3,Parked,>30,Yes,Low,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,31,B3,1922,0,2,No,1,0,Harmony,Not Observed,Yes,Medium,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,32,R1,3566,1,2,Yes,1,1,Soloist,0-5,No,Not Observed,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,32,R2,6762,3,3,Yes,4,3,Harmony,5-15,No,Not Observed,High,TEXT
+Nate,2024necmp1,Qualifiers,32,R3,3467,1,1,No,1,4,Harmony,0-5,No,Not Observed,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,32,B1,5687,1,0,Yes,3,0,Not Observed,0-5,No,Low,Low,TEXT
+River,2024necmp1,Qualifiers,32,B2,501,2,2,Yes,2,5,Harmony,>30,No,High,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,32,B3,138,1,1,No,6,0,None,0-5,Yes,Not Observed,Not Observed,TEXT
+River,2024necmp1,Qualifiers,33,R1,1073,0,1,No,5,6,Not Observed,5-15,No,High,Low,TEXT
+Olivia,2024necmp1,Qualifiers,33,R2,663,1,3,Yes,2,0,Soloist,None,Yes,Low,High,TEXT
+Olivia,2024necmp1,Qualifiers,33,R3,4041,2,1,No,2,1,None,0-5,Yes,Medium,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,33,B1,6933,2,0,No,4,4,Not Observed,>30,Yes,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,33,B2,6161,2,2,No,4,3,Soloist,0-5,No,High,High,TEXT
+Nate,2024necmp1,Qualifiers,33,B3,8724,0,2,Yes,3,3,Harmony,Not Observed,No,Not Observed,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,34,R1,8708,0,2,No,0,6,None,>30,No,Medium,Medium,TEXT
+River,2024necmp1,Qualifiers,34,R2,95,2,1,Yes,2,4,Harmony,5-15,No,Not Observed,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,34,R3,3451,1,2,Yes,6,1,Soloist,None,Yes,Not Observed,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,34,B1,1831,2,0,No,5,1,Soloist,Not Observed,Yes,Medium,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,34,B2,8023,2,3,No,5,1,Soloist,>30,No,High,Medium,TEXT
+Nate,2024necmp1,Qualifiers,34,B3,151,3,3,Yes,3,0,Soloist,0-5,Yes,Not Observed,Medium,TEXT
+Nate,2024necmp1,Qualifiers,35,R1,1247,0,1,Yes,2,3,None,>30,No,Not Observed,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,35,R2,6763,0,2,No,0,2,Not Observed,15-30,Yes,Medium,Not Observed,TEXT
+River,2024necmp1,Qualifiers,35,R3,238,2,3,No,2,2,Soloist,>30,Yes,Medium,Medium,TEXT
+River,2024necmp1,Qualifiers,35,B1,7913,1,1,No,3,6,Harmony,None,No,Low,Not Observed,TEXT
+River,2024necmp1,Qualifiers,35,B2,467,0,1,Yes,6,3,Soloist,15-30,No,Medium,Low,TEXT
+Olivia,2024necmp1,Qualifiers,35,B3,4761,0,0,No,0,5,Not Observed,Not Observed,No,Not Observed,High,TEXT
+Olivia,2024necmp1,Qualifiers,36,R1,1922,2,1,Yes,3,3,Harmony,Not Observed,No,Low,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,36,R2,1277,3,1,No,0,1,None,>30,Yes,Not Observed,Low,TEXT
+Nate,2024necmp1,Qualifiers,36,R3,3597,0,2,No,0,0,Not Observed,None,Yes,High,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,36,B1,6690,1,2,No,5,1,None,Not Observed,Yes,Not Observed,Medium,TEXT
+Nate,2024necmp1,Qualifiers,36,B2,1307,2,1,Yes,6,6,None,5-15,No,Not Observed,Low,TEXT
+River,2024necmp1,Qualifiers,36,B3,4925,2,3,No,2,3,Not Observed,15-30,Yes,Medium,High,TEXT
+River,2024necmp1,Qualifiers,37,R1,6762,0,0,No,4,5,Harmony,5-15,Yes,Medium,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,37,R2,811,2,0,Yes,4,4,Parked,0-5,No,Low,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,37,R3,138,0,0,Yes,5,1,Soloist,Not Observed,Yes,Low,Low,TEXT
+Olivia,2024necmp1,Qualifiers,37,B1,3467,0,0,Yes,3,4,Not Observed,15-30,No,Low,Low,TEXT
+Olivia,2024necmp1,Qualifiers,37,B2,1058,1,0,No,1,5,None,None,Yes,Not Observed,High,TEXT
+Nate,2024necmp1,Qualifiers,37,B3,4041,0,0,No,0,2,Soloist,15-30,No,Not Observed,High,TEXT
+Nate,2024necmp1,Qualifiers,38,R1,4564,3,0,Yes,0,2,Not Observed,15-30,Yes,Medium,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,38,R2,1512,1,2,No,5,0,None,15-30,Yes,Low,Low,TEXT
+River,2024necmp1,Qualifiers,38,R3,5491,1,1,No,2,4,Parked,5-15,No,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,38,B1,131,2,3,Yes,0,2,Not Observed,Not Observed,Yes,Medium,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,38,B2,7314,0,1,No,2,1,Parked,5-15,No,High,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,38,B3,501,0,0,No,5,6,Soloist,>30,Yes,Medium,Low,TEXT
+Nate,2024necmp1,Qualifiers,39,R1,1073,2,0,Yes,2,0,Soloist,5-15,No,Not Observed,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,39,R2,6933,2,1,Yes,1,5,Not Observed,5-15,No,Low,Medium,TEXT
+Nate,2024necmp1,Qualifiers,39,R3,2876,0,0,No,6,6,Soloist,0-5,Yes,Medium,Low,TEXT
+River,2024necmp1,Qualifiers,39,B1,5687,3,2,No,1,3,Not Observed,5-15,No,Low,Not Observed,TEXT
+River,2024necmp1,Qualifiers,39,B2,3566,2,3,Yes,3,2,None,Not Observed,No,Medium,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,39,B3,5902,1,1,Yes,1,3,Harmony,None,Yes,Medium,High,TEXT
+Olivia,2024necmp1,Qualifiers,40,R1,6161,1,0,No,0,3,Not Observed,>30,No,High,High,TEXT
+Olivia,2024necmp1,Qualifiers,40,R2,7913,2,0,Yes,6,2,Not Observed,None,No,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,40,R3,1831,2,1,No,5,0,None,15-30,Yes,Not Observed,Medium,TEXT
+Nate,2024necmp1,Qualifiers,40,B1,3597,2,1,No,3,4,Parked,15-30,No,Medium,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,40,B2,4761,2,2,No,5,1,Not Observed,15-30,No,High,Medium,TEXT
+Nate,2024necmp1,Qualifiers,40,B3,6690,2,3,Yes,4,3,None,None,No,Medium,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,41,R1,4925,1,1,No,4,2,None,15-30,Yes,Medium,Medium,TEXT
+River,2024necmp1,Qualifiers,41,R2,151,3,2,No,0,3,None,None,Yes,Low,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,41,R3,95,0,0,Yes,0,5,Harmony,0-5,Yes,Medium,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,41,B1,663,1,0,Yes,2,5,Parked,Not Observed,Yes,Medium,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,41,B2,6762,2,1,No,2,4,Not Observed,15-30,Yes,Low,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,41,B3,8724,2,3,No,1,0,Harmony,Not Observed,No,Low,High,TEXT
+Nate,2024necmp1,Qualifiers,41,R1,1512,0,2,No,5,1,Not Observed,0-5,Yes,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,42,R2,811,2,1,No,3,2,Not Observed,15-30,No,Not Observed,Low,TEXT
+Nate,2024necmp1,Qualifiers,42,R3,1058,2,1,Yes,5,3,Soloist,0-5,Yes,Not Observed,High,TEXT
+River,2024necmp1,Qualifiers,42,B1,1277,1,0,No,0,0,Not Observed,15-30,No,Low,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,42,B2,131,0,1,No,2,2,None,0-5,No,Not Observed,High,TEXT
+Olivia,2024necmp1,Qualifiers,42,B3,4564,0,1,Yes,6,2,Harmony,Not Observed,Yes,Medium,Low,TEXT
+Olivia,2024necmp1,Qualifiers,42,R1,1073,3,0,Yes,0,0,Harmony,>30,Yes,Low,Medium,TEXT
+Nate,2024necmp1,Qualifiers,43,R2,138,1,1,No,1,0,Soloist,None,No,Not Observed,High,TEXT
+Nate,2024necmp1,Qualifiers,43,R3,1922,0,0,Yes,3,4,Harmony,0-5,No,High,High,TEXT
+Nate,2024necmp1,Qualifiers,43,B1,238,0,0,Yes,6,6,Not Observed,Not Observed,Yes,Medium,Medium,TEXT
+River,2024necmp1,Qualifiers,43,B2,7314,3,3,Yes,6,6,Harmony,Not Observed,No,Low,Medium,TEXT
+River,2024necmp1,Qualifiers,43,B3,5687,3,1,No,1,2,Parked,Not Observed,Yes,High,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,43,R1,1247,1,0,No,0,3,Soloist,5-15,No,Medium,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,44,R2,3467,3,2,No,4,0,Parked,0-5,Yes,High,High,TEXT
+Olivia,2024necmp1,Qualifiers,44,R3,2876,0,2,No,1,4,Parked,>30,Yes,Not Observed,Low,TEXT
+Olivia,2024necmp1,Qualifiers,44,B1,6933,2,2,No,4,5,Not Observed,>30,Yes,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,44,B2,5491,2,0,Yes,4,0,Parked,Not Observed,No,Low,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,44,B3,3451,1,1,No,5,5,Not Observed,15-30,No,Low,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,44,R1,8023,0,1,Yes,4,1,Harmony,15-30,No,Low,High,TEXT
+River,2024necmp1,Qualifiers,45,R2,467,3,0,Yes,5,0,Parked,>30,Yes,Low,Not Observed,TEXT
+River,2024necmp1,Qualifiers,45,R3,6763,1,3,Yes,3,2,Harmony,15-30,Yes,High,High,TEXT
+River,2024necmp1,Qualifiers,45,B1,501,2,2,Yes,3,5,None,>30,No,High,High,TEXT
+Olivia,2024necmp1,Qualifiers,45,B2,4041,1,2,Yes,3,6,Harmony,5-15,No,Medium,High,TEXT
+Olivia,2024necmp1,Qualifiers,45,B3,3566,2,0,No,1,2,Not Observed,>30,No,Medium,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,45,R1,1307,3,1,No,6,6,Harmony,5-15,No,Medium,High,TEXT
+Nate,2024necmp1,Qualifiers,46,R2,5902,0,1,No,5,4,None,15-30,Yes,High,High,TEXT
+Nate,2024necmp1,Qualifiers,46,R3,811,3,0,Yes,3,3,Soloist,5-15,Yes,High,High,TEXT
+Nate,2024necmp1,Qualifiers,46,B1,8724,1,2,No,2,3,Not Observed,Not Observed,Yes,High,Medium,TEXT
+River,2024necmp1,Qualifiers,46,B2,8708,1,1,Yes,0,5,Harmony,0-5,No,Low,Low,TEXT
+Olivia,2024necmp1,Qualifiers,46,B3,3597,1,1,No,1,2,Parked,>30,No,Low,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,46,R1,663,1,2,Yes,3,1,Harmony,Not Observed,Yes,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,47,R2,238,3,1,No,4,6,Harmony,None,Yes,Medium,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,47,R3,6690,1,1,No,1,3,Not Observed,15-30,No,Medium,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,47,B1,5687,2,0,Yes,6,3,Soloist,>30,No,Medium,High,TEXT
+Nate,2024necmp1,Qualifiers,47,B2,1512,2,2,Yes,3,3,Not Observed,None,Yes,Low,Not Observed,TEXT
+River,2024necmp1,Qualifiers,47,B3,7913,0,3,Yes,4,3,None,0-5,Yes,Not Observed,High,TEXT
+River,2024necmp1,Qualifiers,47,R1,4761,2,2,Yes,1,5,Soloist,15-30,Yes,Low,Medium,TEXT
+River,2024necmp1,Qualifiers,48,R2,1073,0,2,No,1,0,Harmony,None,Yes,Not Observed,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,48,R3,7314,1,3,No,3,1,Soloist,Not Observed,No,Low,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,48,B1,1922,0,1,Yes,5,6,Not Observed,15-30,No,Not Observed,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,48,B2,4564,0,0,No,5,6,Harmony,>30,No,Low,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,48,B3,3467,1,1,Yes,0,4,Soloist,15-30,No,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,48,R1,131,2,2,No,5,4,Not Observed,>30,No,Not Observed,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,49,R2,1058,1,2,No,4,5,None,15-30,Yes,Not Observed,Low,TEXT
+River,2024necmp1,Qualifiers,49,R3,467,1,2,Yes,3,4,Soloist,0-5,Yes,Medium,High,TEXT
+River,2024necmp1,Qualifiers,49,B1,501,0,0,No,2,4,Harmony,15-30,Yes,Not Observed,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,49,B2,4925,2,0,Yes,4,3,Harmony,15-30,No,Medium,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,49,B3,6933,0,0,No,6,6,Soloist,5-15,No,Medium,Low,TEXT
+Olivia,2024necmp1,Qualifiers,49,R1,5491,3,2,No,1,6,Not Observed,5-15,No,Low,Low,TEXT
+Olivia,2024necmp1,Qualifiers,50,R2,5902,0,1,Yes,5,5,Not Observed,15-30,Yes,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,50,R3,1831,1,1,No,2,4,Soloist,Not Observed,No,Not Observed,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,50,B1,8023,1,2,Yes,6,4,Harmony,Not Observed,Yes,Not Observed,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,50,B2,3451,1,0,No,1,0,Not Observed,None,Yes,Low,High,TEXT
+River,2024necmp1,Qualifiers,50,B3,6762,1,0,Yes,6,5,Harmony,5-15,Yes,Low,High,TEXT
+Olivia,2024necmp1,Qualifiers,50,R1,138,2,3,Yes,4,6,Not Observed,5-15,Yes,Not Observed,High,TEXT
+Olivia,2024necmp1,Qualifiers,51,R2,3566,0,0,Yes,4,2,Not Observed,>30,Yes,Low,High,TEXT
+Olivia,2024necmp1,Qualifiers,51,R3,1307,1,3,No,5,1,None,0-5,Yes,Medium,Low,TEXT
+Nate,2024necmp1,Qualifiers,51,B1,151,0,0,No,1,0,Harmony,15-30,No,High,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,51,B2,6161,2,3,No,2,0,Harmony,None,No,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,51,B3,1247,0,1,No,1,0,Not Observed,Not Observed,Yes,Low,Low,TEXT
+River,2024necmp1,Qualifiers,51,R1,8708,2,3,Yes,0,1,Not Observed,>30,Yes,High,Medium,TEXT
+River,2024necmp1,Qualifiers,52,R2,4041,1,1,Yes,1,3,None,Not Observed,No,High,High,TEXT
+River,2024necmp1,Qualifiers,52,R3,2876,1,2,No,0,2,Soloist,None,Yes,Not Observed,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,52,B1,6763,2,0,Yes,2,4,None,0-5,Yes,Medium,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,52,B2,1277,1,0,No,3,2,Soloist,0-5,No,Low,Low,TEXT
+Olivia,2024necmp1,Qualifiers,52,B3,95,1,2,No,6,6,Harmony,5-15,No,High,High,TEXT
+Nate,2024necmp1,Qualifiers,52,R1,7913,1,0,No,6,4,Harmony,15-30,No,Low,High,TEXT
+Nate,2024necmp1,Qualifiers,53,R2,3597,2,2,Yes,6,1,Soloist,5-15,No,Low,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,53,R3,131,2,0,Yes,5,1,Parked,Not Observed,Yes,Medium,Low,TEXT
+River,2024necmp1,Qualifiers,53,B1,3467,0,2,No,1,6,Not Observed,5-15,No,Low,Not Observed,TEXT
+River,2024necmp1,Qualifiers,53,B2,1073,1,1,No,3,5,None,None,Yes,High,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,53,B3,1512,1,1,Yes,0,0,Soloist,Not Observed,Yes,Medium,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,53,R1,5491,1,1,Yes,4,3,None,None,No,High,High,TEXT
+Olivia,2024necmp1,Qualifiers,54,R2,8724,2,0,Yes,4,1,Soloist,0-5,Yes,High,High,TEXT
+Olivia,2024necmp1,Qualifiers,54,R3,4925,0,2,No,6,6,Harmony,Not Observed,No,Not Observed,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,54,B1,1831,1,2,Yes,5,1,Soloist,5-15,No,Low,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,54,B2,4564,2,2,No,0,0,Not Observed,15-30,Yes,High,Medium,TEXT
+Nate,2024necmp1,Qualifiers,54,B3,5687,1,2,Yes,2,0,None,None,Yes,Medium,High,TEXT
+River,2024necmp1,Qualifiers,54,R1,6161,0,0,Yes,4,6,Harmony,15-30,Yes,Not Observed,Low,TEXT
+Olivia,2024necmp1,Qualifiers,55,R2,1922,1,2,No,5,5,Soloist,>30,Yes,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,55,R3,1307,3,1,No,6,1,Soloist,5-15,No,Medium,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,55,B1,663,3,0,Yes,1,0,Not Observed,Not Observed,No,High,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,55,B2,8023,0,2,No,0,1,Not Observed,5-15,No,Not Observed,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,55,B3,811,0,1,No,6,5,None,Not Observed,No,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,55,R1,4761,3,3,No,5,6,Parked,5-15,Yes,Not Observed,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,56,R2,4041,0,0,No,4,6,Parked,15-30,Yes,Medium,High,TEXT
+River,2024necmp1,Qualifiers,56,R3,138,2,0,Yes,2,5,Parked,15-30,Yes,Medium,Medium,TEXT
+River,2024necmp1,Qualifiers,56,B1,2876,1,1,No,2,3,Soloist,0-5,No,High,Low,TEXT
+Olivia,2024necmp1,Qualifiers,56,B2,3451,2,1,Yes,0,0,Not Observed,None,No,Not Observed,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,56,B3,467,3,1,No,2,2,Not Observed,Not Observed,No,Medium,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,56,R1,6690,0,1,No,5,0,None,>30,Yes,High,High,TEXT
+Nate,2024necmp1,Qualifiers,57,R2,3566,2,0,Yes,2,3,Not Observed,5-15,No,High,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,57,R3,7314,3,3,No,5,5,Harmony,5-15,No,High,Medium,TEXT
+Nate,2024necmp1,Qualifiers,57,B1,6762,0,0,No,1,6,Soloist,15-30,No,Not Observed,Low,TEXT
+River,2024necmp1,Qualifiers,57,B2,1247,3,2,Yes,2,2,Parked,0-5,No,High,Not Observed,TEXT
+River,2024necmp1,Qualifiers,57,B3,1058,3,2,Yes,6,3,Harmony,0-5,No,Not Observed,Medium,TEXT
+River,2024necmp1,Qualifiers,57,R1,5902,0,3,Yes,2,0,None,None,Yes,High,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,58,R2,1277,0,3,No,3,4,Soloist,Not Observed,Yes,Medium,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,58,R3,6933,1,2,Yes,6,5,Harmony,None,Yes,Not Observed,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,58,B1,95,0,0,Yes,3,3,None,0-5,Yes,Low,Medium,TEXT
+Nate,2024necmp1,Qualifiers,58,B2,501,3,1,No,1,0,Parked,>30,Yes,Medium,Low,TEXT
+Nate,2024necmp1,Qualifiers,58,B3,238,0,1,Yes,5,5,None,5-15,No,Not Observed,Low,TEXT
+Nate,2024necmp1,Qualifiers,58,R1,151,2,2,No,3,3,Not Observed,15-30,Yes,Medium,High,TEXT
+River,2024necmp1,Qualifiers,59,R2,8708,1,3,No,5,5,None,None,Yes,Low,High,TEXT
+Olivia,2024necmp1,Qualifiers,59,R3,811,1,3,No,2,6,Soloist,5-15,No,Medium,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,59,B1,6763,0,2,No,6,1,Parked,15-30,No,High,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,59,B2,1073,1,0,Yes,0,6,Parked,Not Observed,Yes,High,Medium,TEXT
+Nate,2024necmp1,Qualifiers,59,B3,3597,3,2,Yes,3,0,None,5-15,Yes,Low,High,TEXT
+Nate,2024necmp1,Qualifiers,59,R1,5687,1,2,Yes,5,3,None,15-30,No,Not Observed,Medium,TEXT
+Nate,2024necmp1,Qualifiers,60,R2,5491,1,1,Yes,5,2,Not Observed,Not Observed,No,Low,Not Observed,TEXT
+River,2024necmp1,Qualifiers,60,R3,663,1,2,Yes,4,1,Soloist,>30,No,High,Not Observed,TEXT
+River,2024necmp1,Qualifiers,60,B1,467,1,0,Yes,5,6,Not Observed,0-5,Yes,High,Low,TEXT
+River,2024necmp1,Qualifiers,60,B2,138,2,2,No,0,1,Harmony,None,Yes,Low,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,60,B3,6161,0,1,Yes,4,2,Harmony,5-15,Yes,Medium,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,60,R1,4041,2,0,No,0,5,Not Observed,15-30,Yes,Not Observed,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,61,R2,7913,0,1,No,3,6,Parked,>30,No,Not Observed,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,61,R3,7314,1,2,No,0,6,Harmony,15-30,Yes,Medium,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,61,B1,4925,0,1,Yes,6,4,Not Observed,None,No,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,61,B2,2876,1,1,No,6,0,None,>30,Yes,Not Observed,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,61,B3,3566,2,0,Yes,4,2,Not Observed,None,Yes,Not Observed,High,TEXT
+River,2024necmp1,Qualifiers,61,R1,1277,0,0,Yes,3,3,Not Observed,Not Observed,Yes,Medium,High,TEXT
+River,2024necmp1,Qualifiers,62,R2,3467,3,2,No,1,5,Soloist,15-30,Yes,Medium,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,62,R3,8023,1,1,Yes,0,0,Soloist,15-30,No,Medium,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,62,B1,131,1,2,No,3,3,Harmony,0-5,Yes,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,62,B2,5902,1,1,No,4,6,Harmony,Not Observed,Yes,Low,Medium,TEXT
+Nate,2024necmp1,Qualifiers,62,B3,3451,2,2,Yes,4,2,Parked,0-5,Yes,Not Observed,Low,TEXT
+Nate,2024necmp1,Qualifiers,62,R1,1058,2,1,No,0,5,Parked,15-30,Yes,High,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,63,R2,151,1,0,No,0,5,None,5-15,Yes,Low,Medium,TEXT
+River,2024necmp1,Qualifiers,63,R3,501,0,1,Yes,5,0,Parked,Not Observed,Yes,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,63,B1,4761,2,2,Yes,1,5,None,0-5,Yes,Medium,Low,TEXT
+Olivia,2024necmp1,Qualifiers,63,B2,1512,1,1,No,3,3,Parked,>30,No,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,63,B3,1922,1,0,No,2,1,Soloist,0-5,No,High,Medium,TEXT
+Nate,2024necmp1,Qualifiers,63,R1,95,1,3,No,4,1,Not Observed,>30,Yes,Medium,High,TEXT
+Nate,2024necmp1,Qualifiers,64,R2,1307,1,2,No,1,6,Not Observed,>30,Yes,High,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,64,R3,1831,2,2,No,6,1,Soloist,>30,No,Medium,High,TEXT
+River,2024necmp1,Qualifiers,64,B1,6762,1,0,Yes,2,5,Soloist,Not Observed,Yes,High,High,TEXT
+River,2024necmp1,Qualifiers,64,B2,6763,2,3,Yes,6,4,None,None,Yes,Not Observed,Not Observed,TEXT
+River,2024necmp1,Qualifiers,64,B3,4564,1,0,Yes,3,5,Parked,0-5,Yes,Not Observed,Low,TEXT
+Olivia,2024necmp1,Qualifiers,64,R1,6690,2,0,Yes,5,3,Parked,>30,Yes,Low,High,TEXT
+Olivia,2024necmp1,Qualifiers,65,R2,8724,0,1,No,1,0,Soloist,None,Yes,Not Observed,High,TEXT
+Olivia,2024necmp1,Qualifiers,65,R3,1247,0,1,Yes,6,6,Soloist,0-5,Yes,Low,Medium,TEXT
+Nate,2024necmp1,Qualifiers,65,B1,6933,2,0,No,6,4,Not Observed,15-30,No,Medium,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,65,B2,238,0,0,No,5,1,Harmony,None,No,Medium,High,TEXT
+Nate,2024necmp1,Qualifiers,65,B3,8708,0,0,No,3,5,Parked,5-15,No,Medium,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,65,R1,3451,1,0,Yes,6,6,None,Not Observed,No,Low,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,66,R2,3597,0,0,No,0,2,Soloist,Not Observed,No,Low,Low,TEXT
+River,2024necmp1,Qualifiers,66,R3,138,1,0,No,3,1,Not Observed,15-30,Yes,Low,Low,TEXT
+Olivia,2024necmp1,Qualifiers,66,B1,4925,2,1,Yes,0,6,None,0-5,No,Low,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,66,B2,7913,0,1,Yes,1,2,Harmony,>30,No,Low,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,66,B3,1073,0,0,No,1,0,None,None,Yes,Medium,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,66,R1,501,3,0,Yes,0,4,Harmony,15-30,Yes,Medium,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,67,R2,3467,2,0,Yes,2,2,Soloist,None,Yes,Medium,Medium,TEXT
+Nate,2024necmp1,Qualifiers,67,R3,5902,3,2,No,2,6,Harmony,>30,No,Not Observed,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,67,B1,4041,3,1,No,5,2,Soloist,Not Observed,Yes,Not Observed,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,67,B2,5687,3,1,No,1,2,Parked,15-30,No,Not Observed,Low,TEXT
+Olivia,2024necmp1,Qualifiers,67,B3,151,1,2,No,2,3,Harmony,15-30,No,High,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,67,R1,1307,0,0,Yes,6,2,Not Observed,0-5,Yes,High,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,68,R2,1277,2,0,No,2,6,None,None,Yes,Not Observed,Medium,TEXT
+Nate,2024necmp1,Qualifiers,68,R3,6762,0,2,No,2,0,Harmony,15-30,No,Not Observed,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,68,B1,5491,2,1,Yes,6,3,Parked,5-15,Yes,Low,Medium,TEXT
+River,2024necmp1,Qualifiers,68,B2,131,2,2,Yes,1,4,Not Observed,None,No,High,Medium,TEXT
+River,2024necmp1,Qualifiers,68,B3,4761,2,1,Yes,6,0,Harmony,5-15,No,High,Low,TEXT
+River,2024necmp1,Qualifiers,68,R1,238,2,2,Yes,3,0,None,Not Observed,No,Medium,Low,TEXT
+Olivia,2024necmp1,Qualifiers,69,R2,4564,1,1,Yes,6,1,Not Observed,0-5,No,Low,High,TEXT
+Olivia,2024necmp1,Qualifiers,69,R3,3566,0,1,Yes,5,0,Soloist,None,No,Not Observed,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,69,B1,8708,0,0,No,3,4,Soloist,5-15,No,High,Medium,TEXT
+Nate,2024necmp1,Qualifiers,69,B2,1831,3,3,Yes,4,0,None,None,No,Not Observed,Low,TEXT
+Nate,2024necmp1,Qualifiers,69,B3,663,0,0,Yes,1,2,Soloist,15-30,No,Medium,High,TEXT
+Nate,2024necmp1,Qualifiers,69,R1,7314,3,1,No,2,2,Not Observed,Not Observed,No,Medium,Low,TEXT
+River,2024necmp1,Qualifiers,70,R2,1247,2,2,Yes,6,5,Harmony,5-15,Yes,High,Low,TEXT
+River,2024necmp1,Qualifiers,70,R3,6933,2,3,No,1,4,Parked,0-5,Yes,High,High,TEXT
+River,2024necmp1,Qualifiers,70,B1,95,0,1,Yes,0,6,Harmony,5-15,No,Medium,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,70,B2,1922,0,0,Yes,3,1,Harmony,5-15,Yes,High,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,70,B3,8023,2,0,Yes,0,6,None,5-15,No,Not Observed,High,TEXT
+Olivia,2024necmp1,Qualifiers,70,R1,8724,1,2,Yes,1,6,None,>30,Yes,High,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,71,R2,467,2,1,Yes,1,4,Parked,0-5,Yes,Medium,High,TEXT
+Nate,2024necmp1,Qualifiers,71,R3,1512,0,3,No,1,1,Parked,5-15,Yes,High,Low,TEXT
+Nate,2024necmp1,Qualifiers,71,B1,1058,1,0,Yes,5,3,None,Not Observed,No,Not Observed,High,TEXT
+River,2024necmp1,Qualifiers,71,B2,2876,2,3,No,6,2,None,>30,Yes,Medium,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,71,B3,6161,2,3,Yes,2,4,Not Observed,>30,No,Not Observed,Low,TEXT
+Olivia,2024necmp1,Qualifiers,71,R1,6763,1,1,Yes,1,4,Soloist,None,No,Not Observed,Low,TEXT
+Olivia,2024necmp1,Qualifiers,72,R2,6690,1,0,Yes,3,4,None,15-30,Yes,High,High,TEXT
+Nate,2024necmp1,Qualifiers,72,R3,5687,0,0,No,4,5,Harmony,5-15,Yes,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,72,B1,811,3,1,No,3,1,None,None,Yes,Medium,Low,TEXT
+Nate,2024necmp1,Qualifiers,72,B2,3467,3,3,Yes,0,0,Harmony,Not Observed,No,High,Medium,TEXT
+River,2024necmp1,Qualifiers,72,B3,131,2,2,Yes,6,4,Not Observed,15-30,No,High,Not Observed,TEXT
+River,2024necmp1,Qualifiers,72,R1,4041,2,1,Yes,3,4,Not Observed,None,Yes,Low,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,73,R2,6762,0,1,Yes,1,1,Not Observed,5-15,Yes,Not Observed,Low,TEXT
+Olivia,2024necmp1,Qualifiers,73,R3,5902,2,1,No,6,3,Parked,None,No,Medium,Low,TEXT
+Olivia,2024necmp1,Qualifiers,73,B1,7913,1,3,Yes,3,2,Harmony,5-15,Yes,Medium,Low,TEXT
+Olivia,2024necmp1,Qualifiers,73,B2,138,1,0,No,4,2,Parked,None,No,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,73,B3,238,0,2,No,6,3,Parked,>30,Yes,High,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,73,R1,1277,2,0,Yes,0,2,Parked,0-5,No,Not Observed,High,TEXT
+Nate,2024necmp1,Qualifiers,74,R2,501,1,1,No,5,3,Soloist,>30,Yes,High,High,TEXT
+River,2024necmp1,Qualifiers,74,R3,1073,2,2,Yes,5,1,Not Observed,0-5,No,High,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,74,B1,3451,1,0,Yes,1,2,Parked,15-30,No,Not Observed,Low,TEXT
+River,2024necmp1,Qualifiers,74,B2,663,3,3,No,3,5,Not Observed,None,No,High,Not Observed,TEXT
+Olivia,2024necmp1,Qualifiers,74,B3,1247,3,0,Yes,1,0,Parked,5-15,No,High,High,TEXT
+Olivia,2024necmp1,Qualifiers,74,R1,3597,1,2,Yes,6,1,Soloist,Not Observed,No,Medium,High,TEXT
+Olivia,2024necmp1,Qualifiers,75,R2,4564,1,0,Yes,1,5,Parked,>30,Yes,High,Medium,TEXT
+Nate,2024necmp1,Qualifiers,75,R3,95,0,0,No,3,3,Harmony,>30,No,Low,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,75,B1,8023,0,2,No,2,0,Harmony,>30,No,High,Not Observed,TEXT
+Nate,2024necmp1,Qualifiers,75,B2,6161,0,0,No,2,0,Harmony,15-30,No,High,Medium,TEXT
+River,2024necmp1,Qualifiers,75,B3,3566,0,1,No,2,5,None,0-5,No,Low,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,76,R1,1058,1,0,No,0,5,Soloist,0-5,Yes,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,76,R2,8724,1,2,No,6,6,Harmony,Not Observed,Yes,Medium,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,76,R3,1922,1,2,No,3,0,Not Observed,15-30,Yes,Not Observed,Low,TEXT
+Nate,2024necmp1,Qualifiers,76,B1,2876,0,2,No,1,0,None,5-15,Yes,Low,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,76,B2,6763,0,0,No,6,6,Parked,>30,Yes,High,Did Not Defend,TEXT
+Nate,2024necmp1,Qualifiers,76,B3,5491,0,0,Yes,1,3,None,0-5,No,Medium,Not Observed,TEXT
+River,2024necmp1,Qualifiers,77,R1,467,2,2,No,5,6,Harmony,>30,Yes,High,Not Observed,TEXT
+River,2024necmp1,Qualifiers,77,R2,6690,0,3,No,3,5,Soloist,15-30,Yes,Not Observed,Low,TEXT
+River,2024necmp1,Qualifiers,77,R3,1831,0,1,Yes,5,5,Parked,None,Yes,Low,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,77,B1,151,3,1,Yes,4,2,Parked,15-30,No,High,Medium,TEXT
+Olivia,2024necmp1,Qualifiers,77,B2,7314,0,2,Yes,4,0,Parked,0-5,No,Medium,Did Not Defend,TEXT
+Olivia,2024necmp1,Qualifiers,77,B3,1307,0,1,No,3,6,Parked,None,No,Low,Low,TEXT
+Nate,2024necmp1,Qualifiers,78,R1,811,2,0,No,6,5,Soloist,>30,Yes,Medium,Low,TEXT
+Nate,2024necmp1,Qualifiers,78,R2,6933,1,2,No,4,2,None,None,No,Not Observed,Medium,TEXT
+Nate,2024necmp1,Qualifiers,78,R3,4761,2,3,No,3,6,Parked,None,Yes,Not Observed,High,TEXT
+River,2024necmp1,Qualifiers,78,B1,1512,0,0,No,3,1,Harmony,15-30,Yes,High,High,TEXT
+River,2024necmp1,Qualifiers,78,B2,4925,0,3,No,4,3,Parked,5-15,Yes,Low,Did Not Defend,TEXT
+River,2024necmp1,Qualifiers,78,B3,8708,3,0,Yes,3,6,Parked,0-5,Yes,Not Observed,Did Not Defend,TEXT
