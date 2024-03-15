@@ -2,7 +2,7 @@
 
 # Scouting P.A.S.S.
 
-#### A scouting system for FIRST FRC competitions developed by [PWNAGE - Team #2451](https://pwnagerobotics.org).
+#### A scouting system for FIRST FRC competitions developed by [PWNAGE - Team #2451](https://pwnagerobotics.org). Altered By [Grasshoppers - Team #95](https://www.frcteam95.com).
 
 <a href="https://first95.github.io/ScoutingPASS">Team 95's version Live Demo</a> . <a href="#getting-started">Getting Started</a> . <a href="#faq">FAQ</a>
 
@@ -53,7 +53,7 @@ This repository is hosted on GitHub Pages.  You can view a live version of it he
 <div id="description"></div>
 
 ## Description:
-Scouting PASS is a web page displayed in a browser.  It consists of 5 "swipeable" pages each representing a specific aspect of a FRC match: Pre-Match, Autonomous, Teleop, End Game and Post-Match.  A configuratioin file allows the screens to be easily modified to collect any metrics that are important for your scouting needs.  The scouter can use the "Next" or "Prev" buttons or a swiping motion on touchscreens to move between pages.  A QR code is dynamically generated on the last page.  This QR code can be scanned to transfer the data to your data repository.  The QR code can also be stored for processing later using a screenshot or camera.  Once the data has been transfered, the scout hits the clear button and the form is cleared out and ready for the next match.
+Scouting PASS is a web page displayed in a browser.  It consists of 1 long "swipeable" page, divided into 5 distinct sections, each representing a specific aspect of a FRC match: Pre-Match, Autonomous, Teleop, End Game and Post-Match.  A configuratioin file allows the screens to be easily modified to collect any metrics that are important for your scouting needs. A QR code is dynamically generated after the form has been completed, and a button labeled "Next" at the top has been pressed.  This QR code can be scanned to transfer the data to your data repository.  The QR code can also be stored for processing later using a screenshot or camera.  Once the data has been transfered, the scout hits the clear button and the form is cleared out and ready for the next match.
 
 Configuration is as easy as creating a JSON file with the fields that your scouting team wants to track.  Some fields are common to all teams and years.  The basic fields are:
 * Scouter - who is scouting this robot
@@ -69,11 +69,10 @@ User defined fields can be of several different types:
 * Counter - A counter that can be increased or decreased with a click or touch
 * Radio Buttons - A single choice between several options (Ball pick up: ()Ground ()Loading Bay ()Both ()None)
 * Checkbox - A single on/off or yes/no check box (Exit Start Line?  []Yes if checked)
-* Field Image - Using an image of the field, select positions on the field. (Use to record starting point, or shooting locations)
 
-These should cover most of your scouting team's data collection needs.  PWNAGE's 2020 Infinite Recharge configuration file is included as an example.  The import of the configuration file is in index.html and would need to be updated to import a different configuration file. Only import one configuration file.
+These should cover most of your scouting team's data collection needs. Every Grasshopper's previous configuration files are included as examples.  The import of the configuration file is in index.html and would need to be updated to import a different configuration file. Only import one configuration file.
 
-Since this is a HTML/JavaScript web page, scouters can use almost any device that has a web broswer.  If the device has a touchscreen the screen can be used to swipe back and forth between pages and interact with the data elements.  The webpage only needs to be loaded once.  Once loaded the functionality and data is stored locally in the webpage and doesn't need to be reloaded.  The QR code generation and clear button only resets the form and does not cause the page to reload.  This means that a cellular or WiFi connection is not needed at the competition as long as the webpage is loaded before the event.
+Since this is a HTML/JavaScript web page, scouters can use almost any device that has a web broswer.  If the device has a touchscreen the screen can be used to swipe up and down between pages and interact with the data elements.  The webpage only needs to be loaded once.  Once loaded the functionality and data is stored locally in the webpage and doesn't need to be reloaded.  The QR code generation and clear button only resets the form and does not cause the page to reload.  This means that a cellular or WiFi connection is not needed at the competition as long as the webpage is loaded before the event.
 
 If your team has a The Blue Alliance API access token (See https://www.thebluealliance.com/apidocs) the web page will pull team and schedule information from The Blue Alliance.  Put your access token in the authKey variable in resources/js/TBAInterface.js and when the web page is loaded it will load the data (for the event code in the Event field).  This enables some features on the PreMatch Screen.  With the team information the team name will populate just below the Team # field when the team # field is filled in.  If the schedule information is available when the web page is loaded then when the match and robot fields are populated it will automatically populate the team number and team name for the scouter.  This reduces typo errors when entering the team numbers manually.  (Schedules are usually published before the event a day or two before matches start.  However, it may be delayed for various reasons an may only be published hours or minutes before the start of a competition.)
 
@@ -103,15 +102,15 @@ Note: In order for this to work, the schedule has to be posted to The Blue Allia
 
 ## How We Scout
 
-We have 6 scouts per match.  One for each robot.  Each scout has this web site pre-loaded on their phone or a team tablet.
+We have 2 scouts per match.  One for each alliance.  Each scout has this web site pre-loaded on a team tablet.
 
-The lead scout has a laptop with Excel and a wired hand held scanner in the stands with the scouts.  ([Nadomoo Bur3072 - ~$55](https://www.amazon.com/NADAMOO-Wireless-Barcode-Cordless-Computer/dp/B06Y2RMM51?th=1))
+The lead scout has a laptop with Excel and a wired hand held scanner in the stands with the scouts.  ([Nadomoo Bur3072 - ~$55](https://www.amazon.com/NADAMOO-Wireless-Barcode-Cordless-Computer/dp/B06Y2RMM51?th=1)) Any barcode scanner should work, this is just the one we used.
 
 At the end of each match the lead scout kicks off an Excel macro that pops up an input box. (See an example Excel spreadsheet in the Excel directory)  The scouts show their QR code to the lead scout, one by one, who scans the QR code.  The data from the QR code is parsed and a row is added to the Scouting Data Table in Excel.   If the table doesn't exist, it will create it.
 
 We use custom Excel screens and graphs to determine strategy for each of our matches.
 
-The night before Eliminations we load the Excel data into Tableau where we use the data mining/graphing capabilities to make a pick list.
+We load the Excel data into our "ScoutR" app (written in R), where it is convereted into graphs and readble data. A list is then made manually by the Lead Scout.
 
 The pick list can be modified up to Alliance Selection based on the data that is continued to be collected all the way up to the last match.
 
@@ -145,33 +144,13 @@ JSON is a stickler for commas and brackets.  If you see JSON errors check your J
 <details><summary>What does P.A.S.S. stand for?</summary>
 <br />
 PWNAGE Analytical Strategy System
+(Or G.A.S.S.!)
 </details>
-
-<details><summary>How does the Field Image element work?</summary>
-<br />
-The Field Image element allows tracking of the location of a robot.  It does this by dividing the field into 72 different boxes, 12 boxes (across the longest side of a field) by 6 boxes (across the shortest side of the field).   A box represents a 4.5' x 4.5' square on the field.  Each box is numbered from 1-72 per the diagram below.
-<br />
-<br />
-Field Location Key:
-  
-![Field Location Key](resources/images/field_location_key.png)
-  
-When a scouter clicks on the image the coordinates of the click location are translated into a box and that number is stored into an array.   The array is passed as the data for the field element.  
-  
-The scouter can click as many times as they want and duplicate clicks (boxes) are recorded.  
-  
-This could be used (as in our demo) to collect shooting information and create heat maps for each robot.
-  
-Note: The Auto Start (as) element is special in that it will only keep track of one location.  There can only be one starting location.  Therefore if you click more than once it will only record the last location.
-</details>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-<div id="things-to-add"></div>
 
 ## Things we might want to add someday:
 * Timing Element
 * Pit Scouting
-* More options for processing the QR code
+* More options for processing the QR code (Done!)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 <div id="license"></div>
@@ -180,10 +159,6 @@ Note: The Auto Start (as) element is special in that it will only keep track of 
 Distributed under the GNU GPL v3.0 License. See `LICENSE` for more information.
 
 ## Parsing
-The Example Excel spreadsheet contains macros that will parse the QR code data and insert the values into the spreadsheet in tabular form.
 There may be teams who's laptops don't have excel on them.
 
-Here's a Powershell one-liner that will take the text as it's formatted in the QR code from the clipboard, and convert it into a tab-delimited list of values only,
-for easy pasting into Excel or Google Sheets, likely any spreadsheet program.  This line can be placed in a Shortcut (.Lnk file) in Widows and pinned to the taskbar for easy execution between QR reading and manually pasting into the left-most cell of the first empty row of a spreadsheet:
-
-	C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -noninteractive -Command {((Get-Clipboard).split(";") | Foreach-Object { $_.split("=")[1] }) -join "`t" |  Set-Clipboard}
+Due to this we added tab separated value functionality, so data can be printed into an .csv file (or even notepad). There is an option for using the codes and the macro, but you would have to look at FRC Team PWNAGE's ScoutingPASS to see a functional version of the macro system.
