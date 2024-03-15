@@ -52,9 +52,9 @@ var config_data =
           "b3":"Blue-3"
         }
       },
-      "Team Number": {
+      "Team": {
         "code":"t",
-        "title":"Team Number",
+        "title":"Team",
         "type":"team",
         "min":1,
         "max":99999
@@ -66,12 +66,6 @@ var config_data =
         "title":"Autonomous",
         "type":"divider"
       },
-      "Auton Exits Community?": {
-        "code":"ae",
-        "title":"Leaves Startline?",
-        "type":"bool"
-      },
-
       "Auto Amp Notes Scored": {
         "code":"aa",
         "title": "Amp Notes Scored",
@@ -86,6 +80,11 @@ var config_data =
         "min":0,
         "max":50
       },
+      "Compatible?": {
+        "code":"abs",
+        "title":"Compatible?",
+        "type":"bool"
+      }
     },
     "teleop": {
       "Teleop": {
@@ -100,20 +99,13 @@ var config_data =
         "min":0,
         "max":50
       },
-      "Teleop Muffled Speaker Notes Scored": {
+      "Teleop Speaker Notes Scored": {
         "code":"tms",
-        "title": "Muffled Speaker Notes",
+        "title": "Speaker Notes Scored",
         "type":"counter",
         "min":0,
         "max":50
-      },
-      "Teleop Amped Speaker Notes Scored": {
-        "code":"tas",
-        "title": "Amped Speaker Notes",
-        "type":"counter",
-        "min":0,
-        "max":50
-      },
+      }
     },
     "endgame": {
       "Endgame": {
@@ -152,13 +144,7 @@ var config_data =
         "code":"tr",
         "title":"Trap",
         "type":"bool"
-      },
-      "Spotlit?": {
-        "code":"sl",
-        "title":"Spotlit?",
-        "type":"bool"
-      },
-
+      }
     },
     "postmatch": {
       "Postmatch": {
@@ -183,18 +169,13 @@ var config_data =
         "title": "Defense Skill",
         "type":"radio",
         "choices":{
-          "Didn't Defend":"Didn't Defend<br>",
+          "Didn't Defend":"Did Not Defend<br>",
           "Low":"Low<br>",
           "Medium":"Medium<br>",
           "High":"High<br>",
           "Not Observed":"Not Observed"
         },
         "defaultValue":"Not Observed"
-      },
-      "Button Presser": {
-        "code":"th",
-        "title":"Button Presser?",
-        "type":"bool"
       },
       "Comments": {
         "code":"co",
