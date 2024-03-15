@@ -37,6 +37,19 @@ ui <- fluidPage(
       .shiny-plot-output {
         margin: 10px;
       }
+      .nav-tabs > li > a {
+        color: white;
+      }
+       .nav-tabs > li.active > a,
+      .nav-tabs > li.active > a:focus,
+      .nav-tabs > li.active > a:hover {
+        background-color: #548B54;
+        color: white;
+      }
+      .btn {
+        background-color: #548B54;
+        color: white;
+      }
       ")
     )
   ),
