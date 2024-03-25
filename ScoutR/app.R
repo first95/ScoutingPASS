@@ -98,9 +98,9 @@ ui <- fluidPage(
       ),
       tabPanel("Input",
           br(),
-          fileInput("file", "Load TSV"),
+          fileInput("file", "Load CSV"),
           br(),
-          textAreaInput("tsvInput", "Enter TSV Text", rows = 10, width = 1000),
+          textAreaInput("csvInput", "Enter CSV Text", rows = 10, width = 1000),
           actionButton("update", "Update")
       )
     )
@@ -193,7 +193,7 @@ server <- function(input, output, session){
   })
   
   load_data <- function(file_path) {
-    temp <- read.delim(file_path)
+    temp <- read.csv(file_path)
     file(temp)
     averaged_data <- temp %>%
       group_by(Team) %>%
@@ -209,13 +209,13 @@ server <- function(input, output, session){
   })
   
   observeEvent(input$update, {
-    req(input$file, input$tsvInput)
-    if (nzchar(input$tsvInput)) {
-      write(paste0("\n", input$tsvInput), input$file$datapath, append = TRUE)
+    req(input$file, input$csvInput)
+    if (nzchar(input$csvInput)) {
+      write(paste0("\n", input$csvInput), input$file$datapath, append = TRUE)
     } else {
       return("Text input is empty.")
     }
-    updateTextInput(session, "tsvInput", value = "")
+    updateTextInput(session, "csvInput", value = "")
     data(load_data(input$file$datapath))
   })
 }
