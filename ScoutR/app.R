@@ -4,6 +4,7 @@ library(DescTools)
 library(dplyr)
 library(shinyjs)
 
+ogData <- read.csv(file = "test.csv")
 mode_columns <- c("Compatible", "Harmony", "Queue.Time", "Trap", "Driver", "Defense")
 plot_columns <- c("Auto.Amp", "Auto.Spkr", "Teleop.Amp", "Teleop.Spkr")
 
@@ -12,14 +13,26 @@ mode_func <- function(x) {
   ux[which.max(tabulate(match(x, ux)))]
 }
 
-generate_plot <- function(data = NULL, column_name = NULL, file = NULL) {
+# Mean num cols
+averaged_data <- ogData %>%
+  group_by(Team) %>%
+  summarise(across(plot_columns, ~round(mean(., na.rm = TRUE), 1)))
+
+# Mode char cols
+mode_data <- ogData %>%
+  group_by(Team) %>%
+  summarise(across(all_of(mode_columns), mode_func))
+
+data <- merge(averaged_data, mode_data, by = "Team")
+
+generate_plot <- function(data = NULL, column_name = NULL) {
     plot(data[[column_name]], type = "l", 
          main = column_name,
          col = "palegreen4",
          lwd = 3,
          xlab = "Match", ylab = "Pts",
          xlim = c(1, 12),
-         ylim = c(0, max(file[column_name]))
+         ylim = c(0, max(ogData[[column_name]]))
     )
 }
 
@@ -36,19 +49,6 @@ ui <- fluidPage(
       }
       .shiny-plot-output {
         margin: 10px;
-      }
-      .nav-tabs > li > a {
-        color: white;
-      }
-       .nav-tabs > li.active > a,
-      .nav-tabs > li.active > a:focus,
-      .nav-tabs > li.active > a:hover {
-        background-color: #548B54;
-        color: white;
-      }
-      .btn {
-        background-color: #548B54;
-        color: white;
       }
       ")
     )
@@ -95,26 +95,16 @@ ui <- fluidPage(
             column(4, actionButton("unfavorite_btn", "Remove Selected Row"))
           )
         )
-      ),
-      tabPanel("Input",
-          br(),
-          fileInput("file", "Load TSV"),
-          br(),
-          textAreaInput("tsvInput", "Enter TSV Text", rows = 10, width = 1000),
-          actionButton("update", "Update")
       )
     )
 )
 
-server <- function(input, output, session){
-  
-  data <- reactiveVal(NULL)
-  file <- reactiveVal(NULL)
+server <- function(input, output, session) {
   
   # Render the datatable
   output$table <- renderDT({
     datatable(
-      data(),
+      data,
       selection = "single",
       rownames = FALSE,
       options = list(rowId = "ID")
@@ -125,9 +115,9 @@ server <- function(input, output, session){
   selected_row_data <- reactive({
     selected_row <- input$table_rows_selected
     if (length(selected_row) > 0) {
-      selected_value <- data()[selected_row, "Team"]
+      selected_value <- data[selected_row, "Team"]
       teamName <- selected_value
-      filtered_data <- file()[file()$Team == selected_value, ]
+      filtered_data <- ogData[ogData$Team == selected_value, ]
       filtered_data
     }
   })
@@ -137,16 +127,16 @@ server <- function(input, output, session){
   })
   
   output$plot_1 <- renderPlot({req(input$table_rows_selected)
-    generate_plot(selected_row_data(), plot_columns[1], file())})
+    generate_plot(selected_row_data(), plot_columns[1])})
   output$plot_2 <- renderPlot({req(input$table_rows_selected)
-    generate_plot(selected_row_data(), plot_columns[2], file())})
+    generate_plot(selected_row_data(), plot_columns[2])})
   output$plot_3 <- renderPlot({req(input$table_rows_selected)
-    generate_plot(selected_row_data(), plot_columns[3], file())})
+    generate_plot(selected_row_data(), plot_columns[3])})
   output$plot_4 <- renderPlot({req(input$table_rows_selected)
-    generate_plot(selected_row_data(), plot_columns[4], file())})
+    generate_plot(selected_row_data(), plot_columns[4])})
   
   output$char <- renderDT({
-    datatable(selected_row_data()[c("Match.Num", mode_columns, "Comments")], options = list(pageLength = 6, lengthMenu = c(6,12)))
+    datatable(selected_row_data()[c("Match.Num", mode_columns)], options = list(pageLength = 6, lengthMenu = c(6,12)))
   })
   
   primary <- reactiveValues(data = NULL)
@@ -177,7 +167,7 @@ server <- function(input, output, session){
   output$team_title <- renderText({
     selected_row <- input$table_rows_selected
     if (length(selected_row) > 0) {
-      paste("Team:", data()[selected_row, "Team"])
+      paste("Team:", data[selected_row, "Team"])
     } else {
       "Team"
     }
@@ -192,32 +182,6 @@ server <- function(input, output, session){
     datatable(secondary$data, rownames = FALSE, selection = "single")
   })
   
-  load_data <- function(file_path) {
-    temp <- read.delim(file_path)
-    file(temp)
-    averaged_data <- temp %>%
-      group_by(Team) %>%
-      summarise(across(all_of(plot_columns), ~round(mean(., na.rm = TRUE), 1)))
-    mode_data <- temp %>%
-      group_by(Team) %>%
-      summarise(across(all_of(mode_columns), mode_func))
-    return(merge(averaged_data, mode_data, by = "Team"))
-  }
-  
-  observeEvent(input$file, {
-    data(load_data(input$file$datapath))
-  })
-  
-  observeEvent(input$update, {
-    req(input$file, input$tsvInput)
-    if (nzchar(input$tsvInput)) {
-      write(paste0("\n", input$tsvInput), input$file$datapath, append = TRUE)
-    } else {
-      return("Text input is empty.")
-    }
-    updateTextInput(session, "tsvInput", value = "")
-    data(load_data(input$file$datapath))
-  })
 }
 
 # Run the application 
