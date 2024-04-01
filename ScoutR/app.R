@@ -4,7 +4,7 @@ library(DescTools)
 library(dplyr)
 library(shinyjs)
 
-mode_columns <- c("Compatible", "Harmony", "Queue.Time", "Trap", "Driver", "Defense")
+mode_columns <- c("Compatible", "Harmony", "Trap", "Driver", "Defense")
 plot_columns <- c("Auto.Amp", "Auto.Spkr", "Teleop.Amp", "Teleop.Spkr")
 
 mode_func <- function(x) {
@@ -124,9 +124,8 @@ server <- function(input, output, session){
   # Reactive expression to filter data based on selected value
   selected_row_data <- reactive({
     selected_row <- input$table_rows_selected
-    if (length(selected_row) > 0) {
+    if (!is.null(selected_row)) {
       selected_value <- data()[selected_row, "Team"]
-      teamName <- selected_value
       filtered_data <- file()[file()$Team == selected_value, ]
       filtered_data
     }
@@ -136,13 +135,13 @@ server <- function(input, output, session){
     updateTabsetPanel(session, "inTabset", selected = "team")
   })
   
-  output$plot_1 <- renderPlot({req(input$table_rows_selected)
+  output$plot_1 <- renderPlot({
     generate_plot(selected_row_data(), plot_columns[1], file())})
-  output$plot_2 <- renderPlot({req(input$table_rows_selected)
+  output$plot_2 <- renderPlot({
     generate_plot(selected_row_data(), plot_columns[2], file())})
-  output$plot_3 <- renderPlot({req(input$table_rows_selected)
+  output$plot_3 <- renderPlot({
     generate_plot(selected_row_data(), plot_columns[3], file())})
-  output$plot_4 <- renderPlot({req(input$table_rows_selected)
+  output$plot_4 <- renderPlot({
     generate_plot(selected_row_data(), plot_columns[4], file())})
   
   output$char <- renderDT({
@@ -155,14 +154,14 @@ server <- function(input, output, session){
   observeEvent(input$primary_btn, {
     selected_row <- input$table_rows_selected
     if (length(selected_row) > 0) {
-      primary$data <- rbind(primary$data, data[selected_row, ])
+      primary$data <- rbind(primary$data, data()[selected_row, ])
     }
   })
   
   observeEvent(input$secondary_btn, {
     selected_row <- input$table_rows_selected
     if (length(selected_row) > 0) {
-      secondary$data <- rbind(secondary$data, data[selected_row, ])
+      secondary$data <- rbind(secondary$data, data()[selected_row, ])
     }
   })
   
@@ -197,7 +196,7 @@ server <- function(input, output, session){
     file(temp)
     averaged_data <- temp %>%
       group_by(Team) %>%
-      summarise(across(all_of(plot_columns), ~round(mean(., na.rm = TRUE), 1)))
+      summarise(across(all_of(plot_columns), ~max(.)))
     mode_data <- temp %>%
       group_by(Team) %>%
       summarise(across(all_of(mode_columns), mode_func))
