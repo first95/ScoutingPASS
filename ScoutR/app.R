@@ -4,7 +4,7 @@ library(DescTools)
 library(dplyr)
 library(shinyjs)
 
-mode_columns <- c("Compatible", "Harmony", "Trap", "Driver", "Defense")
+mode_columns <- c("Harmony", "Trap", "Driver.Skill", "Defense.Skill", "Self", "Close", "Far", "Source.Side", "Self.Side")
 plot_columns <- c("Auto.Amp", "Auto.Spkr", "Teleop.Amp", "Teleop.Spkr")
 
 mode_func <- function(x) {
@@ -19,7 +19,7 @@ generate_plot <- function(data = NULL, column_name = NULL, file = NULL) {
          lwd = 3,
          xlab = "Match", ylab = "Pts",
          xlim = c(1, 12),
-         ylim = c(0, max(file[column_name]))
+         ylim = c(0, 15)
     )
 }
 
