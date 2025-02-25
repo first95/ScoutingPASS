@@ -599,7 +599,7 @@ function getData(Formname) {
       Data.push(Form[field].value.replace(/\t/g,"-"))
     }
   })
-  return Data.join(",")
+  return Data.join("\t")
 }
 
 function updateQRHeader() {
