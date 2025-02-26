@@ -20,7 +20,7 @@ var config_data =
         "code":"e",
         "title":"Event",
         "type":"event",
-        "defaultValue":"2024nhgrs",
+        "defaultValue":"2025mefal",
         "disabled":"true"
       },
       "Match Level":{
