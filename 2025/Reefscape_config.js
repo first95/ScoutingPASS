@@ -20,7 +20,7 @@ var config_data =
         "code":"e",
         "title":"Event",
         "type":"event",
-        "defaultValue":"2025necmp2",
+        "defaultValue":"2025mefal",
         "disabled":"true"
       },
       "Match Number":{
