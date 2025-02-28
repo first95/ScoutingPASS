@@ -454,6 +454,27 @@ function addElement(table, idx, column, data){
   return idx
 }
 
+function update3(fieldname) {
+  thisfielddata = document.forms["topForm"]['top' + fieldname].value;
+  for (column of ["left", "mid", "right"]) {
+
+    document.forms[column + "Form"][column + fieldname].value = thisfielddata;
+    updateMatchStart(column);
+
+
+  };
+}
+
+function setRobots(){
+  allianceColor = document.forms["topForm"]["topr"].value
+  document.forms["leftForm"]["input_r_" + allianceColor + "1"].checked = true;
+  updateMatchStart("left");
+  document.forms["midForm"]["input_r_" + allianceColor + "2"].checked = true;
+  updateMatchStart("mid");
+  document.forms["rightForm"]["input_r_" + allianceColor + "3"].checked = true;
+  updateMatchStart("right");
+}
+
 function configure(column){
   try {
     var mydata = config_data;
@@ -466,6 +487,7 @@ function configure(column){
     cell1.innerHTML = `Error parsing configuration file: ${err.message}`
     return -1
   }
+
 
   if (mydata.hasOwnProperty('title')) {
     document.title = mydata.title;
@@ -541,7 +563,8 @@ function resetRobot() {
 
 
 function getLevel(column){
-	return document.forms[column + "Form"][column + "l"].value
+	// return document.forms[column + "Form"][column + "l"].value
+  return "qm";
 }
 
 function validateLevel(column) {
@@ -647,7 +670,7 @@ function clearForm() {
 	swipePage(-1)
 
 	// Increment match
-  for (column of ["left","mid","right"])  {
+  for (column of ["top","left","mid","right"])  {
     match = parseInt(document.forms[column + "Form"][column + "m"].value)
     if (match == NaN) {
       document.forms[column + "Form"][column + "m"].value = ""
@@ -841,11 +864,12 @@ function getMatch(matchKey){
 }
 
 function getCurrentTeamNumberFromRobot(column){
-	if(getRobot(column) != "" && typeof getRobot(column) !== 'undefined' && getCurrentMatch(column) != ""){
-		if(getRobot(column).charAt(0) == "r"){
-			return getCurrentMatch(column).red.team_keys[parseInt(getRobot(column).charAt(1))-1]
+  robot = getRobot(column);
+	if(robot != "" && typeof robot !== 'undefined' && getCurrentMatch(column) != ""){
+		if(robot.charAt(0) == "r"){
+			return getCurrentMatch(column).red.team_keys[parseInt(robot.charAt(1))-1]
 		} else if(getRobot(column).charAt(0) == "b"){
-			return getCurrentMatch(column).blue.team_keys[parseInt(getRobot(column).charAt(1))-1]
+			return getCurrentMatch(column).blue.team_keys[parseInt(robot.charAt(1))-1]
 		}
 	} else {
     return "";

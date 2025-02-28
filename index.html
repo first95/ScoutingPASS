@@ -16,15 +16,25 @@
 		<script src="./resources/js/scoutingPASS.js"></script>
 		<script src="./2025/Reefscape_config.js"></script>
 		<script src="./2023/2023cthar_matches.js"></script>
-		<script src="./2023/2023cthar_teams.js"></script>
+		<script src="./2025/2025mefal_teams.js"></script>
 		<link rel="stylesheet" href="./resources/css/scoutingPASS.css">
 	</head>
 
-<body>
-	<form name="scoutingForm" id="scoutingForm" onsubmit="false">
+<body> 
+	<form name="topForm" id="topForm" onsubmit="false">
 		<div id="top" style="background-color:var(--background); position:fixed; width:100%; top:0em; border:2px solid black">
 			<h1 id="prematchHeader1" class="page_title"></h1>
-			<input type="button" value="Next" id="nextButton1" style="position:absolute; top:1em; left:48%" onclick="swipePage(1)">
+			<input type="button" value="Next" id="nextButton1" style="position:absolute; top:1em; left:28%" onclick="swipePage(1)">
+:			<label style="color: black; position: absolute;top:1em;left: 35%;">Scouter name
+				<input type="text" name="tops" id="topScoutInitials" onchange="update3('s')" style="width:10em">
+			</label>
+			<label style="color: black; position: absolute;top:1em;left: 55%;">Match Number
+				<input type="number" name="topm" id="topMatchNumber" onchange="update3('m')" style="width:6em;">
+			</label>
+			<label style="color: black; position: absolute;top:1em;right: 10%;">Alliance
+				<input type="radio" name="topr" id="topRobotAlliance" value="r" onchange="setRobots()">Red
+				<input type="radio" name="topr" id="topRobotAlliance" value="b" onchange="setRobots()">Blue
+			</label>	
 		</div>
 	</form>
 		<div id="main-panel-holder" style="top:5em">
