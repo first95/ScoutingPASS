@@ -467,12 +467,11 @@ function update3(fieldname) {
 
 function setRobots(){
   allianceColor = document.forms["topForm"]["topr"].value
-  document.forms["leftForm"]["input_r_" + allianceColor + "1"].checked = true;
-  updateMatchStart("left");
-  document.forms["midForm"]["input_r_" + allianceColor + "2"].checked = true;
-  updateMatchStart("mid");
-  document.forms["rightForm"]["input_r_" + allianceColor + "3"].checked = true;
-  updateMatchStart("right");
+  rnum = "1".charCodeAt(0);
+  for (column of ["left", "mid", "right"]) {
+    document.forms[column + "Form"]["input_r_" + allianceColor + String.fromCharCode(rnum++)].checked = true;
+    updateMatchStart(column);
+  }
 }
 
 function configure(column){
