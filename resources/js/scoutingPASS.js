@@ -5,6 +5,8 @@ document.addEventListener("touchend", moveTouch, false);
 var initialX = null;
 var xThreshold = 0.3;
 var slide = 0;
+// columList - some combination of "left", "mid", "right"
+var columnList = ["left"];
 
 // Options
 var options = {
@@ -456,7 +458,8 @@ function addElement(table, idx, column, data){
 
 function update3(fieldname) {
   thisfielddata = document.forms["topForm"]['top' + fieldname].value;
-  for (column of ["left", "mid", "right"]) {
+  // for (column of ["left", "mid", "right"]) {
+  for (column of columnList) {
 
     document.forms[column + "Form"][column + fieldname].value = thisfielddata;
     updateMatchStart(column);
@@ -468,7 +471,8 @@ function update3(fieldname) {
 function setRobots(){
   allianceColor = document.forms["topForm"]["topr"].value
   rnum = "1".charCodeAt(0);
-  for (column of ["left", "mid", "right"]) {
+  // for (column of ["left", "mid", "right"]) {
+  for (column of columnList) {
     document.forms[column + "Form"]["input_r_" + allianceColor + String.fromCharCode(rnum++)].checked = true;
     updateMatchStart(column);
   }
@@ -643,15 +647,18 @@ function qr_regenerate() {
 		// Don't allow a swipe until all required data is filled in
 		return false
 	}
-
+  var datafromcols = "";
 	// Get data
-	leftdata = getData("leftForm");
-  middata = getData("midForm");
-  rightdata = getData("rightForm");
+  for (column of columnList) {
+    datafromcols += getData(column + "Form") + "\n";
+  }
+	// leftdata = getData("leftForm");
+  // middata = getData("midForm");
+  // rightdata = getData("rightForm");
   // Regenerate QR Code
-	qr.makeCode(leftdata + "\n"  + middata + "\n" + rightdata)
-
-	updateQRHeader()
+	// qr.makeCode(leftdata + "\n"  + middata + "\n" + rightdata)
+  qr.makeCode(datafromcols);
+	updateQRHeader();
 	return true
 }
 
@@ -669,7 +676,7 @@ function clearForm() {
 	swipePage(-1)
 
 	// Increment match
-  for (column of ["top","left","mid","right"])  {
+  for (column of ["top"]+columnList)  {
     match = parseInt(document.forms[column + "Form"][column + "m"].value)
     if (match == NaN) {
       document.forms[column + "Form"][column + "m"].value = ""
@@ -734,7 +741,7 @@ function clearForm() {
 		}
 	}
 	drawFields();
-  for (column of ["left","mid","right"])  {
+  for (column of columnList)  {
     updateMatchStart(column);
   }
 }
