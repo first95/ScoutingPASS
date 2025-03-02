@@ -676,7 +676,7 @@ function clearForm() {
 	swipePage(-1)
 
 	// Increment match
-  for (column of ["top"]+columnList)  {
+  for (column of columnList)  {
     match = parseInt(document.forms[column + "Form"][column + "m"].value)
     if (match == NaN) {
       document.forms[column + "Form"][column + "m"].value = ""
