@@ -6,7 +6,7 @@ var initialX = null;
 var xThreshold = 0.3;
 var slide = 0;
 // columList - some combination of "left", "mid", "right"
-var columnList = ["left"];
+var columnList = ["left","mid","right"];
 
 // Options
 var options = {
@@ -770,9 +770,10 @@ function moveTouch(e) {
 };
 
 function swipePage(incriment){
+  console.log("swipepage called with " + incriment);
 	if (qr_regenerate() == true) {
 		slides = document.getElementById("main-panel-holder").children
-		if(slide + incriment < slides.length && slide + incriment >= 0){
+		if(slide + incriment <= slides.length && slide + incriment >= 0){
 			slides[slide].style.display = "none";
 			slide += incriment;
 			window.scrollTo(0,0);
@@ -957,27 +958,16 @@ function undo(event)
 }		
 
 window.onload = function(){
-  var ret_left = configure("left");
-  if (ret_left != -1) {
-    var ec = document.getElementById("input_e").value;
-    getTeams(ec);
-    getSchedule(ec);
-    this.drawFields();
+
+  for (column of columnList) {
+    var ret_left = configure(column);
+    if (ret_left != -1) {
+      var ec = document.getElementById("input_e").value;
+      getTeams(ec);
+      getSchedule(ec);
+      this.drawFields();
+    }
+   
   }
 
-  var ret_mid = configure("mid");
-  if (ret_mid != -1) {
-    var ec = document.getElementById("input_e").value;
-    getTeams(ec);
-    getSchedule(ec);
-    this.drawFields();
-  }
-
-  var ret_right = configure("right");
-  if (ret_right != -1) {
-    var ec = document.getElementById("input_e").value;
-    getTeams(ec);
-    getSchedule(ec);
-    this.drawFields();
-  }
 };
