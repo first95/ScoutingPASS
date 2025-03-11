@@ -675,6 +675,9 @@ function clearForm() {
 
 	swipePage(-1)
 
+  // clear any displayed data
+  document.getElementById('data').innerHTML = "";
+
 	// Increment match
   for (column of ["top"]+columnList)  {
     match = parseInt(document.forms[column + "Form"][column + "m"].value)
@@ -955,7 +958,26 @@ function undo(event)
    tempValue.pop();
    changingInput.value = JSON.stringify(tempValue);
    drawFields();
-}		
+}
+
+function displayData(){
+  var datafromcols = "";
+	// Get data
+  for (column of columnList) {
+    datafromcols += getData(column + "Form") + "<br>\n";
+  }
+  document.getElementById('data').innerHTML = datafromcols;
+}
+
+function copyData(){
+  var datafromcols = "";
+	// Get data
+  for (column of columnList) {
+    datafromcols += getData(column + "Form") + "\n";
+  }
+  navigator.clipboard.writeText(datafromcols);
+  document.getElementById('copyButton').setAttribute('value','Copied');
+}
 
 window.onload = function(){
 

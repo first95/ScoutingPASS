@@ -32,8 +32,8 @@
 				<input type="number" name="topm" id="topMatchNumber" onchange="update3('m')" style="width:6em;">
 			</label>
 			<label style="color: black; position: absolute;top:1em;right: 10%;">Alliance
-				<input type="radio" name="topr" id="topRobotAlliance" value="r" onchange="setRobots()">Red
-				<input type="radio" name="topr" id="topRobotAlliance" value="b" onchange="setRobots()">Blue
+				<input type="radio" name="topr" id="topRobotAlliance_r" value="r" onchange="setRobots()">Red
+				<input type="radio" name="topr" id="topRobotAlliance_b" value="b" onchange="setRobots()">Blue
 			</label>	
 		</div>
 	</form>
@@ -92,8 +92,18 @@
 						</td>
 						<td width="5%">&nbsp;</td>
 					</tr>
+					<tr><td width="5%">&nbsp;</td><td width="90%">
+						<div>
+							<p id="data" style="text-align:center"></p>
+						</div>
+					</td><td width="5%">&nbsp;</td></tr>
 				</table>
 				<p></p>
+				<p class="match-label">
+					<input type="button" value="Display Data" id="displayButton" onclick="displayData()">
+					<input type="button" value="Copy Data" id="copyButton" onclick="copyData()">
+				</p>
+
 				<div id="clearButton">
 					<button type="button" class="clearForm" onclick="clearForm()">Clear Form</button>
 					<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
