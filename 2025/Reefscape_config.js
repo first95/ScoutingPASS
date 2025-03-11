@@ -57,6 +57,16 @@ var config_data =
         "title":"Autonomous",
         "type":"divider"
       },
+      "Auton Start Position?": {
+        "code":"asp",
+        "title": "Auton Start Position",
+        "type":"radio",
+        "choices":{
+          "L":"Left<br>",
+          "M":"Mid<br>",
+          "R":"Right"
+        }
+      },  
       "Auton Leaves Line?": {
         "code":"all",
         "title":"Leaves Line?",
@@ -103,6 +113,27 @@ var config_data =
         },
         "defaultValue":"'0"
       },
+        "Teleop Scoring Levels": {
+          "code":"tl1",
+          "title": "Coral Levels Scored L1",
+          "type":"bool"
+        },
+        "L2": {
+          "code":"tl2",
+          "title":"L2",
+          "type":"bool"
+        },
+        "L3": {
+          "code":"tl3",
+          "title":"L3",
+          "type":"bool"
+        },
+        "L4": {
+          "code":"tl4",
+          "title":"L4",
+          "type":"bool"
+        },
+      },
       "Teleop Algae Scored B": {
         "code":"tab",
         "title": "Barge Algae Scored",
@@ -117,20 +148,6 @@ var config_data =
         "min":0,
         "max":10
       },
-      "Teleop Preferred Scoring Level": {
-        "code":"tl",
-        "title": "Preferred Scoring Level",
-        "type":"radio",
-        "choices":{
-          "L4":"L4<br>",
-          "L3":"L3<br>",
-          "L2":"L2<br>",
-          "L1":"L1<br>",
-          "Not Observed":"Not Observed"
-        },
-        "defaultValue":"Not Observed"
-      },
-    },
     "endgame": {
       "Endgame": {
         "code":"e-div",
