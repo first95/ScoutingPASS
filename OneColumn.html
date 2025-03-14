@@ -8,25 +8,30 @@
 -->
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0">
-		<title>ScoutingPASS 95</title>
-		<script src="./resources/js/easy.qrcode.min.js"></script>
-		<script src="./resources/js/TBAInterface.js"></script>
-		<script src="./resources/js/scoutingPASS.js"></script>
-		<script src="./2025/Reefscape_config.js"></script>
-		<script src="./2025/2025mefal_matches.js"></script>
-		<script src="./2025/2025mefal_teams.js"></script>
-		<link rel="stylesheet" href="./resources/css/scoutingPASS.css">
-		<script>
-			var columnList = ["left"];
-		</script>	</head>
-<body> 
-	
-		<div id="top" style="background-color:var(--background); position:fixed; width:100%; top:0em; border:2px solid black">
-			<h1 id="prematchHeader1" class="page_title"></h1>
-			<input type="button" value="Next" id="nextButton1" style="position:absolute; top:1em; left:28%" onclick="swipePage(1)">
-<!-- :			<label style="color: black; position: absolute;top:1em;left: 35%;">Scouter name
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0">
+	<title>ScoutingPASS 95</title>
+	<script src="./resources/js/easy.qrcode.min.js"></script>
+	<script src="./resources/js/TBAInterface.js"></script>
+	<script src="./resources/js/scoutingPASS.js"></script>
+	<script src="./2025/Reefscape_config.js"></script>
+	<script src="./2025/2025mefal_matches.js"></script>
+	<script src="./2025/2025mefal_teams.js"></script>
+	<link rel="stylesheet" href="./resources/css/scoutingPASS.css">
+	<script>
+		var columnList = ["left"];
+	</script>
+</head>
+
+<body>
+
+	<div id="top"
+		style="background-color:var(--background); position:fixed; width:100%; top:0em; border:2px solid black">
+		<h1 id="prematchHeader1" class="page_title"></h1>
+		<input type="button" value="Next" id="nextButton1" style="position:absolute; top:1em; left:28%"
+			onclick="swipePage(1)">
+		<!-- :			<label style="color: black; position: absolute;top:1em;left: 35%;">Scouter name
 				<input type="text" name="tops" id="topScoutInitials" onchange="update3('s')" style="width:10em">
 			</label>
 			<label style="color: black; position: absolute;top:1em;left: 55%;">Match Number
@@ -36,10 +41,10 @@
 				<input type="radio" name="topr" id="topRobotAlliance_r" value="r" onchange="setRobots()">Red
 				<input type="radio" name="topr" id="topRobotAlliance_b" value="b" onchange="setRobots()">Blue
 			</label>	 -->
-		</div>
-	
-		<div id="main-panel-holder" style="top:5em">
-			<div>
+	</div>
+
+	<div id="main-panel-holder" style="top:5em">
+		<div>
 			<div style="display:flex; width:100%; margin-top:98px">
 				<div id="left" class="column" style="background-color: var(--background);">
 					<div id="left_teaminfo_" class="team-info-header"></div>
@@ -51,49 +56,53 @@
 						<table id="postmatch_table_left" style="font: Roboto"></table>
 					</form>
 				</div>
-				
-				</div>
+
 			</div>
-			<div id="qr-code" class="main-panel" style="background-color: var(--background);">
-				<h1 id="qrHeader1" class="page_title"><span class="odd">P</span><span class="even">W</span><span
-						class="odd">n</span><span class="even">A</span><span class="odd">G</span><span
-						class="even">E</span><br>Scouting 2020</h1>
-				<h2 id="qrHeader2">Generate QR Code</h2>
-				<p class="match-label"><input type="button" value="Prev" id="prevButton9" onclick="swipePage(-1)"></p>
-				<p id="qr-info"><span id="display_qr-info" style="border: none; text-align: center;"></span></p>
-				<table id="qr-table">
-					<tr>
-						<td width="5%">&nbsp;</td>
-						<td width="90%">
-							<div id="qrcode" style="text-align:center">
-								<script>
-									// Create QRCode Object
-									qr = new QRCode(document.getElementById("qrcode"), options)
-								</script>
-							</div>
-						</td>
-						<td width="5%">&nbsp;</td>
-					</tr>
-					<tr><td width="5%">&nbsp;</td><td width="90%">
+		</div>
+		<div id="qr-code" class="main-panel" style="background-color: var(--background);">
+			<h1 id="qrHeader1" class="page_title"><span class="odd">P</span><span class="even">W</span><span
+					class="odd">n</span><span class="even">A</span><span class="odd">G</span><span
+					class="even">E</span><br>Scouting 2020</h1>
+			<h2 id="qrHeader2">Generate QR Code</h2>
+			<p class="match-label"><input type="button" value="Prev" id="prevButton9" onclick="swipePage(-1)"></p>
+			<p id="qr-info"><span id="display_qr-info" style="border: none; text-align: center;"></span></p>
+			<table id="qr-table">
+				<tr>
+					<td width="5%">&nbsp;</td>
+					<td width="90%">
+						<div id="qrcode" style="text-align:center">
+							<script>
+								// Create QRCode Object
+								qr = new QRCode(document.getElementById("qrcode"), options)
+							</script>
+						</div>
+					</td>
+					<td width="5%">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="5%">&nbsp;</td>
+					<td width="90%">
 						<div>
 							<p id="data" style="text-align:center"></p>
 						</div>
-					</td><td width="5%">&nbsp;</td></tr>
-				</table>
-				<p></p>
-				<p class="match-label">
-					<input type="button" value="Display Data" id="displayButton" onclick="displayData()">
-					<input type="button" value="Copy Data" id="copyButton" onclick="copyData()">
-				</p>
+					</td>
+					<td width="5%">&nbsp;</td>
+				</tr>
+			</table>
+			<p></p>
+			<p class="match-label">
+				<input type="button" value="Display Data" id="displayButton" onclick="displayData()">
+				<input type="button" value="Copy Data" id="copyButton" onclick="copyData()">
+			</p>
 
-				<div id="clearButton">
-					<button type="button" class="clearForm" onclick="clearForm()">Clear Form</button>
-					<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
-					</p>
-				</div>
-				<br>
+			<div id="clearButton">
+				<button type="button" class="clearForm" onclick="clearForm()">Clear Form</button>
+				<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+				</p>
 			</div>
+			<br>
 		</div>
+	</div>
 	</form>
 </body>
 
