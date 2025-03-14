@@ -1,245 +1,245 @@
-var config_data = 
+var config_data =
 {
-  "title":"ScoutingPASS 95",
-  "page_title":"ScoutingPASS 95",
-  "elements":{
+  "title": "ScoutingPASS 95",
+  "page_title": "ScoutingPASS 95",
+  "elements": {
     "prematch": {
       "Prematch": {
-        "code":"prm-div",
-        "title":"Prematch",
-        "type":"divider"
+        "code": "prm-div",
+        "title": "Prematch",
+        "type": "divider"
       },
       "Scouter Name": {
-        "code":"s",
-        "title":"Scouter Name",
-        "type":"scouter",
-        "size":10,
-        "maxSize":20
+        "code": "s",
+        "title": "Scouter Name",
+        "type": "scouter",
+        "size": 10,
+        "maxSize": 20
       },
-      "Event":{
-        "code":"e",
-        "title":"Event",
-        "type":"event",
-        "defaultValue":"2025mefal",
-        "disabled":"true"
+      "Event": {
+        "code": "e",
+        "title": "Event",
+        "type": "event",
+        "defaultValue": "2025mefal",
+        "disabled": "true"
       },
-      "Match Number":{
-        "code":"m",
-        "title":"Match Number",
-        "type":"match",
-        "min":1,
-        "max":100
+      "Match Number": {
+        "code": "m",
+        "title": "Match Number",
+        "type": "match",
+        "min": 1,
+        "max": 100
       },
-     "Robot": {
-        "code":"r",
-        "title":"Robot",
-        "type":"robot",
-        "choices":{
-          "r1":"Red-1",
-          "b1":"Blue-1<br>",
-          "r2":"Red-2",
-          "b2":"Blue-2<br>",
-          "r3":"Red-3",
-          "b3":"Blue-3"
+      "Robot": {
+        "code": "r",
+        "title": "Robot",
+        "type": "robot",
+        "choices": {
+          "r1": "Red-1",
+          "b1": "Blue-1<br>",
+          "r2": "Red-2",
+          "b2": "Blue-2<br>",
+          "r3": "Red-3",
+          "b3": "Blue-3"
         }
       },
       "Team Number": {
-        "code":"t",
-        "title":"Team Number",
-        "type":"team",
-        "min":1,
-        "max":99999
+        "code": "t",
+        "title": "Team Number",
+        "type": "team",
+        "min": 1,
+        "max": 99999
       },
     },
     "auton": {
       "Autonomous": {
-        "code":"a-div",
-        "title":"Autonomous",
-        "type":"divider"
+        "code": "a-div",
+        "title": "Autonomous",
+        "type": "divider"
       },
       "Auton Start Position?": {
-        "code":"asp",
+        "code": "asp",
         "title": "Auton Start Position",
-        "type":"radio",
-        "choices":{
-          "L":"Left<br>",
-          "M":"Mid<br>",
-          "R":"Right"
+        "type": "radio",
+        "choices": {
+          "L": "Left<br>",
+          "M": "Mid<br>",
+          "R": "Right"
         }
-      },  
+      },
       "Auton Leaves Line?": {
-        "code":"all",
-        "title":"Leaves Line?",
-        "type":"bool"
+        "code": "all",
+        "title": "Leaves Line?",
+        "type": "bool"
       },
       "Auton Coral Scored": {
-        "code":"ac",
+        "code": "ac",
         "title": "Coral Scored",
-        "type":"counter",
-        "min":0,
-        "max":10
+        "type": "counter",
+        "min": 0,
+        "max": 10
       },
       "Auton Algae Scored": {
-        "code":"aa",
+        "code": "aa",
         "title": "Algae Scored",
-        "type":"counter",
-        "min":0,
-        "max":10
+        "type": "counter",
+        "min": 0,
+        "max": 10
       },
       "Auton Algae Removed": {
-        "code":"aar",
+        "code": "aar",
         "title": "Algae Removed",
-        "type":"counter",
-        "min":0,
-        "max":10
+        "type": "counter",
+        "min": 0,
+        "max": 10
       },
     },
     "teleop": {
       "Teleop": {
-        "code":"t-div",
-        "title":"Teleop",
-        "type":"divider"
+        "code": "t-div",
+        "title": "Teleop",
+        "type": "divider"
       },
       "Teleop Coral Scored": {
-        "code":"tco",
+        "code": "tco",
         "title": "Coral Scored",
-        "type":"radio",
-        "choices":{
-          "0":"None<br>",
-          "2":"1-3<br>",
-          "5":"4-6<br>",
-          "8":"7-9<br>",
-          "10":"10+<br>"
+        "type": "radio",
+        "choices": {
+          "0": "None<br>",
+          "2": "1-3<br>",
+          "5": "4-6<br>",
+          "8": "7-9<br>",
+          "10": "10+<br>"
         },
-        "defaultValue":"'0"
+        "defaultValue": "'0"
       },
       "L1": {
-          "code":"tl1",
-          "title": "Coral Scored on L1",
-          "type":"bool"
+        "code": "tl1",
+        "title": "Coral Scored on L1",
+        "type": "bool"
       },
       "L2": {
-          "code":"tl2",
-          "title":"Coral Scored on L2",
-          "type":"bool"
+        "code": "tl2",
+        "title": "Coral Scored on L2",
+        "type": "bool"
       },
       "L3": {
-          "code":"tl3",
-          "title":"Coral Scored on L3",
-          "type":"bool"
+        "code": "tl3",
+        "title": "Coral Scored on L3",
+        "type": "bool"
       },
       "L4": {
-          "code":"tl4",
-          "title":"Coral Scored on L4",
-          "type":"bool"
+        "code": "tl4",
+        "title": "Coral Scored on L4",
+        "type": "bool"
       },
       "Teleop Algae Scored B": {
-        "code":"tab",
+        "code": "tab",
         "title": "Barge Algae Scored",
-        "type":"counter",
-        "min":0,
-        "max":10
+        "type": "counter",
+        "min": 0,
+        "max": 10
       },
       "Teleop Algae Scored P": {
-        "code":"tap",
+        "code": "tap",
         "title": "Processor Algae Scored",
-        "type":"counter",
-        "min":0,
-        "max":10
+        "type": "counter",
+        "min": 0,
+        "max": 10
       },
     },
     "endgame": {
       "Endgame": {
-        "code":"e-div",
-        "title":"Endgame",
-        "type":"divider"
+        "code": "e-div",
+        "title": "Endgame",
+        "type": "divider"
       },
       "Endgame Climb Status": {
-        "code":"ec",
+        "code": "ec",
         "title": "Climb Status",
-        "type":"radio",
-        "choices":{
-          "None":"None<br>",
-          "Parked":"Parked<br>",
-          "Shallow":"Shallow<br>",
-          "Deep":"Deep<br>"
+        "type": "radio",
+        "choices": {
+          "None": "None<br>",
+          "Parked": "Parked<br>",
+          "Shallow": "Shallow<br>",
+          "Deep": "Deep<br>"
         },
-        "defaultValue":"Not Observed"
+        "defaultValue": "Not Observed"
       },
       "Endgame Time to Climb": {
-        "code":"et",
+        "code": "et",
         "title": "Time to Climb",
-        "type":"radio",
-        "choices":{
-          "'0-5":"0-5 secs<br>",
-          "'5-15":"5-15 secs<br>",
-          "'15-30":"15-30 secs<br>",
-          "'>30":">30 secs<br>",
-          "Not Attempted":"Not Attempted<br>",
-          "Not Observed":"Not Observed"
+        "type": "radio",
+        "choices": {
+          "'0-5": "0-5 secs<br>",
+          "'5-15": "5-15 secs<br>",
+          "'15-30": "15-30 secs<br>",
+          "'>30": ">30 secs<br>",
+          "Not Attempted": "Not Attempted<br>",
+          "Not Observed": "Not Observed"
         },
-        "defaultValue":"Not Observed"
+        "defaultValue": "Not Observed"
       },
     },
     "postmatch": {
       "Postmatch": {
-        "code":"pom-div",
-        "title":"Postmatch",
-        "type":"divider"
+        "code": "pom-div",
+        "title": "Postmatch",
+        "type": "divider"
       },
       "Teleop Can Handle Coral?": {
-        "code":"tco",
-        "title":"Can Handle Coral?",
-        "type":"bool"
+        "code": "tco",
+        "title": "Can Handle Coral?",
+        "type": "bool"
       },
       "Teleop Can Handle Algae?": {
-        "code":"tal",
-        "title":"Can Handle Algae?",
-        "type":"bool"
+        "code": "tal",
+        "title": "Can Handle Algae?",
+        "type": "bool"
       },
       "Driver Skill": {
-        "code":"pdri",
+        "code": "pdri",
         "title": "Driver Skill",
-        "type":"radio",
-        "choices":{
-          "Low":"Low<br>",
-          "Medium":"Medium<br>",
-          "High":"High<br>",
-          "Not Observed":"Not Observed"
+        "type": "radio",
+        "choices": {
+          "Low": "Low<br>",
+          "Medium": "Medium<br>",
+          "High": "High<br>",
+          "Not Observed": "Not Observed"
         },
-        "defaultValue":"Not Observed"
+        "defaultValue": "Not Observed"
       },
       "Defense Skill": {
-        "code":"pdef",
+        "code": "pdef",
         "title": "Defense Skill",
-        "type":"radio",
-        "choices":{
-          "Didn't Defend":"Didn't Defend<br>",
-          "Low":"Low<br>",
-          "Medium":"Medium<br>",
-          "High":"High<br>",
-          "Not Observed":"Not Observed"
+        "type": "radio",
+        "choices": {
+          "Didn't Defend": "Didn't Defend<br>",
+          "Low": "Low<br>",
+          "Medium": "Medium<br>",
+          "High": "High<br>",
+          "Not Observed": "Not Observed"
         },
-        "defaultValue":"Not Observed"
+        "defaultValue": "Not Observed"
       },
       "Human Player Skill": {
-        "code":"php",
+        "code": "php",
         "title": "Human Player Skill",
-        "type":"radio",
-        "choices":{
-          "Low":"Low<br>",
-          "Medium":"Medium<br>",
-          "High":"High<br>",
-          "Not Observed":"Not Observed"
+        "type": "radio",
+        "choices": {
+          "Low": "Low<br>",
+          "Medium": "Medium<br>",
+          "High": "High<br>",
+          "Not Observed": "Not Observed"
         },
-        "defaultValue":"Not Observed"
+        "defaultValue": "Not Observed"
       },
       "Comments": {
-        "code":"co",
+        "code": "co",
         "title": "Comments",
-        "type":"text",
-        "size":15,
-        "maxSize":100
+        "type": "text",
+        "size": 15,
+        "maxSize": 100
       }
     }
   }
