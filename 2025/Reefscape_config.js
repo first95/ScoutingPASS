@@ -113,26 +113,25 @@ var config_data =
         },
         "defaultValue":"'0"
       },
-        "Teleop Scoring Levels": {
+      "L1": {
           "code":"tl1",
-          "title": "Coral Levels Scored L1",
+          "title": "Coral Scored on L1",
           "type":"bool"
-        },
-        "L2": {
+      },
+      "L2": {
           "code":"tl2",
-          "title":"L2",
+          "title":"Coral Scored on L2",
           "type":"bool"
-        },
-        "L3": {
+      },
+      "L3": {
           "code":"tl3",
-          "title":"L3",
+          "title":"Coral Scored on L3",
           "type":"bool"
-        },
-        "L4": {
+      },
+      "L4": {
           "code":"tl4",
-          "title":"L4",
+          "title":"Coral Scored on L4",
           "type":"bool"
-        },
       },
       "Teleop Algae Scored B": {
         "code":"tab",
@@ -148,6 +147,7 @@ var config_data =
         "min":0,
         "max":10
       },
+    },
     "endgame": {
       "Endgame": {
         "code":"e-div",
