@@ -5,8 +5,6 @@ document.addEventListener("touchend", moveTouch, false);
 var initialX = null;
 var xThreshold = 0.3;
 var slide = 0;
-// columList - some combination of "left", "mid", "right"
-var columnList = ["left","mid","right"];
 
 // Options
 var options = {
@@ -674,17 +672,26 @@ function clearForm() {
 	var e = 0;
 
 	swipePage(-1)
-
+  
   // clear any displayed data
   document.getElementById('data').innerHTML = "";
+  // reset copy data button text
+  document.getElementById('copyButton').setAttribute('value','Copy Data');
+  
 
 	// Increment match
-  for (column of ["top"]+columnList)  {
-    match = parseInt(document.forms[column + "Form"][column + "m"].value)
+  if ("topForm" in document.forms) {
+    var matchIncrementForms = [].concat("top", columnList);
+  } else {
+    var matchIncrementForms = columnList;
+  }
+  console.log("clearing forms "+ matchIncrementForms)
+  for (formPosition of matchIncrementForms)  {
+    match = parseInt(document.forms[formPosition + "Form"][formPosition + "m"].value)
     if (match == NaN) {
-      document.forms[column + "Form"][column + "m"].value = ""
+      document.forms[formPosition + "Form"][formPosition + "m"].value = ""
     } else {
-      document.forms[column + "Form"][column + "m"].value = match+1
+      document.forms[formPosition + "Form"][formPosition + "m"].value = match+1
     }
 
   };
@@ -719,12 +726,12 @@ function clearForm() {
 				e.checked = false
 				document.getElementById("display_"+baseCode).value = ""
 			}
-			var defaultValue = document.getElementById("default_"+baseCode).value
-			if (defaultValue != "") {
-				if (defaultValue == e.value) {
+			var defaultValue = document.getElementById("default_"+baseCode)
+			if (defaultValue) {
+				if (defaultValue.value == e.value) {
 					console.log("they match!")
 					e.checked = true
-					document.getElementById("display_"+baseCode).value = defaultValue
+					document.getElementById("display_"+baseCode).value = defaultValue.value
 				}
 			}
 		} else {

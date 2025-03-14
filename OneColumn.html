@@ -13,15 +13,16 @@
 		<title>ScoutingPASS 95</title>
 		<script src="./resources/js/easy.qrcode.min.js"></script>
 		<script src="./resources/js/TBAInterface.js"></script>
-		<script src="./resources/js/scoutingPASS_1column.js"></script>
+		<script src="./resources/js/scoutingPASS.js"></script>
 		<script src="./2025/Reefscape_config.js"></script>
 		<script src="./2025/2025mefal_matches.js"></script>
 		<script src="./2025/2025mefal_teams.js"></script>
 		<link rel="stylesheet" href="./resources/css/scoutingPASS.css">
-	</head>
-
+		<script>
+			var columnList = ["left"];
+		</script>	</head>
 <body> 
-	<form name="topForm" id="topForm" onsubmit="false">
+	
 		<div id="top" style="background-color:var(--background); position:fixed; width:100%; top:0em; border:2px solid black">
 			<h1 id="prematchHeader1" class="page_title"></h1>
 			<input type="button" value="Next" id="nextButton1" style="position:absolute; top:1em; left:28%" onclick="swipePage(1)">
@@ -36,7 +37,7 @@
 				<input type="radio" name="topr" id="topRobotAlliance_b" value="b" onchange="setRobots()">Blue
 			</label>	 -->
 		</div>
-	</form>
+	
 		<div id="main-panel-holder" style="top:5em">
 			<div>
 			<div style="display:flex; width:100%; margin-top:98px">
