@@ -79,19 +79,15 @@ var config_data =
         "min": 0,
         "max": 10
       },
-      "Auton Algae Scored": {
+      "Auton Algae Processed": {
         "code": "aa",
-        "title": "Algae Scored",
-        "type": "counter",
-        "min": 0,
-        "max": 10
+        "title": "Algae Proccessed",
+        "type": "bool"
       },
       "Auton Algae Removed": {
         "code": "aar",
         "title": "Algae Removed",
-        "type": "counter",
-        "min": 0,
-        "max": 10
+        "type": "bool"
       },
     },
     "teleop": {
@@ -99,19 +95,6 @@ var config_data =
         "code": "t-div",
         "title": "Teleop",
         "type": "divider"
-      },
-      "Teleop Coral Scored": {
-        "code": "tco",
-        "title": "Coral Scored",
-        "type": "radio",
-        "choices": {
-          "0": "None<br>",
-          "2": "1-3<br>",
-          "5": "4-6<br>",
-          "8": "7-9<br>",
-          "10": "10+<br>"
-        },
-        "defaultValue": "'0"
       },
       "L1": {
         "code": "tl1",
@@ -154,9 +137,9 @@ var config_data =
         "title": "Endgame",
         "type": "divider"
       },
-      "Endgame Climb Status": {
+      "Endgame Status": {
         "code": "ec",
-        "title": "Climb Status",
+        "title": "Barge Status",
         "type": "radio",
         "choices": {
           "None": "None<br>",

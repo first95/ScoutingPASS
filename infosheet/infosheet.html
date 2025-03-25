@@ -20,6 +20,11 @@
             Opponent3Div.innerHTML = Opponent1Div.innerHTML;
         }
     </script>
+  	<script src="../2025/2025mefal_matches.js"></script>
+    <script src="../2025/2025mefal_teams.js"></script>
+    <script src="infosheet.js"></script>
+    <script>var ourTeamKey = "frc95";</script>
+   
     <style>
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
@@ -36,8 +41,10 @@
         <div class="swipePageButton" id="AlliesButton" style="text-shadow: 2px 2px 2px #fcffca"><span>Allies</span></div>
         <div class="swipePageButton" id="OpponentsButton">Opponents</div>
         <div class="swipePageButton" id="StrategyButton">Strategy</div>
-        <div class="matchNumberLabel" id = "MatchNumber">
-            Match: <input type="number" class="matchNumberInput">
+        <div class="matchNumberLabel">
+            Match: <select name="MatchNumber" id="MatchNumber-select" class="matchNumberInput">
+                
+                </select>
         </div>
     </div>
 
@@ -329,6 +336,8 @@
             var Opponent3Div = document.getElementById('Opponent3');
             Opponent2Div.innerHTML = Opponent1Div.innerHTML;
             Opponent3Div.innerHTML = Opponent1Div.innerHTML;
+            buildMatchList();
+            setTeamNumbers();
         }
     </script>
 </body>
