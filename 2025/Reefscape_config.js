@@ -20,7 +20,7 @@ var config_data =
         "code": "e",
         "title": "Event",
         "type": "event",
-        "defaultValue": "2025mefal",
+        "defaultValue": "2025vtbur",
         "disabled": "true"
       },
       "Match Number": {
@@ -221,8 +221,8 @@ var config_data =
         "code": "co",
         "title": "Comments",
         "type": "text",
-        "size": 15,
-        "maxSize": 100
+        "size": 25,
+        "maxSize": 100  
       }
     }
   }

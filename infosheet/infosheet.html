@@ -6,6 +6,7 @@
     <!-- #79a4d2; Button Color-->
     <title>Drive Team Info Sheet</title>
     <link rel="stylesheet" href="infosheet.css">
+    <link href="favicon.png" type="image/x-icon" rel="icon" />
 
     <script type="text/javascript">
         function copyDiv() {
@@ -20,8 +21,8 @@
             Opponent3Div.innerHTML = Opponent1Div.innerHTML;
         }
     </script>
-  	<script src="../2025/2025mefal_matches.js"></script>
-    <script src="../2025/2025mefal_teams.js"></script>
+  	<script src="../2025/2025vtbur_matches.js"></script>
+    <script src="../2025/2025vtbur_teams.js"></script>
     <script src="infosheet.js"></script>
     <script>var ourTeamKey = "frc95";</script>
    
@@ -42,7 +43,7 @@
         <div class="swipePageButton" id="OpponentsButton">Opponents</div>
         <div class="swipePageButton" id="StrategyButton">Strategy</div>
         <div class="matchNumberLabel">
-            Match: <select name="MatchNumber" id="MatchNumber-select" class="matchNumberInput">
+            Match: <select name="MatchNumber" id="MatchNumber-select" class="matchNumberInput" onchange=setTeamNumbers()>
                 
                 </select>
         </div>
@@ -52,7 +53,8 @@
         <div class="infoBox" id="Allies">
             <div class="divAlly" id="Ally1">
                 <br><div class="team_number_label">
-                    Team Number: <input class="team_number_input" type="number">
+                    Team Number: <input class="team_number_input" type="number" name="team_number">
+                    <input name="team_name">
                 </div>
 
                 <div name="Auto" class="sectionBox">
@@ -152,7 +154,8 @@
             <div class="divOpponent" id="Opponent1">
                 <br>
                 <div class="team_number_label" onSubmit="return false;">
-                    Team Number: <input class="team_number_input" type="number">
+                    Team Number: <input class="team_number_input" type="number" name="team_number">
+                    <input name="team_name">
                 </div>
 
                 <div class="sectionBox">
@@ -263,19 +266,19 @@
 
             <h2>Endgame Strategy</h2>
 
-            Team 95:
+            Team <script>ourTeamKey.replace("frc","")</script>:
             <br>
             <textarea rows="2" cols="40"></textarea>
 
             <br><br>
 
-            Team<input type="text" style="width:30px">:
+            Team<input type="text" style="width:30px" id="Ally1_number">:
             <br>
             <textarea rows="2" cols="40"></textarea>
 
             <br><br>
 
-            Team<input type="text" style="width:30px">:
+            Team<input type="text" style="width:30px" id="Ally2_number">:
             <br>
             <textarea rows="2" cols="40"></textarea>
         </div>
