@@ -96,6 +96,11 @@ var config_data =
         "title": "Teleop",
         "type": "divider"
       },
+      "Ground Pickup": {
+        "code": "gpu",
+        "title": "Has Ground pickup",
+        "type": "bool"
+      },
       "L1": {
         "code": "tl1",
         "title": "Coral Scored on L1",
