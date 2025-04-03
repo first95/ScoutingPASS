@@ -1,42 +1,58 @@
 "Name","Barge","AutonStart","comments"
 "95","2 Deep","2 R","14: Good at l4 cool hand off good climb."
-"125","1 Deep","1 R",""
-"133","1 Deep","1 L",""
-"155","1 Deep","1 M","7: Human loader didn't prepare to load coral, lazy."
+"125","2 Deep","2 R",""
+"133","2 Deep","1 L
+1 R","15: Good drive train. Can score on all levels and the processor. Interesting deap climb."
+"155","1 Deep
+1 Shallow","1 M
+1 L","7: Human loader didn't prepare to load coral, lazy."
 "166","2 Deep","2 R","6: Good
 12: Can remove algae from the reef, score oral on l2, L3, and L4, and has an okay deep climb."
 "181","1 None
 1 Deep","2 M","3: Ground pickup only observed for coral
 13: Algae bot that can remove algae from reef top and bottom"
-"190","1 Deep","1 L","6: Insane driving. Filled most of the reef singlehandedly. Climbed in around 2 seconds"
-"230","1 Deep","1 R","10: Very good "
+"190","1 Deep
+1 Parked","2 L","6: Insane driving. Filled most of the reef singlehandedly. Climbed in around 2 seconds
+16: Really good drive train. Filledhalf the reef by themselves. Could remove algae.no time for deap"
+"230","2 Deep","1 R
+1 L","10: Very good 
+18: Has potential to score algae but didn't do it this time."
 "237","2 Parked","1 R
 1 L","3: Slow, specialized on L4. Had aiming problems.
 9: Decent"
-"246","1 None","1 M","8: Can score on all levels. Didn't park because they got stuck on algae."
-"501","2 Parked","1 R
+"246","2 None","2 M","8: Can score on all levels. Didn't park because they got stuck on algae."
+"501","3 Parked","2 R
 1 M","5: Played defense, only algae ground load, did not observe any coral handling.
 10: Similar to 4311 algae bot but slower"
-"509","1 Deep","1 M",""
+"509","2 Deep","1 M
+1 R",""
 "571","1 Parked
-1 None","1 L
-1 R","4: Can remove algae and score l2 and L3. No deal climb 
-11: Great all rounder. Consistent "
+2 None","1 L
+2 R","4: Can remove algae and score l2 and L3. No deal climb 
+11: Great all rounder. Consistent 
+17: Really fast. Specialized on l2 and L3."
 "663","1 None","1 R","9: They did very little in auto."
-"999","1 Deep","1 R","6: Great all-rounder"
+"999","2 Deep","2 R","6: Great all-rounder"
 "1058","1 Deep","1 L","12: Still great alliance choice."
 "1071","2 Parked","1 M
 1 L","4: They attempted to climb but failed, they struggled to score algae but were good at removing it from 
 9: Can score on all levels. Climb takes long. Can remove algae from the reef."
 "1073","1 Deep","1 R",""
-"1721","1 Deep","1 L","7: Ok at scoring in the processor"
-"1729","1 Parked","1 R","13: Arm stalled out. Didn't get any penaltys while defending."
-"1991","2 Parked","1 L
-1 M","3: Decent 
+"1721","2 Deep","1 L
+1 M","7: Ok at scoring in the processor
+16: Good processor not much else."
+"1729","1 Parked
+1 Deep","1 R
+1 L","13: Arm stalled out. Didn't get any penaltys while defending."
+"1991","3 Parked","1 L
+2 M","3: Decent 
 11: No coral and only processor but were pretty good."
-"2064","1 Deep","1 L","3: Slow, good coral mechanism. Fast deep climb once set up"
-"2342","2 Parked","1 R
-1 L","11: Really fast drive train and scoring mechisum. Had a lot of trouble with climbing."
+"2064","1 Deep
+1 Shallow","1 L
+1 M","3: Slow, good coral mechanism. Fast deep climb once set up"
+"2342","2 Parked
+1 Deep","1 R
+2 L","11: Really fast drive train and scoring mechisum. Had a lot of trouble with climbing."
 "2370","1 Deep
 1 Parked","1 L
 1 M","4: Good
@@ -50,12 +66,17 @@
 "3467","1 Deep","1 L",""
 "4048","2 Deep","1 R
 1 M","7: Only algae handled was removing from reef."
-"4564","1 Parked","1 M",""
-"4909","1 Parked","1 L","7: Good"
+"4564","1 Parked
+1 None","1 M
+1 R","16: Medium cycles "
+"4909","1 Parked
+1 Deep","1 L
+1 R","7: Good"
 "4925","1 None
-1 Parked","1 M
+2 Parked","2 M
 1 R","5: Very bad driving
-12: Problem with holding coral"
+12: Problem with holding coral
+18: Very bad match. Had trouble with coral mechisum. Very bad at defense. Couldn't climb after a minute."
 "5422","1 Parked
 1 None","1 L
 1 R",""
@@ -65,24 +86,30 @@
 "6153","1 Parked
 1 Deep","2 M",""
 "6328","1 Parked
-1 None","1 R
+1 None
+1 Deep'5-15","2 R
 1 L","13: Super at coral and tried to climb."
 "6329","1 Deep","1 L",""
 "7127","2 Parked","1 R
 1 L","8: Can only remove algae and are good at coral."
 "7153","2 Deep","2 M","6: Good at barge, and coral.
 12: Good at coral attempted algae but did not succeed."
-"8013","1 Deep
-1 None","2 M",""
+"8013","3 Deep
+1 None","4 M","17: Climbed super early
+17: Could pick algae. Specialized in L4. Climbed to early."
 "8544","1 None
 1 Shallow","2 M","8: Below average"
 "8567","1 None
 1 Parked","2 L","8: I could not tell if the elevator could allow them to score L2"
 "8626","1 Parked","1 M",""
-"8708","1 None","1 M","9: Nothing notable, but algae mechanism isn't great"
+"8708","1 None
+1 Deep","2 M","9: Nothing notable, but algae mechanism isn't great"
 "9101","1 Parked
 1 None","1 L
 1 R","5: Took multiple trys to load coral and ""shaky"" driving 
 11: They disabled"
-"9710","1 None","1 M",""
-"10066","1 None","1 M",""
+"9644","1 None","1 L","14: Medium speed cycles, could have done more L2 during match"
+"9710","2 None","2 M","15: Human loader was slow, medium speed cycles all together "
+"10066","1 None
+1 Parked","1 M
+1 L","15: L1"
