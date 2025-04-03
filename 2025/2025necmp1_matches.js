@@ -3167,4 +3167,4 @@ var schedule = [
 	  "time": 1743801900,
 	  "winning_alliance": ""
 	}
-  ]
+  ];
