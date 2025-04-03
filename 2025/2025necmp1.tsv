@@ -95,3 +95,9 @@ Mirola	2025necmp1	18	b1	1991	M	Yes	0	No	No	No	No	No	No	No	0	2	Parked	Not Attempt
 Leo red 2	2025necmp1	18	r2	6328	R	Yes	2	No	No	No	Yes	Yes	Yes	Yes	0	2	Deep'5-15	Yes	Yes	High	Didn't Defend	High	Fast cycles, could get coral jammed easily though
 Curran	2025necmp1	18	r3	4925	M	Yes	0	No	No	No	No	No	No	No	0	0	Parked	'>30	Yes	No	Low	Low	Low	Very bad match. Had trouble with coral mechisum. Very bad at defense. Couldn't climb after a minute.
 Oliver	2025necmp1	18	r1	230	L	Yes	2	No	No	No	No	No	Yes	Yes	0	0	Deep	'5-15	Yes	No	Medium	Didn't Defend	Not Observed	Has potential to score algae but didn't do it this time.
+Cadence	2025necmp1	19	b3	5687	L	Yes	2	No	No	Yes	Yes	Yes	Yes	No	0	0	Deep	'5-15	Yes	No	Not Observed	Not Observed	Not Observed	
+BI4905	2025necmp1	19	b2	166	L	Yes	1	No	No	No	No	Yes	Yes	Yes	0	0	Deep	'5-15	Yes	No	Medium	Didn't Defend	Not Observed	
+Mirola	2025necmp1	19	b1	9644	M	Yes	1	No	No	No	YesYes	Yes	Yes	0	0	Parked	Not Attempted	Yes	No	Medium	Didn't Defend	Medium	
+Leo red 2	2025necmp1	19	r2	237	R	Yes	1	No	No	No	No	No	No	No	0	0	None	Not Attempted	Yes	No	Not Observed	Didn't Defend	Not Observed	Robot malfunction at start of teleop
+Curran	2025necmp1	19	r3	2423	L	Yes	2	No	No	No	No	Yes	Yes	Yes	0	0	Deep	'5-15	Yes	No	High	Didn't Defend	Medium	Specialized in l2 and l3. Could pick algae. Pretty good atuo 
+Oliver	2025necmp1	19	r1	6153	M	Yes	0	No	No	No	No	Yes	Yes	No	0	2	Deep	'5-15	Yes	Yes	Low	Didn't Defend	Not Observed	Driving was not good but seemed like they didn't have a proportional controller.

@@ -6,7 +6,8 @@
 "155","1 Deep
 1 Shallow","1 M
 1 L","7: Human loader didn't prepare to load coral, lazy."
-"166","2 Deep","2 R","6: Good
+"166","3 Deep","2 R
+1 L","6: Good
 12: Can remove algae from the reef, score oral on l2, L3, and L4, and has an okay deep climb."
 "181","1 None
 1 Deep","2 M","3: Ground pickup only observed for coral
@@ -17,9 +18,11 @@
 "230","2 Deep","1 R
 1 L","10: Very good 
 18: Has potential to score algae but didn't do it this time."
-"237","2 Parked","1 R
+"237","2 Parked
+1 None","2 R
 1 L","3: Slow, specialized on L4. Had aiming problems.
-9: Decent"
+9: Decent
+19: Robot malfunction at start of teleop"
 "246","2 None","2 M","8: Can score on all levels. Didn't park because they got stuck on algae."
 "501","3 Parked","2 R
 1 M","5: Played defense, only algae ground load, did not observe any coral handling.
@@ -57,8 +60,10 @@
 1 Parked","1 L
 1 M","4: Good
 14: Good coral mechanism. Not a great climb."
-"2423","2 Parked","1 R
-1 L","10: Good at coral not algae amazingly in auto the robot realized wasn't loaded and returned to the huma."
+"2423","2 Parked
+1 Deep","1 R
+2 L","10: Good at coral not algae amazingly in auto the robot realized wasn't loaded and returned to the huma.
+19: Specialized in l2 and l3. Could pick algae. Pretty good atuo "
 "2648","1 Parked","1 L",""
 "3182","1 Parked
 1 Deep","1 M
@@ -80,11 +85,11 @@
 "5422","1 Parked
 1 None","1 L
 1 R",""
-"5687","1 Deep
-1 Shallow","1 L
+"5687","2 Deep
+1 Shallow","2 L
 1 R",""
 "6153","1 Parked
-1 Deep","2 M",""
+2 Deep","3 M","19: Driving was not good but seemed like they didn't have a proportional controller."
 "6328","1 Parked
 1 None
 1 Deep'5-15","2 R
@@ -108,7 +113,9 @@
 1 None","1 L
 1 R","5: Took multiple trys to load coral and ""shaky"" driving 
 11: They disabled"
-"9644","1 None","1 L","14: Medium speed cycles, could have done more L2 during match"
+"9644","1 None
+1 Not Attempted","1 L
+1 M","14: Medium speed cycles, could have done more L2 during match"
 "9710","2 None","2 M","15: Human loader was slow, medium speed cycles all together "
 "10066","1 None
 1 Parked","1 M
