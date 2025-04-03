@@ -1,4 +1,4 @@
- $matchdata = ipcsv .\2025vtbur.csv -Delimiter "`t"
+ $matchdata = ipcsv .\2025necmp1.tsv -Delimiter "`t"
     
  $barge = @{N="Barge";e={(($_.group |? barge_status).barge_status | group | % {"$($_.count) $($_.name)"} ) -join "`n"}}
  $AutonStart = @{N="AutonStart";e={(($_.group |? auton_start_position).auton_start_position | group | % {"$($_.count) $($_.name)"} ) -join "`n"}}

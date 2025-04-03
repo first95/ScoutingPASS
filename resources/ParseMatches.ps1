@@ -9,5 +9,5 @@ get-content .\2025necmp1_matches.json `
 				@{N="blue1";E={$_.alliances.blue.team_keys[0].replace("frc","")}},
 				@{N="blue2";E={$_.alliances.blue.team_keys[1].replace("frc","")}},
 				@{N="blue3";E={$_.alliances.blue.team_keys[2].replace("frc","")}},
-				@{N="Predicted_Start";E={$unixEpoc.AddSeconds($_.predicted_time)}}
+				@{N="Predicted_Start";E={$unixEpoc.AddSeconds($_.predicted_time).ToLocalTime()}}
   } | Sort-object {[int]$_.match_number}
