@@ -6,12 +6,18 @@
 "166","1 Deep","1 R","6: Good"
 "181","1 None","1 M","3: Ground pickup only observed for coral"
 "190","1 Deep","1 L","6: Insane driving. Filled most of the reef singlehandedly. Climbed in around 2 seconds"
-"237","1 Parked","1 R","3: Slow, specialized on L4. Had aiming problems."
+"237","2 Parked","1 R
+1 L","3: Slow, specialized on L4. Had aiming problems.
+9: Decent"
 "246","1 None","1 M","8: Can score on all levels. Didn't park because they got stuck on algae."
 "501","1 Parked","1 R","5: Played defense, only algae ground load, did not observe any coral handling."
 "571","1 Parked","1 L","4: Can remove algae and score l2 and L3. No deal climb "
+"663","1 None","1 R","9: They did very little in auto."
 "999","1 Deep","1 R","6: Great all-rounder"
-"1071","1 Parked","1 M","4: They attempted to climb but failed, they struggled to score algae but were good at removing it from "
+"1071","2 Parked","1 M
+1 L","4: They attempted to climb but failed, they struggled to score algae but were good at removing it from 
+9: Can score on all levels. Climb takes long. Can remove algae from the reef."
+"1073","1 Deep","1 R",""
 "1721","1 Deep","1 L","7: Ok at scoring in the processor"
 "1991","1 Parked","1 L","3: Decent "
 "2064","1 Deep","1 L","3: Slow, good coral mechanism. Fast deep climb once set up"
@@ -32,6 +38,8 @@
 "8013","1 Deep","1 M",""
 "8544","1 None","1 M","8: Below average"
 "8567","1 None","1 L","8: I could not tell if the elevator could allow them to score L2"
+"8626","1 Parked","1 M",""
+"8708","1 None","1 M","9: Nothing notable, but algae mechanism isn't great"
 "9101","1 Parked","1 L","5: Took multiple trys to load coral and ""shaky"" driving "
 "9710","1 None","1 M",""
 "10066","1 None","1 M",""
