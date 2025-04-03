@@ -1,231 +1,25 @@
-﻿"Name","Barge","AutonStart","comments"
-"157","7 Deep
-2 Parked","7 M
-2 L","1: Jerky driving, poor human loading intake
-11: Tried to score coral in auto but missed, tried really hard with processor but also failed
-28: Could score in the barge quickly
-45: Ok l4 coral cycler."
-"348","5 None
-3 Parked","2 L
-6 M","1: I started watching late bc of technical difficulties, played defense but poorly
-7: Didn't move
-13: Slow - medium cycle times
-18: Good backup option of l2 and l3
-25: Robot malfunction 
-52: Tank drive"
-"7913","2 None
-5 Parked","4 L
-3 M","1: Had trouble getting coral into the rbot
-9: Spinning in place inneffective
-15: Slow cycles
-21: Stuck in one spot for entire match
-51: Moved quicker. Okay defense. After the start of teleop they didn't try to score."
-"811","4 Parked
-3 None","4 R
-1 M
-2 L","1: Mid elevator bot
-6: Very slow, missed almost all attempts, could in hoery score on L4 or L3 but failed
-40: Slow l4 cycle time. Unreliable coral mechanism."
-"9096","5 Parked
-3 None","2 R
-2 M
-4 L","1: Slower cycle times, took time to line up coral to score
-8: Froze right after auto and did not reactivate
-12: Scored 4 L3, 3 L2, 1 L1 by accident
-21: Nothing excitingly good or bad
-27: Slow cycles times
-32: Fast drive train. Slow elevator. Good coral mechanism.
-43: Slow coral cycler. Malfuncted half way through."
-"5494","4 Parked
-3 Deep","5 M
-1 L","1: Medium speed cycle times, not super fast 
-7: Took time to score single coral
-11: Went to play defense
-17: Mostly scored on L4
-27: Almost climbed, dropped last second, used 30 seconds though
-42: Slitely slow l2 and l3 cycles. Working deap climb.
-53: Had trouble with the coral mechanism. Very narrow deep climb."
-"4311","7 Deep
-1 Parked","7 M
-1 R","2: Got stuck on the algae for almost the whole match
-6: Can score l1 coral 
-12: Good processor robot
-19: Fast cycles at the processers
-30: Very fast processor cycles. Very reliable deap climb.
-33: Great 3rd alliance teammate if never chosen as a algae bot"
-"1512","3 Deep
-2 Parked","2 M
-2 R
-1 L","2: Pretty good but pretty slow, barely off the ground with the climb
-11: Trouble with human loading
-33: Didn't attempt to score. Good deap climb"
-"10108","5 Parked
-3 None
-1 Deep","3 L
-5 M","2: budget bot l1 scorer
-6: Slow but effective 
-14: Pretty single minded low level scoring bot
-39: Only defense; not aggressive defense
-54: Higher end of new team but less good than all the old teams"
-"6691","4 Parked
-3 None","3 R
-2 L
-2 M","2: Slow cycle time
-16: Difficulties with loading coral
-20: Pretty inconsistent accuracy 
-24: Fell over at the top of the match and wasn't able to show it's skills
-35: Slow cycles. Reliable coral mechanism. Easy to defend.
-46: Couldn't score. Had problems at the human loading station."
-"2262","3 Parked
-4 None","5 L
-2 R","2: Okay at l4"
-"6933","4 Parked
-2 None","3 R
-3 L","7: None 
-24: Fast bot, unreliable coral mechanism"
-"10138","6 None
-3 Parked","7 M
-1 L","3: Only did defense and were annoying but not too impressive for a defense bot
-12: budget bot
-18: Slow cycles tank drive 
-36: Ok defence.
-41: Slow l1 cycler.
-45: Could be a good l1 scorer for a third teamate"
-"839","6 Deep","3 R
-3 L","3: Pretty good for l2 and l3
-14: Good l2 and l3
-31: Fast cycles times. Can score on all levels. Reliable deap climb.
-53: Too fast to be 100% accurate "
-"2370","5 Deep
-2 Parked
-1 None","7 L","7: Fast cycle times
-16: Pretty good but were reckless with scoring which costhem points, can climb but was stuck on algae 
-26: Fast cycles on l4 and effective at scoring in the barge 
-36: Got the co-op rp by processing in opponents processor 
-39: Very fast l4 cycling. Fast climb."
-"9101","2 Parked
-3 None","1 M
-4 L","3: Was being defended the hole time and barely slowed down, 100% accuracy with coral scoring attempts
-7: Dropped some coral while placing and picking up from human player
-18: Effective at l2 and l3 but not as effective as Rosie
-32: Got coral rp with 7913 barely"
-"1073","7 Deep
-2 Parked","8 R
-1 M","3: Deep climb may not have counted, on algae 
-15: Can score l2 and l3 effectively
-41: Bumped us and contributed very little 
-44: Robot working less than 1st few matches
-51: Pretty fast cycles on l2 and l3. "
-"237","4 None
-3 Parked","2 L
-5 R","3: Medium to fast cycle times
-6: Processor, something happened to coral mechanism
-16: Didn't park because robot got hung up on algae
-52: Pretty good, very good algae, no climb"
-"10066","2 None
-6 Parked","4 R
-3 M
-2 L","4: Attempts score in auto but dropped before it got to the reef, pretty low accuracy
-13: budget bot
-17: Best of the budget bots
-25: Ok cycle time. Very good for budget bot
-36: Fast l1 cycler. Reliable coral mechanism.
-46: Bumper came off 
-54: New team, mid at best"
-"166","1 Parked
-7 Deep","1 M
-4 R
-3 L","4: Good 2 and 3 scoring
-7: Good coral elevator
-19: Placed lots of coral on L2-L4, very fast
-28: Fast cycles, filled up l4 by themselves 
-33: Great at l2 and l3 super valuable alliance teamate
-43: Ok l4 coral scorer. Ok processor scorer. Fast deap climb.
-46: Fast elevator cycler. Reliable deap climb."
-"4909","6 Deep","4 L
-2 R","16: Fast cycles 
-52: Really fast elevator cycler. Reliable deep climb."
-"5687","3 Parked
-2 None
-1 Deep","2 R
-4 L","4: Fast and controlled 
-8: Code malfunction. Did not compete
-17: Did 5< on each lvl by themselves and attempted 3 barge but 2 failed
-22: Insane match. Really fast and scored very quickly 
-30: Very fast cycles. Able to score algae in the processor. Didn't climb because it got stuck on algae."
-"1058","5 Deep
-3 Parked","6 R
-2 L","15: Fast deep climb 
-18: Slow cycles 
-23: Fast
-27: Faster cycle times but inconsistent coral mechanism
-33: Very fast but cycles slow because of a bad coral mechanism. Didn't get to their deap climb.
-45: Fast elevator cycler. Good deep climb."
-"8544","1 None
-7 Parked","3 M
-3 L
-2 R","4: Slow cycles maybe robot malfunction 
-12: Takes quite a while I aim and wasn't even fully accurate 
-20: Slow cycles
-53: Ok elevator cycler."
-"95","6 Deep
-1 None
-1 Parked","4 R
-5 L","5: Great match
-18: We did good :D
-24: Crazy good team "
-"3323","3 Parked
-5 Deep
-1 None","4 M
-2 R
-3 L","5: Pretty slow but very good with algae
-24: I think something went wrong part way through 
-42: Slower processor cycler. Working deap climb."
-"4572","1 Deep
-5 Parked
-3 None","2 L
-7 M","8: Placed 4-5 coral on level3. Dropped a couple more in the process.  
-13: Attempted coral in auto but failed, almost climbed but fell off
-25: Very slow cycles. Ok on l4
-31: Had trouble scoring higher than l1
-39: Broke down 1/2 through match"
-"8421","8 Parked
-1 Not Attempted","6 M
-2 R
-1 L","15: Difficulties w/ picking up algae 
-22: Spent whole match trying to pick up one ball
-34: Didn't try for coral after the start of teleop. Ok processor mechanism.
-40: Ok processor mechanism.
-44: Ok at defence. No attempt to score."
-"2423","7 Parked
-2 Deep","3 L
-6 R","12: Good l2 and l3
-20: Places coral all levels quickly; dropped a few while placing
-26: Good at l2 and l3. Ok cycle time
-41: Fast elevator cycler. Reliable deap climb."
-"69","3 Parked
-2 Deep
-1 None","2 R
-3 M
-1 L","5: Tippy when barge scoring 
-14: Decided not to score directly to barge
-17: Something went wrong with scoring mechanism and they went to play defense 
-23: Slow cycles but reliable scoring mechanism 
-32: Slow cycles. Unreliable coral mechanism.
-35: Slow coral cycles. Reliable coral mechanism."
-"2523","3 None
-6 Parked","7 M
-2 L","6: Very slow, semi accurate but not super
-12: Slow tank drive
-23: 4 L3 scored
-29: Good filler backup bot for l2 and l3 scoring. Slower cycles
-34: Slow coral cycles. Reliable coral mechanism.
-39: Slow cycles. Backup l2 and l3 bot.
-52: Very slow tank drive"
-"1729","4 Deep
-2 Parked
-2 None","2 L
-7 R","10: Tried so hard but successfully scored almost none
-17: Can't tell if they climbed or not
-29: Fast cycles. Very good at scoring l4
-44: Fast l4 coral cycler. Really lose to deap climb."
+"Name","Barge","AutonStart","comments"
+"95","1 Deep","1 R",""
+"133","1 Deep","1 L",""
+"166","1 Deep","1 R","6: Good"
+"181","1 None","1 M","3: Ground pickup only observed for coral"
+"190","1 Deep","1 L","6: Insane driving. Filled most of the reef singlehandedly. Climbed in around 2 seconds"
+"237","1 Parked","1 R","3: Slow, specialized on L4. Had aiming problems."
+"501","1 Parked","1 R","5: Played defense, only algae ground load, did not observe any coral handling."
+"571","1 Parked","1 L","4: Can remove algae and score l2 and L3. No deal climb "
+"999","1 Deep","1 R","6: Great all-rounder"
+"1071","1 Parked","1 M","4: They attempted to climb but failed, they struggled to score algae but were good at removing it from "
+"1991","1 Parked","1 L","3: Decent "
+"2064","1 Deep","1 L","3: Slow, good coral mechanism. Fast deep climb once set up"
+"2342","1 Parked","1 R",""
+"2370","1 Deep","1 L","4: Good"
+"2423","1 Parked","1 R",""
+"3182","1 Parked","1 M",""
+"4564","1 Parked","1 M",""
+"4925","1 None","1 M","5: Very bad driving"
+"5422","1 Parked","1 L",""
+"6153","1 Parked","1 M",""
+"7153","1 Deep","1 M","6: Good at barge, and coral."
+"9101","1 Parked","1 L","5: Took multiple trys to load coral and ""shaky"" driving "
+"9710","1 None","1 M",""
+"10066","1 None","1 M",""

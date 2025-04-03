@@ -1,0 +1,25 @@
+"Scouter_Name"	"Event"	"Match_Number"	"Robot"	"Team_Number"	"Auton_Start_Position"	"Leaves_Line"	"Coral_Scored"	"Algae_Proccessed"	"Algae_Removed"	"Has_Ground_pickup"	"Coral_Scored_on_L1"	"Coral_Scored_on_L2"	"Coral_Scored_on_L3"	"Coral_Scored_on_L4"	"Barge_Algae_Scored"	"Processor_Algae_Scored"	"Barge_Status"	"Time_to_Climb"	"Can_Handle_Coral"	"Can_Handle_Algae"	"Driver_Skill"	"Defense_Skill"	"Human_Player_Skill"	"Comments"
+AP	2025necmp1	3	b2	1991	L	Yes	0	No	No	No	No	No	No	No	0	2	Parked	Not Attempted	No	Yes	Low	Not Observed	Not Observed	Decent 
+Tyler	2025necmp1	3	b1	9710	M	Yes	0	No	No	No	No	Yes	No	Yes	0	0	None	Not Attempted	Yes	No	Low	Didn't Defend	Not Observed	
+Bw	2025necmp1	3	b3	3182	M	Yes	0	No	No	Yes	No	Yes	Yes	No	0	0	Parked	Not Observed	Yes	No	Medium	Low	Medium	
+Curran	2025necmp1	3	r1	237	R	Yes	1	No	No	No	No	No	No	Yes	0	0	Parked	Not Attempted	Yes	No	Low	Didn't Defend	Medium	Slow, specialized on L4. Had aiming problems.
+Curran	2025necmp1	3	r2	2064	L	Yes	0	No	No	No	No	Yes	Yes	No	0	0	Deep	'5-15	Yes	No	Low	Didn't Defend	Medium	Slow, good coral mechanism. Fast deep climb once set up
+Oliver	2025necmp1	3	r3	181	M	Yes	0	No	No	Yes	No	Yes	Yes	No	0	4	None	Not Attempted	Yes	Yes	Medium	Didn't Defend	Not Observed	Ground pickup only observed for coral
+AP	2025necmp1	4	b1	2370	L	Yes	0	No	No	No	No	Yes	Yes	Yes	0	0	Deep	'15-30	Yes	Yes	High	Didn't Defend	Low	Good
+Leo red 2	2025necmp1	4	r2	95	R	Yes	2	No	No	Yes	Yes	No	No	Yes	0	0	Deep	'5-15	Yes	No	High	Didn't Defend	High	
+Bw	2025necmp1	4	b2	2423	R	Yes	1	No	No	No	No	Yes	Yes	Yes	0	0	Parked	Not Attempted	Yes	No	High	Not Observed	High	
+DD	2025necmp1	4	b3	10066	M	Yes	1	No	No	No	Yes	No	No	No	0	0	None	Not Attempted	Yes	No	Low	Didn't Defend	Not Observed	
+Curran 	2025necmp1	4	r3	571	L	Yes	2	No	Yes	No	Yes	Yes	Yes	No	0	0	Parked	Not Attempted	No	Yes	High	Didn't Defend	Medium	Can remove algae and score l2 and L3. No deal climb 
+Oliver	2025necmp1	4	r1	1071	M	Yes	1	No	Yes	No	No	Yes	Yes	Yes	0	0	Parked	'5-15	Yes	Yes	Low	Not Observed	Not Observed	They attempted to climb but failed, they struggled to score algae but were good at removing it from 
+Bw	2025necmp1	5	b1	133	L	Yes	2	No	No	No	No	Yes	Yes	Yes	0	0	Deep	'5-15	Yes	Yes	High	Didn't Defend	High	
+Dd	2025necmp1	5	b2	2342	R	Yes	0	No	No	No	Yes	Yes	Yes	Yes	0	0	Parked	Not Observed	Yes	No	Medium	Didn't Defend	Medium	
+Tyer	2025necmp1	5	b3	4564	M	No	1	No	Yes	No	Yes	Yes	Yes	Yes	0	2	Parked	Not Attempted	Yes	Yes	Medium	Didn't Defend	Medium	
+Curran 	2025necmp1	5	r3	4925	M	Yes	0	No	No	No	Yes	No	No	Yes	0	0	None	Not Attempted	Yes	No	Low	Didn't Defend	Medium	Very bad driving
+Leo red 2	2025necmp1	5	r2	9101	L	Yes	1	No	Yes	No	No	No	Yes	No	0	1	Parked	Not Attempted	Yes	Yes	Medium	Didn't Defend	Low	Took multiple trys to load coral and "shaky" driving 
+Oliver	2025necmp1	5	r1	501	R	Yes	0	No	No	Yes	No	No	No	No	0	2	Parked	Not Attempted	No	Yes	Low	Low	Not Observed	Played defense, only algae ground load, did not observe any coral handling.
+DD	2025necmp1	6	b1	5422	L	Yes	0	No	No	No	No	Yes	Yes	Yes	0	0	Parked	Not Observed	Yes	No	Medium	Didn't Defend	Medium	
+Tyer	2025necmp1	6	b2	6153	M	Yes	0	No	No	No	No	Yes	Yes	Yes	0	0	Parked	Not Attempted	Yes	No	High	Didn't Defend	Low	
+AP	2025necmp1	6	b3	166	R	Yes	0	No	No	No	No	No	Yes	Yes	0	2	Deep	'5-15	Yes	Yes	Medium	Didn't Defend	Medium	Good
+Leo red 2	2025necmp1	6	r2	999	R	Yes	1	No	No	No	Yes	Yes	No	Yes	0	1	Deep	'15-30	Yes	Yes	Medium	Didn't Defend	High	Great all-rounder
+Oliver	2025necmp1	6	r1	7153	M	Yes	0	No	No	No	No	Yes	Yes	Yes	2	0	Deep	'15-30	Yes	Yes	Medium	Not Observed	Not Observed	Good at barge, and coral.
+Curran 	2025necmp1	6	r3	190	L	Yes	2	No	No	No	No	Yes	Yes	Yes	0	0	Deep	'0-5	Yes	No	High	Didn't Defend	High	Insane driving. Filled most of the reef singlehandedly. Climbed in around 2 seconds
