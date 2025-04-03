@@ -101,3 +101,9 @@ Mirola	2025necmp1	19	b1	9644	M	Yes	1	No	No	No	YesYes	Yes	Yes	0	0	Parked	Not Atte
 Leo red 2	2025necmp1	19	r2	237	R	Yes	1	No	No	No	No	No	No	No	0	0	None	Not Attempted	Yes	No	Not Observed	Didn't Defend	Not Observed	Robot malfunction at start of teleop
 Curran	2025necmp1	19	r3	2423	L	Yes	2	No	No	No	No	Yes	Yes	Yes	0	0	Deep	'5-15	Yes	No	High	Didn't Defend	Medium	Specialized in l2 and l3. Could pick algae. Pretty good atuo 
 Oliver	2025necmp1	19	r1	6153	M	Yes	0	No	No	No	No	Yes	Yes	No	0	2	Deep	'5-15	Yes	Yes	Low	Didn't Defend	Not Observed	Driving was not good but seemed like they didn't have a proportional controller.
+Cadence	2025necmp1	20	b3	155	M	Yes	1	No	No	No	Yes	No	No	Yes	0	0	Deep	'5-15	Yes	No	Not Observed	Medium	Not Observed	
+Mirola	2025necmp1	20	b1	2648	R	Yes	2	No	No	No	No	Yes	Yes	Yes	0	2	Deep	'0-5	Yes	Yes	High	Didn't Defend	Low	
+BI4905	2025necmp1	20	b2	5422	L	Yes	2	No	No	No	No	No	Yes	Yes	0	0	Deep	'5-15	Yes	No	Low	Didn't Defend	Not Observed	
+Oliver	2025necmp1	20	r1	3182	R	Yes	1	No	No	No	No	Yes	No	No	0	0	Deep	'5-15	Yes	No	Medium	Low	Not Observed	
+Leo red 2	2025necmp1	20	b3	155	L	Yes	3	No	No	No	Yes	Yes	Yes	Yes	0	0	Deep	'5-15	Yes	No	High	Didn't Defend	Medium	Feels less consistent than last weekend.
+Curran	2025necmp1	20	r3	8544	M	Yes	0	No	No	No	No	No	Yes	No	0	2	None	Not Attempted	Yes	Yes	Low	Didn't Defend	Medium	Could clear the reef and score in processor. Slow cycling. No climb

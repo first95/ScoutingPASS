@@ -3,9 +3,10 @@
 "125","2 Deep","2 R",""
 "133","2 Deep","1 L
 1 R","15: Good drive train. Can score on all levels and the processor. Interesting deap climb."
-"155","1 Deep
-1 Shallow","1 M
-1 L","7: Human loader didn't prepare to load coral, lazy."
+"155","3 Deep
+1 Shallow","2 M
+2 L","7: Human loader didn't prepare to load coral, lazy.
+20: Feels less consistent than last weekend."
 "166","3 Deep","2 R
 1 L","6: Good
 12: Can remove algae from the reef, score oral on l2, L3, and L4, and has an okay deep climb."
@@ -64,10 +65,12 @@
 1 Deep","1 R
 2 L","10: Good at coral not algae amazingly in auto the robot realized wasn't loaded and returned to the huma.
 19: Specialized in l2 and l3. Could pick algae. Pretty good atuo "
-"2648","1 Parked","1 L",""
+"2648","1 Parked
+1 Deep","1 L
+1 R",""
 "3182","1 Parked
-1 Deep","1 M
-1 R","10: Specialized in l2 and L3. Good deep climb once they got set up. "
+2 Deep","1 M
+2 R","10: Specialized in l2 and L3. Good deep climb once they got set up. "
 "3467","1 Deep","1 L",""
 "4048","2 Deep","1 R
 1 M","7: Only algae handled was removing from reef."
@@ -83,7 +86,8 @@
 12: Problem with holding coral
 18: Very bad match. Had trouble with coral mechisum. Very bad at defense. Couldn't climb after a minute."
 "5422","1 Parked
-1 None","1 L
+1 None
+1 Deep","2 L
 1 R",""
 "5687","2 Deep
 1 Shallow","2 L
@@ -102,8 +106,9 @@
 "8013","3 Deep
 1 None","4 M","17: Climbed super early
 17: Could pick algae. Specialized in L4. Climbed to early."
-"8544","1 None
-1 Shallow","2 M","8: Below average"
+"8544","2 None
+1 Shallow","3 M","8: Below average
+20: Could clear the reef and score in processor. Slow cycling. No climb"
 "8567","1 None
 1 Parked","2 L","8: I could not tell if the elevator could allow them to score L2"
 "8626","1 Parked","1 M",""
