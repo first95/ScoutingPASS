@@ -92,7 +92,7 @@ Curran	2025necmp1	17	r2	8013	M	Yes	1	No	Yes	No	No	No	No	Yes	0	0	Deep	'5-15	Yes	N
 BI4905	2025necmp1	18	b2	509	R	Yes	0	No	Yes	Yes	No	No	Yes	No	1	0	Deep	'0-5	Yes	Yes	Medium	Didn't Defend	Not Observed	
 Cadence	2025necmp1	18	b3	1729	L	Yes	1	No	No	No	No	Yes	Yes	Yes	0	0	Deep	'5-15	Yes	No	Not Observed	Not Observed	Not Observed	
 Mirola	2025necmp1	18	b1	1991	M	Yes	0	No	No	No	No	No	No	No	0	2	Parked	Not Attempted	No	Yes	Not Observed	Medium	Not Observed	
-Leo red 2	2025necmp1	18	r2	6328	R	Yes	2	No	No	No	Yes	Yes	Yes	Yes	0	2	Deep'5-15	Yes	Yes	High	Didn't Defend	High	Fast cycles, could get coral jammed easily though
+Leo red 2	2025necmp1	18	r2	6328	R	Yes	2	No	No	No	Yes	Yes	Yes	Yes	0	2	Deep	'5-15	Yes	Yes	High	Didn't Defend	High	Fast cycles, could get coral jammed easily though
 Curran	2025necmp1	18	r3	4925	M	Yes	0	No	No	No	No	No	No	No	0	0	Parked	'>30	Yes	No	Low	Low	Low	Very bad match. Had trouble with coral mechisum. Very bad at defense. Couldn't climb after a minute.
 Oliver	2025necmp1	18	r1	230	L	Yes	2	No	No	No	No	No	Yes	Yes	0	0	Deep	'5-15	Yes	No	Medium	Didn't Defend	Not Observed	Has potential to score algae but didn't do it this time.
 Cadence	2025necmp1	19	b3	5687	L	Yes	2	No	No	Yes	Yes	Yes	Yes	No	0	0	Deep	'5-15	Yes	No	Not Observed	Not Observed	Not Observed	
@@ -120,7 +120,7 @@ Oliver	2025necmp1	22	r1	95	L	Yes	3	No	No	Yes	Yes	No	No	Yes	0	0	Deep	'0-5	Yes	No	
 Curran	2025necmp1	22	r3	125	R	Yes	0	No	No	No	No	Yes	Yes	Yes	3	0	Deep	'0-5	Yes	Yes	High	Didn't Defend	Medium	Fast drive train and cycles on all levels. Fast deap climb
 Curran	2025necmp1	23	r2	4048		Yes	0	No	No	No	No	No	Yes	Yes	0	0	Parked	'>30	Yes	No	Medium	Didn't Defend	Medium	Specialized L4, Pretty fast cycling. Couldn't climb.
 Curran	2025necmp1	23	r1	663		Yes	0	No	No	No	No	No	Yes	Yes	0	0	None	Not Attempted	Yes	No	Low	Didn't Defend	Medium	Could remove algae. Time consuming coral mechanism 
-E r3	2025necmp1	23	r3	9710	M	Yes	1	No	No	No	No	No	No	No	0	0	None	Not Attempted	Yes No	Medium	Medium	Not Observed	Not bad at defence but not exceptional in the least
+E r3	2025necmp1	23	r3	9710	M	Yes	1	No	No	No	No	No	No	No	0	0	None	Not Attempted	Yes	No	Medium	Medium	Not Observed	Not bad at defence but not exceptional in the least
 Leo Blue 3	2025necmp1	23	b3	1058	R	Yes	1	No	No	No	Yes	No	No	Yes	0	0	Deep	'5-15	Yes	Yes	High	Didn't Defend	Medium	Climb more reliable than last weekend, looks to be altered
 E r3	2025necmp1	24	r3	10066	L	Yes	1	No	No	No	Yes	No	No	No	0	0	None	Not Attempted	Yes	No	Low	Not Observed	Not Observed	Still only does L1 and is ok enough but not great
 Leo Blue 3	2025necmp1	24	b3	1073	L	Yes	2	No	No	No	No	No	Yes	Yes	0	0	Deep	'15-30	Yes	Yes	Medium	Didn't Defend	Medium	
@@ -129,8 +129,8 @@ Curran	2025necmp1	24	r1	1721	M	Yes	0	No	No	No	No	No	No	No	0	3	Deep	'5-15	No	Yes	
 Olier	2025necmp1	24	b1	4564	M	Yes	1	No	No	No	No	Yes	Yes	Yes	0	0	Parked	Not Attempted	Yes	No	Medium	Didn't Defend	Not Observed	No climb different coral
 Oliver	2025necmp1	24	b2	7127	R	Yes	2	No	No	No	Yes	Yes	Yes	Yes	0	0	Parked	Not Attempted	No	No	Not Observed	Not Observed	Not Observed	
 Olier	2025necmp1	25	b1	1729	R	Yes	0	No	No	No	No	No	No	No	0	0	Parked	Not Observed	Yes	No	Medium	High	Not Observed	
-Oliver	2025necmp1	25	b2	571	L	Yes	1	No	No	No	No	Yes	Yes	No	0	0	None	Not Attempted	Yes	No	Low	Didn't Defend	Not Observed
-E r3	2025necmp1	25	r3	509	L	Yes	0	No	No	No	No	No	No	Yes	4	0	Parked	'15-30	Yes	Yes	MediumDidn't Defend	Not Observed	I like their algae thrower, slow with coral but fast with algae 
+Oliver	2025necmp1	25	b2	571	L	Yes	1	No	No	No	No	Yes	Yes	No	0	0	None	Not Attempted	Yes	No	Low	Didn't Defend	Not Observed	
+E r3	2025necmp1	25	r3	509	L	Yes	0	No	No	No	No	No	No	Yes	4	0	Parked	'15-30	Yes	Yes	Medium	Didn't Defend	Not Observed	I like their algae thrower, slow with coral but fast with algae 
 Curran	2025necmp1	25	r2	8626	M	Yes	0	No	No	No	No	No	No	No	4	0	Parked	Not Attempted	No	Yes	Medium	Didn't Defend	Not Observed	Stalled at start but unstalled and was ok at barge.
 Curran	2025necmp1	25	r1	155	R	Yes	0	No	No	No	No	No	No	Yes	0	0	Deep	'5-15	Yes	No	Medium	Didn't Defend	Medium	Scored all the coral for its team.
 Leo Blue 3	2025necmp1	25	b3	6153	R	Yes	1	No	No	No	No	Yes	Yes	Yes	0	0	Parked	'5-15	Yes	No	Medium	Didn't Defend	Not Observed	Medium cycles 
