@@ -231,3 +231,18 @@ E Johnson r3	2025necmp1	45	r3	8567	R	Yes	0	No	No	No	No	Yes	Yes	Yes	0	0		Not Obse
 Leo B3	2025necmp1	45	b3	8708	M	Yes	0	No	No	No	No	Yes	Yes	Yes	0	0	Parked	'0-5	Yes	No	Medium	Didn't Defend	Medium	
 Curran	2025necmp1	45	r2	2064	L	Yes	0	No	No	No	No	Yes	Yes	No	0	0	Parked	'>30	Yes	No	High	Didn't Defend	Medium	Fast drive train but unreliable coral mechanism.
 Curran	2025necmp1	45	r1	509	M	Yes	0	No	Yes	No	No	No	No	No	4	2	Deep	'5-15	No	Yes	Medium	Didn't Defend	Medium	Could clear algae, score in the processor, and in the barge. High climb.
+E Johnson r3	2025necmp1	46	r3	2648	L	Yes	2	No	No	No	No	Yes	Yes	Yes	1	0	Parked	Not Attempted	Yes	Yes	Medium	Didn't Defend	High	Pretty good, wouldn't hurt to have on team but wouldn't be too bad to go against 
+Curran	2025necmp1	46	r2	1071	M	Yes	1	No	Yes	No	No	Yes	Yes	No	0	0	Deep	'5-15	Yes	No	Low	Didn't Defend	Medium	Ok coral cycler but wasn't able to line up easily. Ok climb
+Curran	2025necmp1	46	r1	6328	R	Yes	3	No	No	No	Yes	Yes	Yes	Yes	1	1	Parked	'>30	Yes	Yes	High	Didn't Defend	Medium	Fast and reliable elevator cycler. Could pick algae and score it in both locations.
+Oliver	2025necmp1	46	b1	2342	M	Yes	0	No	No	No	No	Yes	Yes	Yes	0	0	Parked	Not Attempted	Yes	No	Medium	Not Observed	Not Observed	Failed climb, good coral bot
+Leo B3	2025necmp1	46	b3	3467	R	Yes	3	No	No	No	No	Yes	Yes	Yes	0	0	Parked	'5-15	Yes	Yes	High	Didn't Defend	Medium	
+E Johnson r3 	2025necmp1	47	r3	1721	M	Yes	0	No	No	No	No	No	No	No	0	2	Deep	'>30	No	Yes	Low	Didn't Defend	Not Observed	Very slow, only processor points, not fully sure if they climbed fully, don't pick
+Oliver	2025necmp1	47	b1	6329	L	Yes	3	No	No	No	No	Yes	Yes	Yes	4	0	Deep	'0-5	Yes	Yes	High	Didn't Defend	Medium	Shooting coral and throwing algae!
+Leo B3	2025necmp1	47	b3	4564	R	Yes	1	No	No	No	No	Yes	Yes	Yes	0	1	None	Not Attempted	Yes	Yes	Medium	Didn't Defend	Medium	
+Curran	2025necmp1	47	r2	246	L	Yes	0	No	No	No	No	Yes	Yes	Yes	0	0	None	Not Attempted	Yes	No	Medium	Not Observed	Medium	Sort of slow coral cycler. Could score on all levels but l1.
+Curran	2025necmp1	47	r1	5422	R	Yes	2	No	No	No	No	Yes	Yes	Yes	0	0	Parked	'>30	Yes	No	Medium	Not Observed	Medium	Pretty good coral cycler and could score on all levels but l1.
+Oliver	2025necmp1	48	b1	2423	L	Yes	2	No	No	No	No	Yes	Yes	Yes	0	0	Deep	'5-15	Yes	No	Medium	Didn't Defend	Not Observed	
+Leo B3	2025necmp1	48	b3	230	R	Yes	2	No	No	No	No	No	Yes	Yes	0	1	Deep	'0-5	Yes	Yes	High	Didn't Defend	Medium	
+E Johnson r3 	2025necmp1	48	r3	190		Yes	4	No	No	No	Yes	Yes	Yes	Yes	0	0	Deep	'0-5	Yes	No	High	Didn't Defend	High	Very good obviously say yes if they ask us lol
+Curran	2025necmp1	48	r2	8626	R	Yes	1	No	Yes	No	No	No	No	No	0	0	None	Not Attempted	Yes	Yes	Not Observed	Didn't Defend	Not Observed	Stalled out at the end of teleop.
+Curran	2025necmp1	48	r1	9710	M	Yes	0	No	No	No	No	Yes	Yes	Yes	0	0	Parked	'>30	Yes	No	Medium	Didn't Defend	Medium	Ok coral cycler. Had a hard time aiming.
