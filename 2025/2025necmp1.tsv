@@ -261,3 +261,32 @@ Oliver	2025necmp1	51	b1	133	R	Yes	3	No	No	Yes	Yes	Yes	Yes	Yes	4	0	Deep	Not Obser
 E Johnson r3 	2025necmp1	51	r3	8013	M	No	1	No	Yes	No	No	No	Yes	Yes	2	0	Deep	'15-30	Yes	Yes	Medium	Didn't Defend	Medium	Algae barged in auto, other than that pretty slow, should focus on algae not coral, don't prioritize
 Curran	2025necmp1	51	r2	125	R	No	3	No	No	No	No	No	No	Yes	2	0	Deep	'0-5	Yes	Yes	High	Didn't Defend	Medium	Really fast drive train and l4 cycler. Can score in the barge and a fast deep climb.
 Curran	2025necmp1	51	r1	3182	L	No	0	No	No	Yes	No	Yes	Yes	No	0	0	Deep	'5-15	Yes	No	Low	Didn't Defend	Medium	Slower drive drain and coral mechanism. Was impossible to defend with ground load.
+E Johnson r3 	2025necmp1	52	r3	5422	L	Yes	1	No	No	No	No	Yes	Yes	No	0	0	Deep	'15-30	Yes	No	Low	Didn't Defend	Not Observed	Ooooof, don't prioritize, very slow and somehow still inaccurate 
+Leo B3	2025necmp1	52	b3	571	M	Yes	0	No	No	No	No	Yes	Yes	No	0	0	Parked	'0-5	Yes	No	Low	Didn't Defend	Medium	Medium cycles
+Oliver	2025necmp1	52	b1	9644	M	Yes	1	No	No	No	Yes	Yes	Yes	Yes	0	0	Parked	Not Attempted	Yes	Yes	Not Observed	Not Observed	Not Observed	
+Curran	2025necmp1	52	r2	2064	M	Yes	1	No	Yes	No	No	Yes	Yes	No	0	0	Deep	'15-30	Yes	No	Medium	Didn't Defend	Medium	Fast drive train and a unreliable coral mechanism. Climb took three tries.
+Curran	2025necmp1	52	r1	2370	R	Yes	2	No	No	No	No	Yes	No	Yes	0	4	Deep	'5-15	Yes	Yes	Medium	Didn't Defend	Medium	Good coral cycler and able to score plus remove algae.
+Leo B3	2025necmp1	53	b3	181	M	Yes	0	Yes	No	No	No	No	No	No	4	1	Parked	Not Attempted	No	Yes	High	Didn't Defend	Not Observed	Good algae bot
+Oliver	2025necmp1	53	b1	230		Yes	1	No	No	No	No	Yes	Yes	Yes	0	0	Parked	Not Attempted	Yes	No	Medium	Not Observed	Not Observed	
+E Johnson r3 	2025necmp1	53	r3	2423	L	Yes	2	No	No	No	No	Yes	Yes	No	0	1	Deep	'15-30	Yes	Yes	High	Didn't Defend	Medium	Solid team, not absurd good but still up there, definitely slightly prioritize 
+Curran	2025necmp1	53	r2	7127	R	Yes	0	No	No	No	No	No	Yes	Yes	0	0	Parked	Not Attempted	Yes	No	Medium	Didn't Defend	Medium	Had trouble with driving at the start after teleop and had trouble aiming.
+Curran	2025necmp1	53	r1	8708	M	Yes	0	No	No	No	No	Yes	Yes	Yes	0	0	Parked	'>30	Yes	No	Medium	Didn't Defend	Medium	 Fast driving with a slow coral mechanism. Couldn't get up.
+Oliver	2025necmp1	54	b1	246	R	Yes	0	No	No	No	No	No	Yes	Yes	0	2	Parked	Not Attempted	Yes	Yes	Medium	Not Observed	Not Observed	
+Leo B3	2025necmp1	54	b3	1071	L	Yes	1	No	No	No	No	Yes	Yes	Yes	0	0	Parked	'0-5	Yes	No	Medium	Didn't Defend	Medium	
+E Johnson r3 	2025necmp1	54	r3	6153	M	No	0	No	No	No	No	No	No	No	0	0		Not Observed	No	No	Not Observed	Didn't Defend	Medium	Bot down for whole match
+Curran	2025necmp1	54	r2	4564	R	Yes	0	No	No	No	No	No	Yes	Yes	0	1	Parked	Not Attempted	Yes	Yes	Medium	Didn't Defend	Medium	Ok l4 coral cycler but had trouble scoring on any other levels. Could remove algae from the reef.
+Curran	2025necmp1	54	r1	3467	L	Yes	2	No	No	No	No	Yes	Yes	Yes	3	0	Deep	'5-15	Yes	Yes	High	Didn't Defend	Medium	Fast evevator cycler and a good deep climb.
+E Johnson r3 	2025necmp1	55	r3	501		Yes	0	No	No	No	No	No	No	No	0	0	Parked	'>30	No	No	Not Observed	Not Observed	Not Observed	Bot broke and went defense, broke more and parked at 2mins
+Leo B3	2025necmp1	55	b3	95	R	Yes	3	No	No	Yes	Yes	No	No	Yes	0	0	Parked	'0-5	Yes	No	High	Didn't Defend	High	Crazy match v 190!
+Curran	2025necmp1	55	r2	190	L	Yes	3	No	No	No	No	No	No	Yes	0	0	Deep	'5-15	Yes	No	Medium	Medium	Medium	Had trouble with scoring mechisum and went to play defense.
+Curran	2025necmp1	55	r1	8544	R	No	0	No	No	No	No	Yes	Yes	No	0	0	Parked	Not Attempted	Yes	No	Low	Didn't Defend	Medium	Slow elevator cycler. Only scored on their team.
+Oliver	2025necmp1	56	b1	166	R	Yes	1	No	No	No	No	No	No	Yes	0	3	Deep	Not Attempted	Yes	Yes	Medium	Didn't Defend	Not Observed	
+E Johnson r3 	2025necmp1	56	r3	663	M	Yes	1	No	No	No	No	No	Yes	Yes	0	0	None	Not Attempted	Yes	No	Medium	Didn't Defend	Not Observed	Slow and not fully accurate, don't prioritize 
+Curran	2025necmp1	56	r2	4909	L	Yes	3	No	No	No	No	Yes	Yes	Yes	0	0	Deep	'5-15	Yes	No	High	Didn't Defend	Medium	Fast elevator cycler. Filled over half of l4 and half of L3.
+Curran	2025necmp1	56	r1	2648	R	Yes	0	No	No	No	No	No	Yes	Yes	0	0	Deep	'15-30	Yes	No	Medium	Didn't Defend	Medium	Ok elevator cycler. Had trouble lining up coral.
+Leo B3	2025necmp1	56	b3	6328	L	Yes	3	No	No	No	No	No	Yes	Yes	4	0	Deep	'5-15	Yes	Yes	High	Didn't Defend	High	Great all-rounder fast cycles
+Leo B3	2025necmp1	57	b3	4925	M	Yes	1	No	No	No	Yes	No	No	No	0	0	Parked	Not Attempted	Yes	No	Not Observed	Medium	Not Observed	
+Oliver	2025necmp1	57	b1	999	L	Yes	1	No	No	No	No	Yes	Yes	Yes	0	0	Deep	'0-5	Yes	Yes	Medium	Not Observed	Not Observed	
+E Johnson r3 	2025necmp1	58	r3	1729		No	0	No	No	No	No	No	No	No	0	0		Not Observed	No	No	Not Observed	Not Observed	Not Observed	
+Curran	2025necmp1	57	r2	5687	L	Yes	2	No	No	No	No	Yes	Yes	Yes	0	1	Deep	'5-15	Yes	Yes	High	Didn't Defend	Medium	Really fast elevator cycler and could remove algae from the reef. Fast climb.
+Curran	2025necmp1	57	r1	571	R	Yes	1	No	Yes	No	Yes	Yes	Yes	No	0	0	Parked	Not Attempted	Yes	No	Medium	Didn't Defend	Medium	Fast drive train but had trouble with aiming.
