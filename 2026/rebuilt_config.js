@@ -9,27 +9,6 @@ var config_data =
         "title": "Prematch",
         "type": "divider"
       },
-      "Scouter Name": {
-        "code": "s",
-        "title": "Scouter Name",
-        "type": "scouter",
-        "size": 10,
-        "maxSize": 20
-      },
-      "Event": {
-        "code": "e",
-        "title": "Event",
-        "type": "event",
-        "defaultValue": "2026nhbed",
-        "disabled": "true"
-      },
-      "Match Number": {
-        "code": "m",
-        "title": "Match Number",
-        "type": "match",
-        "min": 1,
-        "max": 100
-      },
       "Robot": {
         "code": "r",
         "title": "Robot",
