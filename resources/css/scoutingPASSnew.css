@@ -11,47 +11,46 @@
   --surface-raised:#1e2e40;   /* Cards / table cells */
   --border:        rgba(255,255,255,0.10);
   --border-strong: rgba(255,255,255,0.22);
-  --text:          #000000;
-  --accent:        #2ecc55;   /*green — primary accent */
-  --accent-blue:   #1a7fd4;   /*blue — secondary accent */
+  --text:          #e8f0ff;   /* light blue-white — readable on dark bg */
+  --text-muted:    #7a9ab8;
+  --accent:        #2ecc55;   /* green — primary accent */
+  --accent-blue:   #1a7fd4;   /* blue — secondary accent */
   --danger:        #d63031;   /* red — danger/clear actions */
 
-  /* fonts and stuff */
+  /* fonts */
   --font-display: 'Audiowide', monospace;
   --font-body:    'Chakra Petch', 'Segoe UI', system-ui, sans-serif;
 
-  /* margins and spacing stuff */
+  /* spacing */
   --space-xs:  4px;
   --space-sm:  8px;
   --space-md:  16px;
   --space-lg:  24px;
   --space-xl:  36px;
 
-  /* corner radiussss */
+  /* radii */
   --radius-sm:  6px;
   --radius-md:  10px;
   --radius-lg:  16px;
   --radius-pill:999px;
 
-  /* shadows because noice */
+  /* shadows */
   --shadow-sm:  0 1px 4px rgba(0,0,0,0.4);
   --shadow-md:  0 4px 16px rgba(0,0,0,0.45);
   --shadow-lg:  0 8px 32px rgba(0,0,0,0.55);
   --glow-accent:0 0 12px rgba(46,204,85,0.3);
 
-  /* transition delays */
+  /* transitions */
   --transition-fast: 120ms ease;
   --transition-std:  200ms ease;
 }
 
 @font-face {
-    font-family: 'Audiowide';
-    font-style: normal;
-    font-weight: normal;
-    /*src: local('Alexis'), url('../fonts/alex.woff') format('woff');*/
-    src: url("../fonts/Audiowide-Regular.ttf") format('truetype');
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Audiowide-Regular.ttf") format('truetype');
 }
-
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -60,8 +59,8 @@
 html, body {
   height: 100%;
   width: 100%;
-  margin: 10;
-  padding: 10;
+  margin: 0;
+  padding: 0;
   background-color: var(--background);
   color: var(--text);
   font-family: var(--font-body);
@@ -70,7 +69,7 @@ html, body {
   -webkit-tap-highlight-color: transparent;
 }
 
-/*layout stuff*/
+/* layout */
 .column {
   flex: 1;
 }
@@ -81,7 +80,6 @@ html, body {
   gap: var(--space-sm);
 }
 
-/* Clear floats after the columns */
 .row::after {
   content: "";
   display: table;
@@ -94,7 +92,7 @@ html, body {
   padding: var(--space-sm) 0;
 }
 
-/* Main panel (swipeable pages) */
+/* Main panel */
 .main-panel {
   display: none;
   height: 100%;
@@ -116,6 +114,7 @@ html, body {
   display: block;
 }
 
+/* h1 — green ScoutingPASS 95 banner */
 h1 {
   font-family: Audiowide;
   text-align: center;
@@ -123,10 +122,12 @@ h1 {
   font-weight: 400;
   letter-spacing: 2px;
   padding: var(--space-md) var(--space-lg);
-  margin: 0 var(--space-md) var(--space-md);
-  border-radius: var(--radius-lg);
-  border: 3px solid var(--accent);
-  background-color: var(--surface);
+  margin: 0 0 var(--space-md) 0;
+  border-radius: 0;
+  border: none;
+  border-bottom: 3px solid rgba(255,255,255,0.15);
+  background-color: var(--prematch);   /* green header */
+  color: #fff;
   box-shadow: var(--shadow-md);
 }
 
@@ -164,7 +165,7 @@ h2 {
   padding-bottom: var(--space-sm);
 }
 
-/* section color headers (the left/mid/right table cells)*/
+/* section color header tables */
 #prematch_table_left,  #prematch_table_mid,  #prematch_table_right,
 #auton_table_left,     #auton_table_mid,     #auton_table_right,
 #teleop_table_left,    #teleop_table_mid,    #teleop_table_right,
@@ -180,9 +181,10 @@ h2 {
   padding: var(--space-md) var(--space-sm);
   border-radius: var(--radius-md);
   text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  /* gap between sections */
+  margin-bottom: 6px;
 }
 
-/* individual section background colors */
 #prematch_table_left,  #prematch_table_mid,  #prematch_table_right {
   background-color: var(--prematch);
 }
@@ -199,7 +201,7 @@ h2 {
   background-color: var(--postmatch);
 }
 
-/*  tables */
+/* tables */
 table {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -209,12 +211,15 @@ table {
   overflow: hidden;
   background-color: var(--surface);
   box-shadow: var(--shadow-sm);
+  /* gap between each rounded section */
+  margin-bottom: 6px;
 }
 
 td {
   padding: var(--space-sm) var(--space-md);
   border-bottom: 1px solid var(--border);
   vertical-align: middle;
+  color: var(--text);
 }
 
 tr:last-child td {
@@ -231,7 +236,7 @@ tr:last-child td {
   background-color: var(--surface);
 }
 
-
+/* inputs */
 input {
   font-family: var(--font-body);
   font-size: 17px;
@@ -241,7 +246,7 @@ input {
   border: 1.5px solid var(--border-strong);
   border-radius: var(--radius-sm);
   padding: var(--space-sm) var(--space-md);
-  min-height: 44px;        /* iOS tap target */
+  min-height: 44px;
   width: 100%;
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
   outline: none;
@@ -265,21 +270,28 @@ input[type=radio] {
   border: none;
   width: 2.4em;
   height: 2.4em;
+  min-height: unset;
+  width: unset;
   vertical-align: middle;
   accent-color: var(--accent);
   cursor: pointer;
+  -webkit-appearance: auto;
 }
 
 input[type=checkbox] {
   border: none;
   width: 2.2em;
   height: 2.2em;
+  min-height: unset;
+  width: unset;
   vertical-align: middle;
   accent-color: var(--accent);
   cursor: pointer;
   border-radius: var(--radius-sm);
+  -webkit-appearance: auto;
 }
 
+/* buttons base */
 button {
   font-family: var(--font-body);
   font-size: 15px;
@@ -312,6 +324,7 @@ button:active {
   box-shadow: none;
 }
 
+/* counter +/- buttons — pill shaped */
 button.counter-btn,
 td > button {
   width: 2.8em;
@@ -325,7 +338,7 @@ td > button {
   line-height: 1;
 }
 
-/* navigation buttons*/
+/* navigation buttons */
 #nextButton1, #nextButton2, #nextButton9, #nextButton10,
 #nextButton3, #nextButton4, #nextButton5, #nextButton6, #nextButton7, #nextButton8,
 #prevButton1, #prevButton2, #prevButton3, #prevButton4, #prevButton5, #prevButton6,
@@ -354,7 +367,7 @@ td > button {
 #nextButton3:hover, #nextButton4:hover, #nextButton5:hover,
 #nextButton6:hover, #nextButton7:hover, #nextButton8:hover {
   background-color: var(--accent);
-  color: #1a2332;
+  color: #0f1a24;
   border-color: var(--accent);
   box-shadow: var(--glow-accent);
 }
@@ -369,6 +382,43 @@ td > button {
   background-color: rgba(214,48,49,0.15);
   border-color: var(--danger);
   color: var(--danger);
+}
+
+/* top bar — fixed header strip */
+#top {
+  background-color: var(--surface);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: 2px solid var(--border-strong);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  z-index: 100;
+  flex-wrap: wrap;
+}
+
+#top label {
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+#top input[type=text],
+#top input[type=number] {
+  min-height: 36px;
+  font-size: 15px;
+  width: auto;
+  padding: var(--space-xs) var(--space-sm);
+}
+
+/* Next button pushed to the far right of the top bar */
+#nextButton1 {
+  margin-left: auto;
 }
 
 #prevButton7, #prevButton8, #prevButton9 {
@@ -400,7 +450,7 @@ td > button {
 .half-button-l:hover,
 .half-button-r:hover {
   background-color: var(--accent);
-  color: #1a2332;
+  color: #0f1a24;
   border-color: var(--accent);
   box-shadow: var(--glow-accent);
 }
@@ -410,7 +460,7 @@ td > button {
   transform: scale(0.97);
 }
 
-/* Page headers (match / team info) */
+/* page headers */
 #prematchHeader1, #prematchHeader2 {
   text-align: left;
   color: var(--text);
@@ -435,7 +485,7 @@ td > button {
   font-size: 14px;
 }
 
-/* Fixed team info strip */
+/* fixed team info strip */
 .team-info-header {
   position: fixed;
   width: 33%;
@@ -452,7 +502,6 @@ td > button {
   z-index: 10;
 }
 
-/* match label */
 .match-label {
   text-align: center;
   background-color: transparent;
@@ -482,7 +531,7 @@ td > button {
   max-width: 100%;
 }
 
-/* QR code section */
+/* QR code */
 #qr-code {
   text-align: center;
   padding: var(--space-lg);
@@ -493,7 +542,7 @@ td > button {
   border: 3px solid var(--border-strong);
   border-radius: var(--radius-md);
   padding: var(--space-sm);
-  background: #fff; /* QR codes need white background */
+  background: #fff;
   box-shadow: var(--shadow-lg);
 }
 
@@ -507,8 +556,10 @@ td > button {
 
 .field {
   text-align: left;
+  color: var(--text);
 }
 
+/* scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
