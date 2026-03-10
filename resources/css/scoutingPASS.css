@@ -281,3 +281,7 @@ input {
 input, button, select, textarea, table, .divider-header, .team-info-header, .column {
   border-radius: 6px;
 }
+
+.divider-header:first-child {
+  margin-top: 20px;
+}
