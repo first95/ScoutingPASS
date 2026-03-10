@@ -12,7 +12,7 @@
   --border:        rgba(255,255,255,0.10);
   --border-strong: rgba(255,255,255,0.22);
   --text:          #e8f0ff;   /* light blue-white — readable on dark bg */
-  --text-muted:    #7a9ab8;
+  --text-muted:    #e8f0ff;
   --accent:        #2ecc55;   /* green — primary accent */
   --accent-blue:   #1a7fd4;   /* blue — secondary accent */
   --danger:        #d63031;   /* red — danger/clear actions */
@@ -59,8 +59,8 @@
 html, body {
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
   background-color: var(--background);
   color: var(--text);
   font-family: var(--font-body);
@@ -330,7 +330,7 @@ td > button {
   width: 2.8em;
   height: 2.8em;
   min-width: 2.8em;
-  padding: 0;
+  padding: 1;
   font-size: 20px;
   font-weight: 700;
   border-radius: var(--radius-pill);
