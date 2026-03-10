@@ -95,7 +95,7 @@ button {
     color: var(--text);
     border-color: var(--border);
     border-width: 4px;
-    margin:0 0 0.5em 0;
+    margin:0 0 2em 0;
 }
 
 #qrHeader1 {
@@ -289,5 +289,6 @@ table {
 #prematch_table_left, #prematch_table_mid, #prematch_table_right {
   margin-top: 20px;
 }
+
 
 
