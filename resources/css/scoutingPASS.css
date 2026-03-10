@@ -278,11 +278,16 @@ input {
 }
 
 /*I'm adding rounded corners because its the easiest step towards changing a UI from looking out the mid 2000s to the 2020s -Jamie */ 
-input, button, select, textarea, table, .divider-header, .team-info-header, .column {
+input, button, select, textarea, .divider-header, .team-info-header, .column {
   border-radius: 6px;
+}
+
+table {
+    border-radius: 10px;
 }
 
 #prematch_table_left, #prematch_table_mid, #prematch_table_right {
   margin-top: 20px;
 }
+
 
