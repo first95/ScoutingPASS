@@ -282,6 +282,7 @@ input, button, select, textarea, table, .divider-header, .team-info-header, .col
   border-radius: 6px;
 }
 
-.divider-header:first-child {
+#prematch_table_left, #prematch_table_mid, #prematch_table_right {
   margin-top: 20px;
 }
+
