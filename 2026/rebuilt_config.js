@@ -1,8 +1,7 @@
 var config_data =
 {
-  "title": "Scouting PASS 2026",
-  "page_title": "REBUILT",
-  "checkboxAs": "10",
+  "title": "Scouting PASS 95",
+  "page_title": "Scouting PASS 95",
   "elements": {
     "prematch": {
       "Prematch": {
@@ -14,16 +13,15 @@ var config_data =
         "code": "s",
         "title": "Scouter Name",
         "type": "scouter",
-        "size": 5,
-        "maxSize": 5,
-        "required": "true"
+        "size": 10,
+        "maxSize": 20
       },
       "Event": {
         "code": "e",
         "title": "Event",
         "type": "event",
         "defaultValue": "2026nhbed",
-        "required": "true"
+        "disabled": "true"
       },
       "Match Number": {
         "code": "m",
@@ -43,8 +41,7 @@ var config_data =
           "b2": "Blue-2<br>",
           "r3": "Red-3",
           "b3": "Blue-3"
-        },
-        "required": "true"
+        }
       },
       "Team Number": {
         "code": "t",
@@ -121,7 +118,7 @@ var config_data =
         "code": "aff",
         "title": "Pickup from Neutral Zone",
         "type": "bool"
-      }
+      },
     },
     "teleop": {
       "Teleop": {
@@ -177,7 +174,7 @@ var config_data =
         "code": "tff",
         "title": "Pickup from Floor",
         "type": "bool"
-      }
+      },
     },
     "endgame": {
       "Endgame": {
@@ -197,7 +194,7 @@ var config_data =
           "x": "Not Attempted"
         },
         "defaultValue": "x"
-      }
+      },
     },
     "postmatch": {
       "Postmatch": {
@@ -291,9 +288,9 @@ var config_data =
         "code": "co",
         "title": "Comments",
         "type": "text",
-        "size": 15,
-        "maxSize": 55
-      }
+        "size": 25,
+        "maxSize": 100
+      },
     }
   }
 };
