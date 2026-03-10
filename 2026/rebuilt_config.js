@@ -53,12 +53,12 @@ var config_data =
       "Auto Start Location": {
         "code": "as",
         "title": "Auto Start Location",
-        "type": "clickable_image",
-        "filename": "2026/half_field.png",
-        "clickRestriction": "one",
-        "dimensions": "7 10",
-        "allowableResponses": "4 11 18 25 32 39 46 53 60 67",
-        "shape": "circle 5 black red true"
+        "type": "radio",
+        "choices": {
+          "L": "Left<br>",
+          "M": "Mid<br>",
+          "R": "Right"
+        }
       }
     },
     "auton": {
@@ -67,16 +67,7 @@ var config_data =
         "title": "Autonomous",
         "type": "divider"
       },
-      "Auto Shooting Location": {
-        "code": "asl",
-        "title": "Auto Shooting Location",
-        "type": "clickable_image",
-        "filename": "2026/half_field.png",
-        "dimensions": "7 10",
-        "allowableResponses": "1 2 3 4 8 9 10 11 15 16 17 18 22 23 24 25 29 30 31 32 36 37 38 39 43 44 45 46 50 51 52 53 57 58 59 60 64 65 66 67",
-        "expectedMax": 5,
-        "shape": "circle 5 black red true"
-      },
+
       "Auton Fuel Scored": {
         "code": "afs",
         "title": "Fuel Scored",
@@ -126,16 +117,7 @@ var config_data =
         "title": "Teleop",
         "type": "divider"
       },
-      "Teleop Shooting Locations": {
-        "code": "tsl",
-        "title": "Shooting Locations",
-        "type": "clickable_image",
-        "filename": "2026/half_field.png",
-        "dimensions": "7 10",
-        "allowableResponses": "1 2 3 4 8 9 10 11 15 16 17 18 22 23 24 25 29 30 31 32 36 37 38 39 43 44 45 46 50 51 52 53 57 58 59 60 64 65 66 67",
-        "expectedMax": 25,
-        "shape": "circle 5 black red true"
-      },
+
       "Teleop Fuel Scored": {
         "code": "tfs",
         "title": "Fuel Scored",
