@@ -92,10 +92,13 @@ button {
 
 #prematchHeader1, #prematchHeader2{
     text-align: left;
-    color: var(--text);
-    border-color: var(--border);
-    border-width: 4px;
-    margin:0 0 2em 0;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    border-color: transparent;
+    margin: 0;
+    background: green;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px black;
 }
 
 #qrHeader1 {
@@ -186,7 +189,6 @@ h2{
 .match-label{
     text-align: center;
     background-color: var(--background);
-    margin:0
 }
 
 .half-button-l{
@@ -211,7 +213,7 @@ h2{
 #nextButton1, #nextButton2, #nextButton9, #nextButton10, .clearForm{
     font-family: Audiowide;
     padding: 10px;
-    background-color: var(--background);
+    background-color: var(--prematch);
     text-decoration: none;
     display: inline-block;
     width:fit-content;
@@ -288,11 +290,6 @@ input {
 /*I'm adding rounded corners because its the easiest step towards changing a UI from looking out the mid 2000s to the 2020s -Jamie */ 
 input, button, select, textarea, .divider-header, .team-info-header, .column {
   border-radius: 6px;
-}
-
-
-#prematch_table_left, #prematch_table_mid, #prematch_table_right {
-  margin-top: 10px;
 }
 
 
