@@ -50,9 +50,9 @@ var config_data =
         "min": 1,
         "max": 99999
       },
-      "Auto Start Location": {
+      "Start Location": {
         "code": "as",
-        "title": "Auto Start Location",
+        "title": "Start Location",
         "type": "radio",
         "choices": {
           "L": "Left<br>",
@@ -76,9 +76,9 @@ var config_data =
         "altInc1": 10,
         "altInc2": 5
       },
-      "Auton Pass from Neutral Zone": {
+      "Auton Pass from Neutral": {
         "code": "apn",
-        "title": "Pass from Neutral Zone",
+        "title": "Pass from Neutral",
         "type": "counter",
         "expectedMax": 60,
         "altInc1": 10,
@@ -105,9 +105,9 @@ var config_data =
         "title": "Pickup from Outpost",
         "type": "bool"
       },
-      "Auton Pickup from Neutral Zone": {
+      "Auton Pickup from Neutral": {
         "code": "aff",
-        "title": "Pickup from Neutral Zone",
+        "title": "Pickup from Neutral",
         "type": "bool"
       },
     },
@@ -126,17 +126,17 @@ var config_data =
         "altInc1": 10,
         "altInc2": 5
       },
-      "Teleop Pass from Neutral Zone": {
+      "Teleop Pass from Neutral": {
         "code": "pnz",
-        "title": "Pass from Neutral Zone",
+        "title": "Pass from Neutral",
         "type": "counter",
         "expectedMax": 250,
         "altInc1": 10,
         "altInc2": 5
       },
-      "Teleop Pass from Opp Alliance Zone": {
+      "Teleop Pass from Opp Alliance": {
         "code": "poa",
-        "title": "Pass from Opp Alliance Zone",
+        "title": "Pass from Opp Alliance",
         "type": "counter",
         "expectedMax": 250,
         "altInc1": 10,
