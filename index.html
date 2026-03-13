@@ -22,9 +22,6 @@
 	<script>
 		var columnList = ["left", "mid", "right"];
 	</script>
-	<style>
-  	@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-	</style>
 </head>
 
 <body>
@@ -34,13 +31,13 @@
 			<h1 id="prematchHeader1" class="page_title"></h1>
 			<input type="button" value="Next" id="nextButton1" style="position:absolute; top:1em; right:1%"
 				onclick="swipePage(1)">
-			: <label style="color: black; position: absolute;top:1em;left: 35%;">Scouter name
+			: <label style="font: Roboto; color: white; font-weight: bold; position: absolute;top:1em;left: 35%;">Scouter name
 				<input type="text" name="tops" id="topScoutInitials" onchange="update3('s')" style="width:10em">
 			</label>
-			<label style="color: black; position: absolute;top:1em;left: 55%;">Match Number
+			<label style="font: Roboto; color: white; font-weight: bold; position: absolute;top:1em;left: 55%;">Match Number
 				<input type="number" name="topm" id="topMatchNumber" onchange="update3('m')" style="width:6em;">
 			</label>
-			<label style="color: black; position: absolute;top:1em;right: 10%;">Alliance
+			<label style="font: Roboto; color: white; font-weight: bold; position: absolute;top:1em;right: 10%;">Alliance
 				<input type="radio" name="topr" id="topRobotAlliance_r" value="r" onchange="setRobots()">Red
 				<input type="radio" name="topr" id="topRobotAlliance_b" value="b" onchange="setRobots()">Blue
 			</label>
@@ -130,6 +127,7 @@
 
 
 </html>
+
 
 
 
