@@ -27,9 +27,11 @@ html, body{
 }
 
 .column {
-    /* float: left;
+    /*float: center;
+    align-items: center;
     width: 33.33%; */
     flex:1;
+    
 }
 
 /* Clear floats after the columns */
@@ -162,14 +164,7 @@ h2{
     text-decoration: underline;
 }
 
-.divider-header{
-    font-family: Audiowide;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 250;
-    padding-bottom: 0px;
-    color: black;
-}
+
 
 .divider-info{
     font-style: italic;
@@ -264,8 +259,23 @@ table {
 
 }
 
+
 td {
     padding: 8px 4px;
+    vertical-align: middle;  /* ensures text and inputs align on the same baseline */
+}
+
+/* Right-align label column, left-align input column */
+td:first-child {
+    padding-right: 15px;
+    white-space: nowrap;  /* prevents label text from wrapping */
+}
+
+
+
+td input[type=radio] {
+    display: inline-block;
+    margin: 2px 4px;
 }
 
 input {
@@ -282,6 +292,15 @@ input {
 .field {
     width: "50%";
     text-align: left;
+}
+
+.divider-header{
+    font-family: Audiowide;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 250;
+    padding-bottom: 0px;
+    color: black;
 }
 
 #qr-table {
