@@ -317,5 +317,12 @@ input, button, select, textarea, .divider-header, .team-info-header, .column {
   border-radius: 6px;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 
