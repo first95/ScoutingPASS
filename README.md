@@ -1,8 +1,8 @@
 <div id="top"></div>
 
-# Scouting P.A.S.S.
+# Scouting P.A.S.S. 95
 
-#### A scouting system for FIRST FRC competitions developed by [PWNAGE - Team #2451](https://pwnagerobotics.org). Altered By [Grasshoppers - Team #95](https://www.frcteam95.com).
+#### A scouting system for FIRST FRC competitions first developed by [PWNAGE - Team #2451](https://pwnagerobotics.org). Heavily Altered By [Grasshoppers - Team #95](https://www.frcteam95.com).
 
 <a href="https://first95.github.io/ScoutingPASS">Team 95's version Live Demo</a> . <a href="#getting-started">Getting Started</a> . <a href="#faq">FAQ</a>
 
@@ -53,7 +53,7 @@ This repository is hosted on GitHub Pages.  You can view a live version of it he
 <div id="description"></div>
 
 ## Description:
-Scouting PASS is a web page displayed in a browser.  It consists of 1 long "swipeable" page, divided into 5 distinct sections, each representing a specific aspect of a FRC match: Pre-Match, Autonomous, Teleop, End Game and Post-Match.  A configuratioin file allows the screens to be easily modified to collect any metrics that are important for your scouting needs. A QR code is dynamically generated after the form has been completed, and a button labeled "Next" at the top has been pressed.  This QR code can be scanned to transfer the data to your data repository.  The QR code can also be stored for processing later using a screenshot or camera.  Once the data has been transfered, the scout hits the clear button and the form is cleared out and ready for the next match.
+Scouting PASS 95 is a web page displayed in a browser.  It consists of 1 long "swipeable" page, divided into 5 distinct sections, each representing a specific aspect of a FRC match: Pre-Match, Autonomous, Teleop, End Game and Post-Match.  A configuratioin file allows the screens to be easily modified to collect any metrics that are important for your scouting needs. A QR code is dynamically generated after the form has been completed, and a button labeled "Next" at the top has been pressed.  This QR code can be scanned to transfer the data to your data repository.  The QR code can also be stored for processing later using a screenshot or camera.  Once the data has been transfered, the scout hits the clear button and the form is cleared out and ready for the next match.
 
 Configuration is as easy as creating a JSON file with the fields that your scouting team wants to track.  Some fields are common to all teams and years.  The basic fields are:
 * Scouter - who is scouting this robot
