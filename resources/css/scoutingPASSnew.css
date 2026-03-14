@@ -330,7 +330,7 @@ html, body {
       /* positioning */
       position: fixed;
       bottom: 28px;
-      left: 50%;
+      left: 6%;
       transform: translateX(-50%);
       z-index: 9999;
  
