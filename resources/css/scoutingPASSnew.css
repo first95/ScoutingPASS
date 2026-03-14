@@ -326,3 +326,81 @@ html, body {
     max-width: 100%;
 }
 
+#fullscreen-btn {
+      /* positioning */
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+ 
+      /* size & shape */
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 22px;
+      height: 46px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.18);
+ 
+      /* colour */
+      background: rgba(20, 20, 20, 0.72);
+      backdrop-filter: blur(14px) saturate(160%);
+      -webkit-backdrop-filter: blur(14px) saturate(160%);
+      color: #f0f0f0;
+ 
+      /* type */
+      font-family: 'Georgia', serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      white-space: nowrap;
+ 
+      cursor: pointer;
+      transition:
+        background  0.25s ease,
+        border-color 0.25s ease,
+        transform    0.18s ease,
+        box-shadow   0.25s ease;
+ 
+      box-shadow: 0 4px 24px rgba(0,0,0,0.45);
+    }
+ 
+    #fullscreen-btn:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.38);
+      box-shadow: 0 6px 32px rgba(0,0,0,0.55);
+      transform: translateX(-50%) translateY(-2px);
+    }
+ 
+    #fullscreen-btn:active {
+      transform: translateX(-50%) translateY(0px) scale(0.97);
+    }
+ 
+    /* SVG icons inside the button */
+    #fullscreen-btn svg {
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: transform 0.25s ease;
+    }
+ 
+    #fullscreen-btn:hover svg {
+      transform: scale(1.15);
+    }
+ 
+    /* hide/show the correct icon */
+    #fullscreen-btn .icon-exit { display: none; }
+    #fullscreen-btn.is-fullscreen .icon-enter { display: none; }
+    #fullscreen-btn.is-fullscreen .icon-exit  { display: block; }
+ 
+    /* label text swap */
+    #fullscreen-btn .label-enter { display: inline; }
+    #fullscreen-btn .label-exit  { display: none; }
+    #fullscreen-btn.is-fullscreen .label-enter { display: none; }
+    #fullscreen-btn.is-fullscreen .label-exit  { display: inline; }
