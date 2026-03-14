@@ -999,4 +999,48 @@ window.onload = function(){
    
   }
 
+(function () {
+      const btn = document.getElementById('fullscreen-btn');
+      if (!btn) return;
+ 
+      function isFullscreen() {
+        return !!(
+          document.fullscreenElement ||
+          document.webkitFullscreenElement ||
+          document.mozFullScreenElement ||
+          document.msFullscreenElement
+        );
+      }
+ 
+      function enter() {
+        const el = document.documentElement;
+        if      (el.requestFullscreen)       el.requestFullscreen();
+        else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+        else if (el.mozRequestFullScreen)    el.mozRequestFullScreen();
+        else if (el.msRequestFullscreen)     el.msRequestFullscreen();
+      }
+ 
+      function exit() {
+        if      (document.exitFullscreen)       document.exitFullscreen();
+        else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+        else if (document.mozCancelFullScreen)  document.mozCancelFullScreen();
+        else if (document.msExitFullscreen)     document.msExitFullscreen();
+      }
+ 
+      function syncButton() {
+        btn.classList.toggle('is-fullscreen', isFullscreen());
+        btn.setAttribute('aria-pressed', isFullscreen());
+      }
+ 
+      btn.addEventListener('click', () => {
+        isFullscreen() ? exit() : enter();
+      });
+ 
+      // keep button state in sync if user presses Escape or F11
+      ['fullscreenchange','webkitfullscreenchange',
+       'mozfullscreenchange','MSFullscreenChange'].forEach(evt =>
+        document.addEventListener(evt, syncButton)
+      );
+    })();
+
 };
