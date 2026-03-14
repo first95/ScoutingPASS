@@ -270,7 +270,7 @@ var config_data =
         "code": "co",
         "title": "Comments",
         "type": "text",
-        "size": 20,
+        "size": 15,
         "maxSize": 100
       },
     }
