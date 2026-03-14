@@ -15,10 +15,10 @@
 	<script src="./resources/js/easy.qrcode.min.js"></script>
 	<script src="./resources/js/TBAInterface.js"></script>
 	<script src="./resources/js/scoutingPASS.js"></script>
-	<script src="./2025/Reefscape_config.js"></script>
+	<script src="./2026/rebuilt_config.js"></script>
 	<script src="./2025/2025necmp1_matches.js"></script>
-	<script src="./2025/2025necmp1_teams.js"></script>
-	<link rel="stylesheet" href="./resources/css/scoutingPASS.css">
+	<script src="./2026/2026nhbed_teams.js"></script>
+	<link rel="stylesheet" href="./resources/css/scoutingPASSnew.css">
 	<script>
 		var columnList = ["left", "right"];
 	</script>
@@ -27,17 +27,17 @@
 <body>
 	<form name="topForm" id="topForm" onsubmit="false">
 		<div id="top"
-			style="background-color:var(--background); position:fixed; width:100%; top:0em; border:2px solid black">
+			style="background-color:var(--background); position:fixed; width:100%; top:0em; border:0px solid black">
 			<h1 id="prematchHeader1" class="page_title"></h1>
 			<input type="button" value="Next" id="nextButton1" style="position:absolute; top:1em; left:28%"
 				onclick="swipePage(1)">
-			: <label style="color: black; position: absolute;top:1em;left: 35%;">Scouter name
-				<input type="text" name="tops" id="topScoutInitials" onchange="update3('s')" style="width:10em">
+			: <label style="font: Roboto; color: white; font-weight: bold; position: absolute;top:1em;left: 35%;">Scouter name
+				<input type="text" name="tops" id="topScoutInitials" onchange="update3('s')" style="width:8em">
 			</label>
-			<label style="color: black; position: absolute;top:1em;left: 55%;">Match Number
+			<label style="font: Roboto; color: white; font-weight: bold; position: absolute;top:1em;left: 55%;">Match Number
 				<input type="number" name="topm" id="topMatchNumber" onchange="update3('m')" style="width:6em;">
 			</label>
-			<label style="color: black; position: absolute;top:1em;right: 10%;">Alliance
+			<label style="font: Roboto; color: white; font-weight: bold; position: absolute;top:1em;right: 10%;">Alliance
 				<input type="radio" name="topr" id="topRobotAlliance_r" value="r" onchange="setRobots()">Red
 				<input type="radio" name="topr" id="topRobotAlliance_b" value="b" onchange="setRobots()">Blue
 			</label>
@@ -45,7 +45,7 @@
 	</form>
 	<div id="main-panel-holder" style="top:5em">
 		<div>
-			<div style="display:flex; width:100%; margin-top:98px">
+			<div style="display:flex; width:100%; margin-top:104px"> <!--  originally margin-top: was 98px-->
 				<div id="left" class="column" style="background-color: var(--background);">
 					<div id="left_teaminfo_" class="team-info-header"></div>
 					<form name="leftForm" id="leftForm" onsubmit="false">
