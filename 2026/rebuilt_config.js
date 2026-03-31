@@ -20,7 +20,7 @@ var config_data =
         "code": "e",
         "title": "Event",
         "type": "event",
-        "defaultValue": "2026nhbed",
+        "defaultValue": "2026vtbur",
         "disabled": "true"
       },
       "Match Number": {
