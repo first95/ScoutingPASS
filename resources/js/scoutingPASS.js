@@ -29,9 +29,10 @@ function addCounter(table, idx, column, data){
     return idx+1;
   }
   var cell2 = row.insertCell(1);
+  cell2.style.textAlign = "left";
   cell1.innerHTML = data.title+'&nbsp;';
   cell2.classList.add("field");
-  cell2.style.cssText = 'display: inline-flex; gap: 10px;';
+  cell2.style.cssText = 'display: flex; flex-direction: row; gap: 10px;';
   
   var buttonM10 = document.createElement("button");
   buttonM10.setAttribute("type", "checkbox");
@@ -45,11 +46,13 @@ function addCounter(table, idx, column, data){
   buttonM5.innerHTML += "-5"
   cell2.appendChild(buttonM5);  
 
-  var buttonM1 = document.createElement("button");
-  buttonM1.setAttribute("type", "checkbox");
-  buttonM1.setAttribute("onclick", "return counter(this.parentElement, -1)");
-  buttonM1.innerHTML += "-1"
-  cell2.appendChild(buttonM1);
+  if (columnList.length < 3) {
+    var buttonM1 = document.createElement("button");
+    buttonM1.setAttribute("type", "checkbox");
+    buttonM1.setAttribute("onclick", "return counter(this.parentElement, -1)");
+    buttonM1.innerHTML += "-1"
+    cell2.appendChild(buttonM1);
+  }
 
   var inp = document.createElement("input");
   inp.classList.add("counter");
@@ -70,11 +73,13 @@ function addCounter(table, idx, column, data){
 
   cell2.appendChild(inp);
 
-  var buttonP1 = document.createElement("button");
-  buttonP1.setAttribute("type", "checkbox");
-  buttonP1.setAttribute("onclick", "return counter(this.parentElement, 1)");
-  buttonP1.innerHTML += "+1";
-  cell2.appendChild(buttonP1);
+  if (columnList.length < 3) {
+    var buttonP1 = document.createElement("button");
+    buttonP1.setAttribute("type", "checkbox");
+    buttonP1.setAttribute("onclick", "return counter(this.parentElement, 1)");
+    buttonP1.innerHTML += "+1";
+    cell2.appendChild(buttonP1);
+  }
 
   var buttonP5 = document.createElement("button");
   buttonP5.setAttribute("type", "checkbox");
