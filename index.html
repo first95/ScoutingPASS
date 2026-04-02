@@ -1,163 +1,28 @@
-<!--
-	When we gain access to the match schedule, follow these steps:
-	- Create a file named "2026nhbed_matches.js" in the "2026 folder"
-	- Add "var schedule = " to the start of the file
-	- Go to https://www.thebluealliance.com/api/v3/event/2026nhbed/matches/simple?X-TBA-Auth-Key=hNDnK23dYcPhS6V5SKwfZK8l9VKtWZyZBDKYQRQh5aUqWiKj5KyvKOLDJW49YO00
-	- Copy-paste the data from TBA into the file
-	- Move file to "2026" folder on all 6 tablets
--->
 <!DOCTYPE html>
 <html>
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0">
 	<title>ScoutingPASS 95</title>
-	<script src="./resources/js/easy.qrcode.min.js"></script>
-	<script src="./resources/js/TBAInterface.js"></script>
-	<script src="./resources/js/scoutingPASS.js"></script>
-	<script src="./2026/rebuilt_config.js"></script>
-	<script src="./2026/2026nhbed_matches.js"></script>
-	<script src="./2026/2026nhbed_teams.js"></script>
 	<link rel="stylesheet" href="./resources/css/scoutingPASSnew.css">
 	<script>
-		var columnList = ["left", "mid", "right"];
+		var columnList = ["left"];
 	</script>
 </head>
 
 <body>
-	<form name="topForm" id="topForm" onsubmit="false">
-		<div id="top"
+
+	<div id="top"
 			style="background-color:var(--background); position:fixed; width:100%; top:0em; border:0px solid black">
-			<h1 id="prematchHeader1" class="page_title"></h1>
-			<input type="button" value="Next" id="nextButton1" style="position:absolute; top:1em; right:1%"
-				onclick="swipePage(1)">
-			: <label style="font: Roboto; color: white; font-weight: bold; position: absolute;top:1em;left: 35%;">Scouter name
-				<input type="text" name="tops" id="topScoutInitials" onchange="update3('s')" style="width:8em">
-			</label>
-			<label style="font: Roboto; color: white; font-weight: bold; position: absolute;top:1em;left: 55%;">Match Number
-				<input type="number" name="topm" id="topMatchNumber" onchange="update3('m')" style="width:6em;">
-			</label>
-			<label style="font: Roboto; color: white; font-weight: bold; position: absolute;top:1em;right: 10%;">Alliance
-				<input type="radio" name="topr" id="topRobotAlliance_r" value="r" onchange="setRobots()">Red
-				<input type="radio" name="topr" id="topRobotAlliance_b" value="b" onchange="setRobots()">Blue
-			</label>
-		</div>
-	</form>
-	<div id="main-panel-holder" style="top:3em">
-		<div>
-			<div style="display:flex; width:100%; margin-top:104px"> <!--  originally margin-top: was 98px-->
-				<div id="left" class="column" style="background-color: var(--background);">
-					<div id="left_teaminfo_" class="team-info-header"></div>
-					<form name="leftForm" id="leftForm" onsubmit="false">
-						<table id="prematch_table_left" style="font: Roboto"></table>
-						<table id="auton_table_left" style="font: Roboto"></table>
-						<table id="teleop_table_left" style="font: Roboto"></table>
-						<table id="endgame_table_left" style="font: Roboto"></table>
-						<table id="postmatch_table_left" style="font: Roboto"></table>
-					</form>
-				</div>
-				<div id="mid" class="column" style="background-color: var(--background);">
-					<div id="mid_teaminfo_" class="team-info-header"></div>
-					<form name="midForm" id="midForm" onsubmit="false">
-						<table id="prematch_table_mid" style="font: Roboto"></table>
-						<table id="auton_table_mid" style="font: Roboto"></table>
-						<table id="teleop_table_mid" style="font: Roboto"></table>
-						<table id="endgame_table_mid" style="font: Roboto"></table>
-						<table id="postmatch_table_mid" style="font: Roboto"></table>
-					</form>
-				</div>
-				<div id="right" class="column" style="background-color: var(--background);">
-					<div id="right_teaminfo_" class="team-info-header"></div>
-					<form name="rightForm" id="rightForm" onsubmit="false">
-						<table id="prematch_table_right" style="font: Roboto"></table>
-						<table id="auton_table_right" style="font: Roboto"></table>
-						<table id="teleop_table_right" style="font: Roboto"></table>
-						<table id="endgame_table_right" style="font: Roboto"></table>
-						<table id="postmatch_table_right" style="font: Roboto"></table>
-					</form>
-				</div>
-			</div>
-		</div>
-		<div id="qr-code" class="main-panel" style="background-color: var(--background);">
-			<h1 id="qrHeader1" class="page_title"><span class="odd">P</span><span class="even">W</span><span
-					class="odd">n</span><span class="even">A</span><span class="odd">G</span><span
-					class="even">E</span><br>Scouting 2020</h1>
-			<h2 id="qrHeader2">Generate QR Code</h2>
-			<p class="match-label"><input type="button" value="Prev" id="prevButton9" onclick="swipePage(-1)"></p>
-			<p id="qr-info"><span id="display_qr-info" style="border: none; text-align: center;"></span></p>
-			<table id="qr-table">
-				<tr>
-					<td width="5%">&nbsp;</td>
-					<td width="90%">
-						<div id="qrcode" style="text-align:center">
-							<script>
-								// Create QRCode Object
-								qr = new QRCode(document.getElementById("qrcode"), options)
-							</script>
-						</div>
-					</td>
-					<td width="5%">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="5%">&nbsp;</td>
-					<td width="90%">
-						<div>
-							<p id="data" style="text-align:center"></p>
-						</div>
-					</td>
-					<td width="5%">&nbsp;</td>
-				</tr>
-			</table>
-			<p></p>
-			<p class="match-label">
-				<input type="button" value="Display Data" id="displayButton" onclick="displayData()">
-				<input type="button" value="Copy Data" id="copyButton" onclick="copyData()">
-			</p>
-
-			<div id="clearButton">
-				<button type="button" class="clearForm" onclick="clearForm()">Clear Form</button>
-				<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
-				</p>
-			</div>
-			<br>
-		</div>
+		<h1 id="prematchHeader1" class="page_title">Scouting PASS 95</h1>
 	</div>
-	</form>
-	<!-- ── Fullscreen Button ── -->
-  <button id="fullscreen-btn" aria-label="Toggle fullscreen">
- 
-    <!-- Enter-fullscreen icon (four corners pointing out) -->
-    <svg class="icon-enter" viewBox="0 0 24 24" aria-hidden="true">
-      <polyline points="15 3 21 3 21 9"/>
-      <polyline points="9 21 3 21 3 15"/>
-      <line x1="21" y1="3" x2="14" y2="10"/>
-      <line x1="3"  y1="21" x2="10" y2="14"/>
-    </svg>
- 
-    <!-- Exit-fullscreen icon (four corners pointing in) -->
-    <svg class="icon-exit" viewBox="0 0 24 24" aria-hidden="true">
-      <polyline points="4 14 10 14 10 20"/>
-      <polyline points="20 10 14 10 14 4"/>
-      <line x1="10" y1="14" x2="3"  y2="21"/>
-      <line x1="21" y1="3"  x2="14" y2="10"/>
-    </svg>
- 
-    <span class="label-enter"></span>
-    <span class="label-exit"></span>
-  </button>
+<div id="main-panel-holder" style="top:5em">
+		<div>
+			<div style="display:flex; flex-direction: column; width:100%; margin-top:104px"> <!--  originally margin-top: was 98px-->
+
+    <h1><a href="OneColumn.html">One Column form</a></h1>
+    <h1><a href="TwoColumn.html">Two Column form</a></h1>
+    <h1><a href="ThreeColumn.html">Three Column form</a></h1>
+    </div>
 </body>
-
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
