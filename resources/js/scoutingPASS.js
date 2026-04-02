@@ -29,14 +29,30 @@ function addCounter(table, idx, column, data){
     return idx+1;
   }
   var cell2 = row.insertCell(1);
+  cell2.style.textAlign = "left";
   cell1.innerHTML = data.title+'&nbsp;';
   cell2.classList.add("field");
+  cell2.style.cssText = 'display: flex; flex-direction: row; gap: 10px;';
+  
+  var buttonM10 = document.createElement("button");
+  buttonM10.setAttribute("type", "checkbox");
+  buttonM10.setAttribute("onclick", "return counter(this.parentElement, -10)");
+  buttonM10.innerHTML += "-10"
+  cell2.appendChild(buttonM10);
 
-  var button1 = document.createElement("button");
-  button1.setAttribute("type", "checkbox");
-  button1.setAttribute("onclick", "return counter(this.parentElement, -1)");
-  button1.innerHTML += "-"
-  cell2.appendChild(button1);
+  var buttonM5 = document.createElement("button");
+  buttonM5.setAttribute("type", "checkbox");
+  buttonM5.setAttribute("onclick", "return counter(this.parentElement, -5)");
+  buttonM5.innerHTML += "-5"
+  cell2.appendChild(buttonM5);  
+
+  if (columnList.length < 3) {
+    var buttonM1 = document.createElement("button");
+    buttonM1.setAttribute("type", "checkbox");
+    buttonM1.setAttribute("onclick", "return counter(this.parentElement, -1)");
+    buttonM1.innerHTML += "-1"
+    cell2.appendChild(buttonM1);
+  }
 
   var inp = document.createElement("input");
   inp.classList.add("counter");
@@ -57,11 +73,25 @@ function addCounter(table, idx, column, data){
 
   cell2.appendChild(inp);
 
-  var button2 = document.createElement("button");
-  button2.setAttribute("type", "checkbox");
-  button2.setAttribute("onclick", "return counter(this.parentElement, 1)");
-  button2.innerHTML += "+";
-  cell2.appendChild(button2);
+  if (columnList.length < 3) {
+    var buttonP1 = document.createElement("button");
+    buttonP1.setAttribute("type", "checkbox");
+    buttonP1.setAttribute("onclick", "return counter(this.parentElement, 1)");
+    buttonP1.innerHTML += "+1";
+    cell2.appendChild(buttonP1);
+  }
+
+  var buttonP5 = document.createElement("button");
+  buttonP5.setAttribute("type", "checkbox");
+  buttonP5.setAttribute("onclick", "return counter(this.parentElement, 5)");
+  buttonP5.innerHTML += "+5";
+  cell2.appendChild(buttonP5);
+
+  var buttonP10 = document.createElement("button");
+  buttonP10.setAttribute("type", "checkbox");
+  buttonP10.setAttribute("onclick", "return counter(this.parentElement, 10)");
+  buttonP10.innerHTML += "+10";
+  cell2.appendChild(buttonP10);
 
   if (data.hasOwnProperty('defaultValue')) {
     var def = document.createElement("input");
