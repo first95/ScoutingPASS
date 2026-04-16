@@ -20,7 +20,7 @@ var config_data =
         "code": "e",
         "title": "Event",
         "type": "event",
-        "defaultValue": "2026vtbur",
+        "defaultValue": "2026necmp2",
         "disabled": "true"
       },
       "Match Number": {
